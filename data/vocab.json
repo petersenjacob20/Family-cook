@@ -11,6 +11,6 @@
   "soy": ["soy", "soy sauce", "teriyaki", "tofu", "edamame"],
   "dairy": ["milk", "cheese", "cream", "butter", "yogurt", "parmesan", "mozzarella", "cheddar", "ricotta", "provolone", "monterey jack", "sour cream", "cream cheese"],
   "gluten": ["flour", "bread", "pasta", "noodle", "tortilla", "bun", "spaghetti", "macaroni", "fettuccine", "lasagna", "ziti", "penne", "crust", "cracker", "bread crumb", "panko", "pizza dough", "crescent", "pancake"],
-  "nuts": ["peanut", "almond", "walnut", "pecan", "cashew", "pistachio", "hazelnut", "peanut butter", "macadamia", "brazil nut", "pine nut", "chestnut", "filbert", "coconut", "pesto", "nutella", "praline", "marzipan", "nougat", "satay", "granola", "trail mix", "nut butter", "nut oil", "nut flour", "nut milk", "nut"],
+  "nuts": ["peanut", "groundnut", "ground nut", "arachis", "arachis oil", "goober", "goober pea", "almond", "walnut", "pecan", "cashew", "pistachio", "hazelnut", "peanut butter", "macadamia", "brazil nut", "pine nut", "chestnut", "filbert", "coconut", "pesto", "nutella", "praline", "marzipan", "nougat", "satay", "granola", "trail mix", "nut butter", "nut oil", "nut flour", "nut milk", "nut"],
   "spicy": ["jalapeno", "hot sauce", "cayenne", "chili flake", "buffalo", "sriracha", "red pepper flake", "chili powder"]
 }

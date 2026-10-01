@@ -1,17 +1,43 @@
 // Blocked-food rule (build plan section 8). Pure, no DOM.
 // A word matches lowercase, as a whole word, ignoring a trailing "s" or "es".
 
-export function fold(s) {
+// ---- The one text normalizer. Every match below (nut guard, allergy options, never words,
+// vocab synonyms, likes) runs on text that went through normalizeText first:
+//   1. Unicode NFKC (full-width letters -> plain ASCII, ligatures split, odd spaces -> space)
+//   2. strip soft hyphens and zero-width characters (U+00AD, U+200B, U+200C, U+200D, U+2060, U+FEFF)
+//   3. Unicode dashes (U+2010..U+2015, U+2212) -> "-"
+//   4. tabs, NBSP and every other Unicode space -> " ", repeats collapsed, ends trimmed
+//   5. accents dropped (jalapeño -> jalapeno), lowercase
+const HIDDEN_RE = /[\u00AD\u200B\u200C\u200D\u2060\uFEFF]/g;
+const DASH_RE = /[\u2010-\u2015\u2212]/g;
+export function normalizeText(s) {
   return String(s == null ? '' : s)
+    .normalize('NFKC')
+    .replace(HIDDEN_RE, '')
+    .replace(DASH_RE, '-')
+    .replace(/\s+/g, ' ')
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase().trim().replace(/\s+/g, ' ');
+    .toLowerCase().trim();
+}
+export const fold = normalizeText;
+
+// The normalized text, plus (only when it had a soft hyphen or zero-width character) a second
+// reading where that character splits words instead of vanishing. A match in either counts, so
+// "pine<zero-width>nut" is still caught as "pine nut" even though stripping gives "pinenut".
+export function textVariants(s) {
+  const raw = String(s == null ? '' : s);
+  const a = normalizeText(raw);
+  if (!/[\u00AD\u200B\u200C\u200D\u2060\uFEFF]/.test(raw)) return [a];
+  const b = normalizeText(raw.replace(HIDDEN_RE, ' '));
+  return a === b ? [a] : [a, b];
 }
 
 const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 // Base forms of a word: itself, minus a trailing "s", minus a trailing "es".
+// A typed hyphen counts as a space, so "pine-nut" and "ground-nut" work like "pine nut".
 export function bases(word) {
-  const w = fold(word);
+  const w = normalizeText(word).replace(/-/g, ' ').replace(/ +/g, ' ').trim();
   const out = new Set();
   if (!w) return out;
   out.add(w);
@@ -49,7 +75,7 @@ export function matcher(word, vocab) {
 
 export function wordMatches(word, text, vocab) {
   const re = matcher(word, vocab);
-  return re ? re.test(fold(text)) : false;
+  return re ? textVariants(text).some((t) => re.test(t)) : false;
 }
 
 // Everything about a recipe a never word is checked against. Optional ingredients count too.
@@ -98,9 +124,11 @@ export function neverSummary(people) {
 
 // ---- Nut guard (always on) and the household Allergies hard exclude. ----
 // Whole words / phrases only, case-insensitive, plurals allowed. Never a bare "nut" substring,
-// so "minutes", "butternut squash" and "nutmeg" never match.
+// so "minutes", "butternut squash" and "nutmeg" never match. "groundnut" / "ground nut" (another
+// name for peanut) is caught in every form: groundnuts, ground nuts, ground-nut(s); "ground beef" is not.
+// Also peanut's other names: arachis (oil) and goober (peas).
 export const NUT_TERMS = [
-  'peanut', 'almond', 'walnut', 'pecan', 'cashew', 'pistachio', 'hazelnut', 'macadamia', 'brazil nut', 'pine nut',
+  'peanut', 'groundnut', 'ground nut', 'arachis', 'arachis oil', 'goober', 'goober pea', 'almond', 'walnut', 'pecan', 'cashew', 'pistachio', 'hazelnut', 'macadamia', 'brazil nut', 'pine nut',
   'chestnut', 'filbert', 'coconut', 'pesto', 'nutella', 'praline', 'marzipan', 'nougat', 'satay', 'granola', 'trail mix',
   'nut butter', 'nut oil', 'nut flour', 'nut milk', 'nut',
 ];
@@ -115,8 +143,15 @@ const ALLOW_RE = new RegExp(`(^|[^a-z0-9])(?:${NUT_ALLOW.join('|')})(?:es|s)?(?=
 
 // The guard words found in one piece of text ([] when clean).
 export function nutHits(text) {
-  const t = fold(text).replace(ALLOW_RE, '$1 ');
-  return [...t.matchAll(NUT_RE)].map((m) => m[0].slice(m[1].length));
+  const out = [];
+  textVariants(text).forEach((v, i) => {
+    const t = v.replace(ALLOW_RE, '$1 ');
+    for (const m of t.matchAll(NUT_RE)) {
+      const w = m[0].slice(m[1].length);
+      if (i === 0 || !out.includes(w)) out.push(w);
+    }
+  });
+  return out;
 }
 
 // Every string anywhere in a recipe: title, tags, contains, every ingredient field, every step field.

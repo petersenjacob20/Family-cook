@@ -1,6 +1,6 @@
 // Offline: app shell cached first (build plan section 12).
 // Bump CACHE on every content or code change. Older fc- caches are deleted on activate (other apps on the same origin are left alone).
-const CACHE = 'fc-v2-pub1';
+const CACHE = 'fc-v2-pub3';
 const ASSETS = [
   './',
   './css/app.css',
@@ -38,8 +38,10 @@ const ASSETS = [
   './manifest.webmanifest',
 ];
 
+// cache: 'reload' skips the browser's HTTP cache, so an update never re-caches an old file
+// that the host said was still fresh (GitHub Pages sends max-age=600).
 self.addEventListener('install', (event) => {
-  event.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)).then(() => self.skipWaiting()));
+  event.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS.map((u) => new Request(u, { cache: 'reload' })))).then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (event) => {
