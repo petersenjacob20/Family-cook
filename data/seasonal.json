@@ -1,0 +1,17 @@
+{
+  "note": "Month (1-12) -> ingredient keys that are in season or a cozy fit that month. Gentle +1 boost only.",
+  "months": {
+    "1": ["russet-potatoes", "onion", "baby-carrots", "frozen-squash"],
+    "2": ["russet-potatoes", "onion", "baby-carrots", "frozen-squash"],
+    "3": ["russet-potatoes", "onion", "baby-carrots"],
+    "4": ["lettuce", "onion", "celery"],
+    "5": ["lettuce", "celery", "baby-carrots"],
+    "6": ["lettuce", "blueberries", "celery", "baby-potatoes"],
+    "7": ["blueberries", "tomato", "bell-pepper", "lettuce", "baby-potatoes"],
+    "8": ["tomato", "bell-pepper", "blueberries", "baby-potatoes", "onion"],
+    "9": ["apples", "tomato", "bell-pepper", "baby-potatoes", "russet-potatoes"],
+    "10": ["apples", "frozen-squash", "russet-potatoes", "baby-potatoes", "baby-carrots"],
+    "11": ["apples", "frozen-squash", "russet-potatoes", "baby-carrots", "onion"],
+    "12": ["russet-potatoes", "frozen-squash", "onion", "baby-carrots"]
+  }
+}

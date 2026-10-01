@@ -1,0 +1,16 @@
+{
+  "fish": ["fish", "salmon", "tuna", "cod", "tilapia", "trout", "halibut", "anchovy", "sardine", "fish sauce", "fish stick", "catfish", "pollock", "walleye", "perch", "mahi", "swordfish", "haddock", "caesar", "worcestershire"],
+  "shellfish": ["shrimp", "crab", "lobster", "clam", "mussel", "scallop", "oyster", "prawn", "crawfish", "imitation crab"],
+  "asparagus": ["asparagus"],
+  "mushroom": ["mushroom", "portobello", "shiitake", "cremini"],
+  "pork": ["pork", "bacon", "ham", "sausage", "pepperoni", "bratwurst", "brat", "prosciutto", "chorizo", "salami", "pork chop", "pulled pork"],
+  "beef": ["beef", "ground beef", "steak", "shaved steak", "hamburger", "brisket", "roast beef", "beef gravy", "cheeseburger"],
+  "chicken": ["chicken", "drumstick", "chicken wing", "chicken tender", "rotisserie chicken", "chicken broth", "nugget"],
+  "turkey": ["turkey", "deli turkey", "ground turkey"],
+  "egg": ["egg", "eggs", "mayo", "mayonnaise", "egg noodle"],
+  "soy": ["soy", "soy sauce", "teriyaki", "tofu", "edamame"],
+  "dairy": ["milk", "cheese", "cream", "butter", "yogurt", "parmesan", "mozzarella", "cheddar", "ricotta", "provolone", "monterey jack", "sour cream", "cream cheese"],
+  "gluten": ["flour", "bread", "pasta", "noodle", "tortilla", "bun", "spaghetti", "macaroni", "fettuccine", "lasagna", "ziti", "penne", "crust", "cracker", "bread crumb", "panko", "pizza dough", "crescent", "pancake"],
+  "nuts": ["peanut", "almond", "walnut", "pecan", "cashew", "pistachio", "hazelnut", "peanut butter", "macadamia", "brazil nut", "pine nut", "chestnut", "filbert", "coconut", "pesto", "nutella", "praline", "marzipan", "nougat", "satay", "granola", "trail mix", "nut butter", "nut oil", "nut flour", "nut milk", "nut"],
+  "spicy": ["jalapeno", "hot sauce", "cayenne", "chili flake", "buffalo", "sriracha", "red pepper flake", "chili powder"]
+}

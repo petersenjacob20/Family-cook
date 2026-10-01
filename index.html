@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#E8772E">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Family Cook">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Family Cook</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="./icons/icon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="./css/app.css">
+  <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+  <div id="app" class="app" aria-live="polite">
+    <p class="loading">Loading…</p>
+  </div>
+  <div id="timerbar" class="timerbar" hidden></div>
+  <nav id="tabs" class="tabs" aria-label="Main">
+    <a href="#/tonight" data-tab="tonight">Tonight</a>
+    <a href="#/week" data-tab="week">Week</a>
+    <a href="#/grocery" data-tab="grocery">Grocery</a>
+    <a href="#/family" data-tab="family">Family</a>
+  </nav>
+  <div id="banner" class="banner" role="alert" hidden></div>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

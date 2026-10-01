@@ -1,0 +1,5152 @@
+{
+  "schema": 1,
+  "recipes": [
+    {
+      "id": "easy-chicken-alfredo",
+      "title": "Easy Chicken Alfredo",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 30,
+      "serves": 3,
+      "tags": [
+        "pasta",
+        "alfredo",
+        "chicken"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "fettuccine",
+          "name": "fettuccine",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry"
+        },
+        {
+          "key": "cooked-chicken",
+          "name": "cooked chicken (a store rotisserie chicken works)",
+          "qty": 2,
+          "unit": "cup",
+          "section": "meat"
+        },
+        {
+          "key": "alfredo-sauce",
+          "name": "jar of Alfredo sauce",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "parmesan",
+          "name": "grated Parmesan",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "frozen-broccoli",
+          "name": "frozen broccoli",
+          "qty": 1,
+          "unit": "bag",
+          "section": "frozen",
+          "optional": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Fill a big pot with water, add a spoonful of salt, and set it on high heat.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "When it bubbles, add the noodles and stir once.",
+          "minutes": 10,
+          "timer_min": 10,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Put the broccoli in for the last 3 minutes, if using.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Sprinkle the cheese",
+          "how": [
+            "Count 5 pinches together",
+            "Sprinkle it into the cool bowl of sauce",
+            "Say the color: white!"
+          ],
+          "learns": [
+            "counting",
+            "colors"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Drain the noodles in the sink with a strainer.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Put the noodles back in the pot, then stir in the sauce and chicken on low.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Scoop onto plates and let it cool a minute before serving.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "sheet-pan-pizza",
+      "title": "Sheet-Pan Pizza",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 30,
+      "serves": 4,
+      "tags": [
+        "pizza",
+        "pepperoni"
+      ],
+      "contains": [
+        "dairy",
+        "gluten",
+        "pork"
+      ],
+      "ingredients": [
+        {
+          "key": "pizza-dough",
+          "name": "ready-made pizza dough",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "pizza-sauce",
+          "name": "jar of pizza sauce",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "shredded-mozzarella",
+          "name": "shredded mozzarella",
+          "qty": 2,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "pepperoni",
+          "name": "pepperoni slices",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "meat",
+          "optional": true
+        },
+        {
+          "key": "cooking-spray",
+          "name": "cooking spray",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "flour",
+          "name": "flour",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 425°F.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Spray a big baking sheet and dust your hands with flour.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Press the dough out to fill the sheet. Little holes are fine.",
+          "minutes": 5
+        },
+        {
+          "who": "kid",
+          "text": "Spread and sprinkle",
+          "how": [
+            "Spoon sauce on, then spread it in circles",
+            "Sprinkle cheese all over",
+            "Count 10 pepperonis onto the top"
+          ],
+          "learns": [
+            "counting",
+            "shapes"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Bake until the cheese bubbles and the edges are brown.",
+          "minutes": 15,
+          "timer_min": 15,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Let it sit 5 minutes, then cut it into squares.",
+          "minutes": 5,
+          "timer_min": 5,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Hand out squares on plates.",
+          "minutes": 1
+        }
+      ]
+    },
+    {
+      "id": "build-your-own-tacos",
+      "title": "Build-Your-Own Tacos",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 20,
+      "total_min": 35,
+      "serves": 4,
+      "tags": [
+        "tacos",
+        "beef"
+      ],
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "ground-beef",
+          "name": "ground beef",
+          "qty": 1,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "taco-seasoning",
+          "name": "taco seasoning",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "pantry"
+        },
+        {
+          "key": "taco-shells",
+          "name": "hard taco shells",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "flour-tortillas",
+          "name": "flour tortillas (8-inch)",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "lettuce",
+          "name": "head of lettuce",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "tomato",
+          "name": "tomato",
+          "qty": 2,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "sour-cream",
+          "name": "sour cream",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "salsa",
+          "name": "mild salsa",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "optional": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Brown the beef in a big skillet over medium-high, breaking it up.",
+          "minutes": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Pour off the grease into an old can, not the sink.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the taco seasoning and the water the packet says. Simmer.",
+          "minutes": 5,
+          "timer_min": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Rinse the lettuce and tomatoes, then chop them small.",
+          "minutes": 6,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "kid",
+          "text": "Fill the topping bowls",
+          "how": [
+            "Put cheese in one bowl and lettuce in another",
+            "Count the bowls with me",
+            "Name each color"
+          ],
+          "learns": [
+            "sorting",
+            "colors"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Warm the shells in the oven at 350°F for 5 minutes.",
+          "minutes": 5,
+          "timer_min": 5,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Set it all out and let everyone build their own.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "crispy-tenders-and-fries",
+      "title": "Crispy Chicken Tenders and Fries",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 25,
+      "total_min": 40,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "tenders",
+        "fries"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "egg",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-tenders",
+          "name": "chicken tenderloins",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "eggs",
+          "name": "eggs",
+          "qty": 2,
+          "unit": "",
+          "section": "dairy"
+        },
+        {
+          "key": "panko",
+          "name": "panko bread crumbs",
+          "qty": 1.5,
+          "unit": "cup",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "parmesan",
+          "name": "grated Parmesan",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "frozen-fries",
+          "name": "frozen fries",
+          "qty": 1,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "ketchup",
+          "name": "ketchup",
+          "qty": 3,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "honey",
+          "name": "honey",
+          "qty": 2,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "cooking-spray",
+          "name": "cooking spray",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 425°F and spray two baking sheets.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Beat the eggs in one bowl. Mix the crumbs, Parmesan and a pinch of salt in another.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Dip each tender in egg, then press it into the crumbs. Wash your hands after.",
+          "minutes": 8
+        },
+        {
+          "who": "adult",
+          "text": "Put tenders on one sheet and fries on the other. Spray the tops.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Bake both until golden, flipping halfway.",
+          "minutes": 20,
+          "timer_min": 20,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "kid",
+          "text": "Mix the dipping sauce",
+          "how": [
+            "Squeeze ketchup into a small bowl",
+            "Add honey and stir 10 times",
+            "Taste with a clean spoon: sweet!"
+          ],
+          "learns": [
+            "counting",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Check a big tender is white in the middle, then serve.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "stovetop-mac-and-cheese",
+      "title": "Stovetop Mac and Cheese",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 25,
+      "serves": 4,
+      "tags": [
+        "mac and cheese",
+        "pasta",
+        "cheese"
+      ],
+      "contains": [
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "elbow-macaroni",
+          "name": "elbow macaroni",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry"
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 2,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "milk",
+          "name": "milk",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "butter",
+          "name": "butter",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "frozen-peas-carrots",
+          "name": "frozen peas and carrots",
+          "qty": 1,
+          "unit": "bag",
+          "section": "frozen",
+          "optional": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Boil a big pot of salted water.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Measure the noodles",
+          "how": [
+            "Pour dry noodles into a big bowl",
+            "Feel them: hard and bumpy",
+            "Count 10 noodles out loud"
+          ],
+          "learns": [
+            "counting",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Add the noodles and cook until soft.",
+          "minutes": 8,
+          "timer_min": 8,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the frozen peas for the last 2 minutes, if using.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Drain, then put the noodles back in the pot on low.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in a big pat of butter, the milk and the cheese until melted.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Let it cool a minute before serving.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "cheesy-quesadillas",
+      "title": "Cheesy Quesadillas",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 20,
+      "serves": 3,
+      "tags": [
+        "quesadillas",
+        "cheese",
+        "chicken"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "flour-tortillas",
+          "name": "flour tortillas (8-inch)",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 2,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "cooked-chicken",
+          "name": "cooked chicken (a store rotisserie chicken works)",
+          "qty": 1,
+          "unit": "cup",
+          "section": "meat"
+        },
+        {
+          "key": "salsa",
+          "name": "mild salsa",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "optional": true
+        },
+        {
+          "key": "sour-cream",
+          "name": "sour cream",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "butter",
+          "name": "butter",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Set out the tortillas, cheese and chicken.",
+          "minutes": 2
+        },
+        {
+          "who": "kid",
+          "text": "Sprinkle the cheese",
+          "how": [
+            "Lay a tortilla flat on a plate",
+            "Sprinkle cheese on half",
+            "Fold it like a book"
+          ],
+          "learns": [
+            "shapes",
+            "following-directions"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Melt a little butter in a skillet over medium heat.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add chicken inside each folded tortilla and cook until golden on one side.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Flip with a spatula and cook the other side.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Move to a board and cut into triangles.",
+          "minutes": 2,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Serve with salsa and sour cream once it has cooled a little.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "spaghetti-meat-sauce",
+      "title": "Spaghetti with Meat Sauce",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 35,
+      "serves": 4,
+      "tags": [
+        "pasta",
+        "spaghetti",
+        "beef"
+      ],
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "spaghetti",
+          "name": "spaghetti",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry"
+        },
+        {
+          "key": "ground-beef",
+          "name": "ground beef",
+          "qty": 1,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "pasta-sauce",
+          "name": "jar of pasta sauce",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "parmesan",
+          "name": "grated Parmesan",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Start a big pot of salted water on high.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Brown the beef in a skillet, breaking it up, and pour off the grease.",
+          "minutes": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the sauce and a shake of garlic powder. Let it simmer on low.",
+          "minutes": 10,
+          "timer_min": 10,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the spaghetti until soft.",
+          "minutes": 10,
+          "timer_min": 10,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Count the shakes",
+          "how": [
+            "Hold the cheese shaker with two hands",
+            "Shake 5 times over each cool plate",
+            "Count each shake"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Drain the noodles in the sink.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Put noodles on the plates and spoon sauce on top.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "chicken-noodle-soup",
+      "title": "Quick Chicken Noodle Soup",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 35,
+      "serves": 4,
+      "tags": [
+        "soup",
+        "chicken",
+        "noodles"
+      ],
+      "contains": [
+        "chicken",
+        "egg",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-broth",
+          "name": "chicken broth (32 oz carton)",
+          "qty": 2,
+          "unit": "box",
+          "section": "pantry"
+        },
+        {
+          "key": "cooked-chicken",
+          "name": "cooked chicken (a store rotisserie chicken works)",
+          "qty": 2,
+          "unit": "cup",
+          "section": "meat"
+        },
+        {
+          "key": "egg-noodles",
+          "name": "wide egg noodles",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "pantry"
+        },
+        {
+          "key": "baby-carrots",
+          "name": "baby carrots",
+          "qty": 1,
+          "unit": "bag",
+          "section": "produce"
+        },
+        {
+          "key": "celery",
+          "name": "celery",
+          "qty": 1,
+          "unit": "bunch",
+          "section": "produce"
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Slice the carrots and two celery stalks into coins.",
+          "minutes": 6,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "kid",
+          "text": "Sort the veggie coins",
+          "how": [
+            "Put orange coins in one pile",
+            "Put green coins in another",
+            "Which pile is bigger?"
+          ],
+          "learns": [
+            "sorting",
+            "colors"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Warm a spoon of olive oil in a big pot and cook the veggies 5 minutes.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Pour in the broth and bring it to a boil.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the noodles and cook until soft.",
+          "minutes": 8,
+          "timer_min": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the chicken, salt and pepper and heat 2 minutes.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Ladle into bowls and let it cool before serving.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "grilled-cheese-tomato-soup",
+      "title": "Grilled Cheese and Tomato Soup",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 20,
+      "serves": 3,
+      "tags": [
+        "grilled cheese",
+        "soup",
+        "cheese"
+      ],
+      "contains": [
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "sandwich-bread",
+          "name": "sandwich bread",
+          "qty": 6,
+          "unit": "slice",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "american-cheese",
+          "name": "American cheese slices",
+          "qty": 6,
+          "unit": "slice",
+          "section": "dairy"
+        },
+        {
+          "key": "tomato-soup",
+          "name": "can of tomato soup",
+          "qty": 2,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "milk",
+          "name": "milk",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "butter",
+          "name": "butter",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Pour the soup and milk into a pot, stir, and warm on medium-low.",
+          "minutes": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Build the sandwiches",
+          "how": [
+            "Put a cheese square on each bread square",
+            "Count: one, two, three sandwiches",
+            "Put the top bread on"
+          ],
+          "learns": [
+            "counting",
+            "shapes"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Butter the outsides of the bread.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Cook the sandwiches in a skillet over medium until golden.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Flip and cook the other side.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Cut into triangles or strips.",
+          "minutes": 1,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Serve with cups of soup once cool enough to sip.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "breakfast-for-dinner",
+      "title": "Pancakes and Eggs for Dinner",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 25,
+      "total_min": 30,
+      "serves": 4,
+      "tags": [
+        "breakfast",
+        "pancakes",
+        "eggs"
+      ],
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "pancake-mix",
+          "name": "just-add-water pancake mix",
+          "qty": 2,
+          "unit": "cup",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "eggs",
+          "name": "eggs",
+          "qty": 6,
+          "unit": "",
+          "section": "dairy"
+        },
+        {
+          "key": "milk",
+          "name": "milk",
+          "qty": 0.25,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "blueberries",
+          "name": "blueberries",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "produce",
+          "optional": true
+        },
+        {
+          "key": "maple-syrup",
+          "name": "maple syrup",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "butter",
+          "name": "butter",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Measure the mix and water the box says into a big bowl.",
+          "minutes": 2
+        },
+        {
+          "who": "kid",
+          "text": "Stir the batter",
+          "how": [
+            "Hold the bowl with one hand",
+            "Stir 10 times",
+            "Drop in blueberries, one at a time"
+          ],
+          "learns": [
+            "counting",
+            "following-directions"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Heat a skillet or griddle on medium and add a little butter.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Pour small circles of batter. Flip when bubbles pop on top.",
+          "minutes": 10,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Beat the eggs with the milk.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Scramble the eggs on medium-low, stirring slowly, until just set.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Serve with syrup.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "chicken-fried-rice",
+      "title": "Easy Chicken Fried Rice",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 25,
+      "serves": 4,
+      "tags": [
+        "rice",
+        "chicken",
+        "fried rice"
+      ],
+      "contains": [
+        "chicken",
+        "egg",
+        "gluten",
+        "soy"
+      ],
+      "ingredients": [
+        {
+          "key": "instant-rice",
+          "name": "instant rice",
+          "qty": 3,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "cooked-chicken",
+          "name": "cooked chicken (a store rotisserie chicken works)",
+          "qty": 2,
+          "unit": "cup",
+          "section": "meat"
+        },
+        {
+          "key": "frozen-peas-carrots",
+          "name": "frozen peas and carrots",
+          "qty": 1,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "eggs",
+          "name": "eggs",
+          "qty": 2,
+          "unit": "",
+          "section": "dairy"
+        },
+        {
+          "key": "soy-sauce",
+          "name": "soy sauce",
+          "qty": 3,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "oil",
+          "name": "oil",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Make the rice the way the box says and let it sit.",
+          "minutes": 10,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Pour the peas",
+          "how": [
+            "Pour frozen peas into a cool bowl",
+            "Feel how cold they are",
+            "Count 10 peas"
+          ],
+          "learns": [
+            "senses",
+            "counting"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Heat a spoon of oil in a big skillet on medium-high.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the peas and carrots 3 minutes.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Push them aside, crack in the eggs, and scramble.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the rice, chicken and soy sauce and stir until hot.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Scoop into bowls and let it cool a minute.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "turkey-cheese-pinwheels",
+      "title": "Turkey and Cheese Pinwheels",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 15,
+      "serves": 3,
+      "tags": [
+        "wraps",
+        "turkey",
+        "no-cook"
+      ],
+      "contains": [
+        "dairy",
+        "gluten",
+        "turkey"
+      ],
+      "ingredients": [
+        {
+          "key": "flour-tortillas",
+          "name": "flour tortillas (8-inch)",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "deli-turkey",
+          "name": "sliced deli turkey",
+          "qty": 0.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "cream-cheese",
+          "name": "cream cheese (8 oz block)",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "dairy"
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "baby-carrots",
+          "name": "baby carrots",
+          "qty": 1,
+          "unit": "bag",
+          "section": "produce"
+        },
+        {
+          "key": "apples",
+          "name": "apples",
+          "qty": 2,
+          "unit": "",
+          "section": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Soften the cream cheese in a bowl for a few minutes.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Spread a thin layer of cream cheese on each tortilla.",
+          "minutes": 3
+        },
+        {
+          "who": "kid",
+          "text": "Layer the turkey",
+          "how": [
+            "Lay turkey on the tortilla",
+            "Sprinkle cheese on top",
+            "Roll it up tight like a sleeping bag"
+          ],
+          "learns": [
+            "following-directions",
+            "shapes"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Roll the rest of the tortillas the same way.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Cut each roll into 1-inch circles.",
+          "minutes": 3,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Slice the apples.",
+          "minutes": 2,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Serve with carrots and apples.",
+          "minutes": 1
+        }
+      ]
+    },
+    {
+      "id": "baked-potato-bar",
+      "title": "Baked Potato Bar",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 20,
+      "serves": 4,
+      "tags": [
+        "potatoes",
+        "cheese"
+      ],
+      "contains": [
+        "dairy",
+        "pork"
+      ],
+      "ingredients": [
+        {
+          "key": "russet-potatoes",
+          "name": "russet potatoes",
+          "qty": 4,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 1.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "sour-cream",
+          "name": "sour cream",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "bacon-bits",
+          "name": "real bacon bits",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "pantry",
+          "optional": true
+        },
+        {
+          "key": "frozen-broccoli",
+          "name": "frozen broccoli",
+          "qty": 1,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "butter",
+          "name": "butter",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Scrub the potatoes and poke each one 5 times with a fork.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Microwave them on a plate for 10 minutes, turning halfway.",
+          "minutes": 10,
+          "timer_min": 10,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Steam the broccoli in its bag in the microwave.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "kid",
+          "text": "Fill the topping bowls",
+          "how": [
+            "Spoon cheese into one bowl",
+            "Spoon sour cream into another",
+            "Count all the bowls"
+          ],
+          "learns": [
+            "sorting",
+            "counting"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Squeeze a fork-test potato. It should be soft.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Split the potatoes open and add butter and salt.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Let everyone pick their toppings.",
+          "minutes": 1
+        }
+      ]
+    },
+    {
+      "id": "sloppy-joes",
+      "title": "Sloppy Joes",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 25,
+      "serves": 4,
+      "tags": [
+        "sandwiches",
+        "beef"
+      ],
+      "contains": [
+        "beef",
+        "gluten",
+        "pork"
+      ],
+      "ingredients": [
+        {
+          "key": "ground-beef",
+          "name": "ground beef",
+          "qty": 1,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "sloppy-joe-sauce",
+          "name": "can of sloppy joe sauce",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "hamburger-buns",
+          "name": "hamburger buns",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "baby-carrots",
+          "name": "baby carrots",
+          "qty": 1,
+          "unit": "bag",
+          "section": "produce"
+        },
+        {
+          "key": "pickles",
+          "name": "dill pickle chips",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "optional": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Brown the beef in a skillet over medium-high, breaking it up.",
+          "minutes": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Pour off the grease into an old can.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the sauce and simmer on low.",
+          "minutes": 5,
+          "timer_min": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Open the buns",
+          "how": [
+            "Take each bun out of the bag",
+            "Open it like a mouth",
+            "Put one on every plate"
+          ],
+          "learns": [
+            "helping",
+            "counting"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Spoon the meat onto the bottom buns.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Add pickles if you like and put the tops on.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Serve with baby carrots.",
+          "minutes": 1
+        }
+      ]
+    },
+    {
+      "id": "teriyaki-chicken-bowls",
+      "title": "Teriyaki Chicken Bowls",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 30,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "rice",
+        "bowls"
+      ],
+      "contains": [
+        "chicken",
+        "gluten",
+        "soy"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-breast",
+          "name": "boneless chicken breasts",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "teriyaki-sauce",
+          "name": "teriyaki sauce",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "instant-rice",
+          "name": "instant rice",
+          "qty": 3,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "frozen-broccoli",
+          "name": "frozen broccoli",
+          "qty": 1,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "oil",
+          "name": "oil",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Cut the chicken into bite-size pieces. Wash your hands and board after.",
+          "minutes": 6,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Make the rice the way the box says.",
+          "minutes": 10,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Heat a spoon of oil in a skillet on medium-high and cook the chicken.",
+          "minutes": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Steam the broccoli in its bag in the microwave.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Stir the teriyaki sauce into the chicken and let it bubble 2 minutes.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Build the bowls",
+          "how": [
+            "Put rice in each bowl",
+            "Add green broccoli trees",
+            "Count the trees in your bowl"
+          ],
+          "learns": [
+            "counting",
+            "colors"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Spoon the chicken on top.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "meatballs-and-butter-noodles",
+      "title": "Meatballs and Butter Noodles",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 25,
+      "serves": 4,
+      "tags": [
+        "pasta",
+        "meatballs",
+        "noodles"
+      ],
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "frozen-meatballs",
+          "name": "frozen cooked meatballs",
+          "qty": 1,
+          "unit": "bag",
+          "section": "frozen",
+          "check_label": true
+        },
+        {
+          "key": "egg-noodles",
+          "name": "wide egg noodles",
+          "qty": 1,
+          "unit": "bag",
+          "section": "pantry"
+        },
+        {
+          "key": "pasta-sauce",
+          "name": "jar of pasta sauce",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "parmesan",
+          "name": "grated Parmesan",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "butter",
+          "name": "butter",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 375°F.",
+          "minutes": 1
+        },
+        {
+          "who": "kid",
+          "text": "Line up the meatballs",
+          "how": [
+            "Put frozen meatballs in rows on the cold tray",
+            "Count each row",
+            "Wash hands after"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Bake the meatballs until hot inside.",
+          "minutes": 20,
+          "timer_min": 20,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Boil the noodles in salted water until soft.",
+          "minutes": 8,
+          "timer_min": 8,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Warm the sauce in a small pot on low.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Drain the noodles and toss them with butter and Parmesan.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Serve meatballs with sauce next to the noodles.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "bbq-chicken-sliders",
+      "title": "BBQ Chicken Sliders",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 20,
+      "serves": 4,
+      "tags": [
+        "sliders",
+        "chicken",
+        "bbq"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "cooked-chicken",
+          "name": "cooked chicken (a store rotisserie chicken works)",
+          "qty": 3,
+          "unit": "cup",
+          "section": "meat"
+        },
+        {
+          "key": "bbq-sauce",
+          "name": "barbecue sauce",
+          "qty": 0.75,
+          "unit": "cup",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "slider-buns",
+          "name": "slider buns (12 pack)",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "coleslaw-mix",
+          "name": "coleslaw mix",
+          "qty": 1,
+          "unit": "bag",
+          "section": "produce",
+          "optional": true
+        },
+        {
+          "key": "ranch",
+          "name": "ranch dressing",
+          "qty": 0.25,
+          "unit": "cup",
+          "section": "pantry",
+          "optional": true
+        },
+        {
+          "key": "apples",
+          "name": "apples",
+          "qty": 2,
+          "unit": "",
+          "section": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Pull the chicken into small shreds.",
+          "minutes": 5
+        },
+        {
+          "who": "adult",
+          "text": "Warm the chicken and barbecue sauce in a pot on medium-low.",
+          "minutes": 6,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Open the buns",
+          "how": [
+            "Open each little bun",
+            "Line them up in rows",
+            "Count all 12"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Toss the coleslaw mix with ranch, if using.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Spoon chicken onto the bottom buns.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Add slaw and put the tops on.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Slice the apples and serve on the side.",
+          "minutes": 2,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        }
+      ]
+    },
+    {
+      "id": "homemade-chicken-nuggets",
+      "title": "Homemade Chicken Nuggets",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 30,
+      "total_min": 45,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "nuggets"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "egg",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-breast",
+          "name": "boneless chicken breasts",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "eggs",
+          "name": "eggs",
+          "qty": 2,
+          "unit": "",
+          "section": "dairy"
+        },
+        {
+          "key": "panko",
+          "name": "panko bread crumbs",
+          "qty": 1.5,
+          "unit": "cup",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "parmesan",
+          "name": "grated Parmesan",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "ketchup",
+          "name": "ketchup",
+          "qty": 3,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "cooking-spray",
+          "name": "cooking spray",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 425°F and spray a baking sheet.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Cut the chicken into nugget-size chunks. Wash your hands and board after.",
+          "minutes": 8,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "kid",
+          "text": "Mix the crumbs",
+          "how": [
+            "Pour crumbs and cheese into a bag",
+            "Close it tight",
+            "Shake it 10 times"
+          ],
+          "learns": [
+            "counting",
+            "following-directions"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Beat the eggs with a pinch of salt and garlic powder.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Dip each piece in egg, then roll it in the crumbs.",
+          "minutes": 10
+        },
+        {
+          "who": "adult",
+          "text": "Spread the nuggets on the sheet and spray the tops.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Bake until golden, flipping halfway.",
+          "minutes": 15,
+          "timer_min": 15,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Check a big one is white in the middle, then serve with ketchup.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "mini-meatloaves",
+      "title": "Mini Meatloaves",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 25,
+      "total_min": 50,
+      "serves": 4,
+      "tags": [
+        "meatloaf",
+        "beef"
+      ],
+      "contains": [
+        "beef",
+        "dairy",
+        "egg",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "ground-beef",
+          "name": "ground beef",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "eggs",
+          "name": "eggs",
+          "qty": 1,
+          "unit": "",
+          "section": "dairy"
+        },
+        {
+          "key": "crushed-crackers",
+          "name": "saltine crackers",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "ketchup",
+          "name": "ketchup",
+          "qty": 6,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "russet-potatoes",
+          "name": "russet potatoes",
+          "qty": 4,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "butter",
+          "name": "butter",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 400°F.",
+          "minutes": 1
+        },
+        {
+          "who": "kid",
+          "text": "Crush the crackers",
+          "how": [
+            "Put 20 crackers in a zip bag",
+            "Close it tight",
+            "Squish them into crumbs"
+          ],
+          "learns": [
+            "counting",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Mix the beef, egg, cracker crumbs, salt and pepper in a bowl with clean hands.",
+          "minutes": 5
+        },
+        {
+          "who": "adult",
+          "text": "Shape 8 little loaves on a baking sheet. Wash your hands after.",
+          "minutes": 5
+        },
+        {
+          "who": "adult",
+          "text": "Wash the potatoes, cut them into chunks, and put them on the sheet with oil and salt.",
+          "minutes": 6,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Spread a spoon of ketchup on top of each loaf.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Bake until the middles are no longer pink.",
+          "minutes": 25,
+          "timer_min": 25,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Let them rest 5 minutes before serving.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "easy-baked-ziti",
+      "title": "Easy Baked Ziti",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 25,
+      "total_min": 55,
+      "serves": 6,
+      "tags": [
+        "pasta",
+        "ziti",
+        "cheese"
+      ],
+      "contains": [
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "ziti",
+          "name": "ziti or penne",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry"
+        },
+        {
+          "key": "pasta-sauce",
+          "name": "jar of pasta sauce",
+          "qty": 2,
+          "unit": "jar",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "ricotta",
+          "name": "ricotta cheese",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "shredded-mozzarella",
+          "name": "shredded mozzarella",
+          "qty": 2,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "parmesan",
+          "name": "grated Parmesan",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "cooking-spray",
+          "name": "cooking spray",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 375°F and spray a 9x13 baking dish.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Boil the pasta in salted water for 2 minutes less than the box says.",
+          "minutes": 9,
+          "timer_min": 9,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Stir the cheese",
+          "how": [
+            "Spoon ricotta into a cool bowl",
+            "Add a handful of mozzarella",
+            "Stir 10 times"
+          ],
+          "learns": [
+            "counting",
+            "following-directions"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Drain the pasta in the sink.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Mix the pasta, one jar of sauce and the ricotta in the dish.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Pour the second jar on top and cover with mozzarella and Parmesan.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Bake until bubbly.",
+          "minutes": 25,
+          "timer_min": 25,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Let it sit 5 minutes before scooping.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "drumsticks-and-potatoes",
+      "title": "Oven Drumsticks and Potatoes",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 60,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "potatoes"
+      ],
+      "contains": [
+        "chicken"
+      ],
+      "ingredients": [
+        {
+          "key": "drumsticks",
+          "name": "chicken drumsticks",
+          "qty": 3,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "baby-potatoes",
+          "name": "baby potatoes",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "produce"
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 425°F.",
+          "minutes": 1
+        },
+        {
+          "who": "kid",
+          "text": "Wash the potatoes",
+          "how": [
+            "Swish the little potatoes in cool water",
+            "Count them into a colander",
+            "Find the biggest one"
+          ],
+          "learns": [
+            "counting",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Cut the potatoes in half.",
+          "minutes": 5,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Put the drumsticks and potatoes on a big sheet. Wash your hands after.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Drizzle with olive oil and shake on salt, pepper and garlic powder.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Bake, turning everything once halfway.",
+          "minutes": 40,
+          "timer_min": 40,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Check the chicken juices run clear at the bone, then serve.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "french-bread-pizzas",
+      "title": "French Bread Pizzas",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 15,
+      "total_min": 25,
+      "serves": 4,
+      "tags": [
+        "pizza",
+        "bread"
+      ],
+      "contains": [
+        "dairy",
+        "gluten",
+        "pork"
+      ],
+      "ingredients": [
+        {
+          "key": "french-bread",
+          "name": "loaf of French bread",
+          "qty": 1,
+          "unit": "",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "pizza-sauce",
+          "name": "jar of pizza sauce",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "shredded-mozzarella",
+          "name": "shredded mozzarella",
+          "qty": 2,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "pepperoni",
+          "name": "pepperoni slices",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "meat",
+          "optional": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 425°F.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Cut the loaf in half the long way, then in half again.",
+          "minutes": 2,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Put the bread pieces on a baking sheet, soft side up.",
+          "minutes": 1
+        },
+        {
+          "who": "kid",
+          "text": "Make the pizzas",
+          "how": [
+            "Spread sauce with the back of a spoon",
+            "Sprinkle cheese on top",
+            "Make a smiley face with pepperoni"
+          ],
+          "learns": [
+            "shapes",
+            "following-directions"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Bake until the cheese melts and the edges are crisp.",
+          "minutes": 10,
+          "timer_min": 10,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Let them cool 3 minutes, then cut into pieces.",
+          "minutes": 3,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Serve on plates.",
+          "minutes": 1
+        }
+      ]
+    },
+    {
+      "id": "sheet-pan-cheeseburger-sliders",
+      "title": "Sheet-Pan Cheeseburger Sliders",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 25,
+      "total_min": 45,
+      "serves": 6,
+      "tags": [
+        "burgers",
+        "sliders",
+        "beef"
+      ],
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "ground-beef",
+          "name": "ground beef",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "slider-buns",
+          "name": "slider buns (12 pack)",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "american-cheese",
+          "name": "American cheese slices",
+          "qty": 6,
+          "unit": "slice",
+          "section": "dairy"
+        },
+        {
+          "key": "ketchup",
+          "name": "ketchup",
+          "qty": 4,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "pickles",
+          "name": "dill pickle chips",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "optional": true
+        },
+        {
+          "key": "frozen-fries",
+          "name": "frozen fries",
+          "qty": 1,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 400°F.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Press the beef flat into a baking sheet, sprinkle salt and pepper, and bake.",
+          "minutes": 15,
+          "timer_min": 15,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Bake the fries on a second sheet at the same time.",
+          "minutes": 20,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "kid",
+          "text": "Get the buns ready",
+          "how": [
+            "Lay the bottom buns on a tray in rows",
+            "Squeeze a dot of ketchup on each",
+            "Count the dots"
+          ],
+          "learns": [
+            "counting",
+            "following-directions"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Pour off the grease. Lift the meat sheet onto the bottom buns.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Lay the cheese on top and bake 3 more minutes.",
+          "minutes": 3,
+          "timer_min": 3,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Add pickles and the top buns, then cut into sliders.",
+          "minutes": 3,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Serve with the fries.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "chicken-pot-pie",
+      "title": "Easy Chicken Pot Pie",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 25,
+      "total_min": 55,
+      "serves": 6,
+      "tags": [
+        "chicken",
+        "pie"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "cooked-chicken",
+          "name": "cooked chicken (a store rotisserie chicken works)",
+          "qty": 3,
+          "unit": "cup",
+          "section": "meat"
+        },
+        {
+          "key": "frozen-peas-carrots",
+          "name": "frozen peas and carrots",
+          "qty": 1,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "cream-of-chicken",
+          "name": "can of cream of chicken soup",
+          "qty": 2,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "milk",
+          "name": "milk",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "pie-crust",
+          "name": "refrigerated pie crusts (2 pack)",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "dairy",
+          "check_label": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 400°F.",
+          "minutes": 1
+        },
+        {
+          "who": "kid",
+          "text": "Stir the filling",
+          "how": [
+            "Pour soup and milk into a big cool bowl",
+            "Add the frozen peas and carrots",
+            "Stir slowly 10 times"
+          ],
+          "learns": [
+            "following-directions",
+            "counting"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the chicken and a shake of pepper.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Press one crust into a pie dish and pour in the filling.",
+          "minutes": 4
+        },
+        {
+          "who": "adult",
+          "text": "Lay the second crust on top, pinch the edges, and poke 4 small slits.",
+          "minutes": 4,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Bake until the top is golden and the inside bubbles.",
+          "minutes": 30,
+          "timer_min": 30,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Let it cool 10 minutes before scooping.",
+          "minutes": 10,
+          "timer_min": 10,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "shepherds-pie",
+      "title": "Cheesy Shepherd's Pie",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 30,
+      "total_min": 60,
+      "serves": 6,
+      "tags": [
+        "beef",
+        "potatoes"
+      ],
+      "contains": [
+        "beef",
+        "dairy"
+      ],
+      "ingredients": [
+        {
+          "key": "ground-beef",
+          "name": "ground beef",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "instant-potatoes",
+          "name": "instant mashed potatoes",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "pantry"
+        },
+        {
+          "key": "frozen-peas-carrots",
+          "name": "frozen peas and carrots",
+          "qty": 1,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "brown-gravy",
+          "name": "jar of beef gravy",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "milk",
+          "name": "milk",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "butter",
+          "name": "butter",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 400°F.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Brown the beef in a big skillet and pour off the grease.",
+          "minutes": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the peas and carrots and the gravy. Simmer 5 minutes.",
+          "minutes": 5,
+          "timer_min": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Make the mashed potatoes the way the box says.",
+          "minutes": 6,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Spread the meat in a baking dish and spoon the potatoes over it.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "kid",
+          "text": "Top it with cheese",
+          "how": [
+            "Grab a small handful of cheese",
+            "Sprinkle it all over the top",
+            "Is it yellow or orange?"
+          ],
+          "learns": [
+            "colors",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Bake until the top is golden.",
+          "minutes": 20,
+          "timer_min": 20,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Let it cool 5 minutes before serving.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "lasagna-roll-ups",
+      "title": "Lasagna Roll-Ups",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 35,
+      "total_min": 60,
+      "serves": 6,
+      "tags": [
+        "pasta",
+        "lasagna",
+        "cheese"
+      ],
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "lasagna-noodles",
+          "name": "lasagna noodles",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry"
+        },
+        {
+          "key": "ricotta",
+          "name": "ricotta cheese",
+          "qty": 2,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "shredded-mozzarella",
+          "name": "shredded mozzarella",
+          "qty": 2,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "parmesan",
+          "name": "grated Parmesan",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "eggs",
+          "name": "eggs",
+          "qty": 1,
+          "unit": "",
+          "section": "dairy"
+        },
+        {
+          "key": "pasta-sauce",
+          "name": "jar of pasta sauce",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 375°F.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Boil 12 noodles in salted water until soft.",
+          "minutes": 10,
+          "timer_min": 10,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Mix the cheese filling",
+          "how": [
+            "Spoon ricotta into a cool bowl",
+            "Add a handful of mozzarella",
+            "Stir until it looks like snow"
+          ],
+          "learns": [
+            "following-directions",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Stir the egg and Parmesan into the filling.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Drain the noodles and lay them flat on a towel to cool.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Spread filling on each noodle and roll it up.",
+          "minutes": 10
+        },
+        {
+          "who": "adult",
+          "text": "Pour half the sauce in a dish, set the rolls in, and pour the rest on top.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Top with mozzarella, cover with foil, and bake.",
+          "minutes": 25,
+          "timer_min": 25,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Let it sit 5 minutes before serving.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "stuffed-shells",
+      "title": "Cheesy Stuffed Shells",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 30,
+      "total_min": 60,
+      "serves": 6,
+      "tags": [
+        "pasta",
+        "shells",
+        "cheese"
+      ],
+      "contains": [
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "jumbo-shells",
+          "name": "jumbo pasta shells",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry"
+        },
+        {
+          "key": "ricotta",
+          "name": "ricotta cheese",
+          "qty": 2,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "shredded-mozzarella",
+          "name": "shredded mozzarella",
+          "qty": 2,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "parmesan",
+          "name": "grated Parmesan",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "pasta-sauce",
+          "name": "jar of pasta sauce",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 375°F.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Boil the shells in salted water until just soft.",
+          "minutes": 10,
+          "timer_min": 10,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Drain and let them cool on a tray.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Stir the filling",
+          "how": [
+            "Spoon ricotta and mozzarella into a cool bowl",
+            "Stir 10 times",
+            "Count the shells on the tray"
+          ],
+          "learns": [
+            "counting",
+            "following-directions"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Spoon filling into each shell.",
+          "minutes": 10
+        },
+        {
+          "who": "adult",
+          "text": "Spread half the sauce in a dish, add the shells, and spoon on the rest.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Top with Parmesan, cover with foil, and bake.",
+          "minutes": 25,
+          "timer_min": 25,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Let it cool 5 minutes before serving.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "honey-garlic-chicken",
+      "title": "Honey Garlic Chicken and Rice",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 45,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "rice"
+      ],
+      "contains": [
+        "chicken",
+        "gluten",
+        "soy"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-thighs",
+          "name": "boneless chicken thighs",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "honey",
+          "name": "honey",
+          "qty": 4,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "soy-sauce",
+          "name": "soy sauce",
+          "qty": 3,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "instant-rice",
+          "name": "instant rice",
+          "qty": 3,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "frozen-broccoli",
+          "name": "frozen broccoli",
+          "qty": 1,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "oil",
+          "name": "oil",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 400°F.",
+          "minutes": 1
+        },
+        {
+          "who": "kid",
+          "text": "Mix the sauce",
+          "how": [
+            "Squeeze honey into a cool bowl",
+            "Add the soy sauce",
+            "Stir and smell it"
+          ],
+          "learns": [
+            "senses",
+            "following-directions"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Stir a shake of garlic powder into the sauce.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Put the chicken in a baking dish and pour the sauce over it. Wash your hands after.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Bake until the middle of the chicken is no longer pink.",
+          "minutes": 25,
+          "timer_min": 25,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Make the rice the way the box says.",
+          "minutes": 10,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Steam the broccoli in its bag in the microwave.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Spoon sauce from the dish over the chicken and rice.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "taco-bake",
+      "title": "Cheesy Taco Bake",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 20,
+      "total_min": 45,
+      "serves": 6,
+      "tags": [
+        "tacos",
+        "beef",
+        "cheese"
+      ],
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "ground-beef",
+          "name": "ground beef",
+          "qty": 1,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "taco-seasoning",
+          "name": "taco seasoning",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "pantry"
+        },
+        {
+          "key": "black-beans",
+          "name": "can of black beans",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "salsa",
+          "name": "mild salsa",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry"
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 2,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "tortilla-chips",
+          "name": "tortilla chips (big bag)",
+          "qty": 1,
+          "unit": "bag",
+          "section": "pantry"
+        },
+        {
+          "key": "sour-cream",
+          "name": "sour cream",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 375°F.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Brown the beef in a skillet and pour off the grease.",
+          "minutes": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in taco seasoning, the drained beans and the salsa.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Make the chip layer",
+          "how": [
+            "Lay chips across the cold dish",
+            "Make them overlap like a roof",
+            "Count 10 chips"
+          ],
+          "learns": [
+            "counting",
+            "shapes"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Spread the meat over the chips.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Cover with the cheese.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Bake until the cheese melts.",
+          "minutes": 15,
+          "timer_min": 15,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Serve with sour cream.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "breakfast-burritos",
+      "title": "Breakfast Burritos",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 25,
+      "total_min": 30,
+      "serves": 4,
+      "tags": [
+        "breakfast",
+        "burritos",
+        "eggs"
+      ],
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "eggs",
+          "name": "eggs",
+          "qty": 8,
+          "unit": "",
+          "section": "dairy"
+        },
+        {
+          "key": "flour-tortillas",
+          "name": "flour tortillas (8-inch)",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "frozen-hash-browns",
+          "name": "frozen shredded hash browns",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "salsa",
+          "name": "mild salsa",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "optional": true
+        },
+        {
+          "key": "butter",
+          "name": "butter",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Cook the hash browns in a skillet with butter until golden.",
+          "minutes": 10,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Count the eggs",
+          "how": [
+            "Count 8 eggs in the carton",
+            "Hand them to a grown-up one at a time",
+            "Wash hands after"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Beat the eggs with a pinch of salt.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Scramble the eggs on medium-low until just set.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Warm the tortillas in the microwave for 20 seconds.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Fill each tortilla with hash browns, eggs and cheese.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Roll them up and serve with salsa.",
+          "minutes": 2
+        }
+      ]
+    },
+    {
+      "id": "pigs-in-a-blanket",
+      "title": "Pigs in a Blanket",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 15,
+      "total_min": 30,
+      "serves": 4,
+      "tags": [
+        "franks",
+        "pigs in a blanket"
+      ],
+      "contains": [
+        "beef",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "beef-franks",
+          "name": "all-beef hot dogs",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "meat"
+        },
+        {
+          "key": "crescent-dough",
+          "name": "tube of crescent roll dough",
+          "qty": 2,
+          "unit": "can",
+          "section": "dairy",
+          "check_label": true
+        },
+        {
+          "key": "baby-carrots",
+          "name": "baby carrots",
+          "qty": 1,
+          "unit": "bag",
+          "section": "produce"
+        },
+        {
+          "key": "apples",
+          "name": "apples",
+          "qty": 2,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "ketchup",
+          "name": "ketchup",
+          "qty": 3,
+          "unit": "tbsp",
+          "section": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 375°F.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Cut each hot dog into 3 short pieces.",
+          "minutes": 3,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Unroll the dough and pull it apart into triangles.",
+          "minutes": 2
+        },
+        {
+          "who": "kid",
+          "text": "Wrap the little dogs",
+          "how": [
+            "Lay a little dog on the wide end",
+            "Roll it up to the point",
+            "Count them on the tray"
+          ],
+          "learns": [
+            "counting",
+            "following-directions"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Bake until golden.",
+          "minutes": 13,
+          "timer_min": 13,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Slice the apples.",
+          "minutes": 2,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Let them cool a few minutes, then serve with ketchup, carrots and apples.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "broccoli-cheddar-chicken-rice",
+      "title": "Broccoli Cheddar Chicken and Rice",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 35,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "rice",
+        "cheese"
+      ],
+      "contains": [
+        "chicken",
+        "dairy"
+      ],
+      "ingredients": [
+        {
+          "key": "instant-rice",
+          "name": "instant rice",
+          "qty": 2,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "cooked-chicken",
+          "name": "cooked chicken (a store rotisserie chicken works)",
+          "qty": 2,
+          "unit": "cup",
+          "section": "meat"
+        },
+        {
+          "key": "frozen-broccoli",
+          "name": "frozen broccoli",
+          "qty": 1,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 1.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "chicken-broth",
+          "name": "chicken broth (32 oz carton)",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry"
+        },
+        {
+          "key": "milk",
+          "name": "milk",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "butter",
+          "name": "butter",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Bring 2 cups of the broth to a boil in a big pot with a pat of butter.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the rice, cover, and turn off the heat.",
+          "minutes": 5,
+          "timer_min": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Steam the broccoli in its bag in the microwave.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "kid",
+          "text": "Count the trees",
+          "how": [
+            "Pour the cooled broccoli into a bowl",
+            "Count the little trees",
+            "Which one is the biggest?"
+          ],
+          "learns": [
+            "counting",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Put the pot back on low and stir in the milk and cheese.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the chicken and broccoli until hot.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Scoop into bowls and let it cool a minute.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "apple-pork-chops",
+      "title": "Apple Pork Chops and Mashed Potatoes",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 30,
+      "total_min": 40,
+      "serves": 4,
+      "tags": [
+        "pork",
+        "apples",
+        "potatoes"
+      ],
+      "contains": [
+        "dairy",
+        "pork"
+      ],
+      "ingredients": [
+        {
+          "key": "pork-chops",
+          "name": "boneless pork chops",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "apples",
+          "name": "apples",
+          "qty": 2,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "instant-potatoes",
+          "name": "instant mashed potatoes",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "pantry"
+        },
+        {
+          "key": "milk",
+          "name": "milk",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "butter",
+          "name": "butter",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "sugar",
+          "name": "sugar",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "kid",
+          "text": "Wash the apples",
+          "how": [
+            "Swish the apples in cool water",
+            "Dry them with a towel",
+            "Red or green?"
+          ],
+          "learns": [
+            "colors",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Slice the apples thin.",
+          "minutes": 4,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Season the chops with salt and pepper. Wash your hands after.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Cook the chops in butter over medium-high until browned on both sides.",
+          "minutes": 10,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Move the chops to a plate. Add the apples and a spoon of sugar to the skillet.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Make the mashed potatoes the way the box says.",
+          "minutes": 6,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Put the chops back with the apples for 3 minutes until done inside.",
+          "minutes": 3,
+          "timer_min": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Serve the chops and apples over the potatoes.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "fall-squash-mac",
+      "title": "Butternut Squash Mac and Cheese",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 25,
+      "total_min": 40,
+      "serves": 4,
+      "tags": [
+        "mac and cheese",
+        "squash",
+        "pasta"
+      ],
+      "contains": [
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "elbow-macaroni",
+          "name": "elbow macaroni",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry"
+        },
+        {
+          "key": "frozen-squash",
+          "name": "frozen butternut squash puree",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "frozen"
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 2,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "milk",
+          "name": "milk",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "butter",
+          "name": "butter",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Thaw the squash in the microwave the way the package says.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Boil a big pot of salted water.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the noodles until soft.",
+          "minutes": 8,
+          "timer_min": 8,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Squish and stir",
+          "how": [
+            "Spoon the cooled squash into a bowl",
+            "Stir it: what color is it?",
+            "Count 5 big stirs"
+          ],
+          "learns": [
+            "colors",
+            "counting"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Drain the noodles and put them back in the pot on low.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the butter, milk, squash and cheese until creamy.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Let it cool a minute before serving.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "crispy-oven-wings",
+      "title": "Crispy Oven Wings",
+      "kind": "gameday",
+      "effort": "fun",
+      "hands_on_min": 20,
+      "total_min": 60,
+      "serves": 2,
+      "tags": [
+        "wings",
+        "chicken"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "spicy"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-wings",
+          "name": "chicken wings (party wings)",
+          "qty": 2,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "baking-powder",
+          "name": "baking powder",
+          "qty": 1,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "buffalo-sauce",
+          "name": "buffalo wing sauce",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "pantry",
+          "optional": true
+        },
+        {
+          "key": "bbq-sauce",
+          "name": "barbecue sauce",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "ranch",
+          "name": "ranch dressing",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "celery",
+          "name": "celery",
+          "qty": 1,
+          "unit": "bunch",
+          "section": "produce"
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "cooking-spray",
+          "name": "cooking spray",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 425°F and set a rack on a sheet pan, sprayed.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Pat the wings very dry with paper towels. Wash your hands after.",
+          "minutes": 4
+        },
+        {
+          "who": "adult",
+          "text": "Toss the wings with baking powder and salt in a big bowl.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Spread them on the rack in one layer.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Bake 20 minutes, flip, then bake 20 more until crispy.",
+          "minutes": 40,
+          "timer_min": 20,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Cut the celery into sticks while they bake.",
+          "minutes": 3,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Toss half the wings in buffalo sauce and half in barbecue sauce.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Serve with ranch and celery before kickoff.",
+          "minutes": 1
+        }
+      ]
+    },
+    {
+      "id": "loaded-sheet-pan-nachos",
+      "title": "Loaded Sheet-Pan Nachos",
+      "kind": "gameday",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 30,
+      "serves": 2,
+      "tags": [
+        "nachos",
+        "beef",
+        "cheese"
+      ],
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten",
+        "spicy"
+      ],
+      "ingredients": [
+        {
+          "key": "tortilla-chips",
+          "name": "tortilla chips (big bag)",
+          "qty": 1,
+          "unit": "bag",
+          "section": "pantry"
+        },
+        {
+          "key": "ground-beef",
+          "name": "ground beef",
+          "qty": 1,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "taco-seasoning",
+          "name": "taco seasoning",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "pantry"
+        },
+        {
+          "key": "black-beans",
+          "name": "can of black beans",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 1.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "monterey-jack",
+          "name": "shredded Monterey Jack",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "tomato",
+          "name": "tomato",
+          "qty": 2,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "jalapenos",
+          "name": "sliced jalapeños",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "optional": true
+        },
+        {
+          "key": "sour-cream",
+          "name": "sour cream",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "salsa",
+          "name": "mild salsa",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry"
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 400°F.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Brown the beef and pour off the grease.",
+          "minutes": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in taco seasoning and the water the packet says.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Spread chips on a big sheet pan.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Top with beef, drained beans and both cheeses.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Bake until the cheese melts.",
+          "minutes": 8,
+          "timer_min": 8,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Dice the tomatoes while it bakes.",
+          "minutes": 3,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Add tomatoes, jalapeños, sour cream and salsa, and serve on the pan.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "game-day-chili",
+      "title": "Game-Day Chili",
+      "kind": "gameday",
+      "effort": "fun",
+      "hands_on_min": 30,
+      "total_min": 75,
+      "serves": 4,
+      "tags": [
+        "chili",
+        "beef"
+      ],
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "ground-beef",
+          "name": "ground beef",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "chili-beans",
+          "name": "can of chili beans",
+          "qty": 2,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "diced-tomatoes",
+          "name": "can of diced tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "chili-powder",
+          "name": "chili powder",
+          "qty": 2,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "sour-cream",
+          "name": "sour cream",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "soup-crackers",
+          "name": "soup crackers",
+          "qty": 1,
+          "unit": "bag",
+          "section": "pantry",
+          "optional": true,
+          "check_label": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Chop the onion.",
+          "minutes": 4,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Brown the beef and onion in a big pot over medium-high.",
+          "minutes": 10,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Pour off the grease into an old can.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the beans, tomatoes and chili powder.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Bring to a bubble, then turn to low and simmer with the lid tilted.",
+          "minutes": 45,
+          "timer_min": 45,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir every 10 minutes so it doesn't stick.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Ladle into bowls and top with cheese and sour cream.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "brats-and-peppers",
+      "title": "Brats with Peppers and Onions",
+      "kind": "gameday",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 35,
+      "serves": 2,
+      "tags": [
+        "brats",
+        "sausage"
+      ],
+      "contains": [
+        "gluten",
+        "pork"
+      ],
+      "ingredients": [
+        {
+          "key": "bratwurst",
+          "name": "fresh bratwurst",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "meat"
+        },
+        {
+          "key": "brat-buns",
+          "name": "brat buns",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "bell-pepper",
+          "name": "bell pepper",
+          "qty": 2,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "mustard",
+          "name": "brown mustard",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "optional": true
+        },
+        {
+          "key": "oil",
+          "name": "oil",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Slice the peppers and onion into strips.",
+          "minutes": 5,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the brats in a skillet with a little oil over medium, turning often.",
+          "minutes": 12,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add half a cup of water, cover, and cook until done inside.",
+          "minutes": 8,
+          "timer_min": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Move the brats to a plate.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the peppers and onions in the same skillet until soft.",
+          "minutes": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Put brats in buns and pile on the peppers and onions.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Serve with mustard.",
+          "minutes": 1
+        }
+      ]
+    },
+    {
+      "id": "pizza-dip",
+      "title": "Pepperoni Pizza Dip",
+      "kind": "gameday",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 35,
+      "serves": 2,
+      "tags": [
+        "pizza",
+        "dip",
+        "pepperoni"
+      ],
+      "contains": [
+        "dairy",
+        "gluten",
+        "pork"
+      ],
+      "ingredients": [
+        {
+          "key": "cream-cheese",
+          "name": "cream cheese (8 oz block)",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "dairy"
+        },
+        {
+          "key": "pizza-sauce",
+          "name": "jar of pizza sauce",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "shredded-mozzarella",
+          "name": "shredded mozzarella",
+          "qty": 1.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "pepperoni",
+          "name": "pepperoni slices",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "meat"
+        },
+        {
+          "key": "french-bread",
+          "name": "loaf of French bread",
+          "qty": 1,
+          "unit": "",
+          "section": "bakery",
+          "check_label": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 375°F.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Let the cream cheese soften, then spread it in a pie dish.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Spoon pizza sauce over it.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Cover with mozzarella and pepperoni.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Bake until bubbly.",
+          "minutes": 20,
+          "timer_min": 20,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Slice the bread while it bakes.",
+          "minutes": 3,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Let the dip cool 5 minutes, then scoop with bread.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "philly-cheesesteak-sliders",
+      "title": "Philly Cheesesteak Sliders",
+      "kind": "gameday",
+      "effort": "fun",
+      "hands_on_min": 25,
+      "total_min": 40,
+      "serves": 2,
+      "tags": [
+        "sliders",
+        "beef",
+        "cheesesteak"
+      ],
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "shaved-steak",
+          "name": "shaved steak",
+          "qty": 1,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "bell-pepper",
+          "name": "bell pepper",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "provolone",
+          "name": "provolone slices",
+          "qty": 6,
+          "unit": "slice",
+          "section": "dairy"
+        },
+        {
+          "key": "slider-buns",
+          "name": "slider buns (12 pack)",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "butter",
+          "name": "butter",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 350°F.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Slice the pepper and onion thin.",
+          "minutes": 5,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the pepper and onion in butter over medium until soft.",
+          "minutes": 6,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the steak, salt and pepper and cook until no longer pink.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Set the bottom buns in a baking dish and pile on the meat.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Lay provolone on top, add the top buns, and bake.",
+          "minutes": 10,
+          "timer_min": 10,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Pull apart and serve.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "buffalo-chicken-dip",
+      "title": "Buffalo Chicken Dip",
+      "kind": "gameday",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 35,
+      "serves": 2,
+      "tags": [
+        "dip",
+        "chicken",
+        "buffalo"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "gluten",
+        "spicy"
+      ],
+      "ingredients": [
+        {
+          "key": "cooked-chicken",
+          "name": "cooked chicken (a store rotisserie chicken works)",
+          "qty": 2,
+          "unit": "cup",
+          "section": "meat"
+        },
+        {
+          "key": "cream-cheese",
+          "name": "cream cheese (8 oz block)",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "dairy"
+        },
+        {
+          "key": "buffalo-sauce",
+          "name": "buffalo wing sauce",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "ranch",
+          "name": "ranch dressing",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "tortilla-chips",
+          "name": "tortilla chips (big bag)",
+          "qty": 1,
+          "unit": "bag",
+          "section": "pantry"
+        },
+        {
+          "key": "celery",
+          "name": "celery",
+          "qty": 1,
+          "unit": "bunch",
+          "section": "produce"
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 350°F.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Soften the cream cheese in a bowl.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the chicken, buffalo sauce, ranch and half the cheese.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Spread it in a small baking dish and top with the rest of the cheese.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Bake until bubbly.",
+          "minutes": 20,
+          "timer_min": 20,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Cut the celery into sticks while it bakes.",
+          "minutes": 3,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Let it cool 5 minutes and serve with chips and celery.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "homemade-pizza-night",
+      "title": "Two-Topping Homemade Pizza",
+      "kind": "gameday",
+      "effort": "fun",
+      "hands_on_min": 20,
+      "total_min": 40,
+      "serves": 2,
+      "tags": [
+        "pizza",
+        "pepperoni",
+        "sausage"
+      ],
+      "contains": [
+        "dairy",
+        "gluten",
+        "pork"
+      ],
+      "ingredients": [
+        {
+          "key": "pizza-dough",
+          "name": "ready-made pizza dough",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "pizza-sauce",
+          "name": "jar of pizza sauce",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "shredded-mozzarella",
+          "name": "shredded mozzarella",
+          "qty": 2,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "pepperoni",
+          "name": "pepperoni slices",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "meat"
+        },
+        {
+          "key": "italian-sausage",
+          "name": "Italian sausage",
+          "qty": 0.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "bell-pepper",
+          "name": "bell pepper",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "cooking-spray",
+          "name": "cooking spray",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "flour",
+          "name": "flour",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 450°F.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Brown the sausage in a skillet, breaking it up, and drain it.",
+          "minutes": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Slice the bell pepper thin.",
+          "minutes": 3,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Spray a sheet pan, flour your hands, and stretch the dough to fit.",
+          "minutes": 5
+        },
+        {
+          "who": "adult",
+          "text": "Spread sauce, then add cheese, sausage, pepperoni and peppers.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Bake until the crust is brown and the cheese bubbles.",
+          "minutes": 14,
+          "timer_min": 14,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Let it sit 3 minutes, then slice and serve.",
+          "minutes": 3,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        }
+      ]
+    }
+  ]
+}
