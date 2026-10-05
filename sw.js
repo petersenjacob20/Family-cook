@@ -1,6 +1,6 @@
 // Offline: app shell cached first (build plan section 12).
 // Bump CACHE on every content or code change. Older fc- caches are deleted on activate (other apps on the same origin are left alone).
-const CACHE = 'fc-v2-pub4';
+const CACHE = 'fc-v2-pub5';
 const ASSETS = [
   './',
   './css/app.css',

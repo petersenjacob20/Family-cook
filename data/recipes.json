@@ -3487,7 +3487,8 @@
           "name": "tortilla chips (big bag)",
           "qty": 1,
           "unit": "bag",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "sour-cream",
@@ -6685,7 +6686,8 @@
           "name": "tortilla chips (big bag)",
           "qty": 1,
           "unit": "bag",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "ground-beef",
@@ -7335,7 +7337,8 @@
           "name": "tortilla chips (big bag)",
           "qty": 1,
           "unit": "bag",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "celery",
