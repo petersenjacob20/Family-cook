@@ -6,7 +6,7 @@ import {
   SWAP_LABEL_LINE, proteinInfoLines, swapHeading, swapClaimText,
 } from '../grocery.js';
 import { shareWithFallback } from '../share.js';
-import { cap } from '../view.js';
+import { cap, recipePhoto } from '../view.js';
 
 function lineFor(ing) {
   if (ing.staple || ing.qty == null) return ing.name;
@@ -99,6 +99,7 @@ export function render(ctx, params) {
   };
   return [
     header('What you need', { back: '#/tonight' }),
+    recipePhoto(r, 'hero'),
     h('p', { class: 'sub', text: `${r.title} · feeds ${r.serves}` }),
     proteinInfo(r),
     // The toggle sits above the instruction so "Tap what you already have." stays right over the checklist.

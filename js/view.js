@@ -1,8 +1,29 @@
 // Shared view bits built from the Design 4.4 parts. DOM is only touched inside functions.
-import { h, placeholder } from './dom.js';
+import { h } from './dom.js';
 import { kidName, kidBadge, kidPerson } from './people.js';
 import { neverSummary, blockingWords, allergySummary } from './rules.js';
 import { cardProteinLine } from './grocery.js';
+
+// Recipe photos: app/photos/<id>.webp, all 720x540 (4:3). Width and height are always set (plus a 4:3 box in CSS),
+// so nothing moves while a photo loads. loading/decoding are set before src so lazy loading applies.
+export const PHOTO_W = 720;
+export const PHOTO_H = 540;
+const PHOTO_SRC_RE = /^photos\/[a-z0-9]+(?:-[a-z0-9]+)*\.webp$/;
+
+// The plain tile shown when a recipe has no photo or its photo fails to load. Same box as the photo.
+export function photoFallback(cls) {
+  return h('div', { class: `photo-fallback ${cls}`, 'aria-hidden': 'true', 'data-photo-fallback': '' });
+}
+
+export function recipePhoto(r, cls) {
+  const p = r && r.photo;
+  if (!p || typeof p.src !== 'string' || !PHOTO_SRC_RE.test(p.src)) return photoFallback(cls);
+  const img = h('img', {
+    loading: 'lazy', decoding: 'async', width: PHOTO_W, height: PHOTO_H, class: `photo ${cls}`, alt: p.alt || '', src: `./${p.src}`,
+  });
+  img.addEventListener('error', () => img.replaceWith(photoFallback(cls)), { once: true });
+  return img;
+}
 
 export const cap = (s) => (s ? s[0].toUpperCase() + s.slice(1) : s);
 export const lowerFirst = (s) => (s ? s[0].toLowerCase() + s.slice(1) : s);
@@ -46,7 +67,7 @@ export function safeLine(state) {
 // The big meal card on Tonight.
 export function mealCard(state, r, { photo = true } = {}) {
   return h('div', { class: 'card', id: 'meal-card' },
-    photo ? placeholder('photo of the meal') : null,
+    photo ? recipePhoto(r, 'hero') : null,
     h('h2', { text: r.title }),
     h('p', { class: 'meta', text: longMeta(r) }),
     h('hr', { class: 'divider' }),
@@ -57,11 +78,14 @@ export function mealCard(state, r, { photo = true } = {}) {
 // A compact card for Swap and the Recipe list.
 export function smallCard(state, r, vocab, extra = []) {
   const blocked = blockingWords(r, state.people, vocab);
-  return h('div', { class: blocked.length ? 'card dim' : 'card' },
-    h('h3', { text: r.title }),
-    h('p', { class: 'meta', text: shortMeta(r) + (r.kind === 'gameday' ? ' · game-day' : '') }),
-    cardProteinLine(r) ? h('p', { class: 'meta protein', text: cardProteinLine(r) }) : null,
-    firstKidStep(r) ? h('span', { class: 'badge', text: kidBadge(state) }) : null,
-    blocked.length ? h('p', { class: 'meta' }, h('strong', { text: 'Not for your family' }), ` (never: ${blocked.join(', ')})`) : null,
-    extra);
+  // The text comes first in the DOM (screen readers read the title first); CSS shows the photo on the left.
+  return h('div', { class: blocked.length ? 'card has-photo dim' : 'card has-photo' },
+    h('div', { class: 'cardbody' },
+      h('h3', { text: r.title }),
+      h('p', { class: 'meta', text: shortMeta(r) + (r.kind === 'gameday' ? ' · game-day' : '') }),
+      cardProteinLine(r) ? h('p', { class: 'meta protein', text: cardProteinLine(r) }) : null,
+      firstKidStep(r) ? h('span', { class: 'badge', text: kidBadge(state) }) : null,
+      blocked.length ? h('p', { class: 'meta' }, h('strong', { text: 'Not for your family' }), ` (never: ${blocked.join(', ')})`) : null,
+      extra),
+    recipePhoto(r, 'thumb cardthumb'));
 }

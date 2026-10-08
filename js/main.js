@@ -14,15 +14,16 @@ import * as recipes from './screens/recipes.js';
 import * as cook from './screens/cook.js';
 import * as done from './screens/done.js';
 import * as need from './screens/need.js';
+import * as credits from './screens/credits.js';
 import { createTimerController, leftMs, isDone, fmt } from './timers.js';
 
-const ROUTES = { tonight, week, grocery, family, settings, setup, swap, recipes, cook, done, need };
+const ROUTES = { tonight, week, grocery, family, settings, setup, swap, recipes, cook, done, need, credits };
 const NO_TABS = new Set(['setup', 'cook']);
-const TAB_FOR = { swap: 'week', recipes: 'family', settings: 'family', need: 'tonight', done: 'tonight' };
+const TAB_FOR = { swap: 'week', recipes: 'family', settings: 'family', credits: 'family', need: 'tonight', done: 'tonight' };
 
 const ctx = {
   state: load(),
-  data: { recipes: [], filterTags: [], vocab: {}, seasonal: { months: {} } },
+  data: { recipes: [], filterTags: [], photoCredits: [], vocab: {}, seasonal: { months: {} } },
   anyway: null,
   swapped: null, // the Week night to highlight right after a swap
   save() { save(ctx.state); },
@@ -133,7 +134,7 @@ async function loadJSON(name) {
 async function start() {
   try {
     const [r, vocab, seasonal] = await Promise.all([loadJSON('recipes.json'), loadJSON('vocab.json'), loadJSON('seasonal.json')]);
-    ctx.data = { recipes: r.recipes || [], filterTags: r.filter_tags || [], vocab, seasonal };
+    ctx.data = { recipes: r.recipes || [], filterTags: r.filter_tags || [], photoCredits: r.photo_credits || [], vocab, seasonal };
   } catch (e) {
     const root = document.getElementById('app');
     root.textContent = 'Could not load the recipes. Check your connection and reload once.';

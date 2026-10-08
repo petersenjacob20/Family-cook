@@ -107,6 +107,788 @@
       "group": "food"
     }
   ],
+  "photo_credits": [
+    {
+      "id": "easy-chicken-alfredo",
+      "title": "Easy Chicken Alfredo",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lori%27s_Diner_chicken_fettucine_alfredo.JPG",
+      "author": "BrokenSphere",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "sheet-pan-pizza",
+      "title": "Sheet-Pan Pizza",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "build-your-own-tacos",
+      "title": "Build-Your-Own Tacos",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tacos_with_ground_beef_-_Massachusetts.jpg",
+      "author": "Daderot",
+      "license": "CC0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "crispy-tenders-and-fries",
+      "title": "Crispy Chicken Tenders and Fries",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Black_Bear_Diner_-_December_2024_-_Sarah_Stierch_02.jpg",
+      "author": "Missvain",
+      "license": "CC0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "changes": "Center-cropped to 4:3, then further cropped to the dish; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "stovetop-mac-and-cheese",
+      "title": "Stovetop Mac and Cheese",
+      "source": "Openverse (Flickr)",
+      "source_url": "https://www.flickr.com/photos/82365211@N00/2383484064",
+      "author": "kalleboo",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "cheesy-quesadillas",
+      "title": "Cheesy Quesadillas",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chicken_quesadilla_-_Massachusetts.jpg",
+      "author": "Daderot",
+      "license": "CC0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "spaghetti-meat-sauce",
+      "title": "Spaghetti with Meat Sauce",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Spaghetti_in_meat_sauce-_Guido_%5E_Angelina_restaurant_-_panoramio.jpg",
+      "author": "Jiaqian AirplaneFan",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "chicken-noodle-soup",
+      "title": "Quick Chicken Noodle Soup",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chicken_noodle_soup_(cropped).jpg",
+      "author": "Eli Hodapp from Naperville, United States",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "grilled-cheese-tomato-soup",
+      "title": "Grilled Cheese and Tomato Soup",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Grilled_cheese_sandwich_with_tomato_soup.jpg",
+      "author": "Arnold Gatilao from Oakland, CA, USA",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "breakfast-for-dinner",
+      "title": "Pancakes and Eggs for Dinner",
+      "source": "Openverse (Flickr)",
+      "source_url": "https://www.flickr.com/photos/12093430@N07/2828626236",
+      "author": "muanisj",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "chicken-fried-rice",
+      "title": "Easy Chicken Fried Rice",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "turkey-cheese-pinwheels",
+      "title": "Turkey and Cheese Pinwheels",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "baked-potato-bar",
+      "title": "Baked Potato Bar",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Stuffed_-baked_-potato_with_-sourcream,_-bacon,_-cheese,_and_-chives!_From_Harbor_Galley_at_Disneyland,_New_Orleans_Square._Surprisingly,_really_good._And_one_of_the_best_food_-values_I%27ve_found_at_-Disneyland._Soft,_warm,_-cheesy,_and.jpg",
+      "author": "L.A. Foodie",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "sloppy-joes",
+      "title": "Sloppy Joes",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sloppy_Joe_%22homemade%22.jpg",
+      "author": "Buck Blues",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "teriyaki-chicken-bowls",
+      "title": "Teriyaki Chicken Bowls",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Teriyaki_Chicken_Rice_Bowl_from_Botejyu_(2024-12-21).jpg",
+      "author": "Wide Awake!",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "changes": "Center-cropped to 4:3, then further cropped to the dish; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "meatballs-and-butter-noodles",
+      "title": "Meatballs and Butter Noodles",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "bbq-chicken-sliders",
+      "title": "BBQ Chicken Sliders",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "homemade-chicken-nuggets",
+      "title": "Homemade Chicken Nuggets",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Impossible_chicken_nuggets_2.jpg",
+      "author": "Mx. Granger",
+      "license": "CC0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "mini-meatloaves",
+      "title": "Mini Meatloaves",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Meatloaf_on_white_plate.jpg",
+      "author": "Roundhere44",
+      "license": "CC0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "easy-baked-ziti",
+      "title": "Easy Baked Ziti",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Baked_Ziti_(13966884849).jpg",
+      "author": "Prayitno",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "drumsticks-and-potatoes",
+      "title": "Oven Drumsticks and Potatoes",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "french-bread-pizzas",
+      "title": "French Bread Pizzas",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:French-bread-pizza_(48871966453).jpg",
+      "author": "Meg H",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "sheet-pan-cheeseburger-sliders",
+      "title": "Sheet-Pan Cheeseburger Sliders",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Slider_sandwiches.jpg",
+      "author": "jeffreyw",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "chicken-pot-pie",
+      "title": "Easy Chicken Pot Pie",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:191-365_Chicken_Pot_Pie.jpg",
+      "author": "Elsie Hui",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "shepherds-pie",
+      "title": "Cheesy Shepherd's Pie",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Shepherds-pie---2023-11-02.jpg",
+      "author": "RuinDig/Yuki Uchida",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "changes": "Center-cropped to 4:3, then further cropped to the dish; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "lasagna-roll-ups",
+      "title": "Lasagna Roll-Ups",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "stuffed-shells",
+      "title": "Cheesy Stuffed Shells",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "honey-garlic-chicken",
+      "title": "Honey Garlic Chicken and Rice",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "taco-bake",
+      "title": "Cheesy Taco Bake",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "breakfast-burritos",
+      "title": "Breakfast Burritos",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "pigs-in-a-blanket",
+      "title": "Pigs in a Blanket",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:American_pigs_in_blankets.jpg",
+      "author": "stef yau",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "broccoli-cheddar-chicken-rice",
+      "title": "Broccoli Cheddar Chicken and Rice",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "apple-pork-chops",
+      "title": "Apple Pork Chops and Mashed Potatoes",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "fall-squash-mac",
+      "title": "Butternut Squash Mac and Cheese",
+      "source": "Openverse (Flickr)",
+      "source_url": "https://www.flickr.com/photos/77315663@N00/30704992652",
+      "author": "Farther Along",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "ham-and-pea-alfredo-bowties",
+      "title": "Ham and Pea Alfredo Bowties",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "broccoli-tortellini-alfredo",
+      "title": "Cheesy Broccoli Tortellini Alfredo",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "sneaky-cauliflower-alfredo",
+      "title": "Sneaky Cauliflower Alfredo Pasta",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "pizza-quesadillas",
+      "title": "Pizza Quesadillas",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "baked-pizza-pinwheels",
+      "title": "Baked Pizza Pinwheels",
+      "source": "Openverse (Flickr)",
+      "source_url": "https://www.flickr.com/photos/105392694@N02/10958886336",
+      "author": "erecepti.com",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "pull-apart-pizza-bites",
+      "title": "Pull-Apart Pizza Bites",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "ranch-turkey-burgers-and-fries",
+      "title": "Ranch Turkey Burgers with Oven Fries",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "corn-dog-muffins-and-fries",
+      "title": "Mini Corn Dog Muffins with Oven Fries",
+      "source": "Openverse (Flickr)",
+      "source_url": "https://www.flickr.com/photos/75231152@N00/7154526692",
+      "author": "kae71463",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "sneaky-veggie-meatball-subs",
+      "title": "Sneaky Veggie Turkey Meatball Subs",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vegetarian_Meatball_Sub_(%2B_Fries).jpg",
+      "author": "Thriving Vegetarian",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "cheeseburger-pasta-sneaky-carrots",
+      "title": "Cheeseburger Pasta with Sneaky Carrots",
+      "source": "Openverse (Flickr)",
+      "source_url": "https://www.flickr.com/photos/7927684@N03/17237661119",
+      "author": "jeffreyw",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "chicken-black-bean-enchilada-bake",
+      "title": "Chicken and Black Bean Enchilada Bake",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "baked-chicken-parmesan-spaghetti",
+      "title": "Oven-Baked Chicken Parmesan with Whole-Wheat Spaghetti",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tony%27s_of_North_Beach_-_December_2022_-_Sarah_Stierch_05.jpg",
+      "author": "Missvain",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "changes": "Center-cropped to 4:3, then further cropped to the dish; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "chicken-veggie-lo-mein",
+      "title": "Chicken and Veggie Lo Mein",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "veggie-egg-muffins-and-toast",
+      "title": "Veggie Egg Muffins with Whole-Wheat Toast",
+      "source": "Openverse (Flickr)",
+      "source_url": "https://www.flickr.com/photos/80169628@N08/19778094976",
+      "author": "ricardogz10",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3, then further cropped to the dish; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "sheet-pan-lemon-chicken-pitas",
+      "title": "Sheet-Pan Lemon Chicken Pitas with Yogurt Dip",
+      "source": "Openverse (Flickr)",
+      "source_url": "https://www.flickr.com/photos/41039241@N05/5465368110",
+      "author": "Sam Solomon",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "turkey-pizza-stuffed-peppers",
+      "title": "Turkey Pizza Stuffed Peppers",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Quinoa_stuffed_peppers.jpg",
+      "author": "Mark Bonica",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "baked-bean-and-cheese-tostadas",
+      "title": "Baked Bean and Cheese Tostadas",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tostada_(5076307841)_(2).jpg",
+      "author": "TheCulinaryGeek from Chicago, USA",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "tomato-tortellini-soup",
+      "title": "Tomato Tortellini Soup with Spinach",
+      "source": "Openverse (Flickr)",
+      "source_url": "https://www.flickr.com/photos/90155432@N02/11392242076",
+      "author": "Thriving Vegetarian",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "baked-sweet-and-sour-chicken",
+      "title": "Baked Sweet and Sour Chicken with Rice",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sweet_and_Sour_Chicken.JPG",
+      "author": "Miansari66",
+      "license": "CC0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "oven-french-toast-sticks",
+      "title": "Oven French Toast Sticks with Berries",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Healthier_French_Toast_-_50302453341.jpg",
+      "author": "Alabama Extension",
+      "license": "CC0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "sheet-pan-chicken-fajitas",
+      "title": "Sheet-Pan Chicken Fajitas",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chicken_fajitas_-_La_Hacienda_-_Sarah_Stierch.jpg",
+      "author": "Missvain",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "chicken-and-corn-chowder",
+      "title": "Chicken and Corn Chowder",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vegan_Garden_Corn_Chowder_with_Chives_(cropped).jpg",
+      "author": "tomatoes and friends",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "veggie-pasta-primavera",
+      "title": "Veggie Pasta Primavera",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pasta_primavera_(1)_(cropped).jpg",
+      "author": "Stacy Spensley from San Diego",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "chicken-and-egg-rice-bowls",
+      "title": "Japanese-Style Chicken and Egg Rice Bowls",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Oyakodon_003.jpg",
+      "author": "Ocdp",
+      "license": "CC0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "chicken-burrito-bowls",
+      "title": "Chicken Burrito Bowls with Brown Rice",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Grilled_Chicken_Burrito_Bowl_6_(28365051003).jpg",
+      "author": "Sharon Chen from Austin, United States",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "italian-chicken-white-bean-skillet",
+      "title": "Italian Chicken and White Bean Skillet",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "beef-and-broccoli-brown-rice",
+      "title": "Beef and Broccoli with Brown Rice",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Broccoli_beef_(5457397534).jpg",
+      "author": "jeffreyw",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "turkey-sweet-potato-breakfast-hash",
+      "title": "Turkey and Sweet Potato Breakfast Hash with Eggs",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "sheet-pan-pork-tenderloin",
+      "title": "Sheet-Pan Pork Tenderloin with Potatoes and Green Beans",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "mild-yogurt-chicken-curry",
+      "title": "Mild Yogurt Chicken Curry with Brown Rice",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "chicken-broccoli-stuffed-sweet-potatoes",
+      "title": "Cheesy Chicken and Broccoli Stuffed Sweet Potatoes",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "turkey-egg-roll-in-a-bowl",
+      "title": "Turkey Egg Roll in a Bowl",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "mediterranean-chicken-chickpea-quinoa-bowls",
+      "title": "Mediterranean Chicken and Chickpea Quinoa Bowls",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "chicken-tortilla-soup",
+      "title": "Chicken Tortilla Soup",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "crispy-oven-wings",
+      "title": "Crispy Oven Wings",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "loaded-sheet-pan-nachos",
+      "title": "Loaded Sheet-Pan Nachos",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nachos_(6695616337).jpg",
+      "author": "Luca Nebuloni",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "game-day-chili",
+      "title": "Game-Day Chili",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cowboy_Style_Chili_with_Beans_3of7_(8735164699).jpg",
+      "author": "Breville USA",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "brats-and-peppers",
+      "title": "Brats with Peppers and Onions",
+      "source": "Openverse (Flickr)",
+      "source_url": "https://www.flickr.com/photos/7927684@N03/5696972127",
+      "author": "jeffreyw",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "pizza-dip",
+      "title": "Pepperoni Pizza Dip",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "philly-cheesesteak-sliders",
+      "title": "Philly Cheesesteak Sliders",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Philly_Cheesesteak.jpg",
+      "author": "Shoshanah",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "buffalo-chicken-dip",
+      "title": "Buffalo Chicken Dip",
+      "source": "Openverse (Flickr)",
+      "source_url": "https://www.flickr.com/photos/98178986@N00/4434128996",
+      "author": "@joefoodie",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "homemade-pizza-night",
+      "title": "Two-Topping Homemade Pizza",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Half_Margherita,_Half_Meat_(pepperoni,_soppressata,_sausage)._Waited_50_minutes._It_was_worth_it._-pizza_-sanleandro_(17151139468).jpg",
+      "author": "Arnold Gatilao from Oakland, CA, USA",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "baked-chicken-taquitos",
+      "title": "Baked Chicken Taquitos with Ranch",
+      "source": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Taqueria_La_Hacienda_-_Feburary_2023_-_Sarah_Stierch.jpg",
+      "author": "Missvain",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
+    },
+    {
+      "id": "ham-and-cheese-sliders",
+      "title": "Hot Ham and Cheese Sliders",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    }
+  ],
   "recipes": [
     {
       "id": "easy-chicken-alfredo",
@@ -315,6 +1097,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/easy-chicken-alfredo.webp",
+        "alt": "Chicken in creamy Alfredo sauce with broccoli"
       }
     },
     {
@@ -439,6 +1225,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/sheet-pan-pizza.webp",
+        "alt": "Rectangular pepperoni pizza cut into squares on a sheet pan"
       }
     },
     {
@@ -677,6 +1467,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/build-your-own-tacos.webp",
+        "alt": "Hard-shell beef tacos with lettuce, tomato and cheese"
       }
     },
     {
@@ -819,6 +1613,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/crispy-tenders-and-fries.webp",
+        "alt": "Crispy chicken tenders with french fries"
       }
     },
     {
@@ -1028,6 +1826,10 @@
         ],
         "protein_g": 29.7,
         "fiber_g": 3.6
+      },
+      "photo": {
+        "src": "photos/stovetop-mac-and-cheese.webp",
+        "alt": "Bowl of creamy stovetop macaroni and cheese"
       }
     },
     {
@@ -1239,6 +2041,10 @@
         ],
         "protein_g": 43.7,
         "fiber_g": 3.9
+      },
+      "photo": {
+        "src": "photos/cheesy-quesadillas.webp",
+        "alt": "Cheesy quesadilla cut into wedges"
       }
     },
     {
@@ -1450,6 +2256,10 @@
         ],
         "protein_g": 40.2,
         "fiber_g": 6.7
+      },
+      "photo": {
+        "src": "photos/spaghetti-meat-sauce.webp",
+        "alt": "Spaghetti with meat sauce on a plate"
       }
     },
     {
@@ -1618,6 +2428,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/chicken-noodle-soup.webp",
+        "alt": "Bowl of chicken noodle soup with bread on the side"
       }
     },
     {
@@ -1738,6 +2552,10 @@
         ],
         "protein_g": 17.7,
         "fiber_g": 3.6
+      },
+      "photo": {
+        "src": "photos/grilled-cheese-tomato-soup.webp",
+        "alt": "Grilled cheese sandwich with a bowl of tomato soup"
       }
     },
     {
@@ -1919,6 +2737,10 @@
         ],
         "protein_g": 16.3,
         "fiber_g": 1.9
+      },
+      "photo": {
+        "src": "photos/breakfast-for-dinner.webp",
+        "alt": "Pancakes with butter, fried eggs, bacon and sausage links"
       }
     },
     {
@@ -2078,6 +2900,10 @@
         ],
         "protein_g": 32.4,
         "fiber_g": 3.9
+      },
+      "photo": {
+        "src": "photos/chicken-fried-rice.webp",
+        "alt": "Bowl of chicken fried rice with peas, carrots and scrambled egg"
       }
     },
     {
@@ -2203,6 +3029,10 @@
         ],
         "protein_g": 38.7,
         "fiber_g": 11.2
+      },
+      "photo": {
+        "src": "photos/turkey-cheese-pinwheels.webp",
+        "alt": "Turkey and cheese tortilla pinwheels with baby carrots and apple slices"
       }
     },
     {
@@ -2362,6 +3192,10 @@
         ],
         "protein_g": 17.6,
         "fiber_g": 4.9
+      },
+      "photo": {
+        "src": "photos/baked-potato-bar.webp",
+        "alt": "Baked potato topped with cheese, sour cream and green onion"
       }
     },
     {
@@ -2513,6 +3347,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/sloppy-joes.webp",
+        "alt": "Sloppy joe sandwich on a bun"
       }
     },
     {
@@ -2664,6 +3502,10 @@
         ],
         "protein_g": 48.0,
         "fiber_g": 3.5
+      },
+      "photo": {
+        "src": "photos/teriyaki-chicken-bowls.webp",
+        "alt": "Teriyaki chicken over white rice in a bowl"
       }
     },
     {
@@ -2844,6 +3686,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/meatballs-and-butter-noodles.webp",
+        "alt": "Meatballs in tomato sauce over egg noodles with Parmesan"
       }
     },
     {
@@ -2972,6 +3818,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/bbq-chicken-sliders.webp",
+        "alt": "BBQ pulled chicken sliders topped with coleslaw, with apple slices"
       }
     },
     {
@@ -3113,6 +3963,10 @@
         ],
         "protein_g": 50.5,
         "fiber_g": 1.9
+      },
+      "photo": {
+        "src": "photos/homemade-chicken-nuggets.webp",
+        "alt": "Golden chicken nuggets with ketchup"
       }
     },
     {
@@ -3283,6 +4137,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/mini-meatloaves.webp",
+        "alt": "Sliced meatloaf with a ketchup glaze"
       }
     },
     {
@@ -3472,6 +4330,10 @@
         ],
         "protein_g": 26.7,
         "fiber_g": 6.5
+      },
+      "photo": {
+        "src": "photos/easy-baked-ziti.webp",
+        "alt": "Baked ziti with melted cheese in a dish"
       }
     },
     {
@@ -3588,6 +4450,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/drumsticks-and-potatoes.webp",
+        "alt": "Golden roasted chicken drumsticks with baby potatoes on a sheet pan"
       }
     },
     {
@@ -3701,6 +4567,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/french-bread-pizzas.webp",
+        "alt": "French bread pizzas with melted cheese"
       }
     },
     {
@@ -3881,6 +4751,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/sheet-pan-cheeseburger-sliders.webp",
+        "alt": "Cheeseburger sliders on a pan"
       }
     },
     {
@@ -4003,6 +4877,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/chicken-pot-pie.webp",
+        "alt": "Chicken pot pie with a golden flaky crust"
       }
     },
     {
@@ -4172,6 +5050,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/shepherds-pie.webp",
+        "alt": "Cheesy shepherd's pie in a baking dish"
       }
     },
     {
@@ -4315,6 +5197,10 @@
         ],
         "protein_g": 29.3,
         "fiber_g": 4.5
+      },
+      "photo": {
+        "src": "photos/lasagna-roll-ups.webp",
+        "alt": "Lasagna roll-ups in tomato sauce with melted cheese"
       }
     },
     {
@@ -4445,6 +5331,10 @@
         ],
         "protein_g": 25.8,
         "fiber_g": 3.9
+      },
+      "photo": {
+        "src": "photos/stuffed-shells.webp",
+        "alt": "Baking dish of cheese-stuffed pasta shells in red sauce with melted cheese"
       }
     },
     {
@@ -4636,6 +5526,10 @@
         ],
         "protein_g": 42.0,
         "fiber_g": 3.6
+      },
+      "photo": {
+        "src": "photos/honey-garlic-chicken.webp",
+        "alt": "Glazed honey garlic chicken pieces with white rice and broccoli"
       }
     },
     {
@@ -4860,6 +5754,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/taco-bake.webp",
+        "alt": "Cheesy taco bake with beef, black beans and a scoop of sour cream"
       }
     },
     {
@@ -5023,6 +5921,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/breakfast-burritos.webp",
+        "alt": "Breakfast burritos cut open to show egg, cheese and hash browns, with salsa"
       }
     },
     {
@@ -5140,6 +6042,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/pigs-in-a-blanket.webp",
+        "alt": "Hot dogs wrapped in golden crescent dough"
       }
     },
     {
@@ -5275,6 +6181,10 @@
         ],
         "protein_g": 38.2,
         "fiber_g": 3.0
+      },
+      "photo": {
+        "src": "photos/broccoli-cheddar-chicken-rice.webp",
+        "alt": "Cheesy chicken and rice with broccoli"
       }
     },
     {
@@ -5417,6 +6327,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/apple-pork-chops.webp",
+        "alt": "Pork chop topped with soft cooked apples next to mashed potatoes"
       }
     },
     {
@@ -5625,6 +6539,10 @@
         ],
         "protein_g": 31.2,
         "fiber_g": 4.7
+      },
+      "photo": {
+        "src": "photos/fall-squash-mac.webp",
+        "alt": "Macaroni and cheese with roasted squash"
       }
     },
     {
@@ -5863,6 +6781,10 @@
         ],
         "protein_g": 35.2,
         "fiber_g": 7.6
+      },
+      "photo": {
+        "src": "photos/ham-and-pea-alfredo-bowties.webp",
+        "alt": "Bowtie pasta with diced ham and peas in a creamy sauce"
       }
     },
     {
@@ -6002,6 +6924,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/broccoli-tortellini-alfredo.webp",
+        "alt": "Cheese tortellini and broccoli in creamy white sauce"
       }
     },
     {
@@ -6236,6 +7162,10 @@
         ],
         "protein_g": 25.3,
         "fiber_g": 5.3
+      },
+      "photo": {
+        "src": "photos/sneaky-cauliflower-alfredo.webp",
+        "alt": "Bowl of penne in creamy white cauliflower sauce topped with Parmesan"
       }
     },
     {
@@ -6359,6 +7289,10 @@
         ],
         "protein_g": 32.5,
         "fiber_g": 4.9
+      },
+      "photo": {
+        "src": "photos/pizza-quesadillas.webp",
+        "alt": "Pizza quesadilla wedges with pepperoni and a cup of pizza sauce"
       }
     },
     {
@@ -6488,6 +7422,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/baked-pizza-pinwheels.webp",
+        "alt": "Baked pizza pinwheels with a drizzle of tomato sauce"
       }
     },
     {
@@ -6622,6 +7560,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/pull-apart-pizza-bites.webp",
+        "alt": "Baked pull-apart pizza bites with pepperoni and melted cheese"
       }
     },
     {
@@ -6810,6 +7752,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/ranch-turkey-burgers-and-fries.webp",
+        "alt": "Turkey cheeseburger with oven fries and ketchup"
       }
     },
     {
@@ -6969,6 +7915,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/corn-dog-muffins-and-fries.webp",
+        "alt": "Corn dog muffins with a cup of ketchup"
       }
     },
     {
@@ -7186,6 +8136,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/sneaky-veggie-meatball-subs.webp",
+        "alt": "Meatball sub with tomato sauce and melted cheese"
       }
     },
     {
@@ -7430,6 +8384,10 @@
         ],
         "protein_g": 39.7,
         "fiber_g": 2.6
+      },
+      "photo": {
+        "src": "photos/cheeseburger-pasta-sneaky-carrots.webp",
+        "alt": "Cheesy beef pasta bake on a platter"
       }
     },
     {
@@ -7592,6 +8550,10 @@
         ],
         "protein_g": 30.5,
         "fiber_g": 11.2
+      },
+      "photo": {
+        "src": "photos/chicken-black-bean-enchilada-bake.webp",
+        "alt": "Chicken enchilada bake with red sauce, black beans, corn, spinach and melted cheese"
       }
     },
     {
@@ -7817,6 +8779,10 @@
         ],
         "protein_g": 54.8,
         "fiber_g": 16.5
+      },
+      "photo": {
+        "src": "photos/baked-chicken-parmesan-spaghetti.webp",
+        "alt": "Chicken parmesan over spaghetti"
       }
     },
     {
@@ -8073,6 +9039,10 @@
         ],
         "protein_g": 40.8,
         "fiber_g": 11.4
+      },
+      "photo": {
+        "src": "photos/chicken-veggie-lo-mein.webp",
+        "alt": "Noodles with chicken, broccoli, red pepper and carrots"
       }
     },
     {
@@ -8271,6 +9241,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/veggie-egg-muffins-and-toast.webp",
+        "alt": "Baked veggie egg muffins with spinach"
       }
     },
     {
@@ -8430,6 +9404,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/sheet-pan-lemon-chicken-pitas.webp",
+        "alt": "Grilled chicken in a pita"
       }
     },
     {
@@ -8632,6 +9610,10 @@
         ],
         "protein_g": 35.4,
         "fiber_g": 6.5
+      },
+      "photo": {
+        "src": "photos/turkey-pizza-stuffed-peppers.webp",
+        "alt": "Stuffed green bell peppers with a tomato filling"
       }
     },
     {
@@ -8799,6 +9781,10 @@
         ],
         "protein_g": 21.5,
         "fiber_g": 12.2
+      },
+      "photo": {
+        "src": "photos/baked-bean-and-cheese-tostadas.webp",
+        "alt": "Tostada topped with beans, cheese and tomato"
       }
     },
     {
@@ -8963,6 +9949,10 @@
         ],
         "protein_g": 25.2,
         "fiber_g": 6.3
+      },
+      "photo": {
+        "src": "photos/tomato-tortellini-soup.webp",
+        "alt": "Tortellini in a tomato vegetable soup"
       }
     },
     {
@@ -9151,6 +10141,10 @@
         ],
         "protein_g": 46.6,
         "fiber_g": 2.9
+      },
+      "photo": {
+        "src": "photos/baked-sweet-and-sour-chicken.webp",
+        "alt": "Sweet and sour chicken with peppers in a bowl"
       }
     },
     {
@@ -9302,6 +10296,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/oven-french-toast-sticks.webp",
+        "alt": "French toast sticks with berries"
       }
     },
     {
@@ -9484,6 +10482,10 @@
         ],
         "protein_g": 47.8,
         "fiber_g": 11.1
+      },
+      "photo": {
+        "src": "photos/sheet-pan-chicken-fajitas.webp",
+        "alt": "Chicken fajitas with peppers and onions"
       }
     },
     {
@@ -9664,6 +10666,10 @@
         ],
         "protein_g": 29.6,
         "fiber_g": 3.9
+      },
+      "photo": {
+        "src": "photos/chicken-and-corn-chowder.webp",
+        "alt": "Bowl of creamy corn chowder"
       }
     },
     {
@@ -9828,6 +10834,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/veggie-pasta-primavera.webp",
+        "alt": "Pasta with mixed vegetables and Parmesan"
       }
     },
     {
@@ -9990,6 +11000,10 @@
         ],
         "protein_g": 35.8,
         "fiber_g": 3.1
+      },
+      "photo": {
+        "src": "photos/chicken-and-egg-rice-bowls.webp",
+        "alt": "Chicken and egg over rice in a bowl"
       }
     },
     {
@@ -10170,6 +11184,10 @@
         ],
         "protein_g": 56,
         "fiber_g": 11.1
+      },
+      "photo": {
+        "src": "photos/chicken-burrito-bowls.webp",
+        "alt": "Chicken burrito bowl with rice and toppings"
       }
     },
     {
@@ -10349,6 +11367,10 @@
         ],
         "protein_g": 53,
         "fiber_g": 9.4
+      },
+      "photo": {
+        "src": "photos/italian-chicken-white-bean-skillet.webp",
+        "alt": "Skillet of chicken, white beans, tomatoes and spinach with toast"
       }
     },
     {
@@ -10515,6 +11537,10 @@
         ],
         "protein_g": 41,
         "fiber_g": 4.0
+      },
+      "photo": {
+        "src": "photos/beef-and-broccoli-brown-rice.webp",
+        "alt": "Beef and broccoli with rice"
       }
     },
     {
@@ -10690,6 +11716,10 @@
         ],
         "protein_g": 39,
         "fiber_g": 6.4
+      },
+      "photo": {
+        "src": "photos/turkey-sweet-potato-breakfast-hash.webp",
+        "alt": "Skillet hash with sweet potato, ground turkey, peppers, scrambled egg and cheese"
       }
     },
     {
@@ -10850,6 +11880,10 @@
         ],
         "protein_g": 41,
         "fiber_g": 6.4
+      },
+      "photo": {
+        "src": "photos/sheet-pan-pork-tenderloin.webp",
+        "alt": "Sliced pork tenderloin with roasted baby potatoes and green beans on a sheet pan"
       }
     },
     {
@@ -11024,6 +12058,10 @@
         ],
         "protein_g": 50,
         "fiber_g": 6.5
+      },
+      "photo": {
+        "src": "photos/mild-yogurt-chicken-curry.webp",
+        "alt": "Creamy mild chicken curry with peas and tomato next to brown rice"
       }
     },
     {
@@ -11186,6 +12224,10 @@
         ],
         "protein_g": 45,
         "fiber_g": 9.0
+      },
+      "photo": {
+        "src": "photos/chicken-broccoli-stuffed-sweet-potatoes.webp",
+        "alt": "Sweet potatoes stuffed with chicken, broccoli and cheese"
       }
     },
     {
@@ -11346,6 +12388,10 @@
         ],
         "protein_g": 41,
         "fiber_g": 4.3
+      },
+      "photo": {
+        "src": "photos/turkey-egg-roll-in-a-bowl.webp",
+        "alt": "Bowl of brown rice with ground turkey, cabbage slaw and egg"
       }
     },
     {
@@ -11523,6 +12569,10 @@
         ],
         "protein_g": 54,
         "fiber_g": 9.3
+      },
+      "photo": {
+        "src": "photos/mediterranean-chicken-chickpea-quinoa-bowls.webp",
+        "alt": "Quinoa bowl with sliced chicken, chickpeas, cucumber, tomato, feta and a lemon wedge"
       }
     },
     {
@@ -11717,6 +12767,10 @@
         ],
         "protein_g": 35,
         "fiber_g": 8.0
+      },
+      "photo": {
+        "src": "photos/chicken-tortilla-soup.webp",
+        "alt": "Bowl of chicken tortilla soup with black beans, corn and crisp tortilla strips"
       }
     },
     {
@@ -11851,6 +12905,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/crispy-oven-wings.webp",
+        "alt": "Plate of crispy baked chicken wings, some in buffalo sauce, with celery and ranch"
       }
     },
     {
@@ -12092,6 +13150,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/loaded-sheet-pan-nachos.webp",
+        "alt": "Nachos with beef and melted cheese"
       }
     },
     {
@@ -12290,6 +13352,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/game-day-chili.webp",
+        "alt": "Bowl of beef chili topped with cheese"
       }
     },
     {
@@ -12412,6 +13478,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/brats-and-peppers.webp",
+        "alt": "Grilled bratwurst with peppers and onions"
       }
     },
     {
@@ -12523,6 +13593,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/pizza-dip.webp",
+        "alt": "Pepperoni pizza dip with toasted bread slices"
       }
     },
     {
@@ -12657,6 +13731,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/philly-cheesesteak-sliders.webp",
+        "alt": "Cheesesteak sandwiches with melted cheese"
       }
     },
     {
@@ -12808,6 +13886,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/buffalo-chicken-dip.webp",
+        "alt": "Baked buffalo chicken dip in a dish"
       }
     },
     {
@@ -12940,6 +14022,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/homemade-pizza-night.webp",
+        "alt": "Homemade pepperoni pizza"
       }
     },
     {
@@ -13069,6 +14155,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/baked-chicken-taquitos.webp",
+        "alt": "Rolled taquitos with rice, refried beans, sour cream, salsa and guacamole"
       }
     },
     {
@@ -13195,6 +14285,10 @@
         ],
         "protein_g": null,
         "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/ham-and-cheese-sliders.webp",
+        "alt": "Baked ham and cheese sliders in a dish"
       }
     }
   ]

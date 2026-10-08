@@ -1,4 +1,4 @@
-import { h, header, button } from '../dom.js';
+import { h, header, button, linkButton } from '../dom.js';
 import { deleteAll } from '../store.js';
 
 export const APP_VERSION = '1.0.0';
@@ -21,6 +21,7 @@ export function render(ctx) {
     h('div', { class: 'card' },
       h('h3', { text: 'About' }),
       h('p', { class: 'meta', text: `Family Cook v${APP_VERSION}` }),
-      h('p', { class: 'meta', text: 'No accounts. No tracking. We never order for you.' })),
+      h('p', { class: 'meta', text: 'No accounts. No tracking. We never order for you.' }),
+      linkButton('Photo credits', '#/credits', 'small credits-link')),
   ];
 }

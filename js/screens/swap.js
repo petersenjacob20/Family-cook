@@ -2,7 +2,7 @@ import { h, header, toastAction, append } from '../dom.js';
 import { weekOf, weekday, DAY_SHORT, isISODate } from '../dates.js';
 import { applySwap, restoreSwap, byId, nightFor } from '../planner.js';
 import { swapList, anywayList, chipsFor, applyFilters, countLine, rowProtein, hasFilters, resetFilters } from '../swaplist.js';
-import { shortMeta, firstKidStep } from '../view.js';
+import { shortMeta, firstKidStep, recipePhoto } from '../view.js';
 import { kidBadge } from '../people.js';
 
 // Search and chips are kept per night while the app is open, so Back and forth keeps them.
@@ -12,12 +12,15 @@ let offScroll = null;
 // One row: the whole card is the tap target.
 function row(state, r, onPick) {
   const protein = rowProtein(r);
+  // Text first in the DOM (the row's name starts with the title); CSS puts the 56x42 photo on the left.
   return h('button', { type: 'button', class: 'card swaprow', 'data-pick': r.id, onclick: () => onPick(r) },
-    h('span', { class: 'rtitle', text: r.title }),
-    h('span', { class: 'rmeta' },
-      h('span', { text: shortMeta(r) + (r.kind === 'gameday' ? ' \u00b7 game-day' : '') }),
-      firstKidStep(r) ? h('span', { class: 'badge', text: kidBadge(state) }) : null),
-    protein ? h('span', { class: 'rprotein', text: protein }) : null);
+    h('span', { class: 'rtext' },
+      h('span', { class: 'rtitle', text: r.title }),
+      h('span', { class: 'rmeta' },
+        h('span', { text: shortMeta(r) + (r.kind === 'gameday' ? ' \u00b7 game-day' : '') }),
+        firstKidStep(r) ? h('span', { class: 'badge', text: kidBadge(state) }) : null),
+      protein ? h('span', { class: 'rprotein', text: protein }) : null),
+    recipePhoto(r, 'thumb rowthumb'));
 }
 
 export function leave() {
