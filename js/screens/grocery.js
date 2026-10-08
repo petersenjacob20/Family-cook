@@ -2,7 +2,7 @@
 import { h, header, button, checkRow, toast } from '../dom.js';
 import { weekIdFor } from '../dates.js';
 import { fillWeek, getWeek, byId } from '../planner.js';
-import { buildList, pruneChecked, toggleChecked, shareText, rangeLabel, LABEL_LINE } from '../grocery.js';
+import { buildList, pruneChecked, toggleChecked, shareText, rangeLabel, ingredientNotes } from '../grocery.js';
 import { shareWithFallback } from '../share.js';
 
 export function render(ctx) {
@@ -20,7 +20,7 @@ export function render(ctx) {
       const on = toggleChecked(week, item.id);
       ctx.save();
       el.setAttribute('aria-checked', on ? 'true' : 'false');
-    }, item.checkLabel ? LABEL_LINE : '');
+    }, ingredientNotes(item));
     el.dataset.line = item.id;
     return el;
   };

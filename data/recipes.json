@@ -121,6 +121,83 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
+      ],
+      "protein_swaps": [
+        {
+          "id": "easy-chicken-alfredo--cottage-cheese",
+          "type": "swap",
+          "replaces": "alfredo-sauce",
+          "use": {
+            "key": "low-fat-cottage-cheese",
+            "name": "low-fat cottage cheese",
+            "qty": 1,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Use half the jar of sauce and stir in 1 cup cottage cheese blended smooth.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "easy-chicken-alfredo--high-protein-wheat-pasta",
+          "type": "swap",
+          "replaces": "fettuccine",
+          "use": {
+            "key": "high-protein-wheat-pasta",
+            "name": "high-protein wheat pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount, cooked the way the box says.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "easy-chicken-alfredo--chickpea-or-lentil-pasta",
+          "type": "swap",
+          "replaces": "fettuccine",
+          "use": {
+            "key": "chickpea-or-lentil-pasta",
+            "name": "chickpea or lentil pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount. Cook it a minute or two less than the box says; it gets soft fast.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        }
       ]
     },
     {
@@ -381,6 +458,89 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
+      ],
+      "protein_swaps": [
+        {
+          "id": "build-your-own-tacos--greek-yogurt",
+          "type": "swap",
+          "replaces": "sour-cream",
+          "use": {
+            "key": "greek-yogurt",
+            "name": "plain Greek yogurt",
+            "qty": 1,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount, stirred in cold. Tangier than sour cream.",
+          "protein": {
+            "claim": "about +13 g protein for the whole recipe (about +3.3 g per serving)",
+            "g_per_recipe": 13.3,
+            "g_per_serving": 3.3,
+            "basis": "1 cup plain Greek yogurt (FDC 171304, counted at 226.7 g/cup) vs 1 cup reduced-fat sour cream (FDC 171256, 242 g/cup)",
+            "fdc_ids": [
+              171304,
+              171256
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "build-your-own-tacos--lean-beef",
+          "type": "swap",
+          "replaces": "ground-beef",
+          "use": {
+            "key": "extra-lean-ground-beef",
+            "name": "95% lean ground beef",
+            "qty": 1,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. Leaner beef leaves little grease to pour off.",
+          "protein": {
+            "claim": "about +13 g protein for the whole recipe (about +3.2 g per serving)",
+            "g_per_recipe": 12.8,
+            "g_per_serving": 3.2,
+            "basis": "1 lb 95% lean ground beef (FDC 171790) vs 85% lean (FDC 171796), raw",
+            "fdc_ids": [
+              171790,
+              171796
+            ]
+          },
+          "contains": [
+            "beef"
+          ]
+        },
+        {
+          "id": "build-your-own-tacos--black-beans",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "black-beans",
+            "name": "can of black beans",
+            "qty": 1,
+            "unit": "can",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Rinse, drain and warm them as an extra filling.",
+          "protein": {
+            "claim": "about +26 g protein for the whole recipe (about +6.4 g per serving)",
+            "g_per_recipe": 25.6,
+            "g_per_serving": 6.4,
+            "basis": "adds 1 can black beans (FDC 175188, 425 g net as packed per label)",
+            "fdc_ids": [
+              175188
+            ]
+          },
+          "contains": []
+        }
       ]
     },
     {
@@ -634,6 +794,86 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
+      ],
+      "protein_swaps": [
+        {
+          "id": "stovetop-mac-and-cheese--cottage-cheese",
+          "type": "swap",
+          "replaces": "milk",
+          "use": {
+            "key": "low-fat-cottage-cheese",
+            "name": "low-fat cottage cheese",
+            "qty": 1,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Blend it smooth first, then use it in place of the milk. Keep the heat low.",
+          "protein": {
+            "claim": "about +20 g protein for the whole recipe (about +5 g per serving)",
+            "g_per_recipe": 19.9,
+            "g_per_serving": 5.0,
+            "basis": "1 cup 1% cottage cheese (FDC 173417, 226 g/cup) vs 1 cup 2% milk (FDC 171267, 244 g/cup)",
+            "fdc_ids": [
+              173417,
+              171267
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "stovetop-mac-and-cheese--high-protein-wheat-pasta",
+          "type": "swap",
+          "replaces": "elbow-macaroni",
+          "use": {
+            "key": "high-protein-wheat-pasta",
+            "name": "high-protein wheat pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount, cooked the way the box says.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "stovetop-mac-and-cheese--chickpea-or-lentil-pasta",
+          "type": "swap",
+          "replaces": "elbow-macaroni",
+          "use": {
+            "key": "chickpea-or-lentil-pasta",
+            "name": "chickpea or lentil pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount. Cook it a minute or two less than the box says; it gets soft fast.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        }
       ]
     },
     {
@@ -753,6 +993,86 @@
           "minutes": 1,
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "cheesy-quesadillas--greek-yogurt",
+          "type": "swap",
+          "replaces": "sour-cream",
+          "use": {
+            "key": "greek-yogurt",
+            "name": "plain Greek yogurt",
+            "qty": 0.5,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount, stirred in cold. Tangier than sour cream.",
+          "protein": {
+            "claim": "about +7 g protein for the whole recipe (about +2.2 g per serving)",
+            "g_per_recipe": 6.6,
+            "g_per_serving": 2.2,
+            "basis": "0.5 cup plain Greek yogurt (FDC 171304, counted at 226.7 g/cup) vs 0.5 cup reduced-fat sour cream (FDC 171256, 242 g/cup)",
+            "fdc_ids": [
+              171304,
+              171256
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "cheesy-quesadillas--black-beans",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "black-beans",
+            "name": "can of black beans",
+            "qty": 1,
+            "unit": "can",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Rinse and drain, then add a spoonful inside each one. You will use about 1 cup.",
+          "protein": {
+            "claim": "about +14 g protein for the whole recipe (about +4.8 g per serving)",
+            "g_per_recipe": 14.5,
+            "g_per_serving": 4.8,
+            "basis": "adds 1 cup black beans (FDC 175188, 240 g/cup)",
+            "fdc_ids": [
+              175188
+            ]
+          },
+          "contains": []
+        },
+        {
+          "id": "cheesy-quesadillas--protein-tortillas",
+          "type": "swap",
+          "replaces": "flour-tortillas",
+          "use": {
+            "key": "high-protein-tortillas",
+            "name": "high-protein flour tortillas",
+            "qty": 1,
+            "unit": "pkg",
+            "section": "bakery"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same size tortillas.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
         }
       ]
     },
@@ -874,6 +1194,86 @@
           "minutes": 2,
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "spaghetti-meat-sauce--lean-beef",
+          "type": "swap",
+          "replaces": "ground-beef",
+          "use": {
+            "key": "extra-lean-ground-beef",
+            "name": "95% lean ground beef",
+            "qty": 1,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. Leaner beef leaves little grease to pour off.",
+          "protein": {
+            "claim": "about +13 g protein for the whole recipe (about +3.2 g per serving)",
+            "g_per_recipe": 12.8,
+            "g_per_serving": 3.2,
+            "basis": "1 lb 95% lean ground beef (FDC 171790) vs 85% lean (FDC 171796), raw",
+            "fdc_ids": [
+              171790,
+              171796
+            ]
+          },
+          "contains": [
+            "beef"
+          ]
+        },
+        {
+          "id": "spaghetti-meat-sauce--high-protein-wheat-pasta",
+          "type": "swap",
+          "replaces": "spaghetti",
+          "use": {
+            "key": "high-protein-wheat-pasta",
+            "name": "high-protein wheat pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount, cooked the way the box says.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "spaghetti-meat-sauce--chickpea-or-lentil-pasta",
+          "type": "swap",
+          "replaces": "spaghetti",
+          "use": {
+            "key": "chickpea-or-lentil-pasta",
+            "name": "chickpea or lentil pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount. Cook it a minute or two less than the box says; it gets soft fast.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
         }
       ]
     },
@@ -1006,6 +1406,33 @@
           "minutes": 3,
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "chicken-noodle-soup--white-beans",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "white-beans",
+            "name": "can of white beans",
+            "qty": 1,
+            "unit": "can",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Rinse, drain and stir in with the chicken.",
+          "protein": {
+            "claim": "about +31 g protein for the whole recipe (about +7.7 g per serving)",
+            "g_per_recipe": 30.9,
+            "g_per_serving": 7.7,
+            "basis": "adds 1 can white beans (FDC 175204, 425 g net as packed per label)",
+            "fdc_ids": [
+              175204
+            ]
+          },
+          "contains": []
         }
       ]
     },
@@ -1234,6 +1661,60 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
+      ],
+      "protein_swaps": [
+        {
+          "id": "breakfast-for-dinner--egg-whites",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "liquid-egg-whites",
+            "name": "liquid egg whites",
+            "qty": 1,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Beat into the eggs before scrambling.",
+          "protein": {
+            "claim": "about +26 g protein for the whole recipe (about +6.6 g per serving)",
+            "g_per_recipe": 26.5,
+            "g_per_serving": 6.6,
+            "basis": "adds 1 cup egg whites (FDC 172183, 243 g/cup)",
+            "fdc_ids": [
+              172183
+            ]
+          },
+          "contains": [
+            "egg"
+          ]
+        },
+        {
+          "id": "breakfast-for-dinner--protein-pancake-mix",
+          "type": "swap",
+          "replaces": "pancake-mix",
+          "use": {
+            "key": "protein-pancake-mix",
+            "name": "high-protein pancake mix",
+            "qty": 2,
+            "unit": "cup",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Mix it the way the box says.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        }
       ]
     },
     {
@@ -1354,6 +1835,35 @@
           "minutes": 1,
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "chicken-fried-rice--extra-eggs",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "eggs",
+            "name": "eggs",
+            "qty": 2,
+            "unit": "",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Scramble 4 eggs instead of 2.",
+          "protein": {
+            "claim": "about +13 g protein for the whole recipe (about +3.1 g per serving)",
+            "g_per_recipe": 12.6,
+            "g_per_serving": 3.1,
+            "basis": "adds 2 large eggs (FDC 171287, 50 g each)",
+            "fdc_ids": [
+              171287
+            ]
+          },
+          "contains": [
+            "egg"
+          ]
         }
       ]
     },
@@ -1589,6 +2099,36 @@
           "text": "Let everyone pick their toppings.",
           "minutes": 1
         }
+      ],
+      "protein_swaps": [
+        {
+          "id": "baked-potato-bar--greek-yogurt",
+          "type": "swap",
+          "replaces": "sour-cream",
+          "use": {
+            "key": "greek-yogurt",
+            "name": "plain Greek yogurt",
+            "qty": 1,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount, stirred in cold. Tangier than sour cream.",
+          "protein": {
+            "claim": "about +13 g protein for the whole recipe (about +3.3 g per serving)",
+            "g_per_recipe": 13.3,
+            "g_per_serving": 3.3,
+            "basis": "1 cup plain Greek yogurt (FDC 171304, counted at 226.7 g/cup) vs 1 cup reduced-fat sour cream (FDC 171256, 242 g/cup)",
+            "fdc_ids": [
+              171304,
+              171256
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
+        }
       ]
     },
     {
@@ -1699,6 +2239,36 @@
           "who": "adult",
           "text": "Serve with baby carrots.",
           "minutes": 1
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "sloppy-joes--lean-beef",
+          "type": "swap",
+          "replaces": "ground-beef",
+          "use": {
+            "key": "extra-lean-ground-beef",
+            "name": "95% lean ground beef",
+            "qty": 1,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. Leaner beef leaves little grease to pour off.",
+          "protein": {
+            "claim": "about +13 g protein for the whole recipe (about +3.2 g per serving)",
+            "g_per_recipe": 12.8,
+            "g_per_serving": 3.2,
+            "basis": "1 lb 95% lean ground beef (FDC 171790) vs 85% lean (FDC 171796), raw",
+            "fdc_ids": [
+              171790,
+              171796
+            ]
+          },
+          "contains": [
+            "beef"
+          ]
         }
       ]
     },
@@ -1812,6 +2382,34 @@
           "minutes": 1,
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "teriyaki-chicken-bowls--quinoa",
+          "type": "swap",
+          "replaces": "instant-rice",
+          "use": {
+            "key": "quinoa",
+            "name": "quinoa",
+            "qty": 2,
+            "unit": "cup",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Use 2 cups quinoa, rinsed and simmered in 4 cups water about 15 minutes.",
+          "protein": {
+            "claim": "about +4.5 g protein per cooked cup",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "per cooked cup: quinoa (FDC 168917, 185 g/cup) vs prepared instant white rice (FDC 169710, 165 g/cup)",
+            "fdc_ids": [
+              168917,
+              169710
+            ]
+          },
+          "contains": []
         }
       ]
     },
@@ -1932,6 +2530,58 @@
           "minutes": 1,
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "meatballs-and-butter-noodles--high-protein-wheat-pasta",
+          "type": "swap",
+          "replaces": "egg-noodles",
+          "use": {
+            "key": "high-protein-wheat-pasta",
+            "name": "high-protein wheat pasta (same shape)",
+            "qty": 1,
+            "unit": "bag",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount, cooked the way the box says.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "meatballs-and-butter-noodles--chickpea-or-lentil-pasta",
+          "type": "swap",
+          "replaces": "egg-noodles",
+          "use": {
+            "key": "chickpea-or-lentil-pasta",
+            "name": "chickpea or lentil pasta (same shape)",
+            "qty": 1,
+            "unit": "bag",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount. Cook it a minute or two less than the box says; it gets soft fast.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
         }
       ]
     },
@@ -2315,6 +2965,36 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
+      ],
+      "protein_swaps": [
+        {
+          "id": "mini-meatloaves--lean-beef",
+          "type": "swap",
+          "replaces": "ground-beef",
+          "use": {
+            "key": "extra-lean-ground-beef",
+            "name": "95% lean ground beef",
+            "qty": 1.5,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. Leaner beef leaves little grease to pour off.",
+          "protein": {
+            "claim": "about +19 g protein for the whole recipe (about +4.8 g per serving)",
+            "g_per_recipe": 19.2,
+            "g_per_serving": 4.8,
+            "basis": "1.5 lb 95% lean ground beef (FDC 171790) vs 85% lean (FDC 171796), raw",
+            "fdc_ids": [
+              171790,
+              171796
+            ]
+          },
+          "contains": [
+            "beef"
+          ]
+        }
       ]
     },
     {
@@ -2442,6 +3122,58 @@
           "minutes": 5,
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "easy-baked-ziti--high-protein-wheat-pasta",
+          "type": "swap",
+          "replaces": "ziti",
+          "use": {
+            "key": "high-protein-wheat-pasta",
+            "name": "high-protein wheat pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount, cooked the way the box says.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "easy-baked-ziti--chickpea-or-lentil-pasta",
+          "type": "swap",
+          "replaces": "ziti",
+          "use": {
+            "key": "chickpea-or-lentil-pasta",
+            "name": "chickpea or lentil pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount. Cook it a minute or two less than the box says; it gets soft fast.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
         }
       ]
     },
@@ -2795,6 +3527,36 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
+      ],
+      "protein_swaps": [
+        {
+          "id": "sheet-pan-cheeseburger-sliders--lean-beef",
+          "type": "swap",
+          "replaces": "ground-beef",
+          "use": {
+            "key": "extra-lean-ground-beef",
+            "name": "95% lean ground beef",
+            "qty": 1.5,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. Leaner beef leaves little grease to pour off.",
+          "protein": {
+            "claim": "about +19 g protein for the whole recipe (about +3.2 g per serving)",
+            "g_per_recipe": 19.2,
+            "g_per_serving": 3.2,
+            "basis": "1.5 lb 95% lean ground beef (FDC 171790) vs 85% lean (FDC 171796), raw",
+            "fdc_ids": [
+              171790,
+              171796
+            ]
+          },
+          "contains": [
+            "beef"
+          ]
+        }
       ]
     },
     {
@@ -3041,6 +3803,36 @@
           "minutes": 5,
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "shepherds-pie--lean-beef",
+          "type": "swap",
+          "replaces": "ground-beef",
+          "use": {
+            "key": "extra-lean-ground-beef",
+            "name": "95% lean ground beef",
+            "qty": 1.5,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. Leaner beef leaves little grease to pour off.",
+          "protein": {
+            "claim": "about +19 g protein for the whole recipe (about +3.2 g per serving)",
+            "g_per_recipe": 19.2,
+            "g_per_serving": 3.2,
+            "basis": "1.5 lb 95% lean ground beef (FDC 171790) vs 85% lean (FDC 171796), raw",
+            "fdc_ids": [
+              171790,
+              171796
+            ]
+          },
+          "contains": [
+            "beef"
+          ]
         }
       ]
     },
@@ -3426,6 +4218,62 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
+      ],
+      "protein_swaps": [
+        {
+          "id": "honey-garlic-chicken--chicken-breast",
+          "type": "swap",
+          "replaces": "chicken-thighs",
+          "use": {
+            "key": "chicken-breast",
+            "name": "boneless chicken breasts",
+            "qty": 1.5,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. Breasts dry out faster, so check for no pink a little sooner.",
+          "protein": {
+            "claim": "about +19 g protein for the whole recipe (about +4.8 g per serving)",
+            "g_per_recipe": 19.3,
+            "g_per_serving": 4.8,
+            "basis": "1.5 lb boneless chicken breast (FDC 171077) vs thigh (FDC 173627), raw",
+            "fdc_ids": [
+              171077,
+              173627
+            ]
+          },
+          "contains": [
+            "chicken"
+          ]
+        },
+        {
+          "id": "honey-garlic-chicken--quinoa",
+          "type": "swap",
+          "replaces": "instant-rice",
+          "use": {
+            "key": "quinoa",
+            "name": "quinoa",
+            "qty": 2,
+            "unit": "cup",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Use 2 cups quinoa, rinsed and simmered in 4 cups water about 15 minutes.",
+          "protein": {
+            "claim": "about +4.5 g protein per cooked cup",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "per cooked cup: quinoa (FDC 168917, 185 g/cup) vs prepared instant white rice (FDC 169710, 165 g/cup)",
+            "fdc_ids": [
+              168917,
+              169710
+            ]
+          },
+          "contains": []
+        }
       ]
     },
     {
@@ -3559,6 +4407,89 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
+      ],
+      "protein_swaps": [
+        {
+          "id": "taco-bake--greek-yogurt",
+          "type": "swap",
+          "replaces": "sour-cream",
+          "use": {
+            "key": "greek-yogurt",
+            "name": "plain Greek yogurt",
+            "qty": 1,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount, stirred in cold. Tangier than sour cream.",
+          "protein": {
+            "claim": "about +13 g protein for the whole recipe (about +2.2 g per serving)",
+            "g_per_recipe": 13.3,
+            "g_per_serving": 2.2,
+            "basis": "1 cup plain Greek yogurt (FDC 171304, counted at 226.7 g/cup) vs 1 cup reduced-fat sour cream (FDC 171256, 242 g/cup)",
+            "fdc_ids": [
+              171304,
+              171256
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "taco-bake--lean-beef",
+          "type": "swap",
+          "replaces": "ground-beef",
+          "use": {
+            "key": "extra-lean-ground-beef",
+            "name": "95% lean ground beef",
+            "qty": 1,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. Leaner beef leaves little grease to pour off.",
+          "protein": {
+            "claim": "about +13 g protein for the whole recipe (about +2.1 g per serving)",
+            "g_per_recipe": 12.8,
+            "g_per_serving": 2.1,
+            "basis": "1 lb 95% lean ground beef (FDC 171790) vs 85% lean (FDC 171796), raw",
+            "fdc_ids": [
+              171790,
+              171796
+            ]
+          },
+          "contains": [
+            "beef"
+          ]
+        },
+        {
+          "id": "taco-bake--protein-chips",
+          "type": "swap",
+          "replaces": "tortilla-chips",
+          "use": {
+            "key": "protein-tortilla-chips",
+            "name": "high-protein tortilla chips",
+            "qty": 1,
+            "unit": "bag",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Many protein chips are made on shared lines.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        }
       ]
     },
     {
@@ -3681,6 +4612,35 @@
           "who": "adult",
           "text": "Roll them up and serve with salsa.",
           "minutes": 2
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "breakfast-burritos--egg-whites",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "liquid-egg-whites",
+            "name": "liquid egg whites",
+            "qty": 1,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Beat into the eggs before scrambling.",
+          "protein": {
+            "claim": "about +26 g protein for the whole recipe (about +6.6 g per serving)",
+            "g_per_recipe": 26.5,
+            "g_per_serving": 6.6,
+            "basis": "adds 1 cup egg whites (FDC 172183, 243 g/cup)",
+            "fdc_ids": [
+              172183
+            ]
+          },
+          "contains": [
+            "egg"
+          ]
         }
       ]
     },
@@ -4170,6 +5130,86 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
+      ],
+      "protein_swaps": [
+        {
+          "id": "fall-squash-mac--cottage-cheese",
+          "type": "swap",
+          "replaces": "milk",
+          "use": {
+            "key": "low-fat-cottage-cheese",
+            "name": "low-fat cottage cheese",
+            "qty": 1,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Blend it smooth first, then use it in place of the milk. Keep the heat low.",
+          "protein": {
+            "claim": "about +20 g protein for the whole recipe (about +5 g per serving)",
+            "g_per_recipe": 19.9,
+            "g_per_serving": 5.0,
+            "basis": "1 cup 1% cottage cheese (FDC 173417, 226 g/cup) vs 1 cup 2% milk (FDC 171267, 244 g/cup)",
+            "fdc_ids": [
+              173417,
+              171267
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "fall-squash-mac--high-protein-wheat-pasta",
+          "type": "swap",
+          "replaces": "elbow-macaroni",
+          "use": {
+            "key": "high-protein-wheat-pasta",
+            "name": "high-protein wheat pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount, cooked the way the box says.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "fall-squash-mac--chickpea-or-lentil-pasta",
+          "type": "swap",
+          "replaces": "elbow-macaroni",
+          "use": {
+            "key": "chickpea-or-lentil-pasta",
+            "name": "chickpea or lentil pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount. Cook it a minute or two less than the box says; it gets soft fast.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        }
       ]
     },
     {
@@ -4315,6 +5355,86 @@
           "minutes": 1,
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "ham-and-pea-alfredo-bowties--cottage-cheese",
+          "type": "swap",
+          "replaces": "milk",
+          "use": {
+            "key": "low-fat-cottage-cheese",
+            "name": "low-fat cottage cheese",
+            "qty": 1,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Blend it smooth first, then use it in place of the milk. Keep the heat low.",
+          "protein": {
+            "claim": "about +20 g protein for the whole recipe (about +5 g per serving)",
+            "g_per_recipe": 19.9,
+            "g_per_serving": 5.0,
+            "basis": "1 cup 1% cottage cheese (FDC 173417, 226 g/cup) vs 1 cup 2% milk (FDC 171267, 244 g/cup)",
+            "fdc_ids": [
+              173417,
+              171267
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "ham-and-pea-alfredo-bowties--high-protein-wheat-pasta",
+          "type": "swap",
+          "replaces": "bowtie-pasta",
+          "use": {
+            "key": "high-protein-wheat-pasta",
+            "name": "high-protein wheat pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount, cooked the way the box says.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "ham-and-pea-alfredo-bowties--chickpea-or-lentil-pasta",
+          "type": "swap",
+          "replaces": "bowtie-pasta",
+          "use": {
+            "key": "chickpea-or-lentil-pasta",
+            "name": "chickpea or lentil pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount. Cook it a minute or two less than the box says; it gets soft fast.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
         }
       ]
     },
@@ -4588,6 +5708,86 @@
           "minutes": 1,
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "sneaky-cauliflower-alfredo--cottage-cheese",
+          "type": "swap",
+          "replaces": "milk",
+          "use": {
+            "key": "low-fat-cottage-cheese",
+            "name": "low-fat cottage cheese",
+            "qty": 1,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Blend it smooth first, then use it in place of the milk. Keep the heat low.",
+          "protein": {
+            "claim": "about +20 g protein for the whole recipe (about +5 g per serving)",
+            "g_per_recipe": 19.9,
+            "g_per_serving": 5.0,
+            "basis": "1 cup 1% cottage cheese (FDC 173417, 226 g/cup) vs 1 cup 2% milk (FDC 171267, 244 g/cup)",
+            "fdc_ids": [
+              173417,
+              171267
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "sneaky-cauliflower-alfredo--high-protein-wheat-pasta",
+          "type": "swap",
+          "replaces": "ziti",
+          "use": {
+            "key": "high-protein-wheat-pasta",
+            "name": "high-protein wheat pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount, cooked the way the box says.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "sneaky-cauliflower-alfredo--chickpea-or-lentil-pasta",
+          "type": "swap",
+          "replaces": "ziti",
+          "use": {
+            "key": "chickpea-or-lentil-pasta",
+            "name": "chickpea or lentil pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount. Cook it a minute or two less than the box says; it gets soft fast.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
         }
       ]
     },
@@ -5097,6 +6297,36 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
+      ],
+      "protein_swaps": [
+        {
+          "id": "ranch-turkey-burgers-and-fries--fat-free-turkey",
+          "type": "swap",
+          "replaces": "ground-turkey",
+          "use": {
+            "key": "fat-free-ground-turkey",
+            "name": "fat-free ground turkey",
+            "qty": 1,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. It cooks a little drier, so do not overcook it.",
+          "protein": {
+            "claim": "about +18 g protein for the whole recipe (about +4.4 g per serving)",
+            "g_per_recipe": 17.7,
+            "g_per_serving": 4.4,
+            "basis": "1 lb fat-free ground turkey (FDC 172847) vs regular ground turkey (FDC 171505), raw",
+            "fdc_ids": [
+              172847,
+              171505
+            ]
+          },
+          "contains": [
+            "turkey"
+          ]
+        }
       ]
     },
     {
@@ -5428,6 +6658,36 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
+      ],
+      "protein_swaps": [
+        {
+          "id": "sneaky-veggie-meatball-subs--fat-free-turkey",
+          "type": "swap",
+          "replaces": "ground-turkey",
+          "use": {
+            "key": "fat-free-ground-turkey",
+            "name": "fat-free ground turkey",
+            "qty": 1,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. It cooks a little drier, so do not overcook it.",
+          "protein": {
+            "claim": "about +18 g protein for the whole recipe (about +4.4 g per serving)",
+            "g_per_recipe": 17.7,
+            "g_per_serving": 4.4,
+            "basis": "1 lb fat-free ground turkey (FDC 172847) vs regular ground turkey (FDC 171505), raw",
+            "fdc_ids": [
+              172847,
+              171505
+            ]
+          },
+          "contains": [
+            "turkey"
+          ]
+        }
       ]
     },
     {
@@ -5581,6 +6841,86 @@
           "minutes": 2,
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "cheeseburger-pasta-sneaky-carrots--lean-beef",
+          "type": "swap",
+          "replaces": "ground-beef",
+          "use": {
+            "key": "extra-lean-ground-beef",
+            "name": "95% lean ground beef",
+            "qty": 1,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. Leaner beef leaves little grease to pour off.",
+          "protein": {
+            "claim": "about +13 g protein for the whole recipe (about +3.2 g per serving)",
+            "g_per_recipe": 12.8,
+            "g_per_serving": 3.2,
+            "basis": "1 lb 95% lean ground beef (FDC 171790) vs 85% lean (FDC 171796), raw",
+            "fdc_ids": [
+              171790,
+              171796
+            ]
+          },
+          "contains": [
+            "beef"
+          ]
+        },
+        {
+          "id": "cheeseburger-pasta-sneaky-carrots--high-protein-wheat-pasta",
+          "type": "swap",
+          "replaces": "elbow-macaroni",
+          "use": {
+            "key": "high-protein-wheat-pasta",
+            "name": "high-protein wheat pasta (same shape)",
+            "qty": 0.5,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount, cooked the way the box says.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "cheeseburger-pasta-sneaky-carrots--chickpea-or-lentil-pasta",
+          "type": "swap",
+          "replaces": "elbow-macaroni",
+          "use": {
+            "key": "chickpea-or-lentil-pasta",
+            "name": "chickpea or lentil pasta (same shape)",
+            "qty": 0.5,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount. Cook it a minute or two less than the box says; it gets soft fast.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
         }
       ]
     },
@@ -5897,6 +7237,58 @@
           "hazard": "hot",
           "safety": "Hot stove. Keep {kid} back from the stove."
         }
+      ],
+      "protein_swaps": [
+        {
+          "id": "baked-chicken-parmesan-spaghetti--high-protein-wheat-pasta",
+          "type": "swap",
+          "replaces": "whole-wheat-spaghetti",
+          "use": {
+            "key": "high-protein-wheat-pasta",
+            "name": "high-protein wheat pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount. Whole-wheat pasta already has some protein; compare labels.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "baked-chicken-parmesan-spaghetti--chickpea-or-lentil-pasta",
+          "type": "swap",
+          "replaces": "whole-wheat-spaghetti",
+          "use": {
+            "key": "chickpea-or-lentil-pasta",
+            "name": "chickpea or lentil pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount. Cook it a minute or two less than the box says; it gets soft fast. Whole-wheat pasta already has some protein; compare labels.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        }
       ]
     },
     {
@@ -6063,6 +7455,85 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
+      ],
+      "protein_swaps": [
+        {
+          "id": "chicken-veggie-lo-mein--eggs",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "eggs",
+            "name": "eggs",
+            "qty": 2,
+            "unit": "",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Push the chicken and veggies aside and scramble 2 beaten eggs before the noodles go in.",
+          "protein": {
+            "claim": "about +13 g protein for the whole recipe (about +3.1 g per serving)",
+            "g_per_recipe": 12.6,
+            "g_per_serving": 3.1,
+            "basis": "adds 2 large eggs (FDC 171287, 50 g each)",
+            "fdc_ids": [
+              171287
+            ]
+          },
+          "contains": [
+            "egg"
+          ]
+        },
+        {
+          "id": "chicken-veggie-lo-mein--high-protein-wheat-pasta",
+          "type": "swap",
+          "replaces": "whole-wheat-spaghetti",
+          "use": {
+            "key": "high-protein-wheat-pasta",
+            "name": "high-protein wheat pasta (same shape)",
+            "qty": 0.75,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount. Whole-wheat pasta already has some protein; compare labels.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "chicken-veggie-lo-mein--chickpea-or-lentil-pasta",
+          "type": "swap",
+          "replaces": "whole-wheat-spaghetti",
+          "use": {
+            "key": "chickpea-or-lentil-pasta",
+            "name": "chickpea or lentil pasta (same shape)",
+            "qty": 0.75,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount. Cook it a minute or two less than the box says; it gets soft fast. Whole-wheat pasta already has some protein; compare labels.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        }
       ]
     },
     {
@@ -6222,6 +7693,36 @@
           "minutes": 2,
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "veggie-egg-muffins-and-toast--cottage-cheese",
+          "type": "swap",
+          "replaces": "milk",
+          "use": {
+            "key": "low-fat-cottage-cheese",
+            "name": "low-fat cottage cheese",
+            "qty": 0.25,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Whisk it into the eggs in place of the milk.",
+          "protein": {
+            "claim": "about +5 g protein for the whole recipe (about +1.2 g per serving)",
+            "g_per_recipe": 5.0,
+            "g_per_serving": 1.2,
+            "basis": "0.25 cup 1% cottage cheese (FDC 173417, 226 g/cup) vs 0.25 cup 2% milk (FDC 171267, 244 g/cup)",
+            "fdc_ids": [
+              173417,
+              171267
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
         }
       ]
     },
@@ -6534,7 +8035,2939 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
+      ],
+      "protein_swaps": [
+        {
+          "id": "turkey-pizza-stuffed-peppers--fat-free-turkey",
+          "type": "swap",
+          "replaces": "ground-turkey",
+          "use": {
+            "key": "fat-free-ground-turkey",
+            "name": "fat-free ground turkey",
+            "qty": 1,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. It cooks a little drier, so do not overcook it.",
+          "protein": {
+            "claim": "about +18 g protein for the whole recipe (about +4.4 g per serving)",
+            "g_per_recipe": 17.7,
+            "g_per_serving": 4.4,
+            "basis": "1 lb fat-free ground turkey (FDC 172847) vs regular ground turkey (FDC 171505), raw",
+            "fdc_ids": [
+              172847,
+              171505
+            ]
+          },
+          "contains": [
+            "turkey"
+          ]
+        }
       ]
+    },
+    {
+      "id": "baked-bean-and-cheese-tostadas",
+      "title": "Baked Bean and Cheese Tostadas",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 30,
+      "serves": 4,
+      "tags": [
+        "tostadas",
+        "beans",
+        "cheese"
+      ],
+      "contains": [
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "corn-tortillas",
+          "name": "corn tortillas (6-inch)",
+          "qty": 12,
+          "unit": "",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "refried-beans",
+          "name": "can of vegetarian refried beans",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 1.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "lettuce",
+          "name": "head of lettuce",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "tomato",
+          "name": "tomato",
+          "qty": 2,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "salsa",
+          "name": "mild salsa",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "optional": true
+        },
+        {
+          "key": "greek-yogurt",
+          "name": "plain Greek yogurt",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "cooking-spray",
+          "name": "cooking spray",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 400°F and spray two baking sheets.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Lay the tortillas on the sheets, spray the tops, and bake until crisp, flipping once.",
+          "minutes": 10,
+          "timer_min": 10,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Warm the beans in a bowl in the microwave, stirring once.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "kid",
+          "text": "Tear the lettuce",
+          "how": [
+            "Tear rinsed lettuce into small pieces",
+            "Pile it in a bowl",
+            "Count 10 pieces"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Dice the tomatoes.",
+          "minutes": 3,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Spread beans on each tostada and sprinkle with cheese.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Bake until the cheese melts.",
+          "minutes": 4,
+          "timer_min": 4,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "kid",
+          "text": "Fill the topping bowls",
+          "how": [
+            "Spoon salsa into one bowl",
+            "Spoon yogurt into another",
+            "Name the colors"
+          ],
+          "learns": [
+            "sorting",
+            "colors"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Let them cool a few minutes, then top with lettuce, tomatoes, salsa and yogurt.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "tomato-tortellini-soup",
+      "title": "Tomato Tortellini Soup with Spinach",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 30,
+      "serves": 4,
+      "tags": [
+        "soup",
+        "tortellini"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "egg",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "chicken-broth",
+          "name": "chicken broth (32 oz carton)",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry"
+        },
+        {
+          "key": "diced-tomatoes",
+          "name": "can of diced tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "tomato-soup",
+          "name": "can of tomato soup",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "cheese-tortellini",
+          "name": "refrigerated cheese tortellini (20 oz)",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "dairy",
+          "check_label": true
+        },
+        {
+          "key": "baby-spinach",
+          "name": "baby spinach",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "produce"
+        },
+        {
+          "key": "parmesan",
+          "name": "grated Parmesan",
+          "qty": 0.25,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "italian-seasoning",
+          "name": "Italian seasoning",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Dice the onion.",
+          "minutes": 3,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the onion in a spoon of olive oil in a big pot over medium until soft.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the broth, diced tomatoes, tomato soup and Italian seasoning, and bring to a bubble.",
+          "minutes": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Tear the spinach",
+          "how": [
+            "Tear the spinach into little pieces",
+            "Pile it in a bowl",
+            "Feel the leaves: soft!"
+          ],
+          "learns": [
+            "senses",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Add the tortellini and simmer until soft.",
+          "minutes": 7,
+          "timer_min": 7,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the spinach until it wilts.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Ladle into bowls and let them cool a few minutes.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "kid",
+          "text": "Sprinkle the cheese",
+          "how": [
+            "Count 5 pinches of Parmesan",
+            "Sprinkle them over each cooled bowl"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "baked-sweet-and-sour-chicken",
+      "title": "Baked Sweet and Sour Chicken with Rice",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 30,
+      "total_min": 45,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "rice"
+      ],
+      "contains": [
+        "chicken",
+        "egg",
+        "gluten",
+        "soy"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-breast",
+          "name": "boneless chicken breasts",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "cornstarch",
+          "name": "cornstarch",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "eggs",
+          "name": "eggs",
+          "qty": 2,
+          "unit": "",
+          "section": "dairy"
+        },
+        {
+          "key": "ketchup",
+          "name": "ketchup",
+          "qty": 4,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "honey",
+          "name": "honey",
+          "qty": 4,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "rice-vinegar",
+          "name": "rice vinegar",
+          "qty": 3,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "low-sodium-soy-sauce",
+          "name": "low-sodium soy sauce",
+          "qty": 1,
+          "unit": "tbsp",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "pineapple-chunks",
+          "name": "can of pineapple chunks",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "bell-pepper",
+          "name": "bell pepper",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "instant-rice",
+          "name": "instant rice",
+          "qty": 2,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "cooking-spray",
+          "name": "cooking spray",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 425°F and spray a baking sheet.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Cut the chicken into bite-size pieces and the pepper into squares. Wash your hands after.",
+          "minutes": 7,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Toss the chicken in the cornstarch, dip it in beaten egg, and spread it on the sheet. Spray the tops.",
+          "minutes": 6
+        },
+        {
+          "who": "adult",
+          "text": "Bake until golden, flipping halfway.",
+          "minutes": 15,
+          "timer_min": 15,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "kid",
+          "text": "Mix the sweet and sour sauce",
+          "how": [
+            "Squeeze ketchup and honey into a bowl with help",
+            "Add the vinegar and soy sauce",
+            "Stir 10 times"
+          ],
+          "learns": [
+            "counting",
+            "following-directions"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Cook the rice the way the box says.",
+          "minutes": 6,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Count the pineapple",
+          "how": [
+            "Spoon the drained pineapple into a bowl",
+            "Count 10 chunks",
+            "Name the color: yellow!"
+          ],
+          "learns": [
+            "counting",
+            "colors"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Put the chicken, pepper and pineapple in a baking dish, pour on the sauce, and toss.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Bake until sticky and bubbly.",
+          "minutes": 8,
+          "timer_min": 8,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Serve over the rice once it cools a little.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "oven-french-toast-sticks",
+      "title": "Oven French Toast Sticks with Berries",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 30,
+      "serves": 4,
+      "tags": [
+        "breakfast",
+        "french toast"
+      ],
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "sandwich-bread",
+          "name": "sandwich bread",
+          "qty": 8,
+          "unit": "slice",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "eggs",
+          "name": "eggs",
+          "qty": 4,
+          "unit": "",
+          "section": "dairy"
+        },
+        {
+          "key": "milk",
+          "name": "milk",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "ground-cinnamon",
+          "name": "ground cinnamon",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "maple-syrup",
+          "name": "maple syrup",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "blueberries",
+          "name": "blueberries",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "produce"
+        },
+        {
+          "key": "greek-yogurt",
+          "name": "plain Greek yogurt",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "cooking-spray",
+          "name": "cooking spray",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 400°F and spray a baking sheet well.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Cut each slice of bread into 3 sticks.",
+          "minutes": 3,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Crack the eggs into a wide bowl and add the milk and cinnamon.",
+          "minutes": 2
+        },
+        {
+          "who": "kid",
+          "text": "Whisk the egg mix",
+          "how": [
+            "Stir the eggs, milk and cinnamon 10 times",
+            "Watch the brown swirls mix in"
+          ],
+          "learns": [
+            "counting",
+            "colors"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Dip each stick quickly in the egg mix and lay it on the sheet.",
+          "minutes": 5
+        },
+        {
+          "who": "adult",
+          "text": "Bake 8 minutes, flip, then bake until golden.",
+          "minutes": 14,
+          "timer_min": 14,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "kid",
+          "text": "Rinse the berries",
+          "how": [
+            "Rinse the berries in a strainer",
+            "Count 10 berries",
+            "Put them in a bowl"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Let the sticks cool a few minutes, then serve with syrup for dipping, berries and yogurt.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "sheet-pan-chicken-fajitas",
+      "title": "Sheet-Pan Chicken Fajitas",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 40,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "fajitas"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-breast",
+          "name": "boneless chicken breasts",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "bell-pepper",
+          "name": "bell pepper",
+          "qty": 3,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "ground-cumin",
+          "name": "ground cumin",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "paprika",
+          "name": "paprika",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "lime",
+          "name": "lime",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "whole-wheat-tortillas",
+          "name": "whole-wheat tortillas (8-inch)",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "salsa",
+          "name": "mild salsa",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "optional": true
+        },
+        {
+          "key": "greek-yogurt",
+          "name": "plain Greek yogurt",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 425°F and spray a big baking sheet.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Slice the chicken, peppers and onion into thin strips. Wash your hands after.",
+          "minutes": 10,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "kid",
+          "text": "Mix the spices",
+          "how": [
+            "Shake the cumin and paprika into a cup",
+            "Add a shake of garlic powder",
+            "Stir with a spoon"
+          ],
+          "learns": [
+            "following-directions",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Toss everything on the sheet with olive oil, the spices and a pinch of salt.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Roast until the chicken has no pink inside, stirring once.",
+          "minutes": 20,
+          "timer_min": 20,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Wrap the tortillas in foil and warm them in the oven for the last 5 minutes.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "kid",
+          "text": "Fill the topping bowls",
+          "how": [
+            "Spoon salsa into one bowl",
+            "Spoon yogurt into another",
+            "Count the bowls"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Squeeze the lime over the sheet and let everyone fill their tortillas.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "chicken-and-corn-chowder",
+      "title": "Chicken and Corn Chowder",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 25,
+      "total_min": 40,
+      "serves": 4,
+      "tags": [
+        "soup",
+        "chicken",
+        "corn"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "cooked-chicken",
+          "name": "cooked chicken (a store rotisserie chicken works)",
+          "qty": 2,
+          "unit": "cup",
+          "section": "meat"
+        },
+        {
+          "key": "baby-potatoes",
+          "name": "baby potatoes",
+          "qty": 1,
+          "unit": "lb",
+          "section": "produce"
+        },
+        {
+          "key": "frozen-corn",
+          "name": "frozen corn",
+          "qty": 1,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "chicken-broth",
+          "name": "chicken broth (32 oz carton)",
+          "qty": 0.5,
+          "unit": "box",
+          "section": "pantry"
+        },
+        {
+          "key": "milk",
+          "name": "milk",
+          "qty": 2,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "butter",
+          "name": "butter",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "flour",
+          "name": "flour",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Dice the onion and cut the potatoes into small cubes.",
+          "minutes": 6,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Melt 2 tablespoons of butter in a big pot over medium and cook the onion until soft.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in 3 tablespoons of flour and cook 1 minute.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Slowly whisk in the broth and milk, then add the potatoes, salt and pepper.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Simmer on low, stirring often, until the potatoes are soft.",
+          "minutes": 15,
+          "timer_min": 15,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Pour the corn",
+          "how": [
+            "Pour the frozen corn into a big cup",
+            "Count 10 kernels on the table",
+            "Name the color: yellow!"
+          ],
+          "learns": [
+            "counting",
+            "colors"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the corn and chicken and heat for 5 minutes.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Ladle into bowls and let them cool a few minutes.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "kid",
+          "text": "Sprinkle the cheese",
+          "how": [
+            "Pinch some cheese",
+            "Sprinkle it on each cooled bowl"
+          ],
+          "learns": [
+            "helping"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "veggie-pasta-primavera",
+      "title": "Veggie Pasta Primavera",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 25,
+      "total_min": 30,
+      "serves": 4,
+      "tags": [
+        "pasta"
+      ],
+      "contains": [
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "bowtie-pasta",
+          "name": "bowtie pasta",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry"
+        },
+        {
+          "key": "zucchini",
+          "name": "zucchini",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "bell-pepper",
+          "name": "bell pepper",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "cherry-tomatoes",
+          "name": "cherry tomatoes",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "produce"
+        },
+        {
+          "key": "frozen-peas",
+          "name": "frozen peas",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "parmesan",
+          "name": "grated Parmesan",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Fill a big pot with water, add a spoonful of salt, and set it on high heat.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Dice the zucchini and pepper, and halve the tomatoes.",
+          "minutes": 6,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "kid",
+          "text": "Wash the tomatoes",
+          "how": [
+            "Swish the tomatoes in a bowl of cool water",
+            "Count 10 tomatoes",
+            "Sort the big ones from the little ones"
+          ],
+          "learns": [
+            "counting",
+            "sorting"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Cook the pasta until soft, adding the peas for the last 2 minutes.",
+          "minutes": 11,
+          "timer_min": 11,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Meanwhile, cook the zucchini, pepper and tomatoes in olive oil in a big skillet over medium until soft.",
+          "minutes": 6,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Scoop out half a cup of the pasta water, then drain the pasta and peas.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Toss the pasta with the veggies, the Parmesan, a shake of garlic powder and a splash of pasta water.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Shake on the cheese",
+          "how": [
+            "Shake a little cheese on each cooled bowl",
+            "Count the bowls"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Let it cool a minute before serving.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "chicken-and-egg-rice-bowls",
+      "title": "Japanese-Style Chicken and Egg Rice Bowls",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 25,
+      "total_min": 30,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "rice",
+        "bowls",
+        "eggs"
+      ],
+      "contains": [
+        "chicken",
+        "egg",
+        "gluten",
+        "soy"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-thighs",
+          "name": "boneless chicken thighs",
+          "qty": 1,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "eggs",
+          "name": "eggs",
+          "qty": 4,
+          "unit": "",
+          "section": "dairy"
+        },
+        {
+          "key": "chicken-broth",
+          "name": "chicken broth (32 oz carton)",
+          "qty": 0.25,
+          "unit": "box",
+          "section": "pantry"
+        },
+        {
+          "key": "low-sodium-soy-sauce",
+          "name": "low-sodium soy sauce",
+          "qty": 3,
+          "unit": "tbsp",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "honey",
+          "name": "honey",
+          "qty": 1,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "instant-rice",
+          "name": "instant rice",
+          "qty": 2,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "frozen-peas",
+          "name": "frozen peas",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "frozen"
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Cook the rice the way the box says.",
+          "minutes": 6,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Slice the onion thin and cut the chicken into bite-size pieces. Wash your hands after.",
+          "minutes": 7,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "kid",
+          "text": "Crack the eggs",
+          "how": [
+            "Tap each egg on the edge of a bowl with help",
+            "Open it into the bowl",
+            "Stir with a fork until yellow"
+          ],
+          "learns": [
+            "following-directions",
+            "colors"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Simmer 1 cup of the broth with the soy sauce, honey and onion in a big skillet for 4 minutes.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the chicken and peas and simmer until the chicken has no pink inside.",
+          "minutes": 8,
+          "timer_min": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Pour the eggs over the top, cover, and cook on low until just set.",
+          "minutes": 3,
+          "timer_min": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Set the table",
+          "how": [
+            "Count a plate for each person",
+            "Put a spoon by each plate",
+            "Fold one napkin each"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Spoon over bowls of rice and let it cool a minute before serving.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ]
+    },
+    {
+      "id": "chicken-burrito-bowls",
+      "title": "Chicken Burrito Bowls with Brown Rice",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 55,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "rice",
+        "bowls"
+      ],
+      "contains": [
+        "chicken",
+        "dairy"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-breast",
+          "name": "boneless chicken breasts",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "brown-rice",
+          "name": "brown rice",
+          "qty": 1,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "black-beans",
+          "name": "can of black beans",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "frozen-corn",
+          "name": "frozen corn",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "salsa",
+          "name": "mild salsa",
+          "qty": 0.5,
+          "unit": "jar",
+          "section": "pantry"
+        },
+        {
+          "key": "greek-yogurt",
+          "name": "plain Greek yogurt",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "ground-cumin",
+          "name": "ground cumin",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "paprika",
+          "name": "paprika",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "oil",
+          "name": "oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Rinse the brown rice, then simmer it in 2 cups of water, covered, until tender.",
+          "minutes": 45,
+          "timer_min": 45,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Cut the chicken into bite-size pieces. Wash your hands after.",
+          "minutes": 5,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "kid",
+          "text": "Mix the spices",
+          "how": [
+            "Shake the cumin and paprika into a small bowl",
+            "Add 3 shakes of garlic powder and a pinch of salt",
+            "Stir and smell: smoky!"
+          ],
+          "learns": [
+            "counting",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Toss the chicken with the spices and cook it in a little oil in a skillet over medium-high until no pink is left.",
+          "minutes": 8,
+          "timer_min": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Rinse and drain the beans, then stir them and the corn into the skillet until hot.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Fill the topping bowls",
+          "how": [
+            "Spoon salsa into one bowl",
+            "Spoon yogurt into another",
+            "Sprinkle cheese into a third"
+          ],
+          "learns": [
+            "sorting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Scoop rice into bowls, add the chicken and beans, and let everyone add toppings.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 56,
+      "protein_note": "About 56 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts."
+    },
+    {
+      "id": "italian-chicken-white-bean-skillet",
+      "title": "Italian Chicken and White Bean Skillet",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 35,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "beans"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-breast",
+          "name": "boneless chicken breasts",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "white-beans",
+          "name": "can of white beans",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "diced-tomatoes",
+          "name": "can of diced tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "baby-spinach",
+          "name": "baby spinach",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "produce"
+        },
+        {
+          "key": "parmesan",
+          "name": "grated Parmesan",
+          "qty": 0.25,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "italian-seasoning",
+          "name": "Italian seasoning",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "whole-wheat-bread",
+          "name": "whole-wheat bread",
+          "qty": 4,
+          "unit": "slice",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Cut the chicken into bite-size pieces. Wash your hands after.",
+          "minutes": 5,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Brown the chicken in a spoon of olive oil in a big skillet over medium-high.",
+          "minutes": 6,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the tomatoes, drained beans, Italian seasoning, a shake of garlic powder and a pinch of salt.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Simmer on low until the chicken has no pink inside.",
+          "minutes": 10,
+          "timer_min": 10,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Tear the spinach",
+          "how": [
+            "Tear the spinach into little pieces",
+            "Pile it in a bowl",
+            "Is the pile big or small?"
+          ],
+          "learns": [
+            "senses",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the spinach until it wilts.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Toast the bread.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "kid",
+          "text": "Set the table",
+          "how": [
+            "Count a plate for each person",
+            "Put a fork by each plate",
+            "Fold one napkin each"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Spoon into bowls, top with Parmesan, and serve with the toast.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 53,
+      "protein_note": "About 53 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts."
+    },
+    {
+      "id": "beef-and-broccoli-brown-rice",
+      "title": "Beef and Broccoli with Brown Rice",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 25,
+      "total_min": 55,
+      "serves": 4,
+      "tags": [
+        "beef",
+        "rice",
+        "broccoli"
+      ],
+      "contains": [
+        "beef",
+        "gluten",
+        "soy"
+      ],
+      "ingredients": [
+        {
+          "key": "sirloin-steak",
+          "name": "top sirloin steak",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "frozen-broccoli",
+          "name": "frozen broccoli",
+          "qty": 1,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "low-sodium-soy-sauce",
+          "name": "low-sodium soy sauce",
+          "qty": 4,
+          "unit": "tbsp",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "honey",
+          "name": "honey",
+          "qty": 2,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "cornstarch",
+          "name": "cornstarch",
+          "qty": 1,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "brown-rice",
+          "name": "brown rice",
+          "qty": 1,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "ground-ginger",
+          "name": "ground ginger",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "oil",
+          "name": "oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Rinse the brown rice, then simmer it in 2 cups of water, covered, until tender.",
+          "minutes": 45,
+          "timer_min": 45,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Slice the steak into thin strips across the grain. Wash your hands after.",
+          "minutes": 6,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "kid",
+          "text": "Mix the sauce",
+          "how": [
+            "Pour the soy sauce and honey into a cup with help",
+            "Add the cornstarch and ginger",
+            "Stir 10 times"
+          ],
+          "learns": [
+            "counting",
+            "following-directions"
+          ]
+        },
+        {
+          "who": "kid",
+          "text": "Count the broccoli trees",
+          "how": [
+            "Pour the frozen broccoli into a bowl",
+            "Count 10 little trees",
+            "Feel them: cold!"
+          ],
+          "learns": [
+            "counting",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Steam the broccoli in the microwave the way the bag says.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the steak in a little oil in a big skillet over high heat, in two batches, until browned.",
+          "minutes": 6,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Put all the steak back, pour in the sauce with a shake of garlic powder, and stir until glossy.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the broccoli and serve over the rice once it cools a little.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 41,
+      "protein_note": "About 41 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts."
+    },
+    {
+      "id": "turkey-sweet-potato-breakfast-hash",
+      "title": "Turkey and Sweet Potato Breakfast Hash with Eggs",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 30,
+      "total_min": 45,
+      "serves": 4,
+      "tags": [
+        "breakfast",
+        "eggs",
+        "turkey"
+      ],
+      "contains": [
+        "dairy",
+        "egg",
+        "turkey"
+      ],
+      "ingredients": [
+        {
+          "key": "lean-ground-turkey",
+          "name": "93% lean ground turkey",
+          "qty": 1,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "sweet-potatoes",
+          "name": "sweet potatoes",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "produce"
+        },
+        {
+          "key": "bell-pepper",
+          "name": "bell pepper",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "eggs",
+          "name": "eggs",
+          "qty": 8,
+          "unit": "",
+          "section": "dairy"
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 0.25,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "paprika",
+          "name": "paprika",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "oil",
+          "name": "oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "kid",
+          "text": "Wash the veggies",
+          "how": [
+            "Scrub the sweet potatoes in cool water",
+            "Pat the pepper dry with a towel",
+            "Say each color out loud"
+          ],
+          "learns": [
+            "colors",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Dice the sweet potatoes, pepper and onion small.",
+          "minutes": 8,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Brown the turkey and onion in a little oil in a big skillet over medium-high.",
+          "minutes": 7,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the sweet potatoes, pepper, paprika and salt, cover, and cook until the potatoes are soft, stirring now and then.",
+          "minutes": 12,
+          "timer_min": 12,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Crack the eggs",
+          "how": [
+            "Tap each egg on the edge of a bowl with help",
+            "Open it into the bowl",
+            "Count all 8 eggs"
+          ],
+          "learns": [
+            "counting",
+            "following-directions"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Make 8 little wells in the hash and slide one egg into each.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Cover and cook on low until the egg whites are set.",
+          "minutes": 6,
+          "timer_min": 6,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Sprinkle on the cheese, then let it cool a minute before serving.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 39,
+      "protein_note": "About 39 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts."
+    },
+    {
+      "id": "sheet-pan-pork-tenderloin",
+      "title": "Sheet-Pan Pork Tenderloin with Potatoes and Green Beans",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 55,
+      "serves": 4,
+      "tags": [
+        "pork",
+        "potatoes"
+      ],
+      "contains": [
+        "pork"
+      ],
+      "ingredients": [
+        {
+          "key": "pork-tenderloin",
+          "name": "pork tenderloin",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "baby-potatoes",
+          "name": "baby potatoes",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "produce"
+        },
+        {
+          "key": "green-beans",
+          "name": "fresh green beans",
+          "qty": 1,
+          "unit": "lb",
+          "section": "produce"
+        },
+        {
+          "key": "honey",
+          "name": "honey",
+          "qty": 1,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "paprika",
+          "name": "paprika",
+          "qty": 2,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 425°F and spray or line a big baking sheet.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Cut the potatoes in half.",
+          "minutes": 4,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Toss the potatoes with olive oil and salt on the sheet and roast them first.",
+          "minutes": 15,
+          "timer_min": 15,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "kid",
+          "text": "Snap the beans",
+          "how": [
+            "Snap the tip off each green bean",
+            "Put tips in one bowl and beans in another",
+            "Count 10 beans"
+          ],
+          "learns": [
+            "sorting",
+            "counting"
+          ]
+        },
+        {
+          "who": "kid",
+          "text": "Mix the rub",
+          "how": [
+            "Shake the paprika and garlic powder into a cup",
+            "Add a pinch of salt",
+            "Stir and sniff: smoky!"
+          ],
+          "learns": [
+            "senses",
+            "following-directions"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Rub the pork with the honey and the spice mix. Wash your hands after.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Push the potatoes aside, add the pork and green beans, drizzle the beans with oil, and roast.",
+          "minutes": 22,
+          "timer_min": 22,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Check the thickest part of the pork reads 145°F, then let it rest 5 minutes.",
+          "minutes": 5,
+          "timer_min": 5,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Slice the pork and serve with the potatoes and beans.",
+          "minutes": 2,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 41,
+      "protein_note": "About 41 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts."
+    },
+    {
+      "id": "mild-yogurt-chicken-curry",
+      "title": "Mild Yogurt Chicken Curry with Brown Rice",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 25,
+      "total_min": 55,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "rice",
+        "curry"
+      ],
+      "contains": [
+        "chicken",
+        "dairy"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-breast",
+          "name": "boneless chicken breasts",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "greek-yogurt",
+          "name": "plain Greek yogurt",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "mild-curry-powder",
+          "name": "mild curry powder",
+          "qty": 1,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "diced-tomatoes",
+          "name": "can of diced tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "frozen-peas",
+          "name": "frozen peas",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "brown-rice",
+          "name": "brown rice",
+          "qty": 1,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "oil",
+          "name": "oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Rinse the brown rice, then simmer it in 2 cups of water, covered, until tender.",
+          "minutes": 45,
+          "timer_min": 45,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Dice the onion and cut the chicken into bite-size pieces. Wash your hands after.",
+          "minutes": 7,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "kid",
+          "text": "Stir the yogurt sauce",
+          "how": [
+            "Spoon the yogurt into a bowl",
+            "Shake in the curry powder",
+            "Stir until it turns yellow!"
+          ],
+          "learns": [
+            "colors",
+            "following-directions"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Cook the onion in a little oil in a big skillet over medium until soft.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the chicken and cook until it is white on the outside.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the tomatoes, peas and a pinch of salt, and simmer until the chicken has no pink inside.",
+          "minutes": 10,
+          "timer_min": 10,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Turn the heat to low and stir in the yogurt sauce until warm. Do not let it bubble.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Set the table",
+          "how": [
+            "Count a plate for each person",
+            "Put a fork by each plate",
+            "Fold one napkin each"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Serve the curry over the rice once it cools a little.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 50,
+      "protein_note": "About 50 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts."
+    },
+    {
+      "id": "chicken-broccoli-stuffed-sweet-potatoes",
+      "title": "Cheesy Chicken and Broccoli Stuffed Sweet Potatoes",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 60,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "potatoes",
+        "cheese"
+      ],
+      "contains": [
+        "chicken",
+        "dairy"
+      ],
+      "ingredients": [
+        {
+          "key": "sweet-potatoes",
+          "name": "sweet potatoes",
+          "qty": 2,
+          "unit": "lb",
+          "section": "produce"
+        },
+        {
+          "key": "chicken-breast",
+          "name": "boneless chicken breasts",
+          "qty": 1.25,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "frozen-broccoli",
+          "name": "frozen broccoli",
+          "qty": 1,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 0.75,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "greek-yogurt",
+          "name": "plain Greek yogurt",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 400°F and line a baking sheet with foil.",
+          "minutes": 2
+        },
+        {
+          "who": "kid",
+          "text": "Scrub the potatoes",
+          "how": [
+            "Scrub each sweet potato under cool water",
+            "Pat it dry with a towel",
+            "Count the potatoes"
+          ],
+          "learns": [
+            "counting",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Poke each potato 5 times with a fork, set them on the sheet, and bake.",
+          "minutes": 25,
+          "timer_min": 25,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Season the chicken with salt, pepper and 1 teaspoon of garlic powder, add it to the sheet, and bake 25 more minutes.",
+          "minutes": 25,
+          "timer_min": 25,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Steam the broccoli in the microwave the way the bag says.",
+          "minutes": 6,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Check the chicken has no pink inside, shred it with two forks, and stir in the broccoli and half the cheese.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Split the potatoes open, fill them with the chicken mix, and top with the rest of the cheese.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "kid",
+          "text": "Get the yogurt ready",
+          "how": [
+            "Spoon the yogurt into a small bowl",
+            "Put a spoon in it for everyone"
+          ],
+          "learns": [
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Let them cool a few minutes, then serve with a spoon of yogurt on top.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 45,
+      "protein_note": "About 45 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts."
+    },
+    {
+      "id": "turkey-egg-roll-in-a-bowl",
+      "title": "Turkey Egg Roll in a Bowl",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 50,
+      "serves": 4,
+      "tags": [
+        "turkey",
+        "rice",
+        "bowls"
+      ],
+      "contains": [
+        "egg",
+        "gluten",
+        "soy",
+        "turkey"
+      ],
+      "ingredients": [
+        {
+          "key": "lean-ground-turkey",
+          "name": "93% lean ground turkey",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "coleslaw-mix",
+          "name": "coleslaw mix",
+          "qty": 1,
+          "unit": "bag",
+          "section": "produce"
+        },
+        {
+          "key": "low-sodium-soy-sauce",
+          "name": "low-sodium soy sauce",
+          "qty": 3,
+          "unit": "tbsp",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "rice-vinegar",
+          "name": "rice vinegar",
+          "qty": 1,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "ground-ginger",
+          "name": "ground ginger",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "eggs",
+          "name": "eggs",
+          "qty": 2,
+          "unit": "",
+          "section": "dairy"
+        },
+        {
+          "key": "brown-rice",
+          "name": "brown rice",
+          "qty": 1,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "oil",
+          "name": "oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Rinse the brown rice, then simmer it in 2 cups of water, covered, until tender.",
+          "minutes": 45,
+          "timer_min": 45,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Fluff the slaw",
+          "how": [
+            "Pour the slaw mix into a big bowl",
+            "Fluff it with clean hands",
+            "Find the orange carrot bits"
+          ],
+          "learns": [
+            "colors",
+            "senses"
+          ]
+        },
+        {
+          "who": "kid",
+          "text": "Mix the sauce",
+          "how": [
+            "Pour the soy sauce and vinegar into a cup with help",
+            "Add the ginger",
+            "Stir 10 times"
+          ],
+          "learns": [
+            "counting",
+            "following-directions"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Brown the turkey in a little oil in a big skillet over medium-high until no pink is left.",
+          "minutes": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Push the turkey to one side, crack the eggs into the empty side, and scramble them.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the slaw mix, the sauce and a shake of garlic powder, and stir until the cabbage is soft.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Serve over the rice once it cools a little.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 41,
+      "protein_note": "About 41 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts."
+    },
+    {
+      "id": "mediterranean-chicken-chickpea-quinoa-bowls",
+      "title": "Mediterranean Chicken and Chickpea Quinoa Bowls",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 30,
+      "total_min": 40,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "bowls"
+      ],
+      "contains": [
+        "chicken",
+        "dairy"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-breast",
+          "name": "boneless chicken breasts",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "quinoa",
+          "name": "quinoa",
+          "qty": 1,
+          "unit": "cup",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "chickpeas",
+          "name": "can of chickpeas",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "cucumber",
+          "name": "cucumber",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "tomato",
+          "name": "tomato",
+          "qty": 2,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "feta",
+          "name": "crumbled feta cheese",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "lemon",
+          "name": "lemon",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "ground-cumin",
+          "name": "ground cumin",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "paprika",
+          "name": "paprika",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Rinse the quinoa, then simmer it in 2 cups of water, covered, until the water is gone.",
+          "minutes": 15,
+          "timer_min": 15,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Cut the chicken into bite-size pieces. Wash your hands after.",
+          "minutes": 5,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Toss the chicken with the cumin, paprika and salt, and cook it in olive oil in a skillet over medium-high until no pink is left.",
+          "minutes": 8,
+          "timer_min": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Rinse the chickpeas",
+          "how": [
+            "Shake the strainer of chickpeas under cool water",
+            "Count 10 chickpeas",
+            "Feel one: smooth and round"
+          ],
+          "learns": [
+            "counting",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Dice the cucumber and tomatoes.",
+          "minutes": 5,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Fill bowls with quinoa, chicken, chickpeas, cucumber and tomatoes.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "kid",
+          "text": "Crumble the feta",
+          "how": [
+            "Crumble the feta into a small bowl with clean fingers",
+            "Sprinkle a little on each cool bowl"
+          ],
+          "learns": [
+            "senses",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Squeeze the lemon over the top and add a drizzle of olive oil.",
+          "minutes": 1
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 54,
+      "protein_note": "About 54 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts."
+    },
+    {
+      "id": "chicken-tortilla-soup",
+      "title": "Chicken Tortilla Soup",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 25,
+      "total_min": 45,
+      "serves": 6,
+      "tags": [
+        "soup",
+        "chicken"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-breast",
+          "name": "boneless chicken breasts",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "chicken-broth",
+          "name": "chicken broth (32 oz carton)",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry"
+        },
+        {
+          "key": "black-beans",
+          "name": "can of black beans",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "diced-tomatoes",
+          "name": "can of diced tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "frozen-corn",
+          "name": "frozen corn",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "ground-cumin",
+          "name": "ground cumin",
+          "qty": 2,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "corn-tortillas",
+          "name": "corn tortillas (6-inch)",
+          "qty": 4,
+          "unit": "",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "greek-yogurt",
+          "name": "plain Greek yogurt",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "lime",
+          "name": "lime",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "oil",
+          "name": "oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "cooking-spray",
+          "name": "cooking spray",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Dice the onion.",
+          "minutes": 3,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the onion in a little oil in a big pot over medium until soft.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the broth, tomatoes, cumin and whole chicken breasts. Cover and simmer until the chicken has no pink inside.",
+          "minutes": 20,
+          "timer_min": 20,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Heat the oven to 400°F and spray a baking sheet.",
+          "minutes": 1
+        },
+        {
+          "who": "kid",
+          "text": "Tear the tortillas",
+          "how": [
+            "Tear each tortilla into thin strips",
+            "Lay them in one layer on the tray",
+            "Count the strips"
+          ],
+          "learns": [
+            "counting",
+            "shapes"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Spray the strips and bake until crisp.",
+          "minutes": 10,
+          "timer_min": 10,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Lift out the chicken, shred it with two forks, and put it back in the pot.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Add the drained beans and corn and simmer until hot.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Ladle into bowls, squeeze on lime, and top with yogurt and tortilla strips once cooled a little.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 35,
+      "protein_note": "About 35 g protein per serving (6 servings), worked out from USDA FoodData Central values for these amounts."
     },
     {
       "id": "crispy-oven-wings",
@@ -6806,6 +11239,89 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
+      ],
+      "protein_swaps": [
+        {
+          "id": "loaded-sheet-pan-nachos--greek-yogurt",
+          "type": "swap",
+          "replaces": "sour-cream",
+          "use": {
+            "key": "greek-yogurt",
+            "name": "plain Greek yogurt",
+            "qty": 0.5,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount, stirred in cold. Tangier than sour cream.",
+          "protein": {
+            "claim": "about +7 g protein for the whole recipe (about +3.3 g per serving)",
+            "g_per_recipe": 6.6,
+            "g_per_serving": 3.3,
+            "basis": "0.5 cup plain Greek yogurt (FDC 171304, counted at 226.7 g/cup) vs 0.5 cup reduced-fat sour cream (FDC 171256, 242 g/cup)",
+            "fdc_ids": [
+              171304,
+              171256
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "loaded-sheet-pan-nachos--lean-beef",
+          "type": "swap",
+          "replaces": "ground-beef",
+          "use": {
+            "key": "extra-lean-ground-beef",
+            "name": "95% lean ground beef",
+            "qty": 1,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. Leaner beef leaves little grease to pour off.",
+          "protein": {
+            "claim": "about +13 g protein for the whole recipe (about +6.4 g per serving)",
+            "g_per_recipe": 12.8,
+            "g_per_serving": 6.4,
+            "basis": "1 lb 95% lean ground beef (FDC 171790) vs 85% lean (FDC 171796), raw",
+            "fdc_ids": [
+              171790,
+              171796
+            ]
+          },
+          "contains": [
+            "beef"
+          ]
+        },
+        {
+          "id": "loaded-sheet-pan-nachos--protein-chips",
+          "type": "swap",
+          "replaces": "tortilla-chips",
+          "use": {
+            "key": "protein-tortilla-chips",
+            "name": "high-protein tortilla chips",
+            "qty": 1,
+            "unit": "bag",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Many protein chips are made on shared lines.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        }
       ]
     },
     {
@@ -6935,6 +11451,64 @@
           "minutes": 2,
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "game-day-chili--greek-yogurt",
+          "type": "swap",
+          "replaces": "sour-cream",
+          "use": {
+            "key": "greek-yogurt",
+            "name": "plain Greek yogurt",
+            "qty": 0.5,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount, stirred in cold. Tangier than sour cream.",
+          "protein": {
+            "claim": "about +7 g protein for the whole recipe (about +1.6 g per serving)",
+            "g_per_recipe": 6.6,
+            "g_per_serving": 1.6,
+            "basis": "0.5 cup plain Greek yogurt (FDC 171304, counted at 226.7 g/cup) vs 0.5 cup reduced-fat sour cream (FDC 171256, 242 g/cup)",
+            "fdc_ids": [
+              171304,
+              171256
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "game-day-chili--lean-beef",
+          "type": "swap",
+          "replaces": "ground-beef",
+          "use": {
+            "key": "extra-lean-ground-beef",
+            "name": "95% lean ground beef",
+            "qty": 1.5,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. Leaner beef leaves little grease to pour off.",
+          "protein": {
+            "claim": "about +19 g protein for the whole recipe (about +4.8 g per serving)",
+            "g_per_recipe": 19.2,
+            "g_per_serving": 4.8,
+            "basis": "1.5 lb 95% lean ground beef (FDC 171790) vs 85% lean (FDC 171796), raw",
+            "fdc_ids": [
+              171790,
+              171796
+            ]
+          },
+          "contains": [
+            "beef"
+          ]
         }
       ]
     },
@@ -7390,6 +11964,33 @@
           "minutes": 5,
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "buffalo-chicken-dip--protein-chips",
+          "type": "swap",
+          "replaces": "tortilla-chips",
+          "use": {
+            "key": "protein-tortilla-chips",
+            "name": "high-protein tortilla chips",
+            "qty": 1,
+            "unit": "bag",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Many protein chips are made on shared lines.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
         }
       ]
     },

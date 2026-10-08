@@ -194,6 +194,51 @@ export function rangeLabel(list) {
 // Design's label line for store-bought items that are often marked "may contain".
 export const LABEL_LINE = 'Check the label for nut warnings.';
 export const LABEL_SUFFIX = ' (check label for nut warnings)';
+// Every packaged protein swap (check_label true) adds this gray caption line under the label line.
+// It carries the "check the label" advice, so swap notes don't repeat it (Chef trimmed them, 2026-10-08).
+export const SWAP_LABEL_LINE = "Check the label for 'may contain' warnings.";
+// D4 (CEO ruling): on every bbq-sauce line, next to the label line, styled like the nut line (not gray).
+// Exact wording (Design: capital P, closing period); a test keeps it on.
+export const BBQ_NOTE = 'Pick a BBQ sauce with no fish or anchovy (Worcestershire), check the label.';
+export const BBQ_KEY = 'bbq-sauce';
+
+// The note lines under one ingredient (What you need, Grocery): label line first, then the BBQ sauce note.
+export function ingredientNotes(ing) {
+  if (!ing) return [];
+  const out = [];
+  if (ing.check_label === true || ing.checkLabel === true) out.push(LABEL_LINE);
+  if (ing.key === BBQ_KEY) out.push(BBQ_NOTE);
+  return out;
+}
+
+// Protein per serving, only when the data has a number (never worked out here).
+export const PROTEIN_SOURCE_LINE = 'Worked out from USDA FoodData Central for these amounts.';
+export function proteinLine(r) {
+  const g = r && r.protein_g_per_serving;
+  return typeof g === 'number' && Number.isFinite(g) ? `About ${g} g protein per serving` : '';
+}
+
+// Display only: a trailing "(...)" in a swap's name reads ", ..." so it doesn't sit next to the amount's brackets.
+// "high-protein wheat pasta (same shape)" -> "high-protein wheat pasta, same shape". The data is unchanged.
+export function swapUseName(name) {
+  return String(name || '').replace(/\s*\(([^()]+)\)\s*$/, (m, inner) => `, ${inner.trim()}`);
+}
+
+// Display only: the claim with its first letter capitalised ("more protein" -> "More protein").
+export function swapClaimText(claim) {
+  const s = String(claim || '');
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+// Swap card heading: "Swap sour cream for plain Greek yogurt (1 cup)" or "Add can of black beans (1 can)".
+// The amount's spaces are non-breaking (U+00A0) so "(1 box)" never splits across lines.
+export function swapHeading(swap, recipe) {
+  const amount = ingredientAmount(swap.use).replace(/ /g, '\u00a0');
+  const what = `${swapUseName(swap.use.name)}${amount ? ` (${amount})` : ''}`;
+  if (swap.type === 'add') return `Add ${what}`;
+  const from = ((recipe && recipe.ingredients) || []).find((i) => i.key === swap.replaces);
+  return `Swap ${from ? from.name : String(swap.replaces || '').replace(/-/g, ' ')} for ${what}`;
+}
 
 // Plain-text share. Checked lines are left out. Flagged lines get the label note.
 export function shareText(list) {

@@ -210,3 +210,29 @@ export function recordCooked(state, date, id) {
   const h = state.history || (state.history = []);
   if (!h.some((r) => r.date === date && r.id === id)) h.push({ date, id });
 }
+
+// ---- High protein and Fitness meals (protein-and-fitness-build.md sections 3 and 4).
+// High protein is defined by the number in the data, per adult serving as written, never by the category
+// and never by a swap: a recipe with no number (or null) never qualifies.
+export const HIGH_PROTEIN_G = 30;
+export function isHighProtein(r) {
+  return Boolean(r) && typeof r.protein_g_per_serving === 'number' && r.protein_g_per_serving >= HIGH_PROTEIN_G;
+}
+export function isFitness(r) {
+  return Boolean(r) && r.category === 'fitness';
+}
+
+// "High protein" chip: qualifying recipes the household can eat. Blocked (never words) and allergy recipes stay hidden.
+export function highProteinList(state, data) {
+  return recipeList(state, data).filter((r) => isHighProtein(r) && !isBlocked(r, state.people, data.vocab));
+}
+
+// Browse sections, in order: family dinners, Fitness meals, game-day meals. Empty sections are dropped.
+export function browseSections(state, data, { highProtein = false } = {}) {
+  const list = highProtein ? highProteinList(state, data) : recipeList(state, data);
+  return [
+    { id: 'family', label: 'Family dinners', recipes: list.filter((r) => r.kind === 'family' && !isFitness(r)) },
+    { id: 'fitness', label: 'Fitness meals', recipes: list.filter((r) => isFitness(r)) },
+    { id: 'gameday', label: 'Game-day meals', recipes: list.filter((r) => r.kind !== 'family' && !isFitness(r)) },
+  ].filter((s) => s.recipes.length);
+}

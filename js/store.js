@@ -16,6 +16,7 @@ export function defaults() {
     ratings: {},
     timers: [],
     needChecked: {},
+    showProtein: false, // "Show protein options" on recipe screens. Off by default; stays on this phone.
   };
 }
 
@@ -89,6 +90,7 @@ export function normalize(obj) {
   }
   if (Array.isArray(o.timers)) s.timers = o.timers.filter((t) => isObj(t) && typeof t.id === 'string');
   if (isObj(o.needChecked)) s.needChecked = { ...o.needChecked };
+  s.showProtein = o.showProtein === true;
   return s;
 }
 

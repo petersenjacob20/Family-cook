@@ -1,7 +1,10 @@
 // What you need: tap off what's already in the kitchen for one meal.
-import { h, header, button, checkRow, toast } from '../dom.js';
-import { isBlocked, allergyConflict } from '../rules.js';
-import { ingredientAmount, unitFamily, itemText, toBase, LABEL_LINE, LABEL_SUFFIX } from '../grocery.js';
+import { h, header, button, checkRow, toast, toggle } from '../dom.js';
+import { isBlocked, allergyConflict, visibleSwaps } from '../rules.js';
+import {
+  ingredientAmount, unitFamily, itemText, toBase, LABEL_LINE, LABEL_SUFFIX, ingredientNotes,
+  SWAP_LABEL_LINE, PROTEIN_SOURCE_LINE, proteinLine, swapHeading, swapClaimText,
+} from '../grocery.js';
 import { shareWithFallback } from '../share.js';
 import { cap } from '../view.js';
 
@@ -9,6 +12,33 @@ function lineFor(ing) {
   if (ing.staple || ing.qty == null) return ing.name;
   const fam = unitFamily(ing.unit || '');
   return itemText(fam, toBase(ing.qty, ing.unit || ''), ing.unit || '', ing.name);
+}
+
+// One optional swap: "Optional" badge, heading, note, the claim as written (first letter capitalised), then the label lines.
+function swapCard(w, r) {
+  return h('div', { class: 'swapcard', 'data-swap': w.id },
+    h('span', { class: 'badge outline', text: 'Optional' }),
+    h('strong', { class: 'swaphead', text: swapHeading(w, r) }),
+    h('p', { class: 'swapnote', text: w.note }),
+    h('p', { class: 'swapclaim', text: swapClaimText(w.protein.claim) }),
+    w.check_label === true ? [
+      h('p', { class: 'note', text: LABEL_LINE }),
+      h('p', { class: 'hint labelline', text: SWAP_LABEL_LINE }),
+    ] : null);
+}
+
+// "About 56 g protein per serving" plus the source line. With no number, only the note (if any).
+function proteinInfo(r) {
+  const line = proteinLine(r);
+  if (line) {
+    return h('div', { class: 'protein-info', id: 'protein-info' },
+      h('p', { class: 'protein', text: line }),
+      h('p', { class: 'hint', text: PROTEIN_SOURCE_LINE }));
+  }
+  if (typeof r.protein_note === 'string' && r.protein_note.trim()) {
+    return h('div', { class: 'protein-info', id: 'protein-info' }, h('p', { class: 'hint', text: r.protein_note }));
+  }
+  return null;
 }
 
 export function render(ctx, params) {
@@ -22,7 +52,8 @@ export function render(ctx, params) {
   }
   const st = ctx.state;
   const have = new Set(st.needChecked[r.id] || []);
-  const rows = r.ingredients.map((ing) => {
+  const swaps = visibleSwaps(r, st, ctx.data.vocab);
+  const rowFor = (ing) => {
     const amount = ingredientAmount(ing);
     const hint = ing.staple ? 'a pantry basic' : [amount, ing.optional ? '(optional)' : ''].filter(Boolean).join(' ');
     const row = checkRow(cap(ing.name), hint, have.has(ing.key), () => {
@@ -30,10 +61,36 @@ export function render(ctx, params) {
       st.needChecked[r.id] = [...have];
       ctx.save();
       row.setAttribute('aria-checked', have.has(ing.key) ? 'true' : 'false');
-    }, ing.check_label === true ? LABEL_LINE : '');
+    }, ingredientNotes(ing));
     row.dataset.key = ing.key;
     return row;
-  });
+  };
+  // Swaps show under the ingredient they replace; "add" swaps go at the end. Only while the toggle is on.
+  const rows = () => {
+    const on = st.showProtein === true && swaps.length > 0;
+    const out = [];
+    for (const ing of r.ingredients) {
+      out.push(rowFor(ing));
+      if (on) for (const w of swaps) if (w.type === 'swap' && w.replaces === ing.key) out.push(swapCard(w, r));
+    }
+    if (on) for (const w of swaps) if (w.type === 'add') out.push(swapCard(w, r));
+    return out;
+  };
+  const list = h('div', { class: 'card checklist', id: 'need-list' }, rows());
+  // "Show protein options": only on recipes with at least one swap this household can use.
+  let protToggle = null;
+  const drawToggle = () => {
+    const t = toggle('Show protein options', 'Optional swaps for more protein', st.showProtein === true, (v) => {
+      st.showProtein = v;
+      ctx.save();
+      list.replaceChildren(...rows());
+      drawToggle();
+    });
+    t.id = 'protein-toggle';
+    if (protToggle) protToggle.replaceWith(t);
+    protToggle = t;
+    return t;
+  };
   const mount = h('div');
   const share = () => {
     const missing = r.ingredients.filter((i) => !have.has(i.key));
@@ -45,8 +102,11 @@ export function render(ctx, params) {
   return [
     header('What you need', { back: '#/tonight' }),
     h('p', { class: 'sub', text: `${r.title} · feeds ${r.serves}` }),
+    proteinInfo(r),
+    // The toggle sits above the instruction so "Tap what you already have." stays right over the checklist.
+    swaps.length ? drawToggle() : null,
     h('p', { class: 'sub', text: 'Tap what you already have.' }),
-    h('div', { class: 'card checklist', id: 'need-list' }, rows),
+    list,
     mount,
     h('div', { class: 'spacer' }),
     h('div', { class: 'btnstack' },

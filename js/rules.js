@@ -185,3 +185,23 @@ export function allergyConflict(recipe, allergies, vocab) {
 export function allergySummary(allergies) {
   return ALLERGIES.filter((a) => (allergies || []).includes(a.id)).map((a) => a.line).join(' ');
 }
+
+// ---- Optional protein swaps (recipe.protein_swaps). A swap is hidden when the item it brings in would be
+// blocked for this household: never words (isBlocked) or a picked allergy (allergyConflict), run on a mini
+// recipe made of just that swap. The nut guard part also reads the swap's note and basis (strict on purpose).
+export function swapMiniRecipe(swap) {
+  return {
+    title: '', tags: [], contains: (swap && swap.contains) || [], ingredients: swap && swap.use ? [swap.use] : [],
+    note: (swap && swap.note) || '', protein: (swap && swap.protein) || {},
+  };
+}
+
+export function swapHidden(swap, state, vocab) {
+  const mini = swapMiniRecipe(swap);
+  return isBlocked(mini, (state && state.people) || [], vocab) || allergyConflict(mini, (state && state.allergies) || [], vocab);
+}
+
+// The swaps this household can see, in file order. Hidden swaps leave no trace.
+export function visibleSwaps(recipe, state, vocab) {
+  return ((recipe && recipe.protein_swaps) || []).filter((w) => w && w.optional === true && !swapHidden(w, state, vocab));
+}

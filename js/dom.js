@@ -60,7 +60,7 @@ export function chip(label, pressed, onClick, extraClass = '') {
   }, label);
 }
 
-// `note` is an optional extra hint-size line in body color (the label line).
+// `note` is an optional extra hint-size line in body color (the label line), or a list of them.
 export function checkRow(title, hintText, checked, onClick, note = '') {
   return h('button', {
     type: 'button', class: 'check', role: 'checkbox', 'aria-checked': checked ? 'true' : 'false', onclick: onClick,
@@ -69,7 +69,7 @@ export function checkRow(title, hintText, checked, onClick, note = '') {
   h('span', { class: 'txt' },
     h('strong', { text: title }),
     hintText ? h('span', { text: hintText }) : null,
-    note ? h('span', { class: 'note', text: note }) : null));
+    [].concat(note || []).filter(Boolean).map((n) => h('span', { class: 'note', text: n }))));
 }
 
 export function placeholder(label) {
