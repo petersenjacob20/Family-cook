@@ -211,11 +211,28 @@ export function ingredientNotes(ing) {
   return out;
 }
 
-// Protein per serving, only when the data has a number (never worked out here).
+// Protein per serving, only when the data has a number (never worked out here). One number everywhere: the recipe
+// page, the All recipes cards and the swap rows all read Chef's recipe-tags protein_g (USDA FoodData Central, see
+// specs/recipe-nutrition-worksheet.md), rounded to a whole gram, and show nothing when it is null. For the 10 Fitness
+// meals it equals the published protein_g_per_serving, so their text doesn't change.
 export const PROTEIN_SOURCE_LINE = 'Worked out from USDA FoodData Central for these amounts.';
+export function cardProteinG(r) {
+  const g = r && r.filter ? r.filter.protein_g : null;
+  return typeof g === 'number' && Number.isFinite(g) ? Math.round(g) : null;
+}
 export function proteinLine(r) {
-  const g = r && r.protein_g_per_serving;
-  return typeof g === 'number' && Number.isFinite(g) ? `About ${g} g protein per serving` : '';
+  const g = cardProteinG(r);
+  return g === null ? '' : `About ${g} g protein per serving`;
+}
+export const cardProteinLine = proteinLine;
+
+// What the recipe page shows: the protein line with the USDA source line whenever there's a number (all 40 such
+// recipes are "sourced" rows in the worksheet); with no number, only the recipe's protein_note (if any).
+export function proteinInfoLines(r) {
+  const line = proteinLine(r);
+  if (line) return { protein: line, source: PROTEIN_SOURCE_LINE, note: null };
+  const note = r && typeof r.protein_note === 'string' && r.protein_note.trim() ? r.protein_note : null;
+  return { protein: null, source: null, note };
 }
 
 // Display only: a trailing "(...)" in a swap's name reads ", ..." so it doesn't sit next to the amount's brackets.

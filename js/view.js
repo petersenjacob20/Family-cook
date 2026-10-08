@@ -2,7 +2,7 @@
 import { h, placeholder } from './dom.js';
 import { kidName, kidBadge, kidPerson } from './people.js';
 import { neverSummary, blockingWords, allergySummary } from './rules.js';
-import { proteinLine } from './grocery.js';
+import { cardProteinLine } from './grocery.js';
 
 export const cap = (s) => (s ? s[0].toUpperCase() + s.slice(1) : s);
 export const lowerFirst = (s) => (s ? s[0].toLowerCase() + s.slice(1) : s);
@@ -60,7 +60,7 @@ export function smallCard(state, r, vocab, extra = []) {
   return h('div', { class: blocked.length ? 'card dim' : 'card' },
     h('h3', { text: r.title }),
     h('p', { class: 'meta', text: shortMeta(r) + (r.kind === 'gameday' ? ' · game-day' : '') }),
-    proteinLine(r) ? h('p', { class: 'meta protein', text: proteinLine(r) }) : null,
+    cardProteinLine(r) ? h('p', { class: 'meta protein', text: cardProteinLine(r) }) : null,
     firstKidStep(r) ? h('span', { class: 'badge', text: kidBadge(state) }) : null,
     blocked.length ? h('p', { class: 'meta' }, h('strong', { text: 'Not for your family' }), ` (never: ${blocked.join(', ')})`) : null,
     extra);

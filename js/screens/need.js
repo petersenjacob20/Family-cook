@@ -3,7 +3,7 @@ import { h, header, button, checkRow, toast, toggle } from '../dom.js';
 import { isBlocked, allergyConflict, visibleSwaps } from '../rules.js';
 import {
   ingredientAmount, unitFamily, itemText, toBase, LABEL_LINE, LABEL_SUFFIX, ingredientNotes,
-  SWAP_LABEL_LINE, PROTEIN_SOURCE_LINE, proteinLine, swapHeading, swapClaimText,
+  SWAP_LABEL_LINE, proteinInfoLines, swapHeading, swapClaimText,
 } from '../grocery.js';
 import { shareWithFallback } from '../share.js';
 import { cap } from '../view.js';
@@ -29,15 +29,13 @@ function swapCard(w, r) {
 
 // "About 56 g protein per serving" plus the source line. With no number, only the note (if any).
 function proteinInfo(r) {
-  const line = proteinLine(r);
-  if (line) {
+  const p = proteinInfoLines(r);
+  if (p.protein) {
     return h('div', { class: 'protein-info', id: 'protein-info' },
-      h('p', { class: 'protein', text: line }),
-      h('p', { class: 'hint', text: PROTEIN_SOURCE_LINE }));
+      h('p', { class: 'protein', text: p.protein }),
+      h('p', { class: 'hint', text: p.source }));
   }
-  if (typeof r.protein_note === 'string' && r.protein_note.trim()) {
-    return h('div', { class: 'protein-info', id: 'protein-info' }, h('p', { class: 'hint', text: r.protein_note }));
-  }
+  if (p.note) return h('div', { class: 'protein-info', id: 'protein-info' }, h('p', { class: 'hint', text: p.note }));
   return null;
 }
 

@@ -172,10 +172,20 @@ export function swapOptions(state, data, weekId, date, { offset = 0, count = 3 }
   return { options: ranked.slice(offset, offset + count).map((x) => x.recipe), total: ranked.length };
 }
 
+// Returns what was there before, so the "Undo" in the toast can put it back with restoreSwap.
 export function applySwap(state, weekId, date, id) {
   const week = getWeek(state, weekId);
+  const before = { id: week.meals[date] || null, swaps: week.swaps[date] || 0 };
   week.meals[date] = id;
   week.swaps[date] = (week.swaps[date] || 0) + 1;
+  return before;
+}
+
+// Undo a swap: that night gets its old dinner (and swap count) back. Other nights are not touched.
+export function restoreSwap(state, weekId, date, before) {
+  const week = getWeek(state, weekId);
+  if (before && before.id) week.meals[date] = before.id; else delete week.meals[date];
+  if (before && before.swaps) week.swaps[date] = before.swaps; else delete week.swaps[date];
 }
 
 // Tonight: today's planned meal, or "Next up" with that meal.
@@ -215,8 +225,11 @@ export function recordCooked(state, date, id) {
 // High protein is defined by the number in the data, per adult serving as written, never by the category
 // and never by a swap: a recipe with no number (or null) never qualifies.
 export const HIGH_PROTEIN_G = 30;
+// One meaning of High protein everywhere (EM ruling A, 2026-10-08): Chef's "high-protein" filter tag from
+// recipe-tags.json, which the build only allows when Chef's protein_g is 30 g or more per serving (never when null).
+export const HIGH_PROTEIN_TAG = 'high-protein';
 export function isHighProtein(r) {
-  return Boolean(r) && typeof r.protein_g_per_serving === 'number' && r.protein_g_per_serving >= HIGH_PROTEIN_G;
+  return Boolean(r && r.filter && Array.isArray(r.filter.tags) && r.filter.tags.includes(HIGH_PROTEIN_TAG));
 }
 export function isFitness(r) {
   return Boolean(r) && r.category === 'fitness';

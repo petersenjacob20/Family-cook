@@ -5,12 +5,17 @@ import { shortMeta, nightWord, hasKidName } from '../view.js';
 import { kidName } from '../people.js';
 
 function nightRow(ctx, date, recipe) {
-  return h('div', { class: 'night', 'data-date': date },
+  return h('div', { class: ctx.swapped === date ? 'night hl' : 'night', 'data-date': date },
     h('div', { class: 'day' }, h('strong', { text: DAY_SHORT[weekday(date)] }), h('span', { text: slashLabel(date) })),
     recipe
       ? h('a', { class: 'meal', href: `#/need/${recipe.id}` }, h('strong', { text: recipe.title }), h('span', { text: shortMeta(recipe) }))
       : h('div', { class: 'meal' }, h('strong', { class: 'warn', text: 'No meal fits your family\u2019s list.' }), h('a', { href: '#/family', text: 'Edit family' })),
     button('Swap', () => ctx.go(`#/swap/${date}`), 'small', { 'aria-label': `Swap ${DAY_SHORT[weekday(date)]}` }));
+}
+
+// The highlight after a swap lasts until you leave Week.
+export function leave(ctx) {
+  ctx.swapped = null;
 }
 
 export function render(ctx) {

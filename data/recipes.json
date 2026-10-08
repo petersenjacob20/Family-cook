@@ -1,5 +1,112 @@
 {
   "schema": 1,
+  "filter_tags": [
+    {
+      "id": "high-protein",
+      "label": "High protein",
+      "group": "nutrition"
+    },
+    {
+      "id": "high-fiber",
+      "label": "High fiber",
+      "group": "nutrition"
+    },
+    {
+      "id": "veggie-packed",
+      "label": "Veggie-packed",
+      "group": "nutrition"
+    },
+    {
+      "id": "chicken",
+      "label": "Chicken",
+      "group": "food"
+    },
+    {
+      "id": "beef",
+      "label": "Beef",
+      "group": "food"
+    },
+    {
+      "id": "pork",
+      "label": "Pork and ham",
+      "group": "food"
+    },
+    {
+      "id": "turkey",
+      "label": "Turkey",
+      "group": "food"
+    },
+    {
+      "id": "meatless",
+      "label": "No meat",
+      "group": "food"
+    },
+    {
+      "id": "pasta",
+      "label": "Pasta and noodles",
+      "group": "food"
+    },
+    {
+      "id": "pizza",
+      "label": "Pizza night",
+      "group": "food"
+    },
+    {
+      "id": "tacos-mexican",
+      "label": "Tacos and Mexican",
+      "group": "food"
+    },
+    {
+      "id": "burgers-sliders",
+      "label": "Burgers and sliders",
+      "group": "food"
+    },
+    {
+      "id": "sandwiches-subs",
+      "label": "Sandwiches and subs",
+      "group": "food"
+    },
+    {
+      "id": "soups",
+      "label": "Soups and chili",
+      "group": "food"
+    },
+    {
+      "id": "bowls",
+      "label": "Rice and grain bowls",
+      "group": "food"
+    },
+    {
+      "id": "breakfast-for-dinner",
+      "label": "Breakfast for dinner",
+      "group": "food"
+    },
+    {
+      "id": "sheet-pan",
+      "label": "Sheet pan",
+      "group": "food"
+    },
+    {
+      "id": "one-pot",
+      "label": "One pot or pan",
+      "group": "food"
+    },
+    {
+      "id": "slow-cooker",
+      "label": "Slow cooker",
+      "group": "food"
+    },
+    {
+      "id": "quick",
+      "label": "Quick (30 min or less)",
+      "group": "food"
+    },
+    {
+      "id": "game-day",
+      "label": "Game day",
+      "group": "food"
+    }
+  ],
   "recipes": [
     {
       "id": "easy-chicken-alfredo",
@@ -198,7 +305,17 @@
             "gluten"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "chicken",
+          "pasta",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "sheet-pan-pizza",
@@ -312,7 +429,17 @@
           "text": "Hand out squares on plates.",
           "minutes": 1
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "pork",
+          "pizza",
+          "sheet-pan",
+          "quick"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "build-your-own-tacos",
@@ -541,7 +668,16 @@
           },
           "contains": []
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "veggie-packed",
+          "beef",
+          "tacos-mexican"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "crispy-tenders-and-fries",
@@ -675,7 +811,15 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "chicken",
+          "sheet-pan"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "stovetop-mac-and-cheese",
@@ -874,7 +1018,17 @@
             "gluten"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "meatless",
+          "pasta",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": 29.7,
+        "fiber_g": 3.6
+      }
     },
     {
       "id": "cheesy-quesadillas",
@@ -1074,7 +1228,18 @@
             "gluten"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "chicken",
+          "tacos-mexican",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": 43.7,
+        "fiber_g": 3.9
+      }
     },
     {
       "id": "spaghetti-meat-sauce",
@@ -1275,7 +1440,17 @@
             "gluten"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "beef",
+          "pasta"
+        ],
+        "protein_g": 40.2,
+        "fiber_g": 6.7
+      }
     },
     {
       "id": "chicken-noodle-soup",
@@ -1434,7 +1609,16 @@
           },
           "contains": []
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "chicken",
+          "soups",
+          "one-pot"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "grilled-cheese-tomato-soup",
@@ -1544,7 +1728,17 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "meatless",
+          "sandwiches-subs",
+          "soups",
+          "quick"
+        ],
+        "protein_g": 17.7,
+        "fiber_g": 3.6
+      }
     },
     {
       "id": "breakfast-for-dinner",
@@ -1715,7 +1909,17 @@
             "gluten"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "meatless",
+          "breakfast-for-dinner",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": 16.3,
+        "fiber_g": 1.9
+      }
     },
     {
       "id": "chicken-fried-rice",
@@ -1865,7 +2069,16 @@
             "egg"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "chicken",
+          "quick"
+        ],
+        "protein_g": 32.4,
+        "fiber_g": 3.9
+      }
     },
     {
       "id": "turkey-cheese-pinwheels",
@@ -1978,7 +2191,19 @@
           "text": "Serve with carrots and apples.",
           "minutes": 1
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "veggie-packed",
+          "turkey",
+          "sandwiches-subs",
+          "quick"
+        ],
+        "protein_g": 38.7,
+        "fiber_g": 11.2
+      }
     },
     {
       "id": "baked-potato-bar",
@@ -2129,7 +2354,15 @@
             "dairy"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "pork",
+          "quick"
+        ],
+        "protein_g": 17.6,
+        "fiber_g": 4.9
+      }
     },
     {
       "id": "sloppy-joes",
@@ -2270,7 +2503,17 @@
             "beef"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "beef",
+          "sandwiches-subs",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "teriyaki-chicken-bowls",
@@ -2411,7 +2654,17 @@
           },
           "contains": []
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "chicken",
+          "bowls",
+          "quick"
+        ],
+        "protein_g": 48.0,
+        "fiber_g": 3.5
+      }
     },
     {
       "id": "meatballs-and-butter-noodles",
@@ -2583,7 +2836,15 @@
             "gluten"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "pasta",
+          "quick"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "bbq-chicken-sliders",
@@ -2701,7 +2962,17 @@
           "hazard": "sharp",
           "safety": "Sharp knife. {kid} stays at the table for this part."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "chicken",
+          "burgers-sliders",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "homemade-chicken-nuggets",
@@ -2833,7 +3104,16 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "chicken",
+          "sheet-pan"
+        ],
+        "protein_g": 50.5,
+        "fiber_g": 1.9
+      }
     },
     {
       "id": "mini-meatloaves",
@@ -2995,7 +3275,15 @@
             "beef"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "beef",
+          "sheet-pan"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "easy-baked-ziti",
@@ -3175,7 +3463,16 @@
             "gluten"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-fiber",
+          "meatless",
+          "pasta"
+        ],
+        "protein_g": 26.7,
+        "fiber_g": 6.5
+      }
     },
     {
       "id": "drumsticks-and-potatoes",
@@ -3283,7 +3580,15 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "chicken",
+          "sheet-pan"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "french-bread-pizzas",
@@ -3386,7 +3691,17 @@
           "text": "Serve on plates.",
           "minutes": 1
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "pork",
+          "pizza",
+          "sheet-pan",
+          "quick"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "sheet-pan-cheeseburger-sliders",
@@ -3557,7 +3872,16 @@
             "beef"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "beef",
+          "burgers-sliders",
+          "sheet-pan"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "chicken-pot-pie",
@@ -3672,7 +3996,14 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "chicken"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "shepherds-pie",
@@ -3834,7 +4165,14 @@
             "beef"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "beef"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "lasagna-roll-ups",
@@ -3969,7 +4307,15 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "meatless",
+          "pasta"
+        ],
+        "protein_g": 29.3,
+        "fiber_g": 4.5
+      }
     },
     {
       "id": "stuffed-shells",
@@ -4091,7 +4437,15 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "meatless",
+          "pasta"
+        ],
+        "protein_g": 25.8,
+        "fiber_g": 3.9
+      }
     },
     {
       "id": "honey-garlic-chicken",
@@ -4274,7 +4628,15 @@
           },
           "contains": []
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "chicken"
+        ],
+        "protein_g": 42.0,
+        "fiber_g": 3.6
+      }
     },
     {
       "id": "taco-bake",
@@ -4490,7 +4852,15 @@
             "gluten"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "beef",
+          "tacos-mexican"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "breakfast-burritos",
@@ -4642,7 +5012,18 @@
             "egg"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "meatless",
+          "tacos-mexican",
+          "breakfast-for-dinner",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "pigs-in-a-blanket",
@@ -4751,7 +5132,15 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "beef",
+          "quick"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "broccoli-cheddar-chicken-rice",
@@ -4877,7 +5266,16 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "chicken",
+          "one-pot"
+        ],
+        "protein_g": 38.2,
+        "fiber_g": 3.0
+      }
     },
     {
       "id": "apple-pork-chops",
@@ -5012,7 +5410,14 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "pork"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "fall-squash-mac",
@@ -5210,7 +5615,17 @@
             "gluten"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "meatless",
+          "pasta",
+          "one-pot"
+        ],
+        "protein_g": 31.2,
+        "fiber_g": 4.7
+      }
     },
     {
       "id": "ham-and-pea-alfredo-bowties",
@@ -5436,7 +5851,19 @@
             "gluten"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "pork",
+          "pasta",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": 35.2,
+        "fiber_g": 7.6
+      }
     },
     {
       "id": "broccoli-tortellini-alfredo",
@@ -5565,7 +5992,17 @@
             "colors"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "meatless",
+          "pasta",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "sneaky-cauliflower-alfredo",
@@ -5789,7 +6226,17 @@
             "gluten"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "meatless",
+          "pasta",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": 25.3,
+        "fiber_g": 5.3
+      }
     },
     {
       "id": "pizza-quesadillas",
@@ -5901,7 +6348,18 @@
           "hazard": "sharp",
           "safety": "Sharp knife. {kid} stays at the table for this part."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "pork",
+          "pizza",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": 32.5,
+        "fiber_g": 4.9
+      }
     },
     {
       "id": "baked-pizza-pinwheels",
@@ -6021,7 +6479,16 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "pork",
+          "pizza",
+          "sheet-pan"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "pull-apart-pizza-bites",
@@ -6147,7 +6614,15 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "pork",
+          "pizza"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "ranch-turkey-burgers-and-fries",
@@ -6327,7 +6802,15 @@
             "turkey"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "turkey",
+          "burgers-sliders"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "corn-dog-muffins-and-fries",
@@ -6479,7 +6962,14 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "beef"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "sneaky-veggie-meatball-subs",
@@ -6688,7 +7178,15 @@
             "turkey"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "turkey",
+          "sandwiches-subs"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "cheeseburger-pasta-sneaky-carrots",
@@ -6922,7 +7420,17 @@
             "gluten"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "beef",
+          "pasta",
+          "one-pot"
+        ],
+        "protein_g": 39.7,
+        "fiber_g": 2.6
+      }
     },
     {
       "id": "chicken-black-bean-enchilada-bake",
@@ -7074,7 +7582,17 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "chicken",
+          "tacos-mexican"
+        ],
+        "protein_g": 30.5,
+        "fiber_g": 11.2
+      }
     },
     {
       "id": "baked-chicken-parmesan-spaghetti",
@@ -7289,7 +7807,17 @@
             "gluten"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "chicken",
+          "pasta"
+        ],
+        "protein_g": 54.8,
+        "fiber_g": 16.5
+      }
     },
     {
       "id": "chicken-veggie-lo-mein",
@@ -7534,7 +8062,18 @@
             "gluten"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "chicken",
+          "pasta",
+          "quick"
+        ],
+        "protein_g": 40.8,
+        "fiber_g": 11.4
+      }
     },
     {
       "id": "veggie-egg-muffins-and-toast",
@@ -7724,7 +8263,15 @@
             "dairy"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "meatless",
+          "breakfast-for-dinner"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "sheet-pan-lemon-chicken-pitas",
@@ -7874,7 +8421,16 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "chicken",
+          "sandwiches-subs",
+          "sheet-pan"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "turkey-pizza-stuffed-peppers",
@@ -8065,7 +8621,18 @@
             "turkey"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "veggie-packed",
+          "turkey",
+          "pizza"
+        ],
+        "protein_g": 35.4,
+        "fiber_g": 6.5
+      }
     },
     {
       "id": "baked-bean-and-cheese-tostadas",
@@ -8220,7 +8787,19 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-fiber",
+          "veggie-packed",
+          "meatless",
+          "tacos-mexican",
+          "sheet-pan",
+          "quick"
+        ],
+        "protein_g": 21.5,
+        "fiber_g": 12.2
+      }
     },
     {
       "id": "tomato-tortellini-soup",
@@ -8374,7 +8953,17 @@
             "helping"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-fiber",
+          "soups",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": 25.2,
+        "fiber_g": 6.3
+      }
     },
     {
       "id": "baked-sweet-and-sour-chicken",
@@ -8554,7 +9143,15 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "chicken"
+        ],
+        "protein_g": 46.6,
+        "fiber_g": 2.9
+      }
     },
     {
       "id": "oven-french-toast-sticks",
@@ -8695,7 +9292,17 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "meatless",
+          "breakfast-for-dinner",
+          "sheet-pan",
+          "quick"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "sheet-pan-chicken-fajitas",
@@ -8866,7 +9473,18 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "chicken",
+          "tacos-mexican",
+          "sheet-pan"
+        ],
+        "protein_g": 47.8,
+        "fiber_g": 11.1
+      }
     },
     {
       "id": "chicken-and-corn-chowder",
@@ -9037,7 +9655,16 @@
             "helping"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "chicken",
+          "soups",
+          "one-pot"
+        ],
+        "protein_g": 29.6,
+        "fiber_g": 3.9
+      }
     },
     {
       "id": "veggie-pasta-primavera",
@@ -9192,7 +9819,16 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "meatless",
+          "pasta",
+          "quick"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "chicken-and-egg-rice-bowls",
@@ -9344,7 +9980,17 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "chicken",
+          "bowls",
+          "quick"
+        ],
+        "protein_g": 35.8,
+        "fiber_g": 3.1
+      }
     },
     {
       "id": "chicken-burrito-bowls",
@@ -9513,7 +10159,18 @@
       ],
       "category": "fitness",
       "protein_g_per_serving": 56,
-      "protein_note": "About 56 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts."
+      "protein_note": "About 56 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "chicken",
+          "tacos-mexican",
+          "bowls"
+        ],
+        "protein_g": 56,
+        "fiber_g": 11.1
+      }
     },
     {
       "id": "italian-chicken-white-bean-skillet",
@@ -9682,7 +10339,17 @@
       ],
       "category": "fitness",
       "protein_g_per_serving": 53,
-      "protein_note": "About 53 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts."
+      "protein_note": "About 53 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "chicken",
+          "one-pot"
+        ],
+        "protein_g": 53,
+        "fiber_g": 9.4
+      }
     },
     {
       "id": "beef-and-broccoli-brown-rice",
@@ -9839,7 +10506,16 @@
       ],
       "category": "fitness",
       "protein_g_per_serving": 41,
-      "protein_note": "About 41 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts."
+      "protein_note": "About 41 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "filter": {
+        "tags": [
+          "high-protein",
+          "beef",
+          "bowls"
+        ],
+        "protein_g": 41,
+        "fiber_g": 4.0
+      }
     },
     {
       "id": "turkey-sweet-potato-breakfast-hash",
@@ -10002,7 +10678,19 @@
       ],
       "category": "fitness",
       "protein_g_per_serving": 39,
-      "protein_note": "About 39 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts."
+      "protein_note": "About 39 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "veggie-packed",
+          "turkey",
+          "breakfast-for-dinner",
+          "one-pot"
+        ],
+        "protein_g": 39,
+        "fiber_g": 6.4
+      }
     },
     {
       "id": "sheet-pan-pork-tenderloin",
@@ -10152,7 +10840,17 @@
       ],
       "category": "fitness",
       "protein_g_per_serving": 41,
-      "protein_note": "About 41 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts."
+      "protein_note": "About 41 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "pork",
+          "sheet-pan"
+        ],
+        "protein_g": 41,
+        "fiber_g": 6.4
+      }
     },
     {
       "id": "mild-yogurt-chicken-curry",
@@ -10315,7 +11013,18 @@
       ],
       "category": "fitness",
       "protein_g_per_serving": 50,
-      "protein_note": "About 50 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts."
+      "protein_note": "About 50 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "veggie-packed",
+          "chicken",
+          "bowls"
+        ],
+        "protein_g": 50,
+        "fiber_g": 6.5
+      }
     },
     {
       "id": "chicken-broccoli-stuffed-sweet-potatoes",
@@ -10466,7 +11175,18 @@
       ],
       "category": "fitness",
       "protein_g_per_serving": 45,
-      "protein_note": "About 45 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts."
+      "protein_note": "About 45 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "veggie-packed",
+          "chicken",
+          "sheet-pan"
+        ],
+        "protein_g": 45,
+        "fiber_g": 9.0
+      }
     },
     {
       "id": "turkey-egg-roll-in-a-bowl",
@@ -10617,7 +11337,16 @@
       ],
       "category": "fitness",
       "protein_g_per_serving": 41,
-      "protein_note": "About 41 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts."
+      "protein_note": "About 41 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "filter": {
+        "tags": [
+          "high-protein",
+          "turkey",
+          "bowls"
+        ],
+        "protein_g": 41,
+        "fiber_g": 4.3
+      }
     },
     {
       "id": "mediterranean-chicken-chickpea-quinoa-bowls",
@@ -10784,7 +11513,17 @@
       ],
       "category": "fitness",
       "protein_g_per_serving": 54,
-      "protein_note": "About 54 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts."
+      "protein_note": "About 54 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "chicken",
+          "bowls"
+        ],
+        "protein_g": 54,
+        "fiber_g": 9.3
+      }
     },
     {
       "id": "chicken-tortilla-soup",
@@ -10967,7 +11706,18 @@
       ],
       "category": "fitness",
       "protein_g_per_serving": 35,
-      "protein_note": "About 35 g protein per serving (6 servings), worked out from USDA FoodData Central values for these amounts."
+      "protein_note": "About 35 g protein per serving (6 servings), worked out from USDA FoodData Central values for these amounts.",
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "chicken",
+          "tacos-mexican",
+          "soups"
+        ],
+        "protein_g": 35,
+        "fiber_g": 8.0
+      }
     },
     {
       "id": "crispy-oven-wings",
@@ -11092,7 +11842,16 @@
           "text": "Serve with ranch and celery before kickoff.",
           "minutes": 1
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "chicken",
+          "sheet-pan",
+          "game-day"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "loaded-sheet-pan-nachos",
@@ -11322,7 +12081,18 @@
             "gluten"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "beef",
+          "tacos-mexican",
+          "sheet-pan",
+          "quick",
+          "game-day"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "game-day-chili",
@@ -11510,7 +12280,17 @@
             "beef"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "beef",
+          "soups",
+          "one-pot",
+          "game-day"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "brats-and-peppers",
@@ -11622,7 +12402,17 @@
           "text": "Serve with mustard.",
           "minutes": 1
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "pork",
+          "sandwiches-subs",
+          "one-pot",
+          "game-day"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "pizza-dip",
@@ -11724,7 +12514,16 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "pork",
+          "pizza",
+          "game-day"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "philly-cheesesteak-sliders",
@@ -11849,7 +12648,16 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "beef",
+          "burgers-sliders",
+          "game-day"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "buffalo-chicken-dip",
@@ -11992,7 +12800,15 @@
             "gluten"
           ]
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "chicken",
+          "game-day"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "homemade-pizza-night",
@@ -12115,7 +12931,16 @@
           "hazard": "sharp",
           "safety": "Sharp knife. {kid} stays at the table for this part."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "pork",
+          "pizza",
+          "game-day"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "baked-chicken-taquitos",
@@ -12234,7 +13059,17 @@
           "hazard": "hot",
           "safety": "Hot food. Let it cool before {kid} touches it."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "chicken",
+          "tacos-mexican",
+          "sheet-pan",
+          "game-day"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     },
     {
       "id": "ham-and-cheese-sliders",
@@ -12351,7 +13186,16 @@
           "hazard": "sharp",
           "safety": "Sharp knife. {kid} stays at the table for this part."
         }
-      ]
+      ],
+      "filter": {
+        "tags": [
+          "pork",
+          "burgers-sliders",
+          "game-day"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      }
     }
   ]
 }

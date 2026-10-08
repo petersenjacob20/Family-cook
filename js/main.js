@@ -22,8 +22,9 @@ const TAB_FOR = { swap: 'week', recipes: 'family', settings: 'family', need: 'to
 
 const ctx = {
   state: load(),
-  data: { recipes: [], vocab: {}, seasonal: { months: {} } },
+  data: { recipes: [], filterTags: [], vocab: {}, seasonal: { months: {} } },
   anyway: null,
+  swapped: null, // the Week night to highlight right after a swap
   save() { save(ctx.state); },
   today() { return todayISO(); },
   recipe(id) { return byId(ctx.data, id); },
@@ -132,7 +133,7 @@ async function loadJSON(name) {
 async function start() {
   try {
     const [r, vocab, seasonal] = await Promise.all([loadJSON('recipes.json'), loadJSON('vocab.json'), loadJSON('seasonal.json')]);
-    ctx.data = { recipes: r.recipes || [], vocab, seasonal };
+    ctx.data = { recipes: r.recipes || [], filterTags: r.filter_tags || [], vocab, seasonal };
   } catch (e) {
     const root = document.getElementById('app');
     root.textContent = 'Could not load the recipes. Check your connection and reload once.';

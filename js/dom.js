@@ -80,8 +80,28 @@ let toastTimer = null;
 export function toast(msg) {
   const el = document.getElementById('toast');
   if (!el) return;
+  el.classList.remove('has-action');
   el.textContent = msg;
   el.hidden = false;
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => { el.hidden = true; }, 3200);
+}
+
+// A toast with one action button ("Swapped to X." + "Undo"). Stays `ms` long; the button hides it.
+export function toastAction(msg, label, onAction, ms = 6000) {
+  const el = document.getElementById('toast');
+  if (!el) return;
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'toastbtn';
+  btn.id = 'toast-action';
+  btn.textContent = label;
+  btn.addEventListener('click', () => { clearTimeout(toastTimer); el.hidden = true; el.classList.remove('has-action'); onAction(); });
+  const text = document.createElement('span');
+  text.textContent = msg;
+  el.replaceChildren(text, ' ', btn);
+  el.classList.add('has-action');
+  el.hidden = false;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { el.hidden = true; el.classList.remove('has-action'); }, ms);
 }
