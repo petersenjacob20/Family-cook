@@ -1,4 +1,4 @@
-// Grocery list for the whole week, by store section. Share-only: we never order for you.
+// Grocery list for the whole week, by store section. Share, or fill an Amazon Fresh cart: we never order for you.
 import { h, header, button, checkRow, toast } from '../dom.js';
 import { weekIdFor } from '../dates.js';
 import { fillWeek, getWeek, byId } from '../planner.js';
@@ -45,6 +45,7 @@ export function render(ctx) {
       : null,
     mount,
     h('div', { class: 'stickyfoot' },
+      empty ? null : h('a', { class: 'btn', href: '#/fresh', id: 'send-fresh' }, 'Send to Amazon Fresh'),
       button('Share list', share, 'primary', { id: 'share-list', disabled: empty }),
       h('p', { class: 'footer-note', text: 'Send to Notes, a text, or your partner. We never order for you.' })),
   ];

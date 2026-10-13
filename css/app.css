@@ -453,3 +453,14 @@ body.no-tabs.has-timerbar .toast { bottom: calc(var(--timerbar-h) + 20px + env(s
 .creditline { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
 .creditlabel { color: var(--muted); }
 .creditlink { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; color: var(--accent-dark); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Send to Amazon Fresh */
+.card.freshwarn h2 { font-size: 24px; line-height: 1.25; }
+.card.freshwarn p { margin: 0; }
+.freshlist { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+.freshlist li span.meta { display: block; font-size: var(--fs-hint); }
+a.card.freshrow { color: inherit; text-decoration: none; gap: 2px; }
+.stickyfoot .row .btn { flex: 1; }
+/* A ticked "I agree" box isn't crossed off like a grocery line. */
+#fresh-agree[aria-checked="true"] .txt strong,
+#fresh-labelread[aria-checked="true"] .txt strong { color: var(--ink); text-decoration: none; }

@@ -15,11 +15,12 @@ import * as cook from './screens/cook.js';
 import * as done from './screens/done.js';
 import * as need from './screens/need.js';
 import * as credits from './screens/credits.js';
+import * as fresh from './screens/fresh.js';
 import { createTimerController, leftMs, isDone, fmt } from './timers.js';
 
-const ROUTES = { tonight, week, grocery, family, settings, setup, swap, recipes, cook, done, need, credits };
+const ROUTES = { tonight, week, grocery, family, settings, setup, swap, recipes, cook, done, need, credits, fresh };
 const NO_TABS = new Set(['setup', 'cook']);
-const TAB_FOR = { swap: 'week', recipes: 'family', settings: 'family', credits: 'family', need: 'tonight', done: 'tonight' };
+const TAB_FOR = { swap: 'week', recipes: 'family', settings: 'family', credits: 'family', need: 'tonight', done: 'tonight', fresh: 'grocery' };
 
 const ctx = {
   state: load(),
