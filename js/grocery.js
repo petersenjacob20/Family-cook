@@ -162,6 +162,10 @@ export function buildList(state, recipeById, weekId) {
       .map((m) => ({
         id: m.id,
         key: m.key,
+        name: m.name,
+        fam: m.fam,
+        unit: m.unit,
+        total: m.total,
         text: itemText(m.fam, m.total, m.unit, m.name),
         hint: `for: ${m.uses.join(', ')}`,
         checkLabel: m.checkLabel,

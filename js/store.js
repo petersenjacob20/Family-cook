@@ -1,5 +1,6 @@
 // On-device storage (build plan section 5). One localStorage key holding one JSON object.
 // Pure helpers are importable from Node; browser APIs are only touched inside functions.
+import { cleanFresh } from './fresh.js';
 
 export const KEY = 'fc.v1';
 export const SCHEMA = 1;
@@ -17,6 +18,8 @@ export function defaults() {
     timers: [],
     needChecked: {},
     showProtein: false, // "Show protein options" on recipe screens. Off by default; stays on this phone.
+    freshTest: false, // Settings > "Amazon Fresh test". Off by default; stays on this phone.
+    fresh: {}, // Amazon cart: ingredient key -> the one product you checked. Stays on this phone.
   };
 }
 
@@ -91,6 +94,8 @@ export function normalize(obj) {
   if (Array.isArray(o.timers)) s.timers = o.timers.filter((t) => isObj(t) && typeof t.id === 'string');
   if (isObj(o.needChecked)) s.needChecked = { ...o.needChecked };
   s.showProtein = o.showProtein === true;
+  s.freshTest = o.freshTest === true;
+  s.fresh = cleanFresh(o.fresh);
   return s;
 }
 

@@ -1,6 +1,6 @@
 // Offline: app shell cached first (build plan section 12).
 // Bump CACHE on every content or code change. Older fc- caches are deleted on activate (other apps on the same origin are left alone).
-const CACHE = 'fc-v2-pub8';
+const CACHE = 'fc-v2-pub9';
 const ASSETS = [
   './',
   './css/app.css',
@@ -14,6 +14,7 @@ const ASSETS = [
   './index.html',
   './js/dates.js',
   './js/dom.js',
+  './js/fresh.js',
   './js/grocery.js',
   './js/main.js',
   './js/people.js',
@@ -23,6 +24,7 @@ const ASSETS = [
   './js/screens/credits.js',
   './js/screens/done.js',
   './js/screens/family.js',
+  './js/screens/fresh.js',
   './js/screens/grocery.js',
   './js/screens/need.js',
   './js/screens/recipes.js',
@@ -132,7 +134,8 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// Same-origin GET: cache first, then network. Cross-origin requests are not handled (there are none).
+// Same-origin GET: cache first, then network. Cross-origin requests are not handled (Amazon links are
+// plain navigations in a new tab, never fetched by this app).
 self.addEventListener('fetch', (event) => {
   const req = event.request;
   if (req.method !== 'GET') return;
