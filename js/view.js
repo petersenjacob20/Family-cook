@@ -4,6 +4,7 @@ import { kidName, kidBadge, kidPerson } from './people.js';
 import { neverSummary, blockingWords, allergySummary } from './rules.js';
 import { cardProteinLine } from './grocery.js';
 import { DAY_SHORT } from './dates.js';
+import { getPhoto } from './custom.js';
 
 // Recipe photos: app/photos/<id>.webp, all 720x540 (4:3). Width and height are always set (plus a 4:3 box in CSS),
 // so nothing moves while a photo loads. loading/decoding are set before src so lazy loading applies.
@@ -17,6 +18,18 @@ export function photoFallback(cls) {
 }
 
 export function recipePhoto(r, cls) {
+  // Your own recipe: its photo comes from this phone (IndexedDB, a data: URL); the plain tile until it loads.
+  if (r && r.custom) {
+    const tile = photoFallback(cls);
+    if (r.hasPhoto) {
+      getPhoto(r.id).then((url) => {
+        if (!url) return;
+        const img = h('img', { decoding: 'async', width: PHOTO_W, height: PHOTO_H, class: `photo ${cls}`, alt: '', src: url });
+        tile.replaceWith(img);
+      });
+    }
+    return tile;
+  }
   const p = r && r.photo;
   if (!p || typeof p.src !== 'string' || !PHOTO_SRC_RE.test(p.src)) return photoFallback(cls);
   const img = h('img', {

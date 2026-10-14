@@ -1,6 +1,7 @@
 // On-device storage (build plan section 5). One localStorage key holding one JSON object.
 // Pure helpers are importable from Node; browser APIs are only touched inside functions.
 import { cleanFresh } from './fresh.js';
+import { CUSTOM_KEY, PHOTO_DB, UNREADABLE_KEY } from './custom.js';
 
 export const KEY = 'fc.v1';
 export const SCHEMA = 1;
@@ -156,6 +157,17 @@ export function save(state, storage = globalThis.localStorage) {
 export async function deleteAll(env = globalThis) {
   try { env.localStorage.removeItem(KEY); } catch { /* ignore */ }
   try { env.localStorage.removeItem(DAYS_KEY); } catch { /* ignore */ }
+  try { env.localStorage.removeItem(CUSTOM_KEY); } catch { /* ignore */ }
+  try { env.localStorage.removeItem(UNREADABLE_KEY); } catch { /* ignore */ }
+  // Your recipe photos: only this app's own database (fc-photos). Nothing else in IndexedDB is opened or touched.
+  try {
+    if (env.indexedDB) {
+      await new Promise((resolve) => {
+        const req = env.indexedDB.deleteDatabase(PHOTO_DB);
+        req.onsuccess = req.onerror = req.onblocked = () => resolve();
+      });
+    }
+  } catch { /* ignore */ }
   try {
     if (env.caches) {
       const keys = await env.caches.keys();

@@ -42,6 +42,9 @@ function proteinInfo(r) {
 export function render(ctx, params) {
   const r = ctx.recipe(params[0]);
   if (!r) return [header('What you need', { back: '#/tonight' })];
+  if (r.blocked) {
+    return [header('What you need', { back: `#/custom/view/${r.id}` }), h('div', { class: 'card', id: 'custom-blocked-cook' }, h('h2', { text: 'Nut or fish word found' }), h('p', { class: 'meta', text: 'This recipe is left out of your plan until you edit it.' }), h('a', { class: 'btn', href: `#/custom/view/${r.id}` }, 'Open the recipe'))];
+  }
   if (allergyConflict(r, ctx.state.allergies, ctx.data.vocab)) {
     return [header('What you need', { back: '#/recipes' }), h('div', { class: 'card' }, h('h2', { text: 'Not for your family' }), h('p', { class: 'meta', text: 'This meal has something on your Allergies list.' }))];
   }

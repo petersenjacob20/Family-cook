@@ -16,11 +16,13 @@ import * as done from './screens/done.js';
 import * as need from './screens/need.js';
 import * as credits from './screens/credits.js';
 import * as fresh from './screens/fresh.js';
+import * as custom from './screens/custom.js';
+import { loadCustom, withCustom } from './custom.js';
 import { createTimerController, leftMs, isDone, fmt } from './timers.js';
 
-const ROUTES = { tonight, week, grocery, family, settings, setup, swap, recipes, cook, done, need, credits, fresh };
+const ROUTES = { tonight, week, grocery, family, settings, setup, swap, recipes, cook, done, need, credits, fresh, custom };
 const NO_TABS = new Set(['setup', 'cook']);
-const TAB_FOR = { swap: 'week', recipes: 'family', settings: 'family', credits: 'family', need: 'tonight', done: 'tonight', fresh: 'grocery' };
+const TAB_FOR = { swap: 'week', recipes: 'family', settings: 'family', credits: 'family', need: 'tonight', done: 'tonight', fresh: 'grocery', custom: 'family' };
 
 const ctx = {
   state: load(),
@@ -135,7 +137,7 @@ async function loadJSON(name) {
 async function start() {
   try {
     const [r, vocab, seasonal] = await Promise.all([loadJSON('recipes.json'), loadJSON('vocab.json'), loadJSON('seasonal.json')]);
-    ctx.data = { recipes: r.recipes || [], filterTags: r.filter_tags || [], photoCredits: r.photo_credits || [], vocab, seasonal };
+    ctx.data = { recipes: withCustom(r.recipes || [], loadCustom(vocab)), filterTags: r.filter_tags || [], photoCredits: r.photo_credits || [], vocab, seasonal };
   } catch (e) {
     const root = document.getElementById('app');
     root.textContent = 'Could not load the recipes. Check your connection and reload once.';

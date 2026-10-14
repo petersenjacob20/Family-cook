@@ -2,7 +2,7 @@
 // The app never picks a product for you: "Search Amazon" only opens Amazon's own search for the
 // ingredient name (nothing else is sent), and you choose. Only products you saved yourself
 // (one exact product per ingredient, label checked) are put in the cart. The app never places an order.
-import { nutHits, wordMatches } from './rules.js';
+import { nutHits, wordMatches, guardScan, guardAllowStrip } from './rules.js';
 
 // Amazon's add-to-cart form. Items land in the regular Amazon cart, after you confirm.
 export const CART_ADD = 'https://www.amazon.com/gp/aws/cart/add.html';
@@ -38,9 +38,11 @@ export function seafoodHit(text, vocab) {
 }
 
 // Why this text can't go in the cart ('' when it's fine).
+// pub16: also the widened guard (rules.js guardScan), so your own recipes' items are dropped by the same list.
 export function blockReason(text, vocab) {
-  if (seafoodHit(text, vocab)) return 'fish or seafood';
-  if (nutHits(text).length) return 'nut word';
+  const g = guardScan(text, vocab);
+  if (g.fish.length || seafoodHit(guardAllowStrip(text), vocab)) return 'fish or seafood';
+  if (g.nut.length) return 'nut word';
   return '';
 }
 

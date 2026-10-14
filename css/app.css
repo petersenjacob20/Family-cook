@@ -467,7 +467,11 @@ a.card.freshrow { color: inherit; text-decoration: none; gap: 2px; }
 .card.freshcart { display: flex; flex-direction: column; gap: 10px; }
 /* A ticked "I agree" box isn't crossed off like a grocery line. */
 #fresh-agree[aria-checked="true"] .txt strong,
-#fresh-labelread[aria-checked="true"] .txt strong { color: var(--ink); text-decoration: none; }
+#fresh-labelread[aria-checked="true"] .txt strong,
+#custom-tick[aria-checked="true"] .txt strong { color: var(--ink); text-decoration: none; }
+#custom-tick { min-height: 44px; }
+.customreason { margin: 6px 0 0; text-align: center; }
+.customwarn { color: var(--danger); font-weight: 700; }
 /* Search Amazon Fresh: the label note is always visible, bold red. */
 .card.freshsearchcard h2 { font-size: 22px; line-height: 1.25; margin: 0 0 6px; }
 .card.freshsearchcard p { margin: 0 0 8px; }
@@ -492,3 +496,20 @@ a.btn[aria-disabled="true"] { opacity: 0.5; pointer-events: none; }
 .freshdays .daychk[aria-checked="true"] { border-color: var(--accent); }
 .freshdays .daychk[aria-checked="true"] .box { background: var(--accent); border-color: var(--accent); }
 .freshdays .daychk[aria-checked="true"] .box::after { content: "\2713"; }
+/* Your own recipes (#/custom): fits 360px, nothing sticky, so no footer can cover it. */
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.customcard { display: flex; flex-direction: column; gap: 8px; }
+.customrows { display: flex; flex-direction: column; gap: 12px; }
+.customrow { display: flex; flex-direction: column; gap: 6px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+.customamt { flex-wrap: wrap; gap: 6px; }
+.customamt .input { flex: 1 1 30%; min-width: 0; padding: 8px 8px; }
+.customamt .btn { flex: 0 0 auto; min-height: 44px; }
+.customrow textarea.input { min-height: 64px; }
+.customnums { gap: 12px; }
+.customnums label { display: flex; align-items: center; gap: 6px; flex: 1; }
+.customnums .input { width: 100%; }
+.customguard[hidden] { display: none; }
+.customguard h2 { color: var(--danger); font-size: 22px; margin: 0 0 6px; }
+.customnote p { margin: 0 0 4px; }
+.customphoto img { width: 100%; height: auto; border-radius: var(--radius-sm); }
+#add-custom { margin: 0 0 10px; }

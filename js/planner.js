@@ -54,6 +54,7 @@ export function allergyExcluded(r, state, data) {
 // Rules 1-3: right kind, not blocked, no allergy conflict, hands-on <= 45, not rated not_again.
 export function eligible(r, kind, state, data) {
   return r.kind === kind
+    && !r.blocked // your own recipe with a nut or fish word: never planned or swapped in
     && Number(r.hands_on_min) <= MAX_HANDS_ON
     && state.ratings[r.id] !== 'not_again'
     && !isBlocked(r, state.people, data.vocab)
@@ -63,14 +64,14 @@ export function eligible(r, kind, state, data) {
 // A planned meal stays put unless it vanished, changed kind, or became blocked or an allergy conflict.
 export function stillValid(state, data, id, kind) {
   const r = byId(data, id);
-  return Boolean(r && r.kind === kind && Number(r.hands_on_min) <= MAX_HANDS_ON
+  return Boolean(r && !r.blocked && r.kind === kind && Number(r.hands_on_min) <= MAX_HANDS_ON
     && !isBlocked(r, state.people, data.vocab) && !allergyExcluded(r, state, data));
 }
 
 // All recipes list: family first, then game-day, by title. Allergy conflicts are hidden (not dimmed).
 export function recipeList(state, data) {
   return (data.recipes || [])
-    .filter((r) => !allergyExcluded(r, state, data))
+    .filter((r) => r.blocked || !allergyExcluded(r, state, data)) // a blocked recipe of yours always shows in My recipes, with its warning
     .sort((a, b) => (a.kind === b.kind ? a.title.localeCompare(b.title) : a.kind === 'family' ? -1 : 1));
 }
 
@@ -244,7 +245,8 @@ export function highProteinList(state, data) {
 export function browseSections(state, data, { highProtein = false } = {}) {
   const list = highProtein ? highProteinList(state, data) : recipeList(state, data);
   return [
-    { id: 'family', label: 'Family dinners', recipes: list.filter((r) => r.kind === 'family' && !isFitness(r)) },
+    { id: 'custom', label: 'Your recipes', recipes: list.filter((r) => r.custom) },
+    { id: 'family', label: 'Family dinners', recipes: list.filter((r) => r.kind === 'family' && !isFitness(r) && !r.custom) },
     { id: 'fitness', label: 'Fitness meals', recipes: list.filter((r) => isFitness(r)) },
     { id: 'gameday', label: 'Game-day meals', recipes: list.filter((r) => r.kind !== 'family' && !isFitness(r)) },
   ].filter((s) => s.recipes.length);

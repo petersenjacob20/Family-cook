@@ -10,11 +10,16 @@ export function render(ctx, params = []) {
   const high = params[0] === 'high-protein';
   const sections = browseSections(state, data, { highProtein: high });
   const count = high ? sections.reduce((n, s) => n + s.recipes.length, 0) : recipeList(state, data).length;
-  const card = (r) => (isBlocked(r, state.people, data.vocab)
+  // Your own recipe with a nut or fish word: kept, shown with the warning, opens to Edit and Delete.
+  const blockedCard = (r) => h('a', { class: 'cardlink', href: `#/custom/view/${r.id}`, 'data-blocked': r.id },
+    smallCard(state, r, data.vocab),
+    h('p', { class: 'customwarn', text: `Not in your plan: nut or fish word (${r.blocked.map((b) => `${b.where}: ${b.words.join(', ')}`).join('; ')}). Tap to edit or delete.` }));
+  const card = (r) => (r.blocked ? blockedCard(r) : isBlocked(r, state.people, data.vocab)
     ? smallCard(state, r, data.vocab)
-    : h('a', { class: 'cardlink', href: `#/need/${r.id}` }, smallCard(state, r, data.vocab)));
+    : h('a', { class: 'cardlink', href: r.custom ? `#/custom/view/${r.id}` : `#/need/${r.id}` }, smallCard(state, r, data.vocab)));
   return [
     header('All recipes', { back: '#/family' }),
+    h('a', { class: 'btn small', href: '#/custom/new', id: 'add-custom' }, 'Add your own recipe'),
     h('div', { class: 'chips', id: 'browse-chips' },
       chip('High protein', high, () => ctx.go(high ? '#/recipes' : '#/recipes/high-protein'), 'filter')),
     h('p', { class: 'sub', text: high
