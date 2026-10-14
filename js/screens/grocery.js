@@ -2,8 +2,11 @@
 import { h, header, button, checkRow, toast } from '../dom.js';
 import { weekIdFor } from '../dates.js';
 import { fillWeek, getWeek, byId } from '../planner.js';
-import { buildList, pruneChecked, toggleChecked, shareText, rangeLabel, ingredientNotes } from '../grocery.js';
+import { plannedDays, pickDays, buildList, pruneChecked, toggleChecked, shareText, pickedDates, daysLabel, ingredientNotes } from '../grocery.js';
 import { shareWithFallback } from '../share.js';
+import { loadDays } from '../store.js';
+import { dayPicker } from '../view.js';
+import { NO_DAYS, pickAndRefresh } from './fresh.js';
 
 export function render(ctx) {
   const { state, data } = ctx;
@@ -11,8 +14,16 @@ export function render(ctx) {
   fillWeek(state, data, weekId);
   const week = getWeek(state, weekId);
   const recipe = (id) => (id ? byId(data, id) : null);
-  let list = buildList(state, recipe, weekId);
-  pruneChecked(week, list);
+  // Checks are pruned against the whole week, so a day you untick keeps its checks for later.
+  pruneChecked(week, buildList(state, recipe, weekId));
+  // The shared day picks (same as the Amazon Fresh screen): only meals on ticked days feed this list.
+  const planned = plannedDays(state, recipe, weekId);
+  const days = pickDays(loadDays(), planned);
+  const noDays = planned.length > 0 && days.length === 0;
+  let list = buildList(state, recipe, weekId, days);
+  // The date line follows the picked days (all planned days picked = the same line as before).
+  const allPicked = days.length === planned.length;
+  const label = daysLabel(list, pickedDates(state, recipe, weekId, days), allPicked);
   ctx.save();
 
   const row = (item) => {
@@ -27,14 +38,17 @@ export function render(ctx) {
 
   const mount = h('div');
   const share = () => {
-    list = buildList(state, recipe, weekId);
-    shareWithFallback({ title: 'Grocery list', text: shareText(list) }, { toast, mount });
+    list = buildList(state, recipe, weekId, days);
+    shareWithFallback({ title: 'Grocery list', text: shareText(list, label || undefined) }, { toast, mount });
   };
   const empty = !list.sections.length && !list.staples.length;
   return [
     header('Grocery list \u2014 this week', { back: '#/week' }),
-    h('p', { class: 'sub', text: empty ? rangeLabel(list) : `${rangeLabel(list)} · Tap what you already have.` }),
-    empty
+    planned.length ? dayPicker('grocery', planned, days, pickAndRefresh(ctx, '#/grocery')) : null,
+    noDays ? null : h('p', { class: 'sub', id: 'grocery-dates', text: empty ? label : `${label} · Tap what you already have.` }),
+    noDays
+      ? h('div', { class: 'card', id: 'grocery-no-days' }, h('p', { class: 'meta', text: NO_DAYS }))
+      : empty
       ? h('div', { class: 'card' }, h('p', { class: 'meta', text: 'No meals planned this week yet.' }), h('a', { class: 'btn small', href: '#/week' }, 'Plan my week'))
       : h('div', { class: 'card checklist', id: 'grocery-list' },
         list.sections.map((s) => [h('p', { class: 'section-label', text: s.label }), s.lines.map(row)])),

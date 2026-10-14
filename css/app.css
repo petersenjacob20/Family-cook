@@ -477,3 +477,18 @@ a.card.freshrow { color: inherit; text-decoration: none; gap: 2px; }
 .freshsearchlist { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
 .freshsearchlist a.btn { display: block; text-align: left; text-decoration: none; }
 a.btn[aria-disabled="true"] { opacity: 0.5; pointer-events: none; }
+/* Day picks on the Amazon Fresh screen: seven tap targets (at least 44px), tidy wrap at 360px. */
+.freshdays { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+.freshdays .daychk {
+  flex: 0 0 calc((100% - 18px) / 4); min-height: 44px; min-width: 44px;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  background: #fff; border: 2px solid var(--line-strong); border-radius: 10px;
+  font-size: var(--fs-body); font-weight: 700; color: var(--ink); padding: 4px 6px;
+}
+.freshdays .daychk .box {
+  flex: none; width: 20px; height: 20px; border: 2px solid var(--line-strong); border-radius: 4px; background: #fff;
+  display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px; line-height: 1;
+}
+.freshdays .daychk[aria-checked="true"] { border-color: var(--accent); }
+.freshdays .daychk[aria-checked="true"] .box { background: var(--accent); border-color: var(--accent); }
+.freshdays .daychk[aria-checked="true"] .box::after { content: "\2713"; }

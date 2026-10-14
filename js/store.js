@@ -4,6 +4,34 @@ import { cleanFresh } from './fresh.js';
 
 export const KEY = 'fc.v1';
 export const SCHEMA = 1;
+// Day picks shared by the Grocery tab and the Amazon Fresh screen (which planned weekdays feed the list). Its own key, so fc.v1 is never touched.
+export const DAYS_KEY = 'fc-fresh-days';
+export const ALL_DAYS = [0, 1, 2, 3, 4, 5, 6];
+
+// Clean day list: unique weekday numbers 0-6, sorted. Not a list = nothing saved (null: every planned day).
+export function cleanDays(v) {
+  if (!Array.isArray(v)) return null;
+  return ALL_DAYS.filter((d) => v.includes(d));
+}
+
+// The saved day picks, or null when nothing (readable) is saved: then every planned day is on.
+export function loadDays(storage = globalThis.localStorage) {
+  try {
+    const raw = storage ? storage.getItem(DAYS_KEY) : null;
+    return raw == null ? null : cleanDays(JSON.parse(raw));
+  } catch {
+    return null;
+  }
+}
+
+export function saveDays(days, storage = globalThis.localStorage) {
+  try {
+    storage.setItem(DAYS_KEY, JSON.stringify(cleanDays(days) || []));
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 export function defaults() {
   return {
@@ -127,6 +155,7 @@ export function save(state, storage = globalThis.localStorage) {
 // Delete my data: remove the key, clear service worker caches, unregister, reload to setup.
 export async function deleteAll(env = globalThis) {
   try { env.localStorage.removeItem(KEY); } catch { /* ignore */ }
+  try { env.localStorage.removeItem(DAYS_KEY); } catch { /* ignore */ }
   try {
     if (env.caches) {
       const keys = await env.caches.keys();

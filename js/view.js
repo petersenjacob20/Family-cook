@@ -3,6 +3,7 @@ import { h } from './dom.js';
 import { kidName, kidBadge, kidPerson } from './people.js';
 import { neverSummary, blockingWords, allergySummary } from './rules.js';
 import { cardProteinLine } from './grocery.js';
+import { DAY_SHORT } from './dates.js';
 
 // Recipe photos: app/photos/<id>.webp, all 720x540 (4:3). Width and height are always set (plus a 4:3 box in CSS),
 // so nothing moves while a photo loads. loading/decoding are set before src so lazy loading applies.
@@ -88,4 +89,20 @@ export function smallCard(state, r, vocab, extra = []) {
       blocked.length ? h('p', { class: 'meta' }, h('strong', { text: 'Not for your family' }), ` (never: ${blocked.join(', ')})`) : null,
       extra),
     recipePhoto(r, 'thumb cardthumb'));
+}
+
+// Day picks card (Grocery tab and Amazon Fresh screen share it and the fc-fresh-days choice).
+// One box per planned weekday; onPick(newDays) saves and re-renders.
+export const DAYS_LABEL = 'Which days are you shopping for?';
+export function dayPicker(prefix, planned, days, onPick) {
+  return h('div', { class: 'card freshdayscard', id: `${prefix}-days-card` },
+    h('p', { class: 'section-label', id: `${prefix}-days-label`, text: DAYS_LABEL }),
+    h('div', { class: 'freshdays', id: `${prefix}-days`, role: 'group', 'aria-label': DAYS_LABEL },
+      planned.map((d) => {
+        const on = days.includes(d);
+        return h('button', {
+          type: 'button', class: 'daychk', id: `${prefix}-day-${d}`, role: 'checkbox', 'aria-checked': on ? 'true' : 'false',
+          onclick: () => onPick(on ? days.filter((x) => x !== d) : days.concat(d)),
+        }, h('span', { class: 'box', 'aria-hidden': 'true' }), h('span', { text: DAY_SHORT[d] }));
+      })));
 }

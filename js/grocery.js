@@ -122,7 +122,9 @@ export function lineId(section, key, fam) {
 }
 
 // Build the week's list from the active nights. `recipeById(id)` returns a recipe or null.
-export function buildList(state, recipeById, weekId) {
+// `days` (optional): weekday numbers 0 (Sun) to 6 (Sat) to include; omitted = every night.
+export function buildList(state, recipeById, weekId, days) {
+  const daySet = Array.isArray(days) ? new Set(days) : null;
   const week = (state.weeks && state.weeks[weekId]) || { meals: {}, groceryChecked: [] };
   const checked = new Set(week.groceryChecked || []);
   const nights = nightsForWeek(weekId, state.nights, week);
@@ -130,6 +132,7 @@ export function buildList(state, recipeById, weekId) {
   const staples = new Map();
   let last = addDays(weekId, 4);
   for (const night of nights) {
+    if (daySet && !daySet.has(weekday(night.date))) continue;
     const r = recipeById(week.meals ? week.meals[night.date] : null);
     if (!r) continue;
     if (night.date > last) last = night.date;
@@ -177,6 +180,24 @@ export function buildList(state, recipeById, weekId) {
   return { weekId, from: weekId, to: last, sections, staples: stapleList, ids };
 }
 
+// Weekdays (0 Sun to 6 Sat) that have a planned meal this week, in plan order (Thu first). Built from the plan,
+// so any other day shows up by itself if planning ever covers it.
+export function plannedDays(state, recipeById, weekId) {
+  const week = (state.weeks && state.weeks[weekId]) || { meals: {} };
+  const out = [];
+  for (const night of nightsForWeek(weekId, state.nights, week)) {
+    const wd = weekday(night.date);
+    if (!out.includes(wd) && recipeById(week.meals ? week.meals[night.date] : null)) out.push(wd);
+  }
+  return out;
+}
+
+// The days that feed the list: saved picks limited to planned days (a saved day not in the plan is ignored);
+// nothing saved (null) = every planned day.
+export function pickDays(saved, planned) {
+  return Array.isArray(saved) ? planned.filter((d) => saved.includes(d)) : planned.slice();
+}
+
 // A check goes away when its line goes away.
 export function pruneChecked(week, list) {
   const keep = new Set(list.ids);
@@ -193,6 +214,26 @@ export function toggleChecked(week, id) {
 
 export function rangeLabel(list) {
   return `${shortLabel(list.from)} \u2013 ${shortLabel(list.to)}`;
+}
+
+// Dates of this week's planned meals on the picked weekdays, in date order.
+export function pickedDates(state, recipeById, weekId, days) {
+  const week = (state.weeks && state.weeks[weekId]) || { meals: {} };
+  return nightsForWeek(weekId, state.nights, week)
+    .filter((n) => days.includes(weekday(n.date)) && recipeById(week.meals ? week.meals[n.date] : null))
+    .map((n) => n.date);
+}
+
+// The date line for the picked days. All planned days picked: exactly rangeLabel (unchanged). One day: that date.
+// Days next to each other: a range ("Thu Oct 15 \u2013 Fri Oct 16"). Otherwise each day ("Thu Oct 15, Sat Oct 17").
+// No day: '' (nothing to show).
+export function daysLabel(list, dates, allPicked) {
+  if (allPicked) return rangeLabel(list);
+  const d = [...dates].sort();
+  if (!d.length) return '';
+  if (d.length === 1) return shortLabel(d[0]);
+  const adjacent = d.every((x, i) => i === 0 || addDays(d[i - 1], 1) === x);
+  return adjacent ? `${shortLabel(d[0])} \u2013 ${shortLabel(d[d.length - 1])}` : d.map(shortLabel).join(', ');
 }
 
 // Design's label line for store-bought items that are often marked "may contain".
@@ -262,8 +303,8 @@ export function swapHeading(swap, recipe) {
 }
 
 // Plain-text share. Checked lines are left out. Flagged lines get the label note.
-export function shareText(list) {
-  const out = [`Grocery list (${rangeLabel(list)})`];
+export function shareText(list, label = rangeLabel(list)) {
+  const out = [`Grocery list (${label})`];
   for (const s of list.sections) {
     const lines = s.lines.filter((l) => !l.checked);
     if (!lines.length) continue;
