@@ -18,7 +18,6 @@ export function defaults() {
     timers: [],
     needChecked: {},
     showProtein: false, // "Show protein options" on recipe screens. Off by default; stays on this phone.
-    freshTest: false, // Settings > "Amazon Fresh test". Off by default; stays on this phone.
     fresh: {}, // Amazon cart: ingredient key -> the one product you checked. Stays on this phone.
   };
 }
@@ -94,7 +93,7 @@ export function normalize(obj) {
   if (Array.isArray(o.timers)) s.timers = o.timers.filter((t) => isObj(t) && typeof t.id === 'string');
   if (isObj(o.needChecked)) s.needChecked = { ...o.needChecked };
   s.showProtein = o.showProtein === true;
-  s.freshTest = o.freshTest === true;
+  // The old Settings "Amazon Fresh test" flag (freshTest) is gone: it is not copied, so old saves drop it on the next save.
   s.fresh = cleanFresh(o.fresh);
   return s;
 }

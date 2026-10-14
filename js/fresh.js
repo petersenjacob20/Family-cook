@@ -119,14 +119,17 @@ export function productUrl(asin) {
   return ASIN_RE.test(asin) ? `https://www.amazon.com/dp/${asin}` : '';
 }
 
-// ---------- Amazon Fresh test (Settings > "Amazon Fresh test", off by default) ----------
+// ---------- Search Amazon Fresh (always on Send to Amazon cart) ----------
 // One plain Amazon Fresh search link per list item, opened only by the user's tap.
 // Only the item name goes in the link: no amounts, no ASIN, no people names, no allergies.
 // Nut/fish names are dropped and shown instead.
 export const FRESH_SEARCH = 'https://www.amazon.com/s';
 
+// 80 characters by code point, so an emoji is never split into a lone surrogate (encodeURIComponent would throw).
+const cut80 = (v) => Array.from(String(v || '').trim()).slice(0, 80).join('');
+
 export function freshSearchUrl(name) {
-  return `${FRESH_SEARCH}?k=${encodeURIComponent(String(name || '').trim().slice(0, 80))}&i=amazonfresh`;
+  return `${FRESH_SEARCH}?k=${encodeURIComponent(cut80(name))}&i=amazonfresh`;
 }
 
 // This week's unchecked lines -> { names, sent, blocked }. Staples are never sent.
@@ -137,7 +140,7 @@ export function freshPayload(list, vocab) {
   for (const s of (list && list.sections) || []) {
     for (const line of s.lines) {
       if (line.checked) continue;
-      const name = String(line.name || '').trim().slice(0, 80);
+      const name = cut80(line.name);
       if (!name) continue;
       const why = blockReason(name, vocab) || blockReason(line.text, vocab);
       if (why) { blocked.push({ ...line, why }); continue; }

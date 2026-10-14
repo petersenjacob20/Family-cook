@@ -463,19 +463,15 @@ a.card.freshrow { color: inherit; text-decoration: none; gap: 2px; }
 .stickyfoot .row .btn { flex: 1; }
 /* Room under the content for the sticky footer (height set from JS), so nothing hides behind it. */
 .freshbody { padding-bottom: var(--freshfoot-h, 0px); }
+/* The cart tick and "Add to Amazon cart" sit in the page (not the sticky footer), right after the search card. */
+.card.freshcart { display: flex; flex-direction: column; gap: 10px; }
 /* A ticked "I agree" box isn't crossed off like a grocery line. */
 #fresh-agree[aria-checked="true"] .txt strong,
-#fresh-test-agree[aria-checked="true"] .txt strong,
 #fresh-labelread[aria-checked="true"] .txt strong { color: var(--ink); text-decoration: none; }
-/* Amazon Fresh test warning: red, its own tick. */
-.card.freshtestwarn { border: 2px solid var(--danger); }
-.card.freshtestwarn h2 { color: var(--danger); font-size: 22px; line-height: 1.25; margin: 0 0 6px; }
-.card.freshtestwarn p { margin: 0 0 8px; }
-#fresh-test { margin-top: 12px; }
-/* The test card's tick and its own button stay together; scrolling stops with the button above the sticky footer. */
-.freshtestact { display: flex; flex-direction: column; gap: 10px; }
+/* Search Amazon Fresh: the label note is always visible, bold red. */
+.card.freshsearchcard h2 { font-size: 22px; line-height: 1.25; margin: 0 0 6px; }
+.card.freshsearchcard p { margin: 0 0 8px; }
+.freshnote { font-weight: 700; color: var(--danger); font-size: var(--fs-body); }
 .freshsearchlist { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
 .freshsearchlist a.btn { display: block; text-align: left; text-decoration: none; }
-.freshsearchlist a.btn[aria-disabled="true"] { opacity: .5; }
-#fresh-test-agree { scroll-margin-bottom: calc(var(--freshfoot-h, 0px) + var(--tabs-h) + 16px + env(safe-area-inset-bottom)); }
 a.btn[aria-disabled="true"] { opacity: 0.5; pointer-events: none; }

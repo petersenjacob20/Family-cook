@@ -3,6 +3,7 @@
 //   #/fresh/products         this week's items and the product saved for each
 //   #/fresh/product/<key>    save the one exact product for one ingredient
 // "Search Amazon" opens Amazon's search for the ingredient name only (you pick the product).
+// "Search Amazon Fresh" lists one Amazon Fresh search link per item (names only), always shown.
 // The app never picks a product or a swap for you, and never places an order.
 import { h, append, header, button, checkRow, toast } from '../dom.js';
 import { weekIdFor, todayISO } from '../dates.js';
@@ -12,6 +13,14 @@ import { shareWithFallback } from '../share.js';
 import { planSend, cartUrl, makeEntry, productUrl, sendSummary, blockReason, AMAZON_CART, freshPayload, freshSearchUrl } from '../fresh.js';
 
 export const SUBS_LINE = 'Turn substitutions OFF and read every label.';
+export const SEARCH_HEADING = 'Search Amazon Fresh';
+export const SEARCH_NOTE = 'Check every label for peanuts, tree nuts, may-contain warnings, and fish/seafood.';
+export const FOOT_NOTE = 'Nothing is ordered.';
+export const CART_NOTE = 'Amazon asks you to confirm, then adds the items to your cart. Nothing is ordered.';
+export const WHY_TICK = 'Tick the box above to turn this on.';
+export const WHY_SAVE = 'Save products first.';
+// Why "Add to Amazon cart" is off ('' when it is on).
+export function openWhy(agreed, url) { return !url ? WHY_SAVE : agreed ? '' : WHY_TICK; }
 export const LABEL_BOX = "I read this exact label: no peanuts, no tree nuts, no \u201cmay contain\u201d or \u201csame facility\u201d nut warning, and no fish or seafood.";
 
 function weekList(ctx) {
@@ -53,63 +62,57 @@ function sendScreen(ctx) {
     openExternal(url);
   }, 'primary', { id: 'fresh-open', disabled: true });
 
+  // A plain one-line reason under the button whenever it is off (pub10/pub11 left it faded with no reason).
+  const why = h('p', { class: 'meta', id: 'fresh-open-why', 'aria-live': 'polite', text: openWhy(false, url) });
   const agree = checkRow('I\u2019ll turn substitutions off and read every label before I order.', '', false, () => {
     agreed = !agreed;
     agree.setAttribute('aria-checked', agreed ? 'true' : 'false');
     openBtn.disabled = !(agreed && url);
+    why.textContent = openWhy(agreed, url);
   });
   agree.id = 'fresh-agree';
 
   const mount = h('div');
   const line = (l, right) => h('li', null, h('strong', { text: l.text }), right ? h('span', { class: 'meta', text: right }) : null);
 
-  // Amazon Fresh test: only when Settings > "Amazon Fresh test" is on. Nothing is built until tapped.
-  let testArea = null;
-  if (ctx.state.freshTest === true) {
-    testArea = h('div', { id: 'fresh-test' });
-    const tryBtn = button('Try Amazon Fresh (test)', () => {
-      const { names, sent, blocked } = freshPayload(list, vocab);
-      let ticked = false;
-      // One real link per item (target _blank, noopener). No href until the red tick is ticked.
-      const links = names.map((name, i) => {
-        const a = h('a', { class: 'btn small danger freshsearch', id: `fresh-test-link-${i}`, target: '_blank', rel: 'noopener noreferrer', 'aria-disabled': 'true' }, `Search: ${name}`);
-        a.addEventListener('click', (e) => {
-          if (!ticked || !a.getAttribute('href')) { e.preventDefault(); return; }
-          if (navigator.onLine === false) { e.preventDefault(); toast('You\u2019re offline. Connect, then try again.'); }
-        });
-        return { a, url: freshSearchUrl(name) };
-      });
-      const listEl = h('ul', { class: 'freshlist freshsearchlist', id: 'fresh-test-links' }, links.map(({ a }) => h('li', null, a)));
-      const tick = checkRow('Amazon\u2019s search shows its own products. Check every label for peanuts, tree nuts and fish before you buy.', '', false, () => {
-        ticked = !ticked;
-        tick.setAttribute('aria-checked', ticked ? 'true' : 'false');
-        for (const { a, url } of links) {
-          if (ticked) { a.setAttribute('href', url); a.setAttribute('aria-disabled', 'false'); }
-          else { a.removeAttribute('href'); a.setAttribute('aria-disabled', 'true'); }
-        }
-      });
-      tick.id = 'fresh-test-agree';
-      testArea.replaceChildren(h('div', { class: 'card freshtestwarn', id: 'fresh-test-warning', role: 'alert' },
-        h('h2', { text: 'Test: search Amazon Fresh' }),
-        h('p', { class: 'meta', text: `One Amazon Fresh search per item (${sent.length}). Only the item name goes to Amazon. No names of people, no allergies. Tick the box, then tap an item.` }),
-        blocked.length ? h('div', null,
-          h('p', { class: 'section-label', text: `Never sent (${blocked.length})` }),
-          h('ul', { class: 'freshlist', id: 'fresh-test-blocked' }, blocked.map((l) => line(l, l.why)))) : null,
-        h('div', { class: 'freshtestact' }, tick, listEl)));
-      // Bring the tick into view, clear of the sticky footer (see scroll-margin-bottom in the CSS).
-      if (typeof requestAnimationFrame === 'function' && tick.scrollIntoView) requestAnimationFrame(() => tick.scrollIntoView({ block: 'start' }));
-    }, 'small', { id: 'fresh-test-try' });
-    testArea.appendChild(tryBtn);
-  }
+  // Search Amazon Fresh: one plain search link per list item, always shown. The hrefs are set here, but
+  // nothing is fetched: a link only opens when you tap it (new tab, noopener noreferrer).
+  // Only the item name goes in the link; nut and fish items are dropped and listed instead.
+  const { names, sent, blocked } = freshPayload(list, vocab);
+  const searchLinks = names.map((name, i) => {
+    const a = h('a', { class: 'btn small freshsearch', id: `fresh-search-link-${i}`, href: freshSearchUrl(name), target: '_blank', rel: 'noopener noreferrer' }, `Search: ${name}`);
+    a.addEventListener('click', (e) => {
+      if (navigator.onLine === false) { e.preventDefault(); toast('You\u2019re offline. Connect, then try again.'); }
+    });
+    return a;
+  });
+  const searchArea = h('div', { class: 'card freshsearchcard', id: 'fresh-search' },
+    h('h2', { text: SEARCH_HEADING }),
+    h('p', { class: 'freshnote', id: 'fresh-search-note', role: 'note', text: SEARCH_NOTE }),
+    names.length
+      ? h('p', { class: 'meta', text: `One Amazon Fresh search per item (${sent.length}). Only the item name goes to Amazon, never names of people or allergies. Tap an item to open its search.` })
+      : h('p', { class: 'meta', text: 'Nothing on this week\u2019s list to search.' }),
+    blocked.length ? h('div', null,
+      h('p', { class: 'section-label', text: `Never sent (${blocked.length})` }),
+      h('ul', { class: 'freshlist', id: 'fresh-search-blocked' }, blocked.map((l) => line(l, l.why)))) : null,
+    names.length ? h('ul', { class: 'freshlist freshsearchlist', id: 'fresh-search-links' }, searchLinks.map((a) => h('li', null, a))) : null);
 
-  // The tick box sits in the sticky footer, right above the button it unlocks, so it is always in view.
-  const foot = h('div', { class: 'stickyfoot', id: 'fresh-foot' },
+  // QA (360x640): the sticky footer is the same small bar in every state (one row plus a one-line note), so it
+  // never covers the allergy note or the links. When this week's list has a saved product, the cart tick and
+  // "Add to Amazon cart" (off until ticked) sit in a normal block in the page, right after the search card.
+  const hasSaved = plan.send.length > 0;
+  const cartBlock = hasSaved
+    ? h('div', { class: 'card freshcart', id: 'fresh-cart-block' },
       agree,
       openBtn,
+      why,
+      h('p', { class: 'footer-note', id: 'fresh-cart-note', text: CART_NOTE }))
+    : null;
+  const foot = h('div', { class: 'stickyfoot', id: 'fresh-foot' },
       h('div', { class: 'row' },
         button('Copy this list', () => shareWithFallback({ title: 'Amazon cart', text: sendSummary(plan) }, { toast, mount }), 'small', { id: 'fresh-copy' }),
         button('My cart', () => openExternal(AMAZON_CART), 'small', { id: 'fresh-cart' })),
-      h('p', { class: 'footer-note', text: 'Amazon asks you to confirm, then adds the items to your cart. Nothing is ordered.' }));
+      h('p', { class: 'footer-note', id: 'fresh-foot-note', text: FOOT_NOTE }));
   const body = h('div', { class: 'freshbody', id: 'fresh-body' });
   // Bottom padding = the footer's real height, kept in step if it changes.
   const syncFoot = () => body.style.setProperty('--freshfoot-h', `${Math.ceil(foot.getBoundingClientRect().height)}px`);
@@ -118,10 +121,13 @@ function sendScreen(ctx) {
   return [
     header('Send to Amazon cart', { back: '#/grocery' }),
     append(body,
-    [h('div', { class: 'card accent-line freshwarn', id: 'fresh-warning', role: 'alert' },
+    [searchArea,
+    // The substitutions and label warning always comes right after the search card; with a saved product the tick and Add card follows it.
+    h('div', { class: 'card accent-line freshwarn', id: 'fresh-warning', role: 'alert' },
       h('h2', { text: SUBS_LINE }),
       h('p', { text: 'Amazon can swap an out-of-stock item for something else. In your Amazon cart or at checkout, set every item to \u201cDon\u2019t substitute.\u201d Then open each item and read the whole label before you tap Place order.' }),
       h('p', { class: 'meta', text: 'This app only fills the cart. You place the order yourself.' })),
+    cartBlock,
     plan.send.length
       ? h('div', { class: 'card' },
         h('p', { class: 'section-label', text: `Going to your Amazon cart (${plan.send.length})` }),
@@ -140,7 +146,6 @@ function sendScreen(ctx) {
         h('ul', { class: 'freshlist', id: 'fresh-blocked' }, plan.blocked.map((l) => line(l, l.why))))
       : null,
     h('a', { class: 'btn', href: '#/fresh/products', id: 'fresh-products' }, 'Choose products'),
-    testArea,
     mount]),
     foot,
   ];
