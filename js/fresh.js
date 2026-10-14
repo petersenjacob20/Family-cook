@@ -120,29 +120,18 @@ export function productUrl(asin) {
 }
 
 // ---------- Amazon Fresh test (Settings > "Amazon Fresh test", off by default) ----------
-// Amazon's Fresh ingredients page, by a user-tapped GET link carrying
-// {"ingredients":[{name, quantityList:[{unit, amount}]}]}. Names only: AMAZON picks the products,
-// so no ASIN (and no asinOverrides) is ever sent. Nut/fish names are dropped and shown instead.
-export const FRESH_LANDING = 'https://www.amazon.com/afx/ingredients/landingencoded';
+// One plain Amazon Fresh search link per list item, opened only by the user's tap.
+// Only the item name goes in the link: no amounts, no ASIN, no people names, no allergies.
+// Nut/fish names are dropped and shown instead.
+export const FRESH_SEARCH = 'https://www.amazon.com/s';
 
-const round2 = (x) => Math.round(x * 100) / 100;
-// One grocery line -> one { unit, amount } in Amazon's upper-case units.
-export function freshQuantity(line) {
-  const t = Number(line.total) || 0;
-  if (line.fam === 'vol') {
-    if (t >= 12) return { unit: 'CUPS', amount: round2(t / 48) };
-    return { unit: 'COUNT', amount: 1 }; // spoons: one jar or bottle (Amazon's page fails on spoon units)
-  }
-  if (line.fam === 'wt') {
-    if (t >= 16) return { unit: 'POUNDS', amount: round2(t / 16) };
-    return { unit: 'OUNCES', amount: round2(Math.max(t, 0.25)) };
-  }
-  return { unit: 'COUNT', amount: Math.max(1, Math.ceil(t - 1e-9)) }; // count, bag, box, can, jar, pkg ...
+export function freshSearchUrl(name) {
+  return `${FRESH_SEARCH}?k=${encodeURIComponent(String(name || '').trim().slice(0, 80))}&i=amazonfresh`;
 }
 
-// This week's unchecked lines -> { payload, sent, blocked }. Staples are never sent.
+// This week's unchecked lines -> { names, sent, blocked }. Staples are never sent.
 export function freshPayload(list, vocab) {
-  const ingredients = [];
+  const names = [];
   const sent = [];
   const blocked = [];
   for (const s of (list && list.sections) || []) {
@@ -152,29 +141,11 @@ export function freshPayload(list, vocab) {
       if (!name) continue;
       const why = blockReason(name, vocab) || blockReason(line.text, vocab);
       if (why) { blocked.push({ ...line, why }); continue; }
-      ingredients.push({ name, quantityList: [freshQuantity(line)] });
+      names.push(name);
       sent.push(line);
     }
   }
-  return { payload: { ingredients: ingredients.slice(0, MAX_ITEMS) }, sent: sent.slice(0, MAX_ITEMS), blocked };
-}
-
-// The link, built in the browser only after the red tick: gzip, then base64url WITH '=' padding,
-// in the same shape as Amazon's own redirect from its ingredients form:
-//   /afx/ingredients/landingencoded?almBrandId=&encodedIngredients=<...>&tag=
-// A plain GET link, so it still works when Android hands amazon.com links to the Amazon app.
-// Throws 'no-compression' when the browser has no CompressionStream (nothing is sent then).
-export async function encodeIngredients(payload, CS = globalThis.CompressionStream) {
-  if (typeof CS !== 'function') throw new Error('no-compression');
-  const stream = new Blob([JSON.stringify(payload)]).stream().pipeThrough(new CS('gzip'));
-  const bytes = new Uint8Array(await new Response(stream).arrayBuffer());
-  let bin = '';
-  for (let k = 0; k < bytes.length; k += 1) bin += String.fromCharCode(bytes[k]);
-  return btoa(bin).replace(/\+/g, '-').replace(/\//g, '_');
-}
-
-export async function freshLandingUrl(payload, CS) {
-  return `${FRESH_LANDING}?almBrandId=&encodedIngredients=${await encodeIngredients(payload, CS)}&tag=`;
+  return { names: names.slice(0, MAX_ITEMS), sent: sent.slice(0, MAX_ITEMS), blocked };
 }
 
 // Plain-text copy of what the app will and won't send.

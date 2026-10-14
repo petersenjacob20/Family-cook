@@ -15,7 +15,7 @@ export function render(ctx) {
   let freshT = null;
   const drawFresh = () => {
     const on = Boolean(ctx.state && ctx.state.freshTest === true);
-    const t = toggle('Amazon Fresh test', 'Shows a test button on Send to Amazon cart. Amazon picks the products.', on, (v) => {
+    const t = toggle('Amazon Fresh test', 'Shows Amazon Fresh search links on Send to Amazon cart. You pick each product.', on, (v) => {
       if (!ctx.state) return;
       ctx.state.freshTest = v;
       if (ctx.save) ctx.save();

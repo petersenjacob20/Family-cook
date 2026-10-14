@@ -9,7 +9,7 @@ import { weekIdFor, todayISO } from '../dates.js';
 import { fillWeek, getWeek, byId } from '../planner.js';
 import { buildList, ingredientNotes } from '../grocery.js';
 import { shareWithFallback } from '../share.js';
-import { planSend, cartUrl, makeEntry, productUrl, sendSummary, blockReason, AMAZON_CART, freshPayload, freshLandingUrl } from '../fresh.js';
+import { planSend, cartUrl, makeEntry, productUrl, sendSummary, blockReason, AMAZON_CART, freshPayload, freshSearchUrl } from '../fresh.js';
 
 export const SUBS_LINE = 'Turn substitutions OFF and read every label.';
 export const LABEL_BOX = "I read this exact label: no peanuts, no tree nuts, no \u201cmay contain\u201d or \u201csame facility\u201d nut warning, and no fish or seafood.";
@@ -68,41 +68,36 @@ function sendScreen(ctx) {
   if (ctx.state.freshTest === true) {
     testArea = h('div', { id: 'fresh-test' });
     const tryBtn = button('Try Amazon Fresh (test)', () => {
-      const { payload, sent, blocked } = freshPayload(list, vocab);
+      const { names, sent, blocked } = freshPayload(list, vocab);
       let ticked = false;
-      // A real link the user taps (target _blank, noopener): no popup-after-await problem on Android Chrome.
-      // It has no href until the red tick is ticked and the link is built.
-      const go = h('a', { class: 'btn danger', id: 'fresh-test-open', role: 'button', target: '_blank', rel: 'noopener noreferrer', 'aria-disabled': 'true' }, 'Open Amazon Fresh (test)');
-      go.disabled = true;
-      go.addEventListener('click', (e) => {
-        if (go.disabled || !go.getAttribute('href')) { e.preventDefault(); return; }
-        if (navigator.onLine === false) { e.preventDefault(); toast('You\u2019re offline. Connect, then try again.'); }
+      // One real link per item (target _blank, noopener). No href until the red tick is ticked.
+      const links = names.map((name, i) => {
+        const a = h('a', { class: 'btn small danger freshsearch', id: `fresh-test-link-${i}`, target: '_blank', rel: 'noopener noreferrer', 'aria-disabled': 'true' }, `Search: ${name}`);
+        a.addEventListener('click', (e) => {
+          if (!ticked || !a.getAttribute('href')) { e.preventDefault(); return; }
+          if (navigator.onLine === false) { e.preventDefault(); toast('You\u2019re offline. Connect, then try again.'); }
+        });
+        return { a, url: freshSearchUrl(name) };
       });
-      const msg = h('p', { class: 'error', id: 'fresh-test-msg', role: 'alert' });
-      const lock = () => { go.disabled = true; go.removeAttribute('href'); go.setAttribute('aria-disabled', 'true'); };
-      const tick = checkRow('Amazon picks these products, not you. Check every label for peanuts, tree nuts and fish before you buy.', '', false, async () => {
+      const listEl = h('ul', { class: 'freshlist freshsearchlist', id: 'fresh-test-links' }, links.map(({ a }) => h('li', null, a)));
+      const tick = checkRow('Amazon\u2019s search shows its own products. Check every label for peanuts, tree nuts and fish before you buy.', '', false, () => {
         ticked = !ticked;
         tick.setAttribute('aria-checked', ticked ? 'true' : 'false');
-        lock();
-        msg.textContent = '';
-        if (!ticked || !payload.ingredients.length) return;
-        if (typeof globalThis.CompressionStream !== 'function') { msg.textContent = 'This test needs a newer Chrome. Update Chrome, or use Add to Amazon cart.'; return; }
-        const url = await freshLandingUrl(payload);
-        if (!ticked) return; // unticked while building
-        go.setAttribute('href', url);
-        go.disabled = false;
-        go.setAttribute('aria-disabled', 'false');
+        for (const { a, url } of links) {
+          if (ticked) { a.setAttribute('href', url); a.setAttribute('aria-disabled', 'false'); }
+          else { a.removeAttribute('href'); a.setAttribute('aria-disabled', 'true'); }
+        }
       });
       tick.id = 'fresh-test-agree';
       testArea.replaceChildren(h('div', { class: 'card freshtestwarn', id: 'fresh-test-warning', role: 'alert' },
-        h('h2', { text: 'Test: Amazon picks the products' }),
-        h('p', { class: 'meta', text: `Sends ${sent.length} item name${sent.length === 1 ? '' : 's'} and amounts to Amazon Fresh. No names of people, no allergies.` }),
+        h('h2', { text: 'Test: search Amazon Fresh' }),
+        h('p', { class: 'meta', text: `One Amazon Fresh search per item (${sent.length}). Only the item name goes to Amazon. No names of people, no allergies. Tick the box, then tap an item.` }),
         blocked.length ? h('div', null,
           h('p', { class: 'section-label', text: `Never sent (${blocked.length})` }),
           h('ul', { class: 'freshlist', id: 'fresh-test-blocked' }, blocked.map((l) => line(l, l.why)))) : null,
-        h('div', { class: 'freshtestact' }, tick, msg, go)));
-      // Bring the card's button into view, clear of the sticky footer (see scroll-margin-bottom in the CSS).
-      if (typeof requestAnimationFrame === 'function' && go.scrollIntoView) requestAnimationFrame(() => go.scrollIntoView({ block: 'end' }));
+        h('div', { class: 'freshtestact' }, tick, listEl)));
+      // Bring the tick into view, clear of the sticky footer (see scroll-margin-bottom in the CSS).
+      if (typeof requestAnimationFrame === 'function' && tick.scrollIntoView) requestAnimationFrame(() => tick.scrollIntoView({ block: 'start' }));
     }, 'small', { id: 'fresh-test-try' });
     testArea.appendChild(tryBtn);
   }
