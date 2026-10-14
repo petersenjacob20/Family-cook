@@ -125,16 +125,44 @@ export function productUrl(asin) {
 // Nut/fish names are dropped and shown instead.
 export const FRESH_SEARCH = 'https://www.amazon.com/s';
 
-// 80 characters by code point, so an emoji is never split into a lone surrogate (encodeURIComponent would throw).
-const cut80 = (v) => Array.from(String(v || '').trim()).slice(0, 80).join('');
+// Ill-formed UTF-16 (a lone surrogate, e.g. from pasted text) becomes U+FFFD, so encodeURIComponent never throws.
+export function wellFormed(v) {
+  const s = String(v == null ? '' : v);
+  if (typeof s.toWellFormed === 'function') return s.toWellFormed();
+  return s.replace(/[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?<![\uD800-\uDBFF])[\uDC00-\uDFFF]/g, '\uFFFD');
+}
+// 80 characters by code point, so an emoji is never split into a lone surrogate.
+const cut80 = (v) => Array.from(wellFormed(v).trim()).slice(0, 80).join('');
 
 export function freshSearchUrl(name) {
   return `${FRESH_SEARCH}?k=${encodeURIComponent(cut80(name))}&i=amazonfresh`;
 }
 
-// This week's unchecked lines -> { names, sent, blocked }. Staples are never sent.
+// ---------- Whole-list Amazon Fresh import (pub10's landingencoded GET, restored as the main button) ----------
+// Amazon's ingredients page, built exactly as pub10 (e08c730) did. A plain GET, in the same shape as Amazon's own
+// redirect from its ingredients form: /afx/ingredients/landingencoded?almBrandId=&encodedIngredients=<...>&tag=
+export const FRESH_LANDING = 'https://www.amazon.com/afx/ingredients/landingencoded';
+
+const round2 = (x) => Math.round(x * 100) / 100;
+// One grocery line -> one { unit, amount } in Amazon's upper-case units (as pub10).
+export function freshQuantity(line) {
+  const t = Number(line.total) || 0;
+  if (line.fam === 'vol') {
+    if (t >= 12) return { unit: 'CUPS', amount: round2(t / 48) };
+    return { unit: 'COUNT', amount: 1 }; // spoons: one jar or bottle (Amazon's page fails on spoon units)
+  }
+  if (line.fam === 'wt') {
+    if (t >= 16) return { unit: 'POUNDS', amount: round2(t / 16) };
+    return { unit: 'OUNCES', amount: round2(Math.max(t, 0.25)) };
+  }
+  return { unit: 'COUNT', amount: Math.max(1, Math.ceil(t - 1e-9)) }; // count, bag, box, can, jar, pkg ...
+}
+
+// This week's unchecked lines -> { names, payload, sent, blocked }. Staples are never sent.
+// names feed the per-item search links; payload (item names and amounts only) feeds the whole-list import.
 export function freshPayload(list, vocab) {
   const names = [];
+  const ingredients = [];
   const sent = [];
   const blocked = [];
   for (const s of (list && list.sections) || []) {
@@ -145,10 +173,26 @@ export function freshPayload(list, vocab) {
       const why = blockReason(name, vocab) || blockReason(line.text, vocab);
       if (why) { blocked.push({ ...line, why }); continue; }
       names.push(name);
+      ingredients.push({ name, quantityList: [freshQuantity(line)] });
       sent.push(line);
     }
   }
-  return { names: names.slice(0, MAX_ITEMS), sent: sent.slice(0, MAX_ITEMS), blocked };
+  return { names: names.slice(0, MAX_ITEMS), payload: { ingredients: ingredients.slice(0, MAX_ITEMS) }, sent: sent.slice(0, MAX_ITEMS), blocked };
+}
+
+// gzip, then base64url WITH '=' padding (Amazon's own shape). Local only, no network.
+// Throws 'no-compression' when the browser has no CompressionStream (nothing is sent then).
+export async function encodeIngredients(payload, CS = globalThis.CompressionStream) {
+  if (typeof CS !== 'function') throw new Error('no-compression');
+  const stream = new Blob([JSON.stringify(payload)]).stream().pipeThrough(new CS('gzip'));
+  const bytes = new Uint8Array(await new Response(stream).arrayBuffer());
+  let bin = '';
+  for (let k = 0; k < bytes.length; k += 1) bin += String.fromCharCode(bytes[k]);
+  return btoa(bin).replace(/\+/g, '-').replace(/\//g, '_');
+}
+
+export async function freshLandingUrl(payload, CS) {
+  return `${FRESH_LANDING}?almBrandId=&encodedIngredients=${await encodeIngredients(payload, CS)}&tag=`;
 }
 
 // Plain-text copy of what the app will and won't send.

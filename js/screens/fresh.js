@@ -3,17 +3,21 @@
 //   #/fresh/products         this week's items and the product saved for each
 //   #/fresh/product/<key>    save the one exact product for one ingredient
 // "Search Amazon" opens Amazon's search for the ingredient name only (you pick the product).
-// "Search Amazon Fresh" lists one Amazon Fresh search link per item (names only), always shown.
+// "Open my list in Amazon Fresh" sends the whole list (names and amounts) in one tap; per-item searches are the backup.
 // The app never picks a product or a swap for you, and never places an order.
 import { h, append, header, button, checkRow, toast } from '../dom.js';
 import { weekIdFor, todayISO } from '../dates.js';
 import { fillWeek, getWeek, byId } from '../planner.js';
 import { buildList, ingredientNotes } from '../grocery.js';
 import { shareWithFallback } from '../share.js';
-import { planSend, cartUrl, makeEntry, productUrl, sendSummary, blockReason, AMAZON_CART, freshPayload, freshSearchUrl } from '../fresh.js';
+import { planSend, cartUrl, makeEntry, productUrl, sendSummary, blockReason, AMAZON_CART, freshPayload, freshSearchUrl, wellFormed, freshLandingUrl } from '../fresh.js';
 
 export const SUBS_LINE = 'Turn substitutions OFF and read every label.';
-export const SEARCH_HEADING = 'Search Amazon Fresh';
+export const SEARCH_HEADING = 'Send your list to Amazon Fresh';
+export const MAIN_LABEL = 'Open my list in Amazon Fresh';
+export const OLD_CHROME = 'This needs a newer Chrome. Update Chrome, or use the search links below.';
+export const BACKUP_LABEL = 'Backup: search one item at a time';
+export const BACKUP_META = 'If the list doesn\u2019t open, search each item here instead. Tap an item to open its search.';
 export const SEARCH_NOTE = 'Check every label for peanuts, tree nuts, may-contain warnings, and fish/seafood.';
 export const FOOT_NOTE = 'Nothing is ordered.';
 export const CART_NOTE = 'Amazon asks you to confirm, then adds the items to your cart. Nothing is ordered.';
@@ -75,10 +79,26 @@ function sendScreen(ctx) {
   const mount = h('div');
   const line = (l, right) => h('li', null, h('strong', { text: l.text }), right ? h('span', { class: 'meta', text: right }) : null);
 
-  // Search Amazon Fresh: one plain search link per list item, always shown. The hrefs are set here, but
-  // nothing is fetched: a link only opens when you tap it (new tab, noopener noreferrer).
-  // Only the item name goes in the link; nut and fish items are dropped and listed instead.
-  const { names, sent, blocked } = freshPayload(list, vocab);
+  // Amazon Fresh, main path: the whole list in one tap (Amazon's ingredients page, item names and amounts only).
+  // The link is built here, locally (gzip + base64url, no network); it opens only when you tap it.
+  // Opened as pub10 did: a real link (new tab, noopener noreferrer) the user taps. Nut and fish items are dropped and listed.
+  // The per-item search links below it are the backup.
+  const { names, payload, sent, blocked } = freshPayload(list, vocab);
+  const main = h('a', { class: 'btn primary freshmain', id: 'fresh-main', role: 'button', target: '_blank', rel: 'noopener noreferrer', 'aria-disabled': 'true' }, MAIN_LABEL);
+  const mainMsg = h('p', { class: 'error', id: 'fresh-main-msg', role: 'status' });
+  main.addEventListener('click', (e) => {
+    if (!main.getAttribute('href')) { e.preventDefault(); return; }
+    if (navigator.onLine === false) { e.preventDefault(); toast('You\u2019re offline. Connect, then try again.'); }
+  });
+  let mainReady = Promise.resolve();
+  if (!payload.ingredients.length) mainMsg.textContent = 'Nothing on this week\u2019s list to send.';
+  else if (typeof globalThis.CompressionStream !== 'function') mainMsg.textContent = OLD_CHROME;
+  else {
+    mainReady = freshLandingUrl(payload).then((url) => {
+      main.setAttribute('href', url);
+      main.setAttribute('aria-disabled', 'false');
+    }, () => { mainMsg.textContent = OLD_CHROME; });
+  }
   const searchLinks = names.map((name, i) => {
     const a = h('a', { class: 'btn small freshsearch', id: `fresh-search-link-${i}`, href: freshSearchUrl(name), target: '_blank', rel: 'noopener noreferrer' }, `Search: ${name}`);
     a.addEventListener('click', (e) => {
@@ -89,13 +109,20 @@ function sendScreen(ctx) {
   const searchArea = h('div', { class: 'card freshsearchcard', id: 'fresh-search' },
     h('h2', { text: SEARCH_HEADING }),
     h('p', { class: 'freshnote', id: 'fresh-search-note', role: 'note', text: SEARCH_NOTE }),
+    main,
+    mainMsg,
     names.length
-      ? h('p', { class: 'meta', text: `One Amazon Fresh search per item (${sent.length}). Only the item name goes to Amazon, never names of people or allergies. Tap an item to open its search.` })
-      : h('p', { class: 'meta', text: 'Nothing on this week\u2019s list to search.' }),
+      ? h('p', { class: 'meta', id: 'fresh-main-meta', text: `Sends ${sent.length} item name${sent.length === 1 ? '' : 's'} and amounts to Amazon Fresh, never names of people or allergies. Amazon suggests each product; you choose before you buy.` })
+      : null,
     blocked.length ? h('div', null,
       h('p', { class: 'section-label', text: `Never sent (${blocked.length})` }),
       h('ul', { class: 'freshlist', id: 'fresh-search-blocked' }, blocked.map((l) => line(l, l.why)))) : null,
-    names.length ? h('ul', { class: 'freshlist freshsearchlist', id: 'fresh-search-links' }, searchLinks.map((a) => h('li', null, a))) : null);
+    names.length ? h('div', { class: 'freshbackup', id: 'fresh-backup' },
+      h('p', { class: 'section-label', text: BACKUP_LABEL }),
+      h('p', { class: 'meta', text: BACKUP_META }),
+      h('ul', { class: 'freshlist freshsearchlist', id: 'fresh-search-links' }, searchLinks.map((a) => h('li', null, a)))) : null);
+  main.ready = mainReady; // resolves once the local link is built (tests wait on it)
+
 
   // QA (360x640): the sticky footer is the same small bar in every state (one row plus a one-line note), so it
   // never covers the allergy note or the links. When this week's list has a saved product, the cart tick and
@@ -163,7 +190,7 @@ function productsScreen(ctx) {
   const row = (key, title) => {
     const e = fresh[key];
     const why = blockReason(title, vocab);
-    return h('a', { class: 'card freshrow', href: `#/fresh/product/${encodeURIComponent(key)}`, 'data-key': key },
+    return h('a', { class: 'card freshrow', href: `#/fresh/product/${encodeURIComponent(wellFormed(key))}`, 'data-key': key },
       h('strong', { text: title }),
       h('span', { class: 'meta', text: why ? `Never sent (${why})` : e ? `${e.label || 'Saved product'} \u00b7 ${e.asin} \u00d7 ${e.qty}` : 'No product yet' }));
   };
@@ -222,7 +249,7 @@ function productScreen(ctx, key) {
     toast('Removed.');
     ctx.go('#/fresh/products');
   };
-  const search = `https://www.amazon.com/s?k=${encodeURIComponent(name)}`;
+  const search = `https://www.amazon.com/s?k=${encodeURIComponent(wellFormed(name))}`;
 
   return [
     header(title, { back: '#/fresh/products' }),

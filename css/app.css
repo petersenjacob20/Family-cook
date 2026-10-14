@@ -472,6 +472,8 @@ a.card.freshrow { color: inherit; text-decoration: none; gap: 2px; }
 .card.freshsearchcard h2 { font-size: 22px; line-height: 1.25; margin: 0 0 6px; }
 .card.freshsearchcard p { margin: 0 0 8px; }
 .freshnote { font-weight: 700; color: var(--danger); font-size: var(--fs-body); }
+.freshsearchcard a.btn.freshmain { display: block; text-align: center; text-decoration: none; margin: 4px 0 8px; }
+.freshbackup { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 10px; }
 .freshsearchlist { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
 .freshsearchlist a.btn { display: block; text-align: left; text-decoration: none; }
 a.btn[aria-disabled="true"] { opacity: 0.5; pointer-events: none; }
