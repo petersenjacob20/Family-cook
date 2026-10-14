@@ -475,3 +475,4 @@ a.card.freshrow { color: inherit; text-decoration: none; gap: 2px; }
 /* The test card's tick and its own button stay together; scrolling stops with the button above the sticky footer. */
 .freshtestact { display: flex; flex-direction: column; gap: 10px; }
 #fresh-test-open { scroll-margin-bottom: calc(var(--freshfoot-h, 0px) + var(--tabs-h) + 16px + env(safe-area-inset-bottom)); }
+a.btn[aria-disabled="true"] { opacity: 0.5; pointer-events: none; }

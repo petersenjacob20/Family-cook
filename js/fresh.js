@@ -120,11 +120,10 @@ export function productUrl(asin) {
 }
 
 // ---------- Amazon Fresh test (Settings > "Amazon Fresh test", off by default) ----------
-// Amazon's Fresh ingredients page: a user-tapped form POST, field `ingredients`, value
+// Amazon's Fresh ingredients page, by a user-tapped GET link carrying
 // {"ingredients":[{name, quantityList:[{unit, amount}]}]}. Names only: AMAZON picks the products,
 // so no ASIN (and no asinOverrides) is ever sent. Nut/fish names are dropped and shown instead.
-export const FRESH_LANDING = 'https://www.amazon.com/afx/ingredients/landing';
-export const FRESH_FIELD = 'ingredients';
+export const FRESH_LANDING = 'https://www.amazon.com/afx/ingredients/landingencoded';
 
 const round2 = (x) => Math.round(x * 100) / 100;
 // One grocery line -> one { unit, amount } in Amazon's upper-case units.
@@ -132,8 +131,7 @@ export function freshQuantity(line) {
   const t = Number(line.total) || 0;
   if (line.fam === 'vol') {
     if (t >= 12) return { unit: 'CUPS', amount: round2(t / 48) };
-    if (t >= 3) return { unit: 'TABLESPOONS', amount: round2(t / 3) };
-    return { unit: 'TEASPOONS', amount: round2(Math.max(t, 0.25)) };
+    return { unit: 'COUNT', amount: 1 }; // spoons: one jar or bottle (Amazon's page fails on spoon units)
   }
   if (line.fam === 'wt') {
     if (t >= 16) return { unit: 'POUNDS', amount: round2(t / 16) };
@@ -161,20 +159,22 @@ export function freshPayload(list, vocab) {
   return { payload: { ingredients: ingredients.slice(0, MAX_ITEMS) }, sent: sent.slice(0, MAX_ITEMS), blocked };
 }
 
-// The one form, built only inside the user's tap. `doc` is the document.
-export function freshForm(doc, payload) {
-  const f = doc.createElement('form');
-  f.setAttribute('method', 'post');
-  f.setAttribute('action', FRESH_LANDING);
-  f.setAttribute('target', '_blank');
-  f.setAttribute('rel', 'noopener noreferrer');
-  f.setAttribute('enctype', 'application/x-www-form-urlencoded');
-  const i = doc.createElement('input');
-  i.setAttribute('type', 'hidden');
-  i.setAttribute('name', FRESH_FIELD);
-  i.value = JSON.stringify(payload);
-  f.appendChild(i);
-  return f;
+// The link, built in the browser only after the red tick: gzip, then base64url WITH '=' padding,
+// in the same shape as Amazon's own redirect from its ingredients form:
+//   /afx/ingredients/landingencoded?almBrandId=&encodedIngredients=<...>&tag=
+// A plain GET link, so it still works when Android hands amazon.com links to the Amazon app.
+// Throws 'no-compression' when the browser has no CompressionStream (nothing is sent then).
+export async function encodeIngredients(payload, CS = globalThis.CompressionStream) {
+  if (typeof CS !== 'function') throw new Error('no-compression');
+  const stream = new Blob([JSON.stringify(payload)]).stream().pipeThrough(new CS('gzip'));
+  const bytes = new Uint8Array(await new Response(stream).arrayBuffer());
+  let bin = '';
+  for (let k = 0; k < bytes.length; k += 1) bin += String.fromCharCode(bytes[k]);
+  return btoa(bin).replace(/\+/g, '-').replace(/\//g, '_');
+}
+
+export async function freshLandingUrl(payload, CS) {
+  return `${FRESH_LANDING}?almBrandId=&encodedIngredients=${await encodeIngredients(payload, CS)}&tag=`;
 }
 
 // Plain-text copy of what the app will and won't send.
