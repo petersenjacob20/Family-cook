@@ -203,7 +203,7 @@ export const LABEL_SUFFIX = ' (check label for nut warnings)';
 export const SWAP_LABEL_LINE = "Check the label for 'may contain' warnings.";
 // D4 (CEO ruling): on every bbq-sauce line, next to the label line, styled like the nut line (not gray).
 // Exact wording (Design: capital P, closing period); a test keeps it on.
-export const BBQ_NOTE = 'Pick a BBQ sauce with no fish or anchovy (Worcestershire), check the label.';
+export const BBQ_NOTE = 'Check the label for peanuts, tree nuts and fish (many BBQ sauces use Worcestershire, which contains anchovy).';
 export const BBQ_KEY = 'bbq-sauce';
 
 // The note lines under one ingredient (What you need, Grocery): label line first, then the BBQ sauce note.

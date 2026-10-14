@@ -183,7 +183,7 @@
       "title": "Quick Chicken Noodle Soup",
       "source": "Wikimedia Commons",
       "source_url": "https://commons.wikimedia.org/wiki/File:Chicken_noodle_soup_(cropped).jpg",
-      "author": "Eli Hodapp from Naperville, United States",
+      "author": "Eli Hodapp",
       "license": "CC BY 2.0",
       "license_url": "https://creativecommons.org/licenses/by/2.0/",
       "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
@@ -193,7 +193,7 @@
       "title": "Grilled Cheese and Tomato Soup",
       "source": "Wikimedia Commons",
       "source_url": "https://commons.wikimedia.org/wiki/File:Grilled_cheese_sandwich_with_tomato_soup.jpg",
-      "author": "Arnold Gatilao from Oakland, CA, USA",
+      "author": "Arnold Gatilao",
       "license": "CC BY 2.0",
       "license_url": "https://creativecommons.org/licenses/by/2.0/",
       "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
@@ -613,7 +613,7 @@
       "title": "Baked Bean and Cheese Tostadas",
       "source": "Wikimedia Commons",
       "source_url": "https://commons.wikimedia.org/wiki/File:Tostada_(5076307841)_(2).jpg",
-      "author": "TheCulinaryGeek from Chicago, USA",
+      "author": "TheCulinaryGeek",
       "license": "CC BY 2.0",
       "license_url": "https://creativecommons.org/licenses/by/2.0/",
       "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
@@ -673,7 +673,7 @@
       "title": "Veggie Pasta Primavera",
       "source": "Wikimedia Commons",
       "source_url": "https://commons.wikimedia.org/wiki/File:Pasta_primavera_(1)_(cropped).jpg",
-      "author": "Stacy Spensley from San Diego",
+      "author": "Stacy Spensley",
       "license": "CC BY 2.0",
       "license_url": "https://creativecommons.org/licenses/by/2.0/",
       "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
@@ -693,7 +693,7 @@
       "title": "Chicken Burrito Bowls with Brown Rice",
       "source": "Wikimedia Commons",
       "source_url": "https://commons.wikimedia.org/wiki/File:Grilled_Chicken_Burrito_Bowl_6_(28365051003).jpg",
-      "author": "Sharon Chen from Austin, United States",
+      "author": "Sharon Chen",
       "license": "CC BY 2.0",
       "license_url": "https://creativecommons.org/licenses/by/2.0/",
       "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
@@ -789,6 +789,106 @@
       "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
     },
     {
+      "id": "greek-lemon-chicken-orzo-plates",
+      "title": "Greek Lemon Chicken with Orzo, Cucumber and Feta",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "korean-style-beef-veggie-rice-bowls",
+      "title": "Mild Korean-Style Beef and Veggie Rice Bowls",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "black-bean-and-corn-tamale-pie",
+      "title": "Black Bean and Corn Tamale Pie",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "turkey-meatball-spinach-soup",
+      "title": "Italian Turkey Meatball Soup with Spinach",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "mild-turkey-keema-peas-brown-rice",
+      "title": "Mild Turkey Keema with Peas and Brown Rice",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "sheet-pan-bbq-pork-chops-potatoes",
+      "title": "Sheet-Pan BBQ Pork Chops with Potatoes and Green Beans",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "japanese-style-chicken-meatball-rice-bowls",
+      "title": "Japanese-Style Chicken Meatball Rice Bowls",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "beef-kofta-rice-plates",
+      "title": "Beef Kofta Rice Plates with Cucumber Yogurt",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "mild-shakshuka-eggs-with-toast",
+      "title": "Mild Shakshuka Eggs with Whole-Wheat Toast",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "swedish-style-pork-meatballs-egg-noodles",
+      "title": "Swedish-Style Pork Meatballs with Egg Noodles and Peas",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
       "id": "crispy-oven-wings",
       "title": "Crispy Oven Wings",
       "source": "original image generated for Family Cook (no third-party source)",
@@ -863,7 +963,7 @@
       "title": "Two-Topping Homemade Pizza",
       "source": "Wikimedia Commons",
       "source_url": "https://commons.wikimedia.org/wiki/File:Half_Margherita,_Half_Meat_(pepperoni,_soppressata,_sausage)._Waited_50_minutes._It_was_worth_it._-pizza_-sanleandro_(17151139468).jpg",
-      "author": "Arnold Gatilao from Oakland, CA, USA",
+      "author": "Arnold Gatilao",
       "license": "CC BY 2.0",
       "license_url": "https://creativecommons.org/licenses/by/2.0/",
       "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
@@ -11923,7 +12023,8 @@
           "name": "mild curry powder",
           "qty": 1,
           "unit": "tbsp",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "diced-tomatoes",
@@ -12771,6 +12872,2394 @@
       "photo": {
         "src": "photos/chicken-tortilla-soup.webp",
         "alt": "Bowl of chicken tortilla soup with black beans, corn and crisp tortilla strips"
+      }
+    },
+    {
+      "id": "greek-lemon-chicken-orzo-plates",
+      "title": "Greek Lemon Chicken with Orzo, Cucumber and Feta",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 25,
+      "total_min": 35,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "orzo",
+        "greek"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-breast",
+          "name": "boneless chicken breasts",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "orzo",
+          "name": "orzo pasta",
+          "qty": 1.5,
+          "unit": "cup",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "lemon",
+          "name": "lemon",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "dried-oregano",
+          "name": "dried oregano",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "cucumber",
+          "name": "cucumber",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "tomato",
+          "name": "tomato",
+          "qty": 2,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "greek-yogurt",
+          "name": "plain Greek yogurt",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "feta",
+          "name": "crumbled feta cheese",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Cut the chicken into bite-size pieces. Wash your hands and board after.",
+          "minutes": 6,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "kid",
+          "text": "Squeeze the lemon sauce",
+          "how": [
+            "Squeeze a lemon half over the cool yogurt",
+            "Add 2 shakes of oregano",
+            "Stir 10 times"
+          ],
+          "learns": [
+            "counting",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Boil the orzo in salted water until soft, about 9 minutes, then drain.",
+          "minutes": 10,
+          "timer_min": 9,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Toss the chicken with olive oil, the rest of the lemon juice, the oregano, salt and a shake of garlic powder.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Cook the chicken in a big skillet over medium-high until no pink is left inside.",
+          "minutes": 8,
+          "timer_min": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Dice the cucumber and tomatoes into small pieces.",
+          "minutes": 4,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Spoon orzo onto plates and top with chicken, cucumber, tomato and feta.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Add a spoon of the lemon yogurt sauce once it has cooled a little.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 53,
+      "protein_note": "About 53 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "protein_swaps": [
+        {
+          "id": "greek-lemon-chicken-orzo-plates--high-protein-wheat-pasta",
+          "type": "swap",
+          "replaces": "orzo",
+          "use": {
+            "key": "high-protein-wheat-pasta",
+            "name": "high-protein wheat pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Use about 1.5 cups, cooked the way the box says.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "greek-lemon-chicken-orzo-plates--chickpea-or-lentil-pasta",
+          "type": "swap",
+          "replaces": "orzo",
+          "use": {
+            "key": "chickpea-or-lentil-pasta",
+            "name": "chickpea or lentil pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Use about 1.5 cups. Cook it a minute or two less than the box says; it gets soft fast.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "greek-lemon-chicken-orzo-plates--chickpeas",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "chickpeas",
+            "name": "can of chickpeas",
+            "qty": 1,
+            "unit": "can",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Rinse, drain and warm them with the chicken for the last 2 minutes.",
+          "protein": {
+            "claim": "about +22 g protein for the whole recipe (about +5.5 g per serving)",
+            "g_per_recipe": 22.0,
+            "g_per_serving": 5.5,
+            "basis": "adds 1 can can of chickpeas (FDC 175206, 448 g)",
+            "fdc_ids": [
+              175206
+            ]
+          },
+          "contains": []
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "chicken",
+          "pasta"
+        ],
+        "protein_g": 53,
+        "fiber_g": 3.3
+      },
+      "photo": {
+        "src": "photos/greek-lemon-chicken-orzo-plates.webp",
+        "alt": "Orzo topped with lemon chicken bites, cucumber, tomato, feta and yogurt sauce"
+      }
+    },
+    {
+      "id": "korean-style-beef-veggie-rice-bowls",
+      "title": "Mild Korean-Style Beef and Veggie Rice Bowls",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 30,
+      "serves": 4,
+      "tags": [
+        "beef",
+        "rice",
+        "bowls"
+      ],
+      "contains": [
+        "beef",
+        "gluten",
+        "soy"
+      ],
+      "ingredients": [
+        {
+          "key": "lean-ground-beef",
+          "name": "93% lean ground beef",
+          "qty": 1,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "instant-rice",
+          "name": "instant rice",
+          "qty": 2,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "low-sodium-soy-sauce",
+          "name": "low-sodium soy sauce",
+          "qty": 3,
+          "unit": "tbsp",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "honey",
+          "name": "honey",
+          "qty": 2,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "ground-ginger",
+          "name": "ground ginger",
+          "qty": 0.5,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "shredded-carrots",
+          "name": "shredded carrots",
+          "qty": 1,
+          "unit": "cup",
+          "section": "produce"
+        },
+        {
+          "key": "baby-spinach",
+          "name": "baby spinach",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "produce"
+        },
+        {
+          "key": "cucumber",
+          "name": "cucumber",
+          "qty": 1,
+          "unit": "",
+          "section": "produce",
+          "optional": true
+        },
+        {
+          "key": "vegetable-or-canola-oil",
+          "name": "vegetable or canola oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Make the rice the way the box says.",
+          "minutes": 10,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Mix the sauce",
+          "how": [
+            "Pour the soy sauce into a cool bowl",
+            "Add the honey and 2 shakes of ginger",
+            "Stir and smell it"
+          ],
+          "learns": [
+            "senses",
+            "following-directions"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Brown the beef in a big skillet over medium-high, breaking it into small crumbles.",
+          "minutes": 7,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the carrots and a shake of garlic powder and cook 2 minutes.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Pour in the sauce, then stir in the spinach until it wilts.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Slice the cucumber into thin half-moons, if using.",
+          "minutes": 2,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "kid",
+          "text": "Build the bowls",
+          "how": [
+            "Spoon rice into each bowl",
+            "Add cucumber moons on the side",
+            "Count the moons in your bowl"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Spoon the beef over the rice once it has cooled a little.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "korean-style-beef-veggie-rice-bowls--extra-lean-ground-beef",
+          "type": "swap",
+          "replaces": "lean-ground-beef",
+          "use": {
+            "key": "extra-lean-ground-beef",
+            "name": "95% lean ground beef",
+            "qty": 1,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. It cooks a little drier, so add a spoon of water with the sauce.",
+          "protein": {
+            "claim": "about +2 g protein for the whole recipe (about +0.6 g per serving)",
+            "g_per_recipe": 2.5,
+            "g_per_serving": 0.6,
+            "basis": "1 lb 95% lean ground beef (FDC 171790, 453.6 g) vs the recipe's 453.6 g of beef entry (FDC 173110), raw weights",
+            "fdc_ids": [
+              171790,
+              173110
+            ]
+          },
+          "contains": [
+            "beef"
+          ]
+        },
+        {
+          "id": "korean-style-beef-veggie-rice-bowls--eggs",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "eggs",
+            "name": "eggs",
+            "qty": 4,
+            "unit": "",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Scramble 4 eggs until fully set and serve them on the bowls.",
+          "protein": {
+            "claim": "about +25 g protein for the whole recipe (about +6.3 g per serving)",
+            "g_per_recipe": 25.1,
+            "g_per_serving": 6.3,
+            "basis": "adds 4 eggs (FDC 171287, 200 g)",
+            "fdc_ids": [
+              171287
+            ]
+          },
+          "contains": [
+            "egg"
+          ]
+        }
+      ],
+      "filter": {
+        "tags": [
+          "beef",
+          "bowls",
+          "quick"
+        ],
+        "protein_g": 29.1,
+        "fiber_g": 2.2
+      },
+      "photo": {
+        "src": "photos/korean-style-beef-veggie-rice-bowls.webp",
+        "alt": "Rice bowl with sweet soy ground beef, shredded carrot, spinach and cucumber"
+      }
+    },
+    {
+      "id": "black-bean-and-corn-tamale-pie",
+      "title": "Black Bean and Corn Tamale Pie",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 20,
+      "total_min": 50,
+      "serves": 6,
+      "tags": [
+        "beans",
+        "cornbread",
+        "cheese"
+      ],
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "black-beans",
+          "name": "can of black beans",
+          "qty": 2,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "frozen-corn",
+          "name": "frozen corn",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "enchilada-sauce",
+          "name": "can of mild red enchilada sauce",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "bell-pepper",
+          "name": "bell pepper",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "ground-cumin",
+          "name": "ground cumin",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "corn-muffin-mix",
+          "name": "corn muffin mix (8.5 oz box)",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "eggs",
+          "name": "eggs",
+          "qty": 1,
+          "unit": "",
+          "section": "dairy"
+        },
+        {
+          "key": "milk",
+          "name": "milk",
+          "qty": 0.33,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "sour-cream",
+          "name": "sour cream",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "cooking-spray",
+          "name": "cooking spray",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 400°F and spray a 9x13 baking dish.",
+          "minutes": 2
+        },
+        {
+          "who": "kid",
+          "text": "Wash the veggies",
+          "how": [
+            "Swish them in a bowl of cool water",
+            "Pat them dry with a towel",
+            "Say each color out loud"
+          ],
+          "learns": [
+            "colors",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Dice the bell pepper into small pieces.",
+          "minutes": 3,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Rinse and drain the beans.",
+          "minutes": 2
+        },
+        {
+          "who": "kid",
+          "text": "Pour and stir the filling",
+          "how": [
+            "Pour the beans and frozen corn into the cool dish",
+            "Add the sauce and the cumin",
+            "Stir slowly 10 times"
+          ],
+          "learns": [
+            "counting",
+            "following-directions"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Stir the pepper into the filling and sprinkle half the cheese on top.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Mix the muffin mix, egg and milk the way the box says and spread it over the filling.",
+          "minutes": 4
+        },
+        {
+          "who": "adult",
+          "text": "Sprinkle on the rest of the cheese and bake until the top is golden and a toothpick comes out clean.",
+          "minutes": 25,
+          "timer_min": 25,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Let it cool 5 minutes, then scoop and serve with sour cream.",
+          "minutes": 5,
+          "timer_min": 5,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "black-bean-and-corn-tamale-pie--greek-yogurt",
+          "type": "swap",
+          "replaces": "sour-cream",
+          "use": {
+            "key": "greek-yogurt",
+            "name": "plain Greek yogurt",
+            "qty": 0.5,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount, spooned on top in place of the sour cream.",
+          "protein": {
+            "claim": "about +7 g protein for the whole recipe (about +1.2 g per serving)",
+            "g_per_recipe": 7.4,
+            "g_per_serving": 1.2,
+            "basis": "0.5 cup plain Greek yogurt (FDC 171304, 113.3 g) vs the recipe's 115 g of cream entry (FDC 171257), raw weights",
+            "fdc_ids": [
+              171304,
+              171257
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "black-bean-and-corn-tamale-pie--lean-ground-turkey",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "lean-ground-turkey",
+            "name": "93% lean ground turkey",
+            "qty": 1,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Brown it first and stir it into the filling. The dish is no longer meatless.",
+          "protein": {
+            "claim": "about +85 g protein for the whole recipe (about +14.2 g per serving)",
+            "g_per_recipe": 85.0,
+            "g_per_serving": 14.2,
+            "basis": "adds 1 lb 93% lean ground turkey (FDC 172850, 453.6 g)",
+            "fdc_ids": [
+              172850
+            ]
+          },
+          "contains": [
+            "turkey"
+          ]
+        }
+      ],
+      "filter": {
+        "tags": [
+          "meatless"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/black-bean-and-corn-tamale-pie.webp",
+        "alt": "Square of tamale pie with cornbread top over black beans, corn and peppers, with sour cream"
+      }
+    },
+    {
+      "id": "turkey-meatball-spinach-soup",
+      "title": "Italian Turkey Meatball Soup with Spinach",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 30,
+      "total_min": 45,
+      "serves": 6,
+      "tags": [
+        "soup",
+        "turkey",
+        "meatballs"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "egg",
+        "gluten",
+        "turkey"
+      ],
+      "ingredients": [
+        {
+          "key": "lean-ground-turkey",
+          "name": "93% lean ground turkey",
+          "qty": 1,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "panko",
+          "name": "panko bread crumbs",
+          "qty": 0.33,
+          "unit": "cup",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "parmesan",
+          "name": "grated Parmesan",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "eggs",
+          "name": "eggs",
+          "qty": 1,
+          "unit": "",
+          "section": "dairy"
+        },
+        {
+          "key": "chicken-broth",
+          "name": "chicken broth (32 oz carton)",
+          "qty": 2,
+          "unit": "box",
+          "section": "pantry"
+        },
+        {
+          "key": "shredded-carrots",
+          "name": "shredded carrots",
+          "qty": 1,
+          "unit": "cup",
+          "section": "produce"
+        },
+        {
+          "key": "ditalini",
+          "name": "ditalini pasta (small soup pasta)",
+          "qty": 1,
+          "unit": "cup",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "baby-spinach",
+          "name": "baby spinach",
+          "qty": 1,
+          "unit": "bag",
+          "section": "produce"
+        },
+        {
+          "key": "italian-seasoning",
+          "name": "Italian seasoning",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Mix the turkey, crumbs, Parmesan, egg, Italian seasoning and a shake of garlic powder in a bowl.",
+          "minutes": 4
+        },
+        {
+          "who": "kid",
+          "text": "Roll the meatballs",
+          "how": [
+            "Wash hands, then scoop a spoon of the mix",
+            "Roll it into a small ball",
+            "Count each ball onto the tray"
+          ],
+          "learns": [
+            "counting",
+            "shapes"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Finish rolling 1-inch balls. Everyone washes hands after touching raw meat.",
+          "minutes": 5
+        },
+        {
+          "who": "adult",
+          "text": "Warm a spoon of olive oil in a big pot and cook the carrots 3 minutes.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Pour in the broth and bring it to a boil.",
+          "minutes": 6,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Drop in the meatballs and the pasta and simmer until the meatballs are cooked through and the pasta is soft.",
+          "minutes": 12,
+          "timer_min": 12,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the spinach until it wilts, about 1 minute.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Ladle into bowls. Cut meatballs in quarters for little ones and let the soup cool before serving.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "turkey-meatball-spinach-soup--high-protein-wheat-pasta",
+          "type": "swap",
+          "replaces": "ditalini",
+          "use": {
+            "key": "high-protein-wheat-pasta",
+            "name": "high-protein wheat pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Use about 1 cup of a small shape, cooked in the soup.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "turkey-meatball-spinach-soup--chickpea-or-lentil-pasta",
+          "type": "swap",
+          "replaces": "ditalini",
+          "use": {
+            "key": "chickpea-or-lentil-pasta",
+            "name": "chickpea or lentil pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Use about 1 cup of a small shape. Add it for the last 6 minutes; it gets soft fast.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "turkey-meatball-spinach-soup--white-beans",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "white-beans",
+            "name": "can of white beans",
+            "qty": 1,
+            "unit": "can",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Rinse, drain and stir in with the spinach.",
+          "protein": {
+            "claim": "about +31 g protein for the whole recipe (about +5.1 g per serving)",
+            "g_per_recipe": 30.9,
+            "g_per_serving": 5.1,
+            "basis": "adds 1 can can of white beans (FDC 175204, 425 g)",
+            "fdc_ids": [
+              175204
+            ]
+          },
+          "contains": []
+        }
+      ],
+      "filter": {
+        "tags": [
+          "turkey",
+          "soups"
+        ],
+        "protein_g": 24.9,
+        "fiber_g": 2.2
+      },
+      "photo": {
+        "src": "photos/turkey-meatball-spinach-soup.webp",
+        "alt": "Bowl of turkey meatball soup with small pasta, carrot, spinach and Parmesan"
+      }
+    },
+    {
+      "id": "mild-turkey-keema-peas-brown-rice",
+      "title": "Mild Turkey Keema with Peas and Brown Rice",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 55,
+      "serves": 4,
+      "tags": [
+        "turkey",
+        "rice",
+        "peas"
+      ],
+      "contains": [
+        "dairy",
+        "turkey"
+      ],
+      "ingredients": [
+        {
+          "key": "brown-rice",
+          "name": "brown rice",
+          "qty": 1,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "lean-ground-turkey",
+          "name": "93% lean ground turkey",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "diced-tomatoes",
+          "name": "can of diced tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "frozen-peas",
+          "name": "frozen peas",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "mild-curry-powder",
+          "name": "mild curry powder",
+          "qty": 1,
+          "unit": "tbsp",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "ground-cumin",
+          "name": "ground cumin",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "ground-ginger",
+          "name": "ground ginger",
+          "qty": 0.5,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "greek-yogurt",
+          "name": "plain Greek yogurt",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "vegetable-or-canola-oil",
+          "name": "vegetable or canola oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Rinse the brown rice, then simmer it in 2 cups of water, covered, until tender.",
+          "minutes": 45,
+          "timer_min": 45,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Dice the onion small.",
+          "minutes": 3,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "kid",
+          "text": "Mix the spices",
+          "how": [
+            "Shake the curry powder into a small bowl",
+            "Add the cumin and ginger",
+            "Stir and smell it"
+          ],
+          "learns": [
+            "senses",
+            "following-directions"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Cook the onion in a little vegetable or canola oil in a big skillet over medium until soft.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the turkey and cook, breaking it into small crumbles, until no pink is left.",
+          "minutes": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the spices, tomatoes, peas and a pinch of salt and simmer until thick.",
+          "minutes": 10,
+          "timer_min": 10,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Set the table",
+          "how": [
+            "Count a plate for each person",
+            "Put a spoon by each plate",
+            "Fold one napkin each"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Serve the keema over the rice with a spoon of yogurt once it has cooled a little.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 39,
+      "protein_note": "About 39 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "protein_swaps": [
+        {
+          "id": "mild-turkey-keema-peas-brown-rice--fat-free-ground-turkey",
+          "type": "swap",
+          "replaces": "lean-ground-turkey",
+          "use": {
+            "key": "fat-free-ground-turkey",
+            "name": "fat-free ground turkey",
+            "qty": 1.5,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. It cooks a little drier, so do not overcook it.",
+          "protein": {
+            "claim": "about +33 g protein for the whole recipe (about +8.2 g per serving)",
+            "g_per_recipe": 32.9,
+            "g_per_serving": 8.2,
+            "basis": "1.5 lb fat-free ground turkey (FDC 172847, 680.4 g) vs the recipe's 680.4 g of turkey entry (FDC 172850), raw weights",
+            "fdc_ids": [
+              172847,
+              172850
+            ]
+          },
+          "contains": [
+            "turkey"
+          ]
+        },
+        {
+          "id": "mild-turkey-keema-peas-brown-rice--chickpeas",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "chickpeas",
+            "name": "can of chickpeas",
+            "qty": 1,
+            "unit": "can",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Rinse, drain and stir in with the peas.",
+          "protein": {
+            "claim": "about +22 g protein for the whole recipe (about +5.5 g per serving)",
+            "g_per_recipe": 22.0,
+            "g_per_serving": 5.5,
+            "basis": "adds 1 can can of chickpeas (FDC 175206, 448 g)",
+            "fdc_ids": [
+              175206
+            ]
+          },
+          "contains": []
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "turkey",
+          "bowls"
+        ],
+        "protein_g": 39,
+        "fiber_g": 6.6
+      },
+      "photo": {
+        "src": "photos/mild-turkey-keema-peas-brown-rice.webp",
+        "alt": "Mild ground turkey keema with peas and tomato next to brown rice, topped with yogurt"
+      }
+    },
+    {
+      "id": "sheet-pan-bbq-pork-chops-potatoes",
+      "title": "Sheet-Pan BBQ Pork Chops with Potatoes and Green Beans",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 50,
+      "serves": 4,
+      "tags": [
+        "pork",
+        "bbq",
+        "potatoes"
+      ],
+      "contains": [
+        "pork"
+      ],
+      "ingredients": [
+        {
+          "key": "pork-chops",
+          "name": "boneless pork chops",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "baby-potatoes",
+          "name": "baby potatoes",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "produce"
+        },
+        {
+          "key": "green-beans",
+          "name": "fresh green beans",
+          "qty": 1,
+          "unit": "lb",
+          "section": "produce"
+        },
+        {
+          "key": "bbq-sauce",
+          "name": "barbecue sauce",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "paprika",
+          "name": "paprika",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 425°F and line a big baking sheet.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Cut the potatoes in half and toss them with olive oil, salt and paprika on the sheet. Roast 15 minutes.",
+          "minutes": 17,
+          "timer_min": 15,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "kid",
+          "text": "Snap the beans",
+          "how": [
+            "Snap each bean into short pieces",
+            "Drop them in a bowl",
+            "Count 10 beans"
+          ],
+          "learns": [
+            "counting",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Pat the pork chops dry and season with salt, pepper and garlic powder. Wash your hands after.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Push the potatoes aside, add the chops and green beans, and drizzle the beans with oil.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Brush the chops with half the sauce and roast until they read 145°F in the middle.",
+          "minutes": 15,
+          "timer_min": 15,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Rest the chops 5 minutes, brush on the rest of the sauce, then cut into small strips.",
+          "minutes": 5,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Serve with the potatoes and beans once cool enough to eat.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "sheet-pan-bbq-pork-chops-potatoes--white-beans",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "white-beans",
+            "name": "can of white beans",
+            "qty": 1,
+            "unit": "can",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Rinse, drain, toss with a spoon of sauce and roast them on the sheet for the last 10 minutes.",
+          "protein": {
+            "claim": "about +31 g protein for the whole recipe (about +7.7 g per serving)",
+            "g_per_recipe": 30.9,
+            "g_per_serving": 7.7,
+            "basis": "adds 1 can can of white beans (FDC 175204, 425 g)",
+            "fdc_ids": [
+              175204
+            ]
+          },
+          "contains": []
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "pork",
+          "sheet-pan"
+        ],
+        "protein_g": 46.1,
+        "fiber_g": 6.5
+      },
+      "photo": {
+        "src": "photos/sheet-pan-bbq-pork-chops-potatoes.webp",
+        "alt": "Sliced BBQ-glazed pork chop with roasted baby potatoes and green beans"
+      }
+    },
+    {
+      "id": "japanese-style-chicken-meatball-rice-bowls",
+      "title": "Japanese-Style Chicken Meatball Rice Bowls",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 25,
+      "total_min": 40,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "meatballs",
+        "rice"
+      ],
+      "contains": [
+        "chicken",
+        "egg",
+        "gluten",
+        "soy"
+      ],
+      "ingredients": [
+        {
+          "key": "ground-chicken",
+          "name": "ground chicken",
+          "qty": 1.25,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "panko",
+          "name": "panko bread crumbs",
+          "qty": 0.33,
+          "unit": "cup",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "eggs",
+          "name": "eggs",
+          "qty": 1,
+          "unit": "",
+          "section": "dairy"
+        },
+        {
+          "key": "low-sodium-soy-sauce",
+          "name": "low-sodium soy sauce",
+          "qty": 3,
+          "unit": "tbsp",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "honey",
+          "name": "honey",
+          "qty": 2,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "ground-ginger",
+          "name": "ground ginger",
+          "qty": 0.5,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "instant-rice",
+          "name": "instant rice",
+          "qty": 2,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "frozen-broccoli",
+          "name": "frozen broccoli",
+          "qty": 1,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "cucumber",
+          "name": "cucumber",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "cooking-spray",
+          "name": "cooking spray",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 400°F and spray a baking sheet.",
+          "minutes": 2
+        },
+        {
+          "who": "adult",
+          "text": "Mix the chicken, crumbs, egg, 1 tbsp soy sauce and a shake of garlic powder. Roll 1-inch balls onto the sheet. Wash hands after.",
+          "minutes": 10
+        },
+        {
+          "who": "adult",
+          "text": "Bake until the middles are no longer pink.",
+          "minutes": 15,
+          "timer_min": 15,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "kid",
+          "text": "Mix the glaze",
+          "how": [
+            "Pour the rest of the soy sauce into a cool bowl",
+            "Add the honey and 2 shakes of ginger",
+            "Stir 10 times"
+          ],
+          "learns": [
+            "counting",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Make the rice the way the box says and steam the broccoli in its bag in the microwave.",
+          "minutes": 10,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Slice the cucumber into thin half-moons.",
+          "minutes": 2,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Warm the glaze in a small pot until it bubbles, then toss the meatballs in it.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Fill bowls with rice, meatballs, broccoli and cucumber. Cut meatballs in quarters for little ones.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "japanese-style-chicken-meatball-rice-bowls--lean-ground-turkey",
+          "type": "swap",
+          "replaces": "ground-chicken",
+          "use": {
+            "key": "lean-ground-turkey",
+            "name": "93% lean ground turkey",
+            "qty": 1.25,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. Roll the balls the same size and bake the same time.",
+          "protein": {
+            "claim": "about +7 g protein for the whole recipe (about +1.8 g per serving)",
+            "g_per_recipe": 7.3,
+            "g_per_serving": 1.8,
+            "basis": "1.25 lb 93% lean ground turkey (FDC 172850, 567 g) vs the recipe's 567 g of chicken entry (FDC 171116), raw weights",
+            "fdc_ids": [
+              172850,
+              171116
+            ]
+          },
+          "contains": [
+            "turkey"
+          ]
+        },
+        {
+          "id": "japanese-style-chicken-meatball-rice-bowls--eggs",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "eggs",
+            "name": "eggs",
+            "qty": 4,
+            "unit": "",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Scramble 4 eggs until fully set and add them to the bowls.",
+          "protein": {
+            "claim": "about +25 g protein for the whole recipe (about +6.3 g per serving)",
+            "g_per_recipe": 25.1,
+            "g_per_serving": 6.3,
+            "basis": "adds 4 eggs (FDC 171287, 200 g)",
+            "fdc_ids": [
+              171287
+            ]
+          },
+          "contains": [
+            "egg"
+          ]
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "chicken",
+          "bowls"
+        ],
+        "protein_g": 34.7,
+        "fiber_g": 3.9
+      },
+      "photo": {
+        "src": "photos/japanese-style-chicken-meatball-rice-bowls.webp",
+        "alt": "Glazed chicken meatballs over white rice with broccoli and cucumber"
+      }
+    },
+    {
+      "id": "beef-kofta-rice-plates",
+      "title": "Beef Kofta Rice Plates with Cucumber Yogurt",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 25,
+      "total_min": 55,
+      "serves": 4,
+      "tags": [
+        "beef",
+        "rice",
+        "kofta"
+      ],
+      "contains": [
+        "beef",
+        "dairy"
+      ],
+      "ingredients": [
+        {
+          "key": "brown-rice",
+          "name": "brown rice",
+          "qty": 1,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "lean-ground-beef",
+          "name": "93% lean ground beef",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "ground-cumin",
+          "name": "ground cumin",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "paprika",
+          "name": "paprika",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "ground-cinnamon",
+          "name": "ground cinnamon",
+          "qty": 0.25,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "cucumber",
+          "name": "cucumber",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "tomato",
+          "name": "tomato",
+          "qty": 2,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "greek-yogurt",
+          "name": "plain Greek yogurt",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "lemon",
+          "name": "lemon",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "cooking-spray",
+          "name": "cooking spray",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Rinse the brown rice, then simmer it in 2 cups of water, covered, until tender.",
+          "minutes": 45,
+          "timer_min": 45,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Heat the oven to 425°F and spray a baking sheet.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Finely dice the onion. Mix it with the beef, cumin, paprika, cinnamon and salt. Shape 12 small logs on the sheet. Wash hands after.",
+          "minutes": 10,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Bake the kofta until no pink is left in the middle.",
+          "minutes": 15,
+          "timer_min": 15,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "kid",
+          "text": "Wash the veggies",
+          "how": [
+            "Swish them in a bowl of cool water",
+            "Pat them dry with a towel",
+            "Say each color out loud"
+          ],
+          "learns": [
+            "colors",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Dice the cucumber and tomatoes small. Grate a little cucumber into the yogurt.",
+          "minutes": 5,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "kid",
+          "text": "Stir the cucumber yogurt",
+          "how": [
+            "Squeeze lemon into the cool yogurt",
+            "Add a pinch of salt",
+            "Stir 10 times"
+          ],
+          "learns": [
+            "counting",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Serve the kofta on the rice with the cucumber-tomato salad and yogurt. Cut kofta into small pieces for little ones.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 46,
+      "protein_note": "About 46 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "protein_swaps": [
+        {
+          "id": "beef-kofta-rice-plates--extra-lean-ground-beef",
+          "type": "swap",
+          "replaces": "lean-ground-beef",
+          "use": {
+            "key": "extra-lean-ground-beef",
+            "name": "95% lean ground beef",
+            "qty": 1.5,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. Shape the logs a little thicker so they stay juicy.",
+          "protein": {
+            "claim": "about +4 g protein for the whole recipe (about +0.9 g per serving)",
+            "g_per_recipe": 3.8,
+            "g_per_serving": 0.9,
+            "basis": "1.5 lb 95% lean ground beef (FDC 171790, 680.4 g) vs the recipe's 680.4 g of beef entry (FDC 173110), raw weights",
+            "fdc_ids": [
+              171790,
+              173110
+            ]
+          },
+          "contains": [
+            "beef"
+          ]
+        },
+        {
+          "id": "beef-kofta-rice-plates--chickpeas",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "chickpeas",
+            "name": "can of chickpeas",
+            "qty": 1,
+            "unit": "can",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Rinse, drain and spoon them onto the plates with the salad.",
+          "protein": {
+            "claim": "about +22 g protein for the whole recipe (about +5.5 g per serving)",
+            "g_per_recipe": 22.0,
+            "g_per_serving": 5.5,
+            "basis": "adds 1 can can of chickpeas (FDC 175206, 448 g)",
+            "fdc_ids": [
+              175206
+            ]
+          },
+          "contains": []
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "veggie-packed",
+          "beef"
+        ],
+        "protein_g": 46,
+        "fiber_g": 3.6
+      },
+      "photo": {
+        "src": "photos/beef-kofta-rice-plates.webp",
+        "alt": "Beef kofta on brown rice with cucumber tomato salad and yogurt sauce"
+      }
+    },
+    {
+      "id": "mild-shakshuka-eggs-with-toast",
+      "title": "Mild Shakshuka Eggs with Whole-Wheat Toast",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 35,
+      "serves": 4,
+      "tags": [
+        "eggs",
+        "tomatoes",
+        "breakfast for dinner"
+      ],
+      "contains": [
+        "dairy",
+        "egg",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "bell-pepper",
+          "name": "bell pepper",
+          "qty": 2,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "crushed-tomatoes",
+          "name": "can of crushed tomatoes (28 oz)",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "ground-cumin",
+          "name": "ground cumin",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "paprika",
+          "name": "paprika",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "eggs",
+          "name": "eggs",
+          "qty": 8,
+          "unit": "",
+          "section": "dairy"
+        },
+        {
+          "key": "whole-wheat-bread",
+          "name": "whole-wheat bread",
+          "qty": 8,
+          "unit": "slice",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "feta",
+          "name": "crumbled feta cheese",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "kid",
+          "text": "Wash the veggies",
+          "how": [
+            "Swish them in a bowl of cool water",
+            "Pat them dry with a towel",
+            "Say each color out loud"
+          ],
+          "learns": [
+            "colors",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Dice the onion and bell peppers small.",
+          "minutes": 5,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the onion and peppers in olive oil in a big skillet over medium until soft.",
+          "minutes": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the tomatoes, cumin, paprika and a pinch of salt and simmer 5 minutes.",
+          "minutes": 5,
+          "timer_min": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Make 8 little wells and crack an egg into each. Cover and cook on low until the whites and yolks are fully set for little ones.",
+          "minutes": 10,
+          "timer_min": 10,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Toast the bread.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "kid",
+          "text": "Sprinkle the cheese",
+          "how": [
+            "Grab a small pinch of feta",
+            "Sprinkle it over each cool plate",
+            "Count your pinches"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Scoop 2 eggs with sauce onto each plate and serve with toast strips.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "mild-shakshuka-eggs-with-toast--liquid-egg-whites",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "liquid-egg-whites",
+            "name": "liquid egg whites",
+            "qty": 1,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Stir into the sauce before the eggs and let them set into soft curds.",
+          "protein": {
+            "claim": "about +26 g protein for the whole recipe (about +6.6 g per serving)",
+            "g_per_recipe": 26.5,
+            "g_per_serving": 6.6,
+            "basis": "adds 1 cup liquid egg whites (FDC 172183, 243 g)",
+            "fdc_ids": [
+              172183
+            ]
+          },
+          "contains": [
+            "egg"
+          ]
+        },
+        {
+          "id": "mild-shakshuka-eggs-with-toast--white-beans",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "white-beans",
+            "name": "can of white beans",
+            "qty": 1,
+            "unit": "can",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Rinse, drain and stir into the sauce before the eggs.",
+          "protein": {
+            "claim": "about +31 g protein for the whole recipe (about +7.7 g per serving)",
+            "g_per_recipe": 30.9,
+            "g_per_serving": 7.7,
+            "basis": "adds 1 can can of white beans (FDC 175204, 425 g)",
+            "fdc_ids": [
+              175204
+            ]
+          },
+          "contains": []
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-fiber",
+          "meatless",
+          "breakfast-for-dinner",
+          "one-pot"
+        ],
+        "protein_g": 24.8,
+        "fiber_g": 9.6
+      },
+      "photo": {
+        "src": "photos/mild-shakshuka-eggs-with-toast.webp",
+        "alt": "Skillet of eggs in tomato and pepper sauce with feta and whole-wheat toast"
+      }
+    },
+    {
+      "id": "swedish-style-pork-meatballs-egg-noodles",
+      "title": "Swedish-Style Pork Meatballs with Egg Noodles and Peas",
+      "kind": "family",
+      "effort": "fun",
+      "hands_on_min": 30,
+      "total_min": 45,
+      "serves": 5,
+      "tags": [
+        "pork",
+        "meatballs",
+        "noodles"
+      ],
+      "contains": [
+        "beef",
+        "dairy",
+        "egg",
+        "gluten",
+        "pork"
+      ],
+      "ingredients": [
+        {
+          "key": "ground-pork",
+          "name": "ground pork",
+          "qty": 1.25,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "panko",
+          "name": "panko bread crumbs",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "eggs",
+          "name": "eggs",
+          "qty": 1,
+          "unit": "",
+          "section": "dairy"
+        },
+        {
+          "key": "milk",
+          "name": "milk",
+          "qty": 0.25,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 0.5,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "beef-broth",
+          "name": "beef broth (32 oz carton)",
+          "qty": 0.5,
+          "unit": "box",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "sour-cream",
+          "name": "sour cream",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "egg-noodles",
+          "name": "wide egg noodles",
+          "qty": 1,
+          "unit": "bag",
+          "section": "pantry"
+        },
+        {
+          "key": "frozen-peas",
+          "name": "frozen peas",
+          "qty": 1,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "flour",
+          "name": "flour",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "butter",
+          "name": "butter",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "cooking-spray",
+          "name": "cooking spray",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 400°F and spray a baking sheet.",
+          "minutes": 1
+        },
+        {
+          "who": "adult",
+          "text": "Finely dice the onion. Mix it with the pork, crumbs, egg, milk, salt and pepper. Roll 1-inch balls onto the sheet. Wash hands after.",
+          "minutes": 10,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Bake the meatballs until no pink is left in the middle.",
+          "minutes": 18,
+          "timer_min": 18,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "kid",
+          "text": "Pour the peas",
+          "how": [
+            "Pour frozen peas into a cool bowl",
+            "Feel how cold they are",
+            "Count 10 peas"
+          ],
+          "learns": [
+            "senses",
+            "counting"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Boil the noodles in salted water, adding the peas for the last 2 minutes, then drain.",
+          "minutes": 8,
+          "timer_min": 8,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Melt 2 tbsp butter in a skillet, stir in 2 tbsp flour, then whisk in the broth and simmer until thick.",
+          "minutes": 5,
+          "timer_min": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Take the gravy off the heat, stir in the sour cream, then add the meatballs.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Serve the meatballs and gravy over the noodles. Cut meatballs in quarters for little ones.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "swedish-style-pork-meatballs-egg-noodles--high-protein-wheat-pasta",
+          "type": "swap",
+          "replaces": "egg-noodles",
+          "use": {
+            "key": "high-protein-wheat-pasta",
+            "name": "high-protein wheat pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Use a wide or short shape, cooked the way the box says.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "swedish-style-pork-meatballs-egg-noodles--chickpea-or-lentil-pasta",
+          "type": "swap",
+          "replaces": "egg-noodles",
+          "use": {
+            "key": "chickpea-or-lentil-pasta",
+            "name": "chickpea or lentil pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Use a short shape. Cook it a minute or two less than the box says; it gets soft fast.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "swedish-style-pork-meatballs-egg-noodles--greek-yogurt",
+          "type": "swap",
+          "replaces": "sour-cream",
+          "use": {
+            "key": "greek-yogurt",
+            "name": "plain Greek yogurt",
+            "qty": 0.5,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount, stirred in off the heat so it stays smooth.",
+          "protein": {
+            "claim": "about +7 g protein for the whole recipe (about +1.5 g per serving)",
+            "g_per_recipe": 7.4,
+            "g_per_serving": 1.5,
+            "basis": "0.5 cup plain Greek yogurt (FDC 171304, 113.3 g) vs the recipe's 115 g of cream entry (FDC 171257), raw weights",
+            "fdc_ids": [
+              171304,
+              171257
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "pork",
+          "pasta"
+        ],
+        "protein_g": 36.6,
+        "fiber_g": 5.5
+      },
+      "photo": {
+        "src": "photos/swedish-style-pork-meatballs-egg-noodles.webp",
+        "alt": "Pork meatballs in creamy gravy over egg noodles with peas"
       }
     },
     {
