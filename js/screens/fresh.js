@@ -7,10 +7,11 @@
 // The app never picks a product or a swap for you, and never places an order.
 import { h, append, header, button, checkRow, toast } from '../dom.js';
 import { weekIdFor, todayISO } from '../dates.js';
-import { loadDays, saveDays } from '../store.js';
+import { loadDays } from '../store.js';
+import { activeSwaps } from '../protein.js';
+import { PROTEIN_BUTTON } from './protein.js';
 import { fillWeek, getWeek, byId } from '../planner.js';
 import { buildList, ingredientNotes, plannedDays, pickDays } from '../grocery.js';
-import { dayPicker, DAYS_LABEL } from '../view.js';
 import { shareWithFallback } from '../share.js';
 import { planSend, cartUrl, makeEntry, productUrl, sendSummary, blockReason, AMAZON_CART, freshPayload, freshSearchUrl, wellFormed, freshLandingUrl } from '../fresh.js';
 
@@ -21,7 +22,6 @@ export const OLD_CHROME = 'This needs a newer Chrome. Update Chrome, or use the 
 export const BACKUP_LABEL = 'Backup: search one item at a time';
 export const BACKUP_META = 'If the list doesn\u2019t open, search each item here instead. Tap an item to open its search.';
 export const SEARCH_NOTE = 'Check every label for peanuts, tree nuts, may-contain warnings, and fish/seafood.';
-export { DAYS_LABEL };
 export const NO_DAYS = 'Pick at least one day to build your list.';
 export const FOOT_NOTE = 'Nothing is ordered.';
 export const CART_NOTE = 'Amazon asks you to confirm, then adds the items to your cart. Nothing is ordered.';
@@ -36,7 +36,9 @@ function weekList(ctx, days) {
   const weekId = weekIdFor(ctx.today());
   fillWeek(state, data, weekId);
   getWeek(state, weekId);
-  return buildList(state, (id) => (id ? byId(data, id) : null), weekId, days);
+  const recipe = (id) => (id ? byId(data, id) : null);
+  // With the protein picks for those days (none = Regular: the list as before).
+  return buildList(state, recipe, weekId, days, activeSwaps(state, data, recipe, weekId, days));
 }
 
 // This week's planned weekdays and the picked ones (shared fc-fresh-days choice).
@@ -49,12 +51,6 @@ export function weekDays(ctx) {
   return { planned, days: pickDays(loadDays(), planned) };
 }
 
-export function pickAndRefresh(ctx, hash) {
-  return (next) => {
-    saveDays(next);
-    if (typeof ctx.refresh === 'function') ctx.refresh(); else if (typeof ctx.go === 'function') ctx.go(hash);
-  };
-}
 
 // Ingredient name for a key, from the recipe file.
 function ingredientFor(data, key) {
@@ -173,8 +169,8 @@ function sendScreen(ctx) {
 
   return [
     header('Send to Amazon cart', { back: '#/grocery' }),
-    // Day picks sit above the page body, so the search card (allergy note right above the main button) stays first in it.
-    planned.length ? dayPicker('fresh', planned, days, pickAndRefresh(ctx, '#/fresh')) : null,
+    // Above the page body (so the search card, with the allergy note right above the main button, stays first in it).
+    noDays || !payload.ingredients.length ? null : h('a', { class: 'btn small freshprotein', href: '#/protein/fresh', id: 'fresh-protein-open' }, PROTEIN_BUTTON),
     append(body,
     [searchArea,
     // The substitutions and label warning always comes right after the search card; with a saved product the tick and Add card follows it.

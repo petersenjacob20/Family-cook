@@ -481,21 +481,11 @@ a.card.freshrow { color: inherit; text-decoration: none; gap: 2px; }
 .freshsearchlist { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
 .freshsearchlist a.btn { display: block; text-align: left; text-decoration: none; }
 a.btn[aria-disabled="true"] { opacity: 0.5; pointer-events: none; }
-/* Day picks on the Amazon Fresh screen: seven tap targets (at least 44px), tidy wrap at 360px. */
-.freshdays { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
-.freshdays .daychk {
-  flex: 0 0 calc((100% - 18px) / 4); min-height: 44px; min-width: 44px;
-  display: flex; align-items: center; justify-content: center; gap: 6px;
-  background: #fff; border: 2px solid var(--line-strong); border-radius: 10px;
-  font-size: var(--fs-body); font-weight: 700; color: var(--ink); padding: 4px 6px;
-}
-.freshdays .daychk .box {
-  flex: none; width: 20px; height: 20px; border: 2px solid var(--line-strong); border-radius: 4px; background: #fff;
-  display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px; line-height: 1;
-}
-.freshdays .daychk[aria-checked="true"] { border-color: var(--accent); }
-.freshdays .daychk[aria-checked="true"] .box { background: var(--accent); border-color: var(--accent); }
-.freshdays .daychk[aria-checked="true"] .box::after { content: "\2713"; }
+/* Week tab: "Shop for this day" under Swap, the same switch as the Friday row; 44px+ tap area, fits 360px. */
+.night { flex-wrap: wrap; }
+.night .shopday { flex: 1 0 100%; display: flex; align-items: center; justify-content: flex-end; gap: 10px; min-height: 44px; padding-left: 64px; }
+.night .shoplabel { color: var(--muted); font-size: var(--fs-hint); font-weight: 700; }
+.night .shopday .switch::before { content: ""; position: absolute; inset: -6px -4px; }
 /* Your own recipes (#/custom): fits 360px, nothing sticky, so no footer can cover it. */
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .customcard { display: flex; flex-direction: column; gap: 8px; }
@@ -513,3 +503,9 @@ a.btn[aria-disabled="true"] { opacity: 0.5; pointer-events: none; }
 .customnote p { margin: 0 0 4px; }
 .customphoto img { width: 100%; height: auto; border-radius: var(--radius-sm); }
 #add-custom { margin: 0 0 10px; }
+/* Protein options (#/protein): one radio group per meal, 44px rows, fits 360px. */
+.proteinmeal .radio { min-height: 44px; align-items: center; }
+.proteinmeal .radio .box { border-radius: 50%; }
+.proteinmeal .radio[aria-checked="true"] .txt strong { color: var(--ink); text-decoration: none; }
+a.btn.freshprotein { display: flex; text-decoration: none; margin: 0 0 10px; }
+.stickyfoot #protein-open { text-decoration: none; }

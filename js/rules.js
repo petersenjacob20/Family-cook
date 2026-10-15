@@ -6,7 +6,7 @@
 //   1. Unicode NFKC (full-width letters -> plain ASCII, ligatures split, odd spaces -> space)
 //   2. strip soft hyphens and zero-width characters (U+00AD, U+200B, U+200C, U+200D, U+2060, U+FEFF)
 //   3. Unicode dashes (U+2010..U+2015, U+2212) -> "-"
-//   4. tabs, NBSP and every other Unicode space -> " ", repeats collapsed, ends trimmed
+//   4. tabs, NBSP and all remaining Unicode spaces -> " ", repeats collapsed, ends trimmed
 //   5. accents dropped (jalapeño -> jalapeno), lowercase
 const HIDDEN_RE = /[\u00AD\u200B\u200C\u200D\u2060\uFEFF]/g;
 const DASH_RE = /[\u2010-\u2015\u2212]/g;

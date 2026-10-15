@@ -2,15 +2,22 @@
 // Pure helpers are importable from Node; browser APIs are only touched inside functions.
 import { cleanFresh } from './fresh.js';
 import { CUSTOM_KEY, PHOTO_DB, UNREADABLE_KEY } from './custom.js';
+import { PROTEIN_KEY } from './protein.js';
 
 export const KEY = 'fc.v1';
 export const SCHEMA = 1;
-// Day picks shared by the Grocery tab and the Amazon Fresh screen (which planned weekdays feed the list). Its own key, so fc.v1 is never touched.
+// "Shop for this day" choice (the Week tab's toggles), read by the Grocery tab and the Amazon Fresh screen.
+// Its own key, so fc.v1 is never touched. pub15/pub16 saved a list of picked weekdays ([4,5]); pub17 saves
+// {"v":2,"off":[...]}: the planned weekdays turned off, so a newly planned day is on. The old list still reads.
 export const DAYS_KEY = 'fc-fresh-days';
 export const ALL_DAYS = [0, 1, 2, 3, 4, 5, 6];
+// The weekdays pub15/pub16 could plan (Thu, Fri, Sat, Sun, Mon).
+export const LEGACY_PLANNED = [4, 5, 6, 0, 1];
 
 // Clean day list: unique weekday numbers 0-6, sorted. Not a list = nothing saved (null: every planned day).
+// pub17 form { v: 2, off: [...] } -> { off: [...] } (cleaned).
 export function cleanDays(v) {
+  if (v && typeof v === 'object' && !Array.isArray(v) && Array.isArray(v.off)) return { off: ALL_DAYS.filter((d) => v.off.includes(d)) };
   if (!Array.isArray(v)) return null;
   return ALL_DAYS.filter((d) => v.includes(d));
 }
@@ -19,9 +26,23 @@ export function cleanDays(v) {
 export function loadDays(storage = globalThis.localStorage) {
   try {
     const raw = storage ? storage.getItem(DAYS_KEY) : null;
-    return raw == null ? null : cleanDays(JSON.parse(raw));
+    if (raw == null) return null;
+    const v = cleanDays(JSON.parse(raw));
+    // pub15/pub16 list of picked days: those builds only planned Thu-Mon, so a day is off only if it was one of
+    // those and is missing from the list; any other day (Tue, Wed) is on. Read as { off } (nothing is written).
+    return Array.isArray(v) ? { off: LEGACY_PLANNED.filter((d) => !v.includes(d)) } : v;
   } catch {
     return null;
+  }
+}
+
+// Save the Week tab's choice: the planned weekdays that are off (all remaining days, planned later too, are on).
+export function saveDaysOff(off, storage = globalThis.localStorage) {
+  try {
+    storage.setItem(DAYS_KEY, JSON.stringify({ v: 2, off: ALL_DAYS.filter((d) => (off || []).includes(d)) }));
+    return true;
+  } catch {
+    return false;
   }
 }
 
@@ -157,6 +178,7 @@ export function save(state, storage = globalThis.localStorage) {
 export async function deleteAll(env = globalThis) {
   try { env.localStorage.removeItem(KEY); } catch { /* ignore */ }
   try { env.localStorage.removeItem(DAYS_KEY); } catch { /* ignore */ }
+  try { env.localStorage.removeItem(PROTEIN_KEY); } catch { /* ignore */ }
   try { env.localStorage.removeItem(CUSTOM_KEY); } catch { /* ignore */ }
   try { env.localStorage.removeItem(UNREADABLE_KEY); } catch { /* ignore */ }
   // Your recipe photos: only this app's own database (fc-photos). Nothing else in IndexedDB is opened or touched.

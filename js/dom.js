@@ -44,11 +44,16 @@ export function linkButton(label, href, kind = '') {
   return h('a', { class: ('btn ' + kind).trim(), href }, label);
 }
 
-export function toggle(label, sub, on, onChange) {
-  const sw = h('button', {
+// The on/off switch (Week tab: Friday / game-day rows and each day's "Shop for this day").
+export function switchButton(label, on, onChange, attrs = {}) {
+  return h('button', {
     type: 'button', class: 'switch', role: 'switch', 'aria-checked': on ? 'true' : 'false', 'aria-label': label,
-    onclick: () => onChange(!on),
+    onclick: () => onChange(!on), ...attrs,
   });
+}
+
+export function toggle(label, sub, on, onChange) {
+  const sw = switchButton(label, on, onChange);
   return h('div', { class: 'toggle' },
     h('div', { class: 'tl' }, h('strong', { text: label }), sub ? h('span', { text: sub }) : null),
     sw);

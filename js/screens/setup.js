@@ -91,7 +91,7 @@ export function nightsEditor(ctx) {
       if (n.weekly.includes(d)) n.weekly = n.weekly.filter((x) => x !== d);
       else {
         n.weekly = [...n.weekly, d];
-        if (d === 5) n.fridayAlt.on = false; // every Friday replaces every other Friday
+        if (d === 5) n.fridayAlt.on = false; // every Friday replaces alternate Fridays
       }
       ctx.save();
       draw();
@@ -101,7 +101,7 @@ export function nightsEditor(ctx) {
     const err = h('p', { class: 'error', hidden: true, text: 'Please pick a Friday.' });
     const date = h('input', {
       class: 'input', type: 'date', id: 'fri-anchor', step: '7', min: minFri,
-      'aria-label': 'Pick a Friday you have them', value: n.fridayAlt.anchor || '',
+      'aria-label': 'Pick which Friday to start from', value: n.fridayAlt.anchor || '',
       onchange: (e) => {
         const v = e.target.value;
         if (isISODate(v) && weekday(v) === 5) {
@@ -116,13 +116,13 @@ export function nightsEditor(ctx) {
     wrap.replaceChildren(...[
       h('strong', { text: 'Which nights do you cook?' }),
       h('div', { class: 'chips', id: 'day-chips' }, chips),
-      toggle('Every other Friday', 'Pick a Friday you have them', n.fridayAlt.on, (on) => {
+      toggle('Alternate Fridays', 'Pick which Friday to start from', n.fridayAlt.on, (on) => {
         n.fridayAlt.on = on;
         if (on) n.weekly = n.weekly.filter((x) => x !== 5);
         ctx.save();
         draw();
       }),
-      n.fridayAlt.on ? h('div', { class: 'field' }, h('label', { for: 'fri-anchor', text: 'Pick a Friday you have them' }), date, err) : null,
+      n.fridayAlt.on ? h('div', { class: 'field' }, h('label', { for: 'fri-anchor', text: 'Pick which Friday to start from' }), date, err) : null,
       toggle('Monday game-day meal', 'A grown-up dinner. No kid job.', n.gamedayDefault, (on) => {
         n.gamedayDefault = on;
         ctx.save();
@@ -138,7 +138,7 @@ export function nightsSummary(nights) {
   const order = [4, 5, 6, 0, 1, 2, 3];
   const days = order.filter((d) => nights.weekly.includes(d)).map((d) => DAY_SHORT[d]);
   let s = days.length ? days.join(', ') : 'No nights picked yet';
-  if (nights.fridayAlt.on && !nights.weekly.includes(5)) s += ' (+ every other Fri)';
+  if (nights.fridayAlt.on && !nights.weekly.includes(5)) s += ' (+ alternate Fri)';
   if (nights.gamedayDefault && !nights.weekly.includes(1)) s += ' · Mon game-day';
   return s;
 }

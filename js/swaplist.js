@@ -142,7 +142,7 @@ export function resetFilters(f) {
 }
 
 // The full swap list for a night, best first. The planner's ranked candidates come first, in the same
-// order as the old 3-at-a-time picker, then every other eligible dinner (on another night this week or
+// order as the old 3-at-a-time picker, then each remaining eligible dinner (on another night this week or
 // cooked lately), ranked the same way. The current dinner and blocked dinners never appear.
 export function swapList(state, data, weekId, date) {
   const night = nightFor(state, weekId, date);

@@ -5,8 +5,9 @@ import { fillWeek, getWeek, byId } from '../planner.js';
 import { plannedDays, pickDays, buildList, pruneChecked, toggleChecked, shareText, pickedDates, daysLabel, ingredientNotes } from '../grocery.js';
 import { shareWithFallback } from '../share.js';
 import { loadDays } from '../store.js';
-import { dayPicker } from '../view.js';
-import { NO_DAYS, pickAndRefresh } from './fresh.js';
+import { NO_DAYS } from './fresh.js';
+import { activeSwaps } from '../protein.js';
+import { PROTEIN_BUTTON } from './protein.js';
 
 export function render(ctx) {
   const { state, data } = ctx;
@@ -16,11 +17,13 @@ export function render(ctx) {
   const recipe = (id) => (id ? byId(data, id) : null);
   // Checks are pruned against the whole week, so a day you untick keeps its checks for later.
   pruneChecked(week, buildList(state, recipe, weekId));
-  // The shared day picks (same as the Amazon Fresh screen): only meals on ticked days feed this list.
+  // The Week tab's "Shop for this day" switches: only meals on days that are on feed this list.
   const planned = plannedDays(state, recipe, weekId);
   const days = pickDays(loadDays(), planned);
   const noDays = planned.length > 0 && days.length === 0;
-  let list = buildList(state, recipe, weekId, days);
+  // Protein picks (#/protein) for the meals on those days; none = Regular, the list as before.
+  const swaps = activeSwaps(state, data, recipe, weekId, days);
+  let list = buildList(state, recipe, weekId, days, swaps);
   // The date line follows the picked days (all planned days picked = the same line as before).
   const allPicked = days.length === planned.length;
   const label = daysLabel(list, pickedDates(state, recipe, weekId, days), allPicked);
@@ -38,13 +41,12 @@ export function render(ctx) {
 
   const mount = h('div');
   const share = () => {
-    list = buildList(state, recipe, weekId, days);
+    list = buildList(state, recipe, weekId, days, swaps);
     shareWithFallback({ title: 'Grocery list', text: shareText(list, label || undefined) }, { toast, mount });
   };
   const empty = !list.sections.length && !list.staples.length;
   return [
     header('Grocery list \u2014 this week', { back: '#/week' }),
-    planned.length ? dayPicker('grocery', planned, days, pickAndRefresh(ctx, '#/grocery')) : null,
     noDays ? null : h('p', { class: 'sub', id: 'grocery-dates', text: empty ? label : `${label} · Tap what you already have.` }),
     noDays
       ? h('div', { class: 'card', id: 'grocery-no-days' }, h('p', { class: 'meta', text: NO_DAYS }))
@@ -59,6 +61,7 @@ export function render(ctx) {
       : null,
     mount,
     h('div', { class: 'stickyfoot' },
+      empty ? null : h('a', { class: 'btn small', href: '#/protein', id: 'protein-open' }, PROTEIN_BUTTON),
       empty ? null : h('a', { class: 'btn', href: '#/fresh', id: 'send-fresh' }, 'Send to Amazon cart'),
       button('Share list', share, 'primary', { id: 'share-list', disabled: empty }),
       h('p', { class: 'footer-note', text: 'Send to Notes, a text, or your partner. We never order for you.' })),

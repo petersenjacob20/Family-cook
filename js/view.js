@@ -104,18 +104,3 @@ export function smallCard(state, r, vocab, extra = []) {
     recipePhoto(r, 'thumb cardthumb'));
 }
 
-// Day picks card (Grocery tab and Amazon Fresh screen share it and the fc-fresh-days choice).
-// One box per planned weekday; onPick(newDays) saves and re-renders.
-export const DAYS_LABEL = 'Which days are you shopping for?';
-export function dayPicker(prefix, planned, days, onPick) {
-  return h('div', { class: 'card freshdayscard', id: `${prefix}-days-card` },
-    h('p', { class: 'section-label', id: `${prefix}-days-label`, text: DAYS_LABEL }),
-    h('div', { class: 'freshdays', id: `${prefix}-days`, role: 'group', 'aria-label': DAYS_LABEL },
-      planned.map((d) => {
-        const on = days.includes(d);
-        return h('button', {
-          type: 'button', class: 'daychk', id: `${prefix}-day-${d}`, role: 'checkbox', 'aria-checked': on ? 'true' : 'false',
-          onclick: () => onPick(on ? days.filter((x) => x !== d) : days.concat(d)),
-        }, h('span', { class: 'box', 'aria-hidden': 'true' }), h('span', { text: DAY_SHORT[d] }));
-      })));
-}

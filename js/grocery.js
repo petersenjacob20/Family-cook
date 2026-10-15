@@ -123,7 +123,19 @@ export function lineId(section, key, fam) {
 
 // Build the week's list from the active nights. `recipeById(id)` returns a recipe or null.
 // `days` (optional): weekday numbers 0 (Sun) to 6 (Sat) to include; omitted = every night.
-export function buildList(state, recipeById, weekId, days) {
+// One meal's ingredients with a chosen protein swap applied: a 'swap' replaces the ingredient it names,
+// an 'add' adds its item. No swap = the recipe's own list, untouched.
+export function swapIngredients(ingredients, swap) {
+  const list = ingredients || [];
+  if (!swap || !swap.use) return list;
+  const item = { ...swap.use, check_label: swap.check_label === true || swap.use.check_label === true };
+  if (swap.type === 'add') return list.concat(item);
+  if (swap.type === 'swap') return list.map((i) => (i.key === swap.replaces ? item : i));
+  return list;
+}
+
+// swaps (optional): { [date]: protein swap } chosen for this week's meals (js/protein.js); amounts re-merge as usual.
+export function buildList(state, recipeById, weekId, days, swaps) {
   const daySet = Array.isArray(days) ? new Set(days) : null;
   const week = (state.weeks && state.weeks[weekId]) || { meals: {}, groceryChecked: [] };
   const checked = new Set(week.groceryChecked || []);
@@ -137,7 +149,7 @@ export function buildList(state, recipeById, weekId, days) {
     if (!r) continue;
     if (night.date > last) last = night.date;
     const use = `${DAY_SHORT[weekday(night.date)]} ${cutTitle(r.title)}`;
-    for (const ing of r.ingredients || []) {
+    for (const ing of swaps && swaps[night.date] ? swapIngredients(r.ingredients, swaps[night.date]) : r.ingredients || []) {
       if (ing.optional) continue;
       if (ing.staple) {
         if (!staples.has(ing.key)) staples.set(ing.key, { id: lineId(ing.section || 'pantry', ing.key, 'staple'), key: ing.key, name: ing.name });
@@ -194,7 +206,9 @@ export function plannedDays(state, recipeById, weekId) {
 
 // The days that feed the list: saved picks limited to planned days (a saved day not in the plan is ignored);
 // nothing saved (null) = every planned day.
+// pub17 { off }: every planned day except the ones turned off (a newly planned day is on).
 export function pickDays(saved, planned) {
+  if (saved && Array.isArray(saved.off)) return planned.filter((d) => !saved.off.includes(d));
   return Array.isArray(saved) ? planned.filter((d) => saved.includes(d)) : planned.slice();
 }
 
