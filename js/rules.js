@@ -225,7 +225,7 @@ export const GUARD_NUT = [...new Set([
   'praline', 'pralin', 'nougat', 'torrone', 'turron', 'marzipan', 'almond paste', 'frangipane', 'gianduja', 'nutella', 'amaretti',
   'amaretto', 'frangelico', 'nocino', 'orgeat', 'orzata', 'romesco', 'dukkah', 'satay', 'sate', 'gado gado', 'kare kare', 'baklava',
   'financier', 'trail mix', 'nut extract', 'nut flavoring', 'coconut', 'copra', 'noisette', 'tree nut', 'pesto', 'muhammara', 'pad thai',
-  // pub16 QA (da3d7d4): foreign names and common typos
+  // Foreign names and common typos
   'pinoli', 'cacahuete', 'mani', 'erdnuss', 'badam', 'kaju', 'noci', 'pindakaas', 'akhrot', 'chironji', 'almnd', 'pistachoi',
 ])];
 export const GUARD_FISH = ['saumon', ...new Set([
@@ -239,7 +239,7 @@ export const GUARD_FISH = ['saumon', ...new Set([
   'tapenade', 'fish gelatin', 'fish oil', 'isinglass', 'branzino', 'whitefish', 'white fish', 'pike', 'carp', 'mullet', 'grouper',
   'tilefish', 'sea bream', 'bream', 'monkfish', 'hake', 'smelt', 'krill', 'swordfish', 'catfish', 'mahi', 'mahi mahi', 'perch', 'walleye',
   'bass', 'sea bass', 'fish stick',
-  // pub16 QA (da3d7d4): more fish, fish products and dishes, foreign seafood, common typos
+  // More fish, fish products and dishes, foreign seafood, common typos
   'turbot', 'sturgeon', 'barramundi', 'yellowtail', 'sprat', 'pilchard', 'arctic char', 'hamachi', 'skate',
   'gravlax', 'taramasalata', 'bottarga', 'mentaiko', 'ikan bilis', 'furikake', 'ponzu',
   'sashimi', 'ceviche', 'cioppino', 'bouillabaisse', 'puttanesca', 'remoulade',

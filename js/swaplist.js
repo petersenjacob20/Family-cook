@@ -1,12 +1,12 @@
-// Planner swap list (pub7): every dinner that fits the night, best first, with search and filter chips.
-// Pure, no DOM. Tag data comes from Chef's recipe-tags.json, built into recipes.json as
+// Planner swap list: every dinner that fits the night, best first, with search and filter chips.
+// Pure, no DOM. Tag data comes from recipe-tags.json, built into recipes.json as
 // data.filterTags (id, label, group) and recipe.filter ({ tags, protein_g, fiber_g }).
 import { normalizeText } from './rules.js';
 import { getWeek, nightFor, usedInWeek, candidates, rank, eligible } from './planner.js';
 import { proteinLine } from './grocery.js';
 
-// Short chip text (Design: 1-2 words, 14 characters or fewer). Chef's full label is the fallback,
-// and search matches Chef's labels and ids as well as these.
+// Short chip text (1-2 words, 14 characters or fewer). The full label is the fallback,
+// and search matches the full labels and ids as well as these.
 export const CHIP_LABELS = {
   'high-protein': 'High protein',
   'high-fiber': 'High fiber',
@@ -22,7 +22,7 @@ export const CHIP_LABELS = {
   'tacos-mexican': 'Tacos',
   'burgers-sliders': 'Burgers',
   'sandwiches-subs': 'Sandwiches',
-  soups: 'Soup and chili', // Design suggested "Soups and chili" (15); trimmed to fit 14
+  soups: 'Soup and chili', // "Soups and chili" (15) trimmed to fit 14
   bowls: 'Bowls',
   'breakfast-for-dinner': 'Breakfast',
   'sheet-pan': 'Sheet pan',
@@ -32,7 +32,7 @@ export const CHIP_LABELS = {
 };
 export const CHIP_MAX = 14;
 
-// The rule each "rule chip" adds to the count line, in plain words (Chef's definitions, shortened so the line fits
+// The rule each "rule chip" adds to the count line, in plain words (the tag definitions, shortened so the line fits
 // on one row next to "Clear" at 360 px without growing the pinned block past 130 px).
 export const RULE_TEXT = {
   'high-protein': '30 g+ protein per serving',
@@ -80,7 +80,7 @@ export function chipsFor(list, data) {
 
 const searchFold = (s) => normalizeText(s).replace(/[^a-z0-9]+/g, ' ').trim();
 
-// Text a search can match: the title, plus each food tag's id, Chef's label and the short chip text.
+// Text a search can match: the title, plus each food tag's id, its label and the short chip text.
 export function searchText(r, data) {
   const defs = new Map(tagDefs(data).map((t) => [t.id, t]));
   const parts = [r.title || ''];
@@ -115,10 +115,10 @@ export function applyFilters(list, filters, data) {
   });
 }
 
-// The count line (Design, 6a257b8 glance): "67 dinners" with no chip on; with exactly one rule chip on, its rule in
+// The count line: "67 dinners" with no chip on; with exactly one rule chip on, its rule in
 // plain words ("29 dinners · 30 g or more protein per serving"); with a single food chip or 2+ chips, the short chip
 // names in chip-row order ("10 dinners · High fiber, Chicken"). Typed text alone is not named.
-// `order` is the chip-row order of tag ids (defaults to rule chips, then Chef's file order).
+// `order` is the chip-row order of tag ids (defaults to rule chips, then the tag file order).
 export function countLine(n, on, data, order = null) {
   const ids = [...new Set(on || [])];
   const head = `${n} ${n === 1 ? 'dinner' : 'dinners'}`;

@@ -1,4 +1,4 @@
-// Photo credits: one card per recipe photo, from the build's photo_credits (Chef's recipe-photos files).
+// Photo credits: one card per recipe photo, from the build's photo_credits (the recipe-photos files).
 // Source and license links are plain links: nothing loads from outside until one is tapped.
 import { h, header } from '../dom.js';
 import { cap } from '../view.js';

@@ -87,7 +87,7 @@ function sendScreen(ctx) {
     openExternal(url);
   }, 'primary', { id: 'fresh-open', disabled: true });
 
-  // A plain one-line reason under the button whenever it is off (pub10/pub11 left it faded with no reason).
+  // A plain one-line reason under the button whenever it is off, never just faded.
   const why = h('p', { class: 'meta', id: 'fresh-open-why', 'aria-live': 'polite', text: openWhy(false, url) });
   const agree = checkRow('I\u2019ll turn substitutions off and read every label before I order.', '', false, () => {
     agreed = !agreed;
@@ -102,7 +102,7 @@ function sendScreen(ctx) {
 
   // Amazon Fresh, main path: the whole list in one tap (Amazon's ingredients page, item names and amounts only).
   // The link is built here, locally (gzip + base64url, no network); it opens only when you tap it.
-  // Opened as pub10 did: a real link (new tab, noopener noreferrer) the user taps. Nut and fish items are dropped and listed.
+  // Opened as a real link (new tab, noopener noreferrer) the user taps. Nut and fish items are dropped and listed.
   // The per-item search links below it are the backup.
   const { names, payload, sent, blocked } = freshPayload(list, vocab);
   const main = h('a', { class: 'btn primary freshmain', id: 'fresh-main', role: 'button', target: '_blank', rel: 'noopener noreferrer', 'aria-disabled': 'true' }, MAIN_LABEL);
@@ -146,7 +146,7 @@ function sendScreen(ctx) {
   main.ready = mainReady; // resolves once the local link is built (tests wait on it)
 
 
-  // QA (360x640): the sticky footer is the same small bar in every state (one row plus a one-line note), so it
+  // At 360x640 the sticky footer is the same small bar in every state (one row plus a one-line note), so it
   // never covers the allergy note or the links. When this week's list has a saved product, the cart tick and
   // "Add to Amazon cart" (off until ticked) sit in a normal block in the page, right after the search card.
   const hasSaved = plan.send.length > 0;

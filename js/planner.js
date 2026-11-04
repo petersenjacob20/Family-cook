@@ -226,8 +226,8 @@ export function recordCooked(state, date, id) {
 // High protein is defined by the number in the data, per adult serving as written, never by the category
 // and never by a swap: a recipe with no number (or null) never qualifies.
 export const HIGH_PROTEIN_G = 30;
-// One meaning of High protein everywhere (EM ruling A, 2026-10-08): Chef's "high-protein" filter tag from
-// recipe-tags.json, which the build only allows when Chef's protein_g is 30 g or more per serving (never when null).
+// One meaning of High protein everywhere: the "high-protein" filter tag from
+// recipe-tags.json, which the build only allows when protein_g is 30 g or more per serving (never when null).
 export const HIGH_PROTEIN_TAG = 'high-protein';
 export function isHighProtein(r) {
   return Boolean(r && r.filter && Array.isArray(r.filter.tags) && r.filter.tags.includes(HIGH_PROTEIN_TAG));

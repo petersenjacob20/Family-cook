@@ -1089,6 +1089,106 @@
       "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
     },
     {
+      "id": "turkey-stuffing-green-bean-skillet",
+      "title": "Thanksgiving-Style Turkey and Stuffing Skillet",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "honey-mustard-chicken-sweet-potato-fries",
+      "title": "Honey Mustard Chicken with Sweet Potato Fries and Green Beans",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "chicken-ramen-noodle-bowls",
+      "title": "Japanese-Style Chicken Ramen Bowls with Spinach",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "mild-chicken-pozole-hominy-soup",
+      "title": "Mild Chicken Pozole-Style Soup with Hominy",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "red-lentil-sweet-potato-dal",
+      "title": "Mild Red Lentil and Sweet Potato Dal with Rice",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "ham-and-white-bean-soup",
+      "title": "Ham and White Bean Soup with Sneaky Spinach",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "italian-beef-dip-sandwiches",
+      "title": "Italian Beef Dip Sandwiches",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "pizza-smashed-potatoes-spinach",
+      "title": "Pizza Smashed Potatoes with Sneaky Spinach",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "mild-cajun-chicken-sausage-jambalaya",
+      "title": "Mild Cajun-Style Chicken and Sausage Jambalaya",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "beef-chickpea-couscous-skillet",
+      "title": "North African-Style Beef and Chickpea Couscous Skillet",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
       "id": "crispy-oven-wings",
       "title": "Crispy Oven Wings",
       "source": "original image generated for Family Cook (no third-party source)",
@@ -2586,7 +2686,8 @@
           "name": "chicken broth (32 oz carton)",
           "qty": 2,
           "unit": "box",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "cooked-chicken",
@@ -6399,7 +6500,8 @@
           "name": "chicken broth (32 oz carton)",
           "qty": 1,
           "unit": "box",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "milk",
@@ -8488,7 +8590,8 @@
           "name": "chicken broth (32 oz carton)",
           "qty": 0.5,
           "unit": "box",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "milk",
@@ -10118,7 +10221,8 @@
           "name": "chicken broth (32 oz carton)",
           "qty": 1,
           "unit": "box",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "diced-tomatoes",
@@ -10840,7 +10944,8 @@
           "name": "chicken broth (32 oz carton)",
           "qty": 0.5,
           "unit": "box",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "milk",
@@ -11187,7 +11292,8 @@
           "name": "chicken broth (32 oz carton)",
           "qty": 0.25,
           "unit": "box",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "low-sodium-soy-sauce",
@@ -12906,7 +13012,8 @@
           "name": "chicken broth (32 oz carton)",
           "qty": 1,
           "unit": "box",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "black-beans",
@@ -13852,7 +13959,8 @@
           "name": "chicken broth (32 oz carton)",
           "qty": 2,
           "unit": "box",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "shredded-carrots",
@@ -16638,7 +16746,8 @@
           "name": "chicken broth (32 oz carton)",
           "qty": 1,
           "unit": "box",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "milk",
@@ -17144,7 +17253,8 @@
           "name": "chicken broth (32 oz carton)",
           "qty": 0.5,
           "unit": "box",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "milk",
@@ -18199,7 +18309,7 @@
       },
       "photo": {
         "src": "photos/pork-schnitzel-oven-fries-cucumber-salad.webp",
-        "alt": "Golden breaded pork cutlet with oven fries, creamy cucumber salad and a lemon wedge"
+        "alt": "Golden breaded pork cutlet with oven fries, cucumber salad and a lemon wedge"
       }
     },
     {
@@ -18252,7 +18362,8 @@
           "name": "can of tomato sauce (8 oz)",
           "qty": 1,
           "unit": "can",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "ground-cumin",
@@ -18474,7 +18585,8 @@
           "name": "can of tomato sauce (8 oz)",
           "qty": 1,
           "unit": "can",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "black-beans",
@@ -19130,7 +19242,8 @@
           "name": "can of tomato sauce (8 oz)",
           "qty": 1,
           "unit": "can",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "italian-seasoning",
@@ -19566,7 +19679,8 @@
           "name": "can of tomato sauce (8 oz)",
           "qty": 1,
           "unit": "can",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "instant-rice",
@@ -19808,7 +19922,8 @@
           "name": "can of tomato sauce (8 oz)",
           "qty": 0.5,
           "unit": "can",
-          "section": "pantry"
+          "section": "pantry",
+          "check_label": true
         },
         {
           "key": "shredded-cheddar",
@@ -19981,6 +20096,2089 @@
       "photo": {
         "src": "photos/turkey-taco-oven-fries.webp",
         "alt": "Oven fries topped with taco turkey, melted cheddar, diced tomato and sour cream"
+      }
+    },
+    {
+      "id": "turkey-stuffing-green-bean-skillet",
+      "title": "Thanksgiving-Style Turkey and Stuffing Skillet",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 30,
+      "serves": 4,
+      "tags": [
+        "turkey",
+        "stuffing",
+        "green beans"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "gluten",
+        "turkey"
+      ],
+      "ingredients": [
+        {
+          "key": "lean-ground-turkey",
+          "name": "93% lean ground turkey",
+          "qty": 1.25,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "stuffing-mix",
+          "name": "boxed stuffing mix (6 oz)",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "green-beans",
+          "name": "fresh green beans",
+          "qty": 0.75,
+          "unit": "lb",
+          "section": "produce"
+        },
+        {
+          "key": "shredded-carrots",
+          "name": "shredded carrots",
+          "qty": 1,
+          "unit": "cup",
+          "section": "produce"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "chicken-broth",
+          "name": "chicken broth (32 oz carton)",
+          "qty": 0.5,
+          "unit": "box",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "dried-thyme",
+          "name": "dried thyme",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "butter",
+          "name": "butter",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Trim the green beans and cut them into short pieces about the size of a pea pod tip. Dice the onion small.",
+          "minutes": 6,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the turkey and onion in a big skillet over medium-high until no pink is left, breaking it into small crumbles.",
+          "minutes": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the green beans, carrots, thyme, salt, pepper and the broth. Cover and simmer until the beans are soft.",
+          "minutes": 6,
+          "timer_min": 6,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Shake the stuffing",
+          "how": [
+            "Pour the dry stuffing into a big cool bowl",
+            "Fluff it with your fingers",
+            "Can you smell the herbs?"
+          ],
+          "learns": [
+            "senses",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Stir in 2 tbsp butter and the stuffing crumbs, cover, and turn off the heat.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Let it sit until the stuffing soaks up the broth, then fluff with a fork.",
+          "minutes": 5,
+          "timer_min": 5,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Scoop into bowls and let it cool a little before serving.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "turkey-stuffing-green-bean-skillet--fat-free-ground-turkey",
+          "type": "swap",
+          "replaces": "lean-ground-turkey",
+          "use": {
+            "key": "fat-free-ground-turkey",
+            "name": "fat-free ground turkey",
+            "qty": 1.25,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. It cooks a little drier, so do not overcook it.",
+          "protein": {
+            "claim": "about +27 g protein for the whole recipe (about +6.8 g per serving)",
+            "g_per_recipe": 27.4,
+            "g_per_serving": 6.8,
+            "basis": "1.25 lb fat-free ground turkey (FDC 172847, 567 g) vs the recipe's 567 g of turkey entry (FDC 172850), raw weights",
+            "fdc_ids": [
+              172847,
+              172850
+            ]
+          },
+          "contains": [
+            "turkey"
+          ]
+        },
+        {
+          "id": "turkey-stuffing-green-bean-skillet--greek-yogurt",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "greek-yogurt",
+            "name": "plain Greek yogurt",
+            "qty": 0.5,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Spoon it on top like sour cream.",
+          "protein": {
+            "claim": "about +10 g protein for the whole recipe (about +2.5 g per serving)",
+            "g_per_recipe": 10.2,
+            "g_per_serving": 2.5,
+            "basis": "adds 0.5 cup plain Greek yogurt (FDC 171304, 113.3 g)",
+            "fdc_ids": [
+              171304
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
+        }
+      ],
+      "filter": {
+        "tags": [
+          "turkey",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/turkey-stuffing-green-bean-skillet.webp",
+        "alt": "Skillet of golden stuffing with crumbled turkey, green bean pieces and shredded carrot"
+      }
+    },
+    {
+      "id": "honey-mustard-chicken-sweet-potato-fries",
+      "title": "Honey Mustard Chicken with Sweet Potato Fries and Green Beans",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 40,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "fries",
+        "sweet potato"
+      ],
+      "contains": [
+        "chicken"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-thighs",
+          "name": "boneless chicken thighs",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "sweet-potatoes",
+          "name": "sweet potatoes",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "produce"
+        },
+        {
+          "key": "green-beans",
+          "name": "fresh green beans",
+          "qty": 1,
+          "unit": "lb",
+          "section": "produce"
+        },
+        {
+          "key": "yellow-mustard",
+          "name": "yellow mustard",
+          "qty": 3,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "honey",
+          "name": "honey",
+          "qty": 2,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "paprika",
+          "name": "paprika",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 425°F and line 2 baking sheets with foil.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Cut the sweet potatoes into thin fries and trim the green beans. Toss each with olive oil, salt and paprika.",
+          "minutes": 8,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "kid",
+          "text": "Mix the sauce",
+          "how": [
+            "Squeeze mustard into a cool bowl",
+            "Add the honey",
+            "Stir until it is all one yellow"
+          ],
+          "learns": [
+            "colors",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Set the chicken on one sheet with the beans, brush with half the sauce, and spread the fries on the other sheet.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Roast both, turning the fries once, until the chicken reaches 165°F inside and the fries are tender.",
+          "minutes": 25,
+          "timer_min": 25,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Cut the chicken into small strips, the fries in half and the green beans small for little ones. Serve the rest of the sauce to dip.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 39,
+      "protein_note": "About 39 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "protein_swaps": [
+        {
+          "id": "honey-mustard-chicken-sweet-potato-fries--chicken-breast",
+          "type": "swap",
+          "replaces": "chicken-thighs",
+          "use": {
+            "key": "chicken-breast",
+            "name": "boneless chicken breasts",
+            "qty": 1.5,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount; roast until 165°F inside, a few minutes less.",
+          "protein": {
+            "claim": "about +19 g protein for the whole recipe (about +4.8 g per serving)",
+            "g_per_recipe": 19.3,
+            "g_per_serving": 4.8,
+            "basis": "1.5 lb boneless chicken breasts (FDC 171077, 680.4 g) vs the recipe's 680.4 g of chicken entry (FDC 173627), raw weights",
+            "fdc_ids": [
+              171077,
+              173627
+            ]
+          },
+          "contains": [
+            "chicken"
+          ]
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "chicken",
+          "sheet-pan"
+        ],
+        "protein_g": 39,
+        "fiber_g": 8.8
+      },
+      "photo": {
+        "src": "photos/honey-mustard-chicken-sweet-potato-fries.webp",
+        "alt": "Sheet pan of glazed chicken thighs, sweet potato fries and green beans with a small dip bowl"
+      }
+    },
+    {
+      "id": "chicken-ramen-noodle-bowls",
+      "title": "Japanese-Style Chicken Ramen Bowls with Spinach",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 10,
+      "total_min": 20,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "noodles",
+        "soup"
+      ],
+      "contains": [
+        "chicken",
+        "egg",
+        "gluten",
+        "soy"
+      ],
+      "ingredients": [
+        {
+          "key": "ramen-noodles",
+          "name": "instant ramen noodle blocks (toss the flavor packets)",
+          "qty": 3,
+          "unit": "",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "chicken-broth",
+          "name": "chicken broth (32 oz carton)",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "cooked-chicken",
+          "name": "cooked chicken (a store rotisserie chicken works)",
+          "qty": 2,
+          "unit": "cup",
+          "section": "meat"
+        },
+        {
+          "key": "shredded-carrots",
+          "name": "shredded carrots",
+          "qty": 1,
+          "unit": "cup",
+          "section": "produce"
+        },
+        {
+          "key": "baby-spinach",
+          "name": "baby spinach",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "produce"
+        },
+        {
+          "key": "eggs",
+          "name": "eggs",
+          "qty": 2,
+          "unit": "",
+          "section": "dairy"
+        },
+        {
+          "key": "low-sodium-soy-sauce",
+          "name": "low-sodium soy sauce",
+          "qty": 2,
+          "unit": "tbsp",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "ground-ginger",
+          "name": "ground ginger",
+          "qty": 0.5,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Chop the spinach and pull the chicken into small bites, taking out any skin or bones.",
+          "minutes": 5,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Bring the broth, 2 cups water, soy sauce, ginger and garlic powder to a boil in a big pot.",
+          "minutes": 6,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the noodle blocks and carrots and cook 3 minutes, stirring to break the noodles apart.",
+          "minutes": 3,
+          "timer_min": 3,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Whisk the eggs",
+          "how": [
+            "Crack eggs into a cool cup with help",
+            "Whisk with a fork 20 times",
+            "Hand the cup to a grown-up, then wash hands"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Stir the soup in a circle and slowly pour in the eggs so they cook into thin ribbons.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the chicken and spinach and cook 1 minute until hot.",
+          "minutes": 1,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Cut the noodles short with kitchen scissors for little ones and let the bowls cool a few minutes.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 33,
+      "protein_note": "About 33 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "protein_swaps": [
+        {
+          "id": "chicken-ramen-noodle-bowls--eggs",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "eggs",
+            "name": "eggs",
+            "qty": 2,
+            "unit": "",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Whisk 2 more eggs in with the others.",
+          "protein": {
+            "claim": "about +13 g protein for the whole recipe (about +3.1 g per serving)",
+            "g_per_recipe": 12.6,
+            "g_per_serving": 3.1,
+            "basis": "adds 2 eggs (FDC 171287, 100 g)",
+            "fdc_ids": [
+              171287
+            ]
+          },
+          "contains": [
+            "egg"
+          ]
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "chicken",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": 33,
+        "fiber_g": 3.0
+      },
+      "photo": {
+        "src": "photos/chicken-ramen-noodle-bowls.webp",
+        "alt": "Bowl of noodles in golden broth with sliced chicken, egg ribbons, shredded carrot and spinach"
+      }
+    },
+    {
+      "id": "mild-chicken-pozole-hominy-soup",
+      "title": "Mild Chicken Pozole-Style Soup with Hominy",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 35,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "soup",
+        "hominy"
+      ],
+      "contains": [
+        "chicken"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-breast",
+          "name": "boneless chicken breasts",
+          "qty": 1.25,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "hominy",
+          "name": "can of white hominy (15 oz)",
+          "qty": 2,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "chicken-broth",
+          "name": "chicken broth (32 oz carton)",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "tomato-sauce",
+          "name": "can of tomato sauce (8 oz)",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "zucchini",
+          "name": "zucchini",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "chili-powder",
+          "name": "chili powder",
+          "qty": 2,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "ground-cumin",
+          "name": "ground cumin",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "dried-oregano",
+          "name": "dried oregano",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "lime",
+          "name": "lime",
+          "qty": 1,
+          "unit": "",
+          "section": "produce",
+          "optional": true
+        },
+        {
+          "key": "vegetable-or-canola-oil",
+          "name": "vegetable or canola oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Dice the onion and zucchini small. Cut the chicken into 3 big pieces, then wash your hands and board.",
+          "minutes": 6,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the onion in a little oil in a big pot over medium until soft.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Rinse the hominy",
+          "how": [
+            "Hold the strainer over the sink with a grown-up",
+            "Pour in the hominy",
+            "Count 5 puffy kernels"
+          ],
+          "learns": [
+            "counting",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Add the broth, tomato sauce, chili powder, cumin, oregano, salt and the chicken. Simmer until the chicken is 165°F inside.",
+          "minutes": 15,
+          "timer_min": 15,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Lift out the chicken and shred it with 2 forks into small pieces.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Add the hominy, zucchini and chicken back to the pot and simmer until the zucchini is soft.",
+          "minutes": 5,
+          "timer_min": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Squeeze in lime. Chop hominy kernels in half for little ones and let bowls cool before serving.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 38,
+      "protein_note": "About 38 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "protein_swaps": [
+        {
+          "id": "mild-chicken-pozole-hominy-soup--black-beans",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "black-beans",
+            "name": "can of black beans",
+            "qty": 1,
+            "unit": "can",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Rinse, drain and add with the hominy.",
+          "protein": {
+            "claim": "about +26 g protein for the whole recipe (about +6.4 g per serving)",
+            "g_per_recipe": 25.6,
+            "g_per_serving": 6.4,
+            "basis": "adds 1 can can of black beans (FDC 175188, 425 g)",
+            "fdc_ids": [
+              175188
+            ]
+          },
+          "contains": []
+        },
+        {
+          "id": "mild-chicken-pozole-hominy-soup--greek-yogurt",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "greek-yogurt",
+            "name": "plain Greek yogurt",
+            "qty": 0.5,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Spoon it on top like sour cream.",
+          "protein": {
+            "claim": "about +10 g protein for the whole recipe (about +2.5 g per serving)",
+            "g_per_recipe": 10.2,
+            "g_per_serving": 2.5,
+            "basis": "adds 0.5 cup plain Greek yogurt (FDC 171304, 113.3 g)",
+            "fdc_ids": [
+              171304
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "chicken",
+          "one-pot"
+        ],
+        "protein_g": 38,
+        "fiber_g": 7.8
+      },
+      "photo": {
+        "src": "photos/mild-chicken-pozole-hominy-soup.webp",
+        "alt": "Bowl of red chicken soup with hominy and zucchini, with a lime wedge"
+      }
+    },
+    {
+      "id": "red-lentil-sweet-potato-dal",
+      "title": "Mild Red Lentil and Sweet Potato Dal with Rice",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 10,
+      "total_min": 30,
+      "serves": 4,
+      "tags": [
+        "lentils",
+        "rice",
+        "sweet potato"
+      ],
+      "contains": [
+        "dairy"
+      ],
+      "ingredients": [
+        {
+          "key": "red-lentils",
+          "name": "dried red lentils",
+          "qty": 1.5,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "sweet-potatoes",
+          "name": "sweet potatoes",
+          "qty": 1,
+          "unit": "lb",
+          "section": "produce"
+        },
+        {
+          "key": "diced-tomatoes",
+          "name": "can of diced tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "vegetable-broth",
+          "name": "vegetable broth (32 oz carton)",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "mild-curry-powder",
+          "name": "mild curry powder",
+          "qty": 1,
+          "unit": "tbsp",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "baby-spinach",
+          "name": "baby spinach",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "produce"
+        },
+        {
+          "key": "instant-rice",
+          "name": "instant rice",
+          "qty": 2,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "greek-yogurt",
+          "name": "plain Greek yogurt",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "vegetable-or-canola-oil",
+          "name": "vegetable or canola oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Peel the sweet potato and dice it small. Dice the onion.",
+          "minutes": 6,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "kid",
+          "text": "Rinse the lentils",
+          "how": [
+            "Pour lentils into a strainer in a cool bowl",
+            "Swish them with your hand",
+            "Are they orange?"
+          ],
+          "learns": [
+            "colors",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Cook the onion in a little oil in a big pot over medium until soft, then stir in the curry powder for 30 seconds.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the lentils, sweet potato, tomatoes and broth. Simmer, stirring now and then, until the lentils fall apart.",
+          "minutes": 18,
+          "timer_min": 18,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Meanwhile make the rice the way the box says.",
+          "minutes": 10,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Chop the spinach fine and stir it in until it wilts. Add salt to taste.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Spoon over rice with a little yogurt and let it cool before serving.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "red-lentil-sweet-potato-dal--chickpeas",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "chickpeas",
+            "name": "can of chickpeas",
+            "qty": 1,
+            "unit": "can",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Rinse, drain and stir in with the spinach.",
+          "protein": {
+            "claim": "about +21 g protein for the whole recipe (about +5.2 g per serving)",
+            "g_per_recipe": 20.9,
+            "g_per_serving": 5.2,
+            "basis": "adds 1 can can of chickpeas (FDC 175206, 425 g)",
+            "fdc_ids": [
+              175206
+            ]
+          },
+          "contains": []
+        },
+        {
+          "id": "red-lentil-sweet-potato-dal--cooked-chicken",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "cooked-chicken",
+            "name": "cooked chicken (a store rotisserie chicken works)",
+            "qty": 2,
+            "unit": "cup",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Stir in small pieces with the spinach. The dish is no longer meatless.",
+          "protein": {
+            "claim": "about +81 g protein for the whole recipe (about +20.2 g per serving)",
+            "g_per_recipe": 81.0,
+            "g_per_serving": 20.2,
+            "basis": "adds 2 cup cooked chicken (a store rotisserie chicken works) (FDC 171054, 280 g)",
+            "fdc_ids": [
+              171054
+            ]
+          },
+          "contains": [
+            "chicken"
+          ]
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-fiber",
+          "meatless",
+          "bowls",
+          "quick"
+        ],
+        "protein_g": 25.1,
+        "fiber_g": 15.7
+      },
+      "photo": {
+        "src": "photos/red-lentil-sweet-potato-dal.webp",
+        "alt": "Bowl of rice and golden lentil dal with sweet potato, spinach and a swirl of yogurt"
+      }
+    },
+    {
+      "id": "ham-and-white-bean-soup",
+      "title": "Ham and White Bean Soup with Sneaky Spinach",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 35,
+      "serves": 4,
+      "tags": [
+        "ham",
+        "beans",
+        "soup"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "pork"
+      ],
+      "ingredients": [
+        {
+          "key": "diced-ham",
+          "name": "diced cooked ham",
+          "qty": 16,
+          "unit": "oz",
+          "section": "meat"
+        },
+        {
+          "key": "white-beans",
+          "name": "can of white beans",
+          "qty": 2,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "chicken-broth",
+          "name": "chicken broth (32 oz carton)",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "shredded-carrots",
+          "name": "shredded carrots",
+          "qty": 1,
+          "unit": "cup",
+          "section": "produce"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "celery",
+          "name": "celery",
+          "qty": 1,
+          "unit": "bunch",
+          "section": "produce",
+          "optional": true
+        },
+        {
+          "key": "baby-spinach",
+          "name": "baby spinach",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "produce"
+        },
+        {
+          "key": "dried-thyme",
+          "name": "dried thyme",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "butter",
+          "name": "butter",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Dice the onion small (and 2 celery sticks if using). Chop the spinach fine.",
+          "minutes": 5,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the onion, celery and carrots in a spoon of butter in a big pot over medium until soft.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Rinse the beans",
+          "how": [
+            "Hold the strainer over the sink with a grown-up",
+            "Pour the beans in",
+            "Shake shake shake!"
+          ],
+          "learns": [
+            "helping",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Add the ham, beans, broth, thyme and pepper. Simmer 15 minutes.",
+          "minutes": 15,
+          "timer_min": 15,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Scoop out 1 cup of soup, mash it well, and stir it back in to thicken.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the spinach until it wilts. Taste before salting; ham is salty.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Cut any big ham pieces smaller for little ones and let the bowls cool.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 37,
+      "protein_note": "About 37 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "protein_swaps": [
+        {
+          "id": "ham-and-white-bean-soup--chickpeas",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "chickpeas",
+            "name": "can of chickpeas",
+            "qty": 1,
+            "unit": "can",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Rinse, drain and add with the white beans.",
+          "protein": {
+            "claim": "about +21 g protein for the whole recipe (about +5.2 g per serving)",
+            "g_per_recipe": 20.9,
+            "g_per_serving": 5.2,
+            "basis": "adds 1 can can of chickpeas (FDC 175206, 425 g)",
+            "fdc_ids": [
+              175206
+            ]
+          },
+          "contains": []
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "pork",
+          "one-pot"
+        ],
+        "protein_g": 37,
+        "fiber_g": 13.4
+      },
+      "photo": {
+        "src": "photos/ham-and-white-bean-soup.webp",
+        "alt": "Bowl of creamy white bean soup with diced ham, carrot and spinach"
+      }
+    },
+    {
+      "id": "italian-beef-dip-sandwiches",
+      "title": "Italian Beef Dip Sandwiches",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 20,
+      "serves": 4,
+      "tags": [
+        "beef",
+        "sandwiches",
+        "peppers"
+      ],
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "deli-roast-beef",
+          "name": "thin-sliced deli roast beef",
+          "qty": 1.25,
+          "unit": "lb",
+          "section": "meat",
+          "check_label": true
+        },
+        {
+          "key": "beef-broth",
+          "name": "beef broth (32 oz carton)",
+          "qty": 0.5,
+          "unit": "box",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "bell-pepper",
+          "name": "bell pepper",
+          "qty": 2,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "italian-seasoning",
+          "name": "Italian seasoning",
+          "qty": 2,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "hoagie-rolls",
+          "name": "hoagie rolls",
+          "qty": 4,
+          "unit": "",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "provolone",
+          "name": "provolone slices",
+          "qty": 4,
+          "unit": "slice",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Slice the peppers and onion into thin strips.",
+          "minutes": 5,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the peppers and onion in a little olive oil in a big skillet over medium until very soft.",
+          "minutes": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the broth, Italian seasoning, garlic powder and pepper and bring to a gentle simmer.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Tear in the roast beef and warm it in the broth 2 minutes.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Open the rolls",
+          "how": [
+            "Take each roll from the bag",
+            "Open it like a book",
+            "Put one on every plate"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Pile beef, peppers and a slice of provolone in each roll and spoon a little broth on top.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Cut sandwiches into small pieces for little ones; serve extra broth for dipping.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "italian-beef-dip-sandwiches--deli-roast-beef",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "deli-roast-beef",
+            "name": "thin-sliced deli roast beef",
+            "qty": 0.5,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Warm it in the broth with the rest.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "beef"
+          ]
+        }
+      ],
+      "filter": {
+        "tags": [
+          "beef",
+          "burgers-sliders",
+          "quick"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/italian-beef-dip-sandwiches.webp",
+        "alt": "Roll filled with sliced roast beef, sweet peppers and melted provolone, with a cup of broth"
+      }
+    },
+    {
+      "id": "pizza-smashed-potatoes-spinach",
+      "title": "Pizza Smashed Potatoes with Sneaky Spinach",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 50,
+      "serves": 4,
+      "tags": [
+        "pizza",
+        "potatoes",
+        "cheese"
+      ],
+      "contains": [
+        "dairy"
+      ],
+      "ingredients": [
+        {
+          "key": "baby-potatoes",
+          "name": "baby potatoes",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "produce"
+        },
+        {
+          "key": "tomato-sauce",
+          "name": "can of tomato sauce (8 oz)",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "italian-seasoning",
+          "name": "Italian seasoning",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "baby-spinach",
+          "name": "baby spinach",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "produce"
+        },
+        {
+          "key": "shredded-mozzarella",
+          "name": "shredded mozzarella",
+          "qty": 1.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "frozen-broccoli",
+          "name": "frozen broccoli",
+          "qty": 1,
+          "unit": "bag",
+          "section": "frozen"
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Boil the potatoes in a pot of salted water until fork-tender, then drain. Heat the oven to 425°F.",
+          "minutes": 18,
+          "timer_min": 15,
+          "hazard": "hot",
+          "safety": "Hot water. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Chop the spinach very fine and stir it into the tomato sauce with the Italian seasoning.",
+          "minutes": 3,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Set the potatoes on an oiled baking sheet and press each one flat with the bottom of a cup.",
+          "minutes": 3
+        },
+        {
+          "who": "adult",
+          "text": "Brush with olive oil, sprinkle with salt, and roast until the edges are crisp.",
+          "minutes": 12,
+          "timer_min": 12,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Let the pan cool 5 minutes before {kid} helps.",
+          "minutes": 5,
+          "timer_min": 5,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "kid",
+          "text": "Top the potatoes",
+          "how": [
+            "Spoon red sauce onto each cool potato",
+            "Sprinkle cheese on top",
+            "Count how many you made"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Microwave the broccoli in its bag while the topped potatoes bake 5 more minutes to melt the cheese.",
+          "minutes": 5,
+          "timer_min": 5,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back while the door is open."
+        },
+        {
+          "who": "adult",
+          "text": "Cool 3 minutes and cut potatoes into quarters for little ones.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "pizza-smashed-potatoes-spinach--cooked-chicken",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "cooked-chicken",
+            "name": "cooked chicken (a store rotisserie chicken works)",
+            "qty": 2,
+            "unit": "cup",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Tuck small pieces under the cheese. The dish is no longer meatless.",
+          "protein": {
+            "claim": "about +81 g protein for the whole recipe (about +20.2 g per serving)",
+            "g_per_recipe": 81.0,
+            "g_per_serving": 20.2,
+            "basis": "adds 2 cup cooked chicken (a store rotisserie chicken works) (FDC 171054, 280 g)",
+            "fdc_ids": [
+              171054
+            ]
+          },
+          "contains": [
+            "chicken"
+          ]
+        },
+        {
+          "id": "pizza-smashed-potatoes-spinach--low-fat-cottage-cheese",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "low-fat-cottage-cheese",
+            "name": "low-fat cottage cheese",
+            "qty": 0.5,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Mix into the sauce before topping.",
+          "protein": {
+            "claim": "about +14 g protein for the whole recipe (about +3.5 g per serving)",
+            "g_per_recipe": 14.0,
+            "g_per_serving": 3.5,
+            "basis": "adds 0.5 cup low-fat cottage cheese (FDC 173417, 113 g)",
+            "fdc_ids": [
+              173417
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-fiber",
+          "meatless"
+        ],
+        "protein_g": 16.6,
+        "fiber_g": 6.3
+      },
+      "photo": {
+        "src": "photos/pizza-smashed-potatoes-spinach.webp",
+        "alt": "Sheet pan of smashed potatoes topped with pizza sauce, spinach and mozzarella, with broccoli"
+      }
+    },
+    {
+      "id": "mild-cajun-chicken-sausage-jambalaya",
+      "title": "Mild Cajun-Style Chicken and Sausage Jambalaya",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 40,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "sausage",
+        "rice"
+      ],
+      "contains": [
+        "chicken",
+        "pork"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-breast",
+          "name": "boneless chicken breasts",
+          "qty": 1,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "kielbasa",
+          "name": "smoked pork kielbasa sausage (13-14 oz)",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "meat",
+          "check_label": true
+        },
+        {
+          "key": "long-grain-white-rice",
+          "name": "long-grain white rice",
+          "qty": 1,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "diced-tomatoes",
+          "name": "can of diced tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "chicken-broth",
+          "name": "chicken broth (32 oz carton)",
+          "qty": 0.5,
+          "unit": "box",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "bell-pepper",
+          "name": "bell pepper",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "celery",
+          "name": "celery",
+          "qty": 1,
+          "unit": "bunch",
+          "section": "produce",
+          "optional": true
+        },
+        {
+          "key": "paprika",
+          "name": "paprika",
+          "qty": 2,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "dried-thyme",
+          "name": "dried thyme",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "vegetable-or-canola-oil",
+          "name": "vegetable or canola oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Cut the chicken into small bites, then wash your hands and board. Slice the sausage into coins and quarter them.",
+          "minutes": 6,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Dice the pepper, onion and 2 celery sticks small.",
+          "minutes": 4,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Brown the sausage and chicken in a little oil in a big pot over medium-high, about 5 minutes.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the veggies, paprika, thyme and garlic powder and cook 3 minutes.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Measure the rice",
+          "how": [
+            "Scoop rice into a measuring cup",
+            "Level it with a flat finger",
+            "Pour it into a cool bowl"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the rice, tomatoes, broth and 1/2 cup water. Bring to a boil, cover, and turn to low.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Simmer covered without stirring until the rice is tender.",
+          "minutes": 18,
+          "timer_min": 18,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Fluff and let it cool a few minutes before serving.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 42,
+      "protein_note": "About 42 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "protein_swaps": [
+        {
+          "id": "mild-cajun-chicken-sausage-jambalaya--black-beans",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "black-beans",
+            "name": "can of black beans",
+            "qty": 1,
+            "unit": "can",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Rinse, drain and stir in before the rice simmers.",
+          "protein": {
+            "claim": "about +26 g protein for the whole recipe (about +6.4 g per serving)",
+            "g_per_recipe": 25.6,
+            "g_per_serving": 6.4,
+            "basis": "adds 1 can can of black beans (FDC 175188, 425 g)",
+            "fdc_ids": [
+              175188
+            ]
+          },
+          "contains": []
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "veggie-packed",
+          "chicken",
+          "pork",
+          "one-pot"
+        ],
+        "protein_g": 42,
+        "fiber_g": 4.1
+      },
+      "photo": {
+        "src": "photos/mild-cajun-chicken-sausage-jambalaya.webp",
+        "alt": "Skillet of tomato rice with chicken bites, sausage rounds and green pepper"
+      }
+    },
+    {
+      "id": "beef-chickpea-couscous-skillet",
+      "title": "North African-Style Beef and Chickpea Couscous Skillet",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 25,
+      "serves": 4,
+      "tags": [
+        "beef",
+        "couscous",
+        "chickpeas"
+      ],
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "lean-ground-beef",
+          "name": "93% lean ground beef",
+          "qty": 1,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "couscous",
+          "name": "couscous (a tiny wheat pasta)",
+          "qty": 1,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "chickpeas",
+          "name": "can of chickpeas",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "zucchini",
+          "name": "zucchini",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "shredded-carrots",
+          "name": "shredded carrots",
+          "qty": 1,
+          "unit": "cup",
+          "section": "produce"
+        },
+        {
+          "key": "diced-tomatoes",
+          "name": "can of diced tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "ground-cumin",
+          "name": "ground cumin",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "ground-cinnamon",
+          "name": "ground cinnamon",
+          "qty": 0.25,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "greek-yogurt",
+          "name": "plain Greek yogurt",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Dice the zucchini small.",
+          "minutes": 3,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the beef in a big skillet over medium-high until no pink is left, breaking it into small crumbles.",
+          "minutes": 7,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Rinse the chickpeas",
+          "how": [
+            "Hold the strainer over the sink with a grown-up",
+            "Pour in the chickpeas",
+            "Squish one: is it soft?"
+          ],
+          "learns": [
+            "senses",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Add the zucchini, carrots, cumin, cinnamon and salt and cook 3 minutes.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the tomatoes with juice, the chickpeas and 1 cup water and bring to a boil.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the couscous, cover, and turn off the heat. Let it sit until the liquid is soaked up.",
+          "minutes": 5,
+          "timer_min": 5,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Fluff with a fork, mash a few chickpeas for little ones, and top with yogurt.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 36,
+      "protein_note": "About 36 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "protein_swaps": [
+        {
+          "id": "beef-chickpea-couscous-skillet--extra-lean-ground-beef",
+          "type": "swap",
+          "replaces": "lean-ground-beef",
+          "use": {
+            "key": "extra-lean-ground-beef",
+            "name": "95% lean ground beef",
+            "qty": 1,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount; add a splash more water so it stays moist.",
+          "protein": {
+            "claim": "about +2 g protein for the whole recipe (about +0.6 g per serving)",
+            "g_per_recipe": 2.5,
+            "g_per_serving": 0.6,
+            "basis": "1 lb 95% lean ground beef (FDC 171790, 453.6 g) vs the recipe's 453.6 g of beef entry (FDC 173110), raw weights",
+            "fdc_ids": [
+              171790,
+              173110
+            ]
+          },
+          "contains": [
+            "beef"
+          ]
+        },
+        {
+          "id": "beef-chickpea-couscous-skillet--greek-yogurt",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "greek-yogurt",
+            "name": "plain Greek yogurt",
+            "qty": 0.5,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Spoon it on top like sour cream.",
+          "protein": {
+            "claim": "about +10 g protein for the whole recipe (about +2.5 g per serving)",
+            "g_per_recipe": 10.2,
+            "g_per_serving": 2.5,
+            "basis": "adds 0.5 cup plain Greek yogurt (FDC 171304, 113.3 g)",
+            "fdc_ids": [
+              171304
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "veggie-packed",
+          "beef",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": 36,
+        "fiber_g": 10.2
+      },
+      "photo": {
+        "src": "photos/beef-chickpea-couscous-skillet.webp",
+        "alt": "Skillet of couscous with ground beef, chickpeas, zucchini, carrot and yogurt"
       }
     },
     {

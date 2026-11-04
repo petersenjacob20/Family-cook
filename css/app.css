@@ -1,4 +1,4 @@
-/* Family Cook. Tokens follow Design 4.4 (sizes given at 1x = half of the 2x mockups). */
+/* Family Cook. Style tokens (sizes given at 1x = half of the 2x mockups). */
 :root {
   --accent: #E8772E;
   --accent-dark: #BE5514;
@@ -361,7 +361,7 @@ body.no-tabs.has-timerbar .toast { bottom: calc(var(--timerbar-h) + 20px + env(s
 .card .meta.protein { color: var(--ink); font-weight: 700; font-size: var(--fs-hint); }
 .section-label.browse { margin: 8px 0 -4px; }
 
-/* Planner swap list (pub7): search, one scrolling chip row and the count line stay pinned (149 px at 360); the page scrolls. */
+/* Planner swap list: search, one scrolling chip row and the count line stay pinned (149 px at 360); the page scrolls. */
 .swaptop {
   position: sticky; top: 0; z-index: 5;
   background: #fff; margin: 0 calc(-1 * var(--pad)); padding: 0 var(--pad);
@@ -434,7 +434,7 @@ body.no-tabs.has-timerbar .toast { bottom: calc(var(--timerbar-h) + 20px + env(s
   background: none; border: 2px solid #fff; border-radius: 10px; color: #fff; font-weight: 800; font-size: var(--fs-btn-sm);
 }
 
-/* Recipe photos (pub8): every photo sits in a fixed 4:3 box (width/height set too), so nothing moves while it loads.
+/* Recipe photos: every photo sits in a fixed 4:3 box (width/height set too), so nothing moves while it loads.
    A plain tile takes the same box when a photo is missing or fails to load. */
 .photo, .photo-fallback { display: block; background: var(--fill); }
 .photo-fallback { border: 1px solid var(--line); }

@@ -7,15 +7,15 @@ import { PROTEIN_KEY } from './protein.js';
 export const KEY = 'fc.v1';
 export const SCHEMA = 1;
 // "Shop for this day" choice (the Week tab's toggles), read by the Grocery tab and the Amazon Fresh screen.
-// Its own key, so fc.v1 is never touched. pub15/pub16 saved a list of picked weekdays ([4,5]); pub17 saves
+// Its own key, so fc.v1 is never touched. Older versions saved a list of picked weekdays ([4,5]); now it saves
 // {"v":2,"off":[...]}: the planned weekdays turned off, so a newly planned day is on. The old list still reads.
 export const DAYS_KEY = 'fc-fresh-days';
 export const ALL_DAYS = [0, 1, 2, 3, 4, 5, 6];
-// The weekdays pub15/pub16 could plan (Thu, Fri, Sat, Sun, Mon).
+// The weekdays the older versions could plan (Thu, Fri, Sat, Sun, Mon).
 export const LEGACY_PLANNED = [4, 5, 6, 0, 1];
 
 // Clean day list: unique weekday numbers 0-6, sorted. Not a list = nothing saved (null: every planned day).
-// pub17 form { v: 2, off: [...] } -> { off: [...] } (cleaned).
+// Versioned form { v: 2, off: [...] } -> { off: [...] } (cleaned).
 export function cleanDays(v) {
   if (v && typeof v === 'object' && !Array.isArray(v) && Array.isArray(v.off)) return { off: ALL_DAYS.filter((d) => v.off.includes(d)) };
   if (!Array.isArray(v)) return null;
@@ -28,7 +28,7 @@ export function loadDays(storage = globalThis.localStorage) {
     const raw = storage ? storage.getItem(DAYS_KEY) : null;
     if (raw == null) return null;
     const v = cleanDays(JSON.parse(raw));
-    // pub15/pub16 list of picked days: those builds only planned Thu-Mon, so a day is off only if it was one of
+    // Older list of picked days: those builds only planned Thu-Mon, so a day is off only if it was one of
     // those and is missing from the list; any other day (Tue, Wed) is on. Read as { off } (nothing is written).
     return Array.isArray(v) ? { off: LEGACY_PLANNED.filter((d) => !v.includes(d)) } : v;
   } catch {

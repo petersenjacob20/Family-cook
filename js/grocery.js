@@ -206,7 +206,7 @@ export function plannedDays(state, recipeById, weekId) {
 
 // The days that feed the list: saved picks limited to planned days (a saved day not in the plan is ignored);
 // nothing saved (null) = every planned day.
-// pub17 { off }: every planned day except the ones turned off (a newly planned day is on).
+// { off }: every planned day except the ones turned off (a newly planned day is on).
 export function pickDays(saved, planned) {
   if (saved && Array.isArray(saved.off)) return planned.filter((d) => !saved.off.includes(d));
   return Array.isArray(saved) ? planned.filter((d) => saved.includes(d)) : planned.slice();
@@ -250,14 +250,14 @@ export function daysLabel(list, dates, allPicked) {
   return adjacent ? `${shortLabel(d[0])} \u2013 ${shortLabel(d[d.length - 1])}` : d.map(shortLabel).join(', ');
 }
 
-// Design's label line for store-bought items that are often marked "may contain".
+// The label line for store-bought items that are often marked "may contain".
 export const LABEL_LINE = 'Check the label for nut warnings.';
 export const LABEL_SUFFIX = ' (check label for nut warnings)';
 // Every packaged protein swap (check_label true) adds this gray caption line under the label line.
-// It carries the "check the label" advice, so swap notes don't repeat it (Chef trimmed them, 2026-10-08).
+// It carries the "check the label" advice, so swap notes don't repeat it.
 export const SWAP_LABEL_LINE = "Check the label for 'may contain' warnings.";
-// D4 (CEO ruling): on every bbq-sauce line, next to the label line, styled like the nut line (not gray).
-// Exact wording (Design: capital P, closing period); a test keeps it on.
+// On every bbq-sauce line, next to the label line, styled like the nut line (not gray).
+// Exact wording (capital P, closing period); a test keeps it on.
 export const BBQ_NOTE = 'Check the label for peanuts, tree nuts and fish (many BBQ sauces use Worcestershire, which contains anchovy).';
 export const BBQ_KEY = 'bbq-sauce';
 
@@ -271,7 +271,7 @@ export function ingredientNotes(ing) {
 }
 
 // Protein per serving, only when the data has a number (never worked out here). One number everywhere: the recipe
-// page, the All recipes cards and the swap rows all read Chef's recipe-tags protein_g (USDA FoodData Central, see
+// page, the All recipes cards and the swap rows all read the recipe-tags protein_g (USDA FoodData Central, see
 // specs/recipe-nutrition-worksheet.md), rounded to a whole gram, and show nothing when it is null. For the 10 Fitness
 // meals it equals the published protein_g_per_serving, so their text doesn't change.
 export const PROTEIN_SOURCE_LINE = 'Worked out from USDA FoodData Central for these amounts.';

@@ -1,4 +1,4 @@
-// Shared view bits built from the Design 4.4 parts. DOM is only touched inside functions.
+// Shared view bits built from the shared design parts. DOM is only touched inside functions.
 import { h } from './dom.js';
 import { kidName, kidBadge, kidPerson } from './people.js';
 import { neverSummary, blockingWords, allergySummary } from './rules.js';

@@ -38,7 +38,7 @@ export function seafoodHit(text, vocab) {
 }
 
 // Why this text can't go in the cart ('' when it's fine).
-// pub16: also the widened guard (rules.js guardScan), so your own recipes' items are dropped by the same list.
+// Also the widened guard (rules.js guardScan), so your own recipes' items are dropped by the same list.
 export function blockReason(text, vocab) {
   const g = guardScan(text, vocab);
   if (g.fish.length || seafoodHit(guardAllowStrip(text), vocab)) return 'fish or seafood';
@@ -140,13 +140,13 @@ export function freshSearchUrl(name) {
   return `${FRESH_SEARCH}?k=${encodeURIComponent(cut80(name))}&i=amazonfresh`;
 }
 
-// ---------- Whole-list Amazon Fresh import (pub10's landingencoded GET, restored as the main button) ----------
-// Amazon's ingredients page, built exactly as pub10 (e08c730) did. A plain GET, in the same shape as Amazon's own
+// ---------- Whole-list Amazon Fresh import (landingencoded GET, the main button) ----------
+// Amazon's ingredients page, built as a plain GET, in the same shape as Amazon's own
 // redirect from its ingredients form: /afx/ingredients/landingencoded?almBrandId=&encodedIngredients=<...>&tag=
 export const FRESH_LANDING = 'https://www.amazon.com/afx/ingredients/landingencoded';
 
 const round2 = (x) => Math.round(x * 100) / 100;
-// One grocery line -> one { unit, amount } in Amazon's upper-case units (as pub10).
+// One grocery line -> one { unit, amount } in Amazon's upper-case units.
 export function freshQuantity(line) {
   const t = Number(line.total) || 0;
   if (line.fam === 'vol') {
