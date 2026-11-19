@@ -82,7 +82,6 @@ export function allergySummaryText(state) {
 
 export const ALLERGY_SUB = 'Tap any that apply. Meals with these never show up.';
 
-// Cooking nights: day chips, every-other-Friday + date, Monday game-day.
 export function nightsEditor(ctx) {
   const n = ctx.state.nights;
   const wrap = h('div', { class: 'btnstack' });

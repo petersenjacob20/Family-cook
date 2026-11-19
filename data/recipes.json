@@ -1269,6 +1269,106 @@
       "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; all metadata removed."
     },
     {
+      "id": "tater-tot-hotdish-sneaky-veggies",
+      "title": "Tater Tot Hotdish with Sneaky Veggies",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "white-chicken-chili",
+      "title": "White Chicken Chili",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "easy-beef-goulash-sneaky-zucchini",
+      "title": "Easy Beef Goulash with Sneaky Zucchini",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "creamy-tomato-spinach-chicken-rice",
+      "title": "Creamy Tomato Spinach Chicken with Rice",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "baked-ravioli-meat-sauce-carrots",
+      "title": "Baked Ravioli with Meat Sauce and Hidden Carrots",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "baked-chicken-bean-burritos-zucchini",
+      "title": "Baked Chicken and Bean Burritos with Sneaky Zucchini",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "mild-chicken-adobo-green-beans-rice",
+      "title": "Mild Filipino-Style Chicken Adobo with Green Beans and Rice",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "hamburger-vegetable-soup",
+      "title": "Hamburger Vegetable Soup",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "one-pot-pizza-pasta-sneaky-peppers",
+      "title": "One-Pot Pizza Pasta with Sneaky Peppers",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
+      "id": "turkey-zucchini-orzo-skillet-spinach",
+      "title": "Turkey and Zucchini Orzo Skillet with Spinach",
+      "source": "original image generated for Family Cook (no third-party source)",
+      "source_url": null,
+      "author": "Family Cook",
+      "license": "original work, no third-party license",
+      "license_url": null,
+      "changes": "Center-cropped to 4:3; resized to 720×540; converted to WebP; no metadata."
+    },
+    {
       "id": "baked-chicken-taquitos",
       "title": "Baked Chicken Taquitos with Ranch",
       "source": "Wikimedia Commons",
@@ -23434,6 +23534,2361 @@
       "photo": {
         "src": "photos/homemade-pizza-night.webp",
         "alt": "Homemade pepperoni pizza"
+      }
+    },
+    {
+      "id": "tater-tot-hotdish-sneaky-veggies",
+      "title": "Tater Tot Hotdish with Sneaky Veggies",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 25,
+      "total_min": 60,
+      "serves": 4,
+      "tags": [
+        "turkey",
+        "casserole",
+        "tater tots",
+        "green beans"
+      ],
+      "contains": [
+        "dairy",
+        "gluten",
+        "turkey"
+      ],
+      "ingredients": [
+        {
+          "key": "lean-ground-turkey",
+          "name": "93% lean ground turkey",
+          "qty": 1,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "green-beans",
+          "name": "fresh green beans",
+          "qty": 0.5,
+          "unit": "lb",
+          "section": "produce"
+        },
+        {
+          "key": "shredded-carrots",
+          "name": "shredded carrots",
+          "qty": 1,
+          "unit": "cup",
+          "section": "produce"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "milk",
+          "name": "milk",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "cream-cheese",
+          "name": "cream cheese (8 oz block)",
+          "qty": 0.5,
+          "unit": "pkg",
+          "section": "dairy"
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "frozen-tater-tots",
+          "name": "frozen tater tots (about 24 oz, most of a 32 oz bag)",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "frozen",
+          "check_label": true
+        },
+        {
+          "key": "flour",
+          "name": "flour",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "cooking-spray",
+          "name": "cooking spray",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 400°F and spray a 9x13 baking dish.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back from the oven."
+        },
+        {
+          "who": "kid",
+          "text": "Count the tater tots",
+          "how": [
+            "Pour the frozen tots into a big bowl with a grown-up",
+            "Count 10 tots out loud",
+            "Hand the bowl to your grown-up"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Trim the green beans and cut them into short pieces. Dice the onion small.",
+          "minutes": 6,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the turkey and onion in a big skillet over medium-high until no pink is left, breaking it into small crumbles.",
+          "minutes": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the green beans, carrots, garlic powder, salt and pepper with 1/4 cup water. Cover and cook until the beans are soft.",
+          "minutes": 6,
+          "timer_min": 6,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Sprinkle in 2 tbsp flour and stir 1 minute. Stir in the milk and cream cheese until creamy and bubbly, then stir in half the cheddar.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Spread the filling in the baking dish and top with the rest of the cheddar.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Arrange the tater tots in rows over the top.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Bake until the tots are golden and crisp and the filling bubbles.",
+          "minutes": 25,
+          "timer_min": 25,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back from the oven."
+        },
+        {
+          "who": "adult",
+          "text": "Let it rest 5 minutes. Cut tater tots into small pieces for little ones before serving.",
+          "minutes": 5,
+          "timer_min": 5,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 36,
+      "protein_note": "About 36 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "protein_swaps": [
+        {
+          "id": "tater-tot-hotdish-sneaky-veggies--fat-free-ground-turkey",
+          "type": "swap",
+          "replaces": "lean-ground-turkey",
+          "use": {
+            "key": "fat-free-ground-turkey",
+            "name": "fat-free ground turkey",
+            "qty": 1,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. It cooks a little drier, so do not overcook it.",
+          "protein": {
+            "claim": "about +22 g protein for the whole recipe (about +5.5 g per serving)",
+            "g_per_recipe": 22.0,
+            "g_per_serving": 5.5,
+            "basis": "1 lb fat-free ground turkey (FDC 172847, 453.6 g) vs the recipe's 453.6 g of turkey entry (FDC 172850), raw weights",
+            "fdc_ids": [
+              172847,
+              172850
+            ]
+          },
+          "contains": [
+            "turkey"
+          ]
+        },
+        {
+          "id": "tater-tot-hotdish-sneaky-veggies--lean-ground-beef",
+          "type": "swap",
+          "replaces": "lean-ground-turkey",
+          "use": {
+            "key": "lean-ground-beef",
+            "name": "93% lean ground beef",
+            "qty": 1,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount, cooked the same way.",
+          "protein": {
+            "claim": "about +10 g protein for the whole recipe (about +2.4 g per serving)",
+            "g_per_recipe": 9.6,
+            "g_per_serving": 2.4,
+            "basis": "1 lb 93% lean ground beef (FDC 173110, 453.6 g) vs the recipe's 453.6 g of turkey entry (FDC 172850), raw weights",
+            "fdc_ids": [
+              173110,
+              172850
+            ]
+          },
+          "contains": [
+            "beef"
+          ]
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "turkey"
+        ],
+        "protein_g": 36,
+        "fiber_g": 6.7
+      },
+      "photo": {
+        "src": "photos/tater-tot-hotdish-sneaky-veggies.webp",
+        "alt": "Baking dish of golden tater tots over a cheesy turkey, green bean and carrot filling"
+      }
+    },
+    {
+      "id": "white-chicken-chili",
+      "title": "White Chicken Chili",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 35,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "chili",
+        "white beans",
+        "zucchini"
+      ],
+      "contains": [
+        "chicken",
+        "dairy"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-breast",
+          "name": "boneless chicken breasts",
+          "qty": 1.25,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "white-beans",
+          "name": "can of white beans",
+          "qty": 2,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "chicken-broth",
+          "name": "chicken broth (32 oz carton)",
+          "qty": 0.5,
+          "unit": "box",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "zucchini",
+          "name": "zucchini",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "baby-spinach",
+          "name": "baby spinach",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "produce"
+        },
+        {
+          "key": "ground-cumin",
+          "name": "ground cumin",
+          "qty": 2,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "dried-oregano",
+          "name": "dried oregano",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "mild-green-chiles",
+          "name": "can of mild diced green chiles (4 oz)",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry",
+          "optional": true
+        },
+        {
+          "key": "greek-yogurt",
+          "name": "plain Greek yogurt",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "monterey-jack",
+          "name": "shredded Monterey Jack",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "vegetable-or-canola-oil",
+          "name": "vegetable or canola oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Dice the onion and zucchini small. Cut the chicken into 3 big pieces, then wash your hands and board.",
+          "minutes": 6,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the onion and zucchini in a little oil in a big pot over medium until soft.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Rinse the beans",
+          "how": [
+            "Hold the strainer over the sink with a grown-up",
+            "Pour in the white beans",
+            "Squish one: is it soft?"
+          ],
+          "learns": [
+            "senses",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Add the broth, beans, cumin, oregano, garlic powder, salt, the chiles if using, and the chicken. Simmer until the chicken is 165°F inside.",
+          "minutes": 15,
+          "timer_min": 15,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Lift out the chicken and shred it with 2 forks into small pieces.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Mash some of the beans against the pot with a spoon to thicken it. Stir in the chicken and spinach until the spinach wilts.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Ladle into bowls. Mash whole beans for little ones and let the chili cool, then top with yogurt and cheese if you like.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 50,
+      "protein_note": "About 50 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "protein_swaps": [
+        {
+          "id": "white-chicken-chili--white-beans",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "white-beans",
+            "name": "can of white beans",
+            "qty": 1,
+            "unit": "can",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Rinse, drain and stir in with the other beans. Mash them a little for little ones.",
+          "protein": {
+            "claim": "about +31 g protein for the whole recipe (about +7.7 g per serving)",
+            "g_per_recipe": 30.9,
+            "g_per_serving": 7.7,
+            "basis": "adds 1 can white beans (FDC 175204, 425 g net as packed per label)",
+            "fdc_ids": [
+              175204
+            ]
+          },
+          "contains": []
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "chicken",
+          "soups",
+          "one-pot"
+        ],
+        "protein_g": 50,
+        "fiber_g": 11.8
+      },
+      "photo": {
+        "src": "photos/white-chicken-chili.webp",
+        "alt": "Bowl of creamy white chicken chili with white beans, zucchini and spinach, topped with yogurt"
+      }
+    },
+    {
+      "id": "easy-beef-goulash-sneaky-zucchini",
+      "title": "Easy Beef Goulash with Sneaky Zucchini",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 30,
+      "serves": 4,
+      "tags": [
+        "beef",
+        "pasta",
+        "zucchini"
+      ],
+      "contains": [
+        "beef",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "lean-ground-beef",
+          "name": "93% lean ground beef",
+          "qty": 1,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "elbow-macaroni",
+          "name": "elbow macaroni",
+          "qty": 0.5,
+          "unit": "box",
+          "section": "pantry"
+        },
+        {
+          "key": "tomato-sauce",
+          "name": "can of tomato sauce (8 oz)",
+          "qty": 2,
+          "unit": "can",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "diced-tomatoes",
+          "name": "can of diced tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "zucchini",
+          "name": "zucchini",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "shredded-carrots",
+          "name": "shredded carrots",
+          "qty": 1,
+          "unit": "cup",
+          "section": "produce"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "paprika",
+          "name": "paprika",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "italian-seasoning",
+          "name": "Italian seasoning",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "shredded-cheddar",
+          "name": "shredded cheddar",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Grate the zucchini on the small holes of a box grater. Dice the onion small.",
+          "minutes": 4,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the beef and onion in a big pot over medium-high until no pink is left, breaking it into small crumbles.",
+          "minutes": 7,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Add the hidden veggies",
+          "how": [
+            "Hold the bowl of zucchini and carrots",
+            "Hand it to your grown-up at the table",
+            "Watch from your spot as it goes in"
+          ],
+          "learns": [
+            "helping",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the zucchini, carrots, paprika, Italian seasoning, garlic powder, salt and pepper and cook 2 minutes.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the tomato sauce, diced tomatoes with juice and 2 cups water and bring to a boil.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the macaroni, cover, and simmer, stirring now and then, until the pasta is tender. Add a splash of water if it gets thick.",
+          "minutes": 12,
+          "timer_min": 12,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Spoon into bowls, top with cheddar if you like, and let it cool a little before serving.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 34,
+      "protein_note": "About 34 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "protein_swaps": [
+        {
+          "id": "easy-beef-goulash-sneaky-zucchini--high-protein-wheat-pasta",
+          "type": "swap",
+          "replaces": "elbow-macaroni",
+          "use": {
+            "key": "high-protein-wheat-pasta",
+            "name": "high-protein wheat pasta (same shape)",
+            "qty": 0.5,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount, cooked in the pot the same way.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "easy-beef-goulash-sneaky-zucchini--chickpea-or-lentil-pasta",
+          "type": "swap",
+          "replaces": "elbow-macaroni",
+          "use": {
+            "key": "chickpea-or-lentil-pasta",
+            "name": "chickpea or lentil pasta (same shape)",
+            "qty": 0.5,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount. Start checking it a few minutes early; it gets soft fast.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "veggie-packed",
+          "beef",
+          "pasta",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": 34,
+        "fiber_g": 7.4
+      },
+      "photo": {
+        "src": "photos/easy-beef-goulash-sneaky-zucchini.webp",
+        "alt": "Pot of elbow macaroni in tomato sauce with ground beef and melted cheddar"
+      }
+    },
+    {
+      "id": "creamy-tomato-spinach-chicken-rice",
+      "title": "Creamy Tomato Spinach Chicken with Rice",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 30,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "rice",
+        "spinach"
+      ],
+      "contains": [
+        "chicken",
+        "dairy"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-breast",
+          "name": "boneless chicken breasts",
+          "qty": 1.25,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "diced-tomatoes",
+          "name": "can of diced tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "baby-spinach",
+          "name": "baby spinach",
+          "qty": 1,
+          "unit": "bag",
+          "section": "produce"
+        },
+        {
+          "key": "cream-cheese",
+          "name": "cream cheese (8 oz block)",
+          "qty": 0.5,
+          "unit": "pkg",
+          "section": "dairy"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "instant-rice",
+          "name": "instant rice",
+          "qty": 2,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "italian-seasoning",
+          "name": "Italian seasoning",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "parmesan",
+          "name": "grated Parmesan",
+          "qty": 0.25,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Cut the chicken into small bite-size pieces, then wash your hands and board. Dice the onion small.",
+          "minutes": 7,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Make the instant rice in the microwave the way the box says.",
+          "minutes": 8,
+          "timer_min": 8,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Cook chicken and onion in a little oil in a big skillet on medium-high with Italian seasoning, garlic powder, salt and pepper until 165°F.",
+          "minutes": 8,
+          "timer_min": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Pour in the tomatoes with juice and simmer 3 minutes.",
+          "minutes": 3,
+          "timer_min": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Scoop the spinach",
+          "how": [
+            "Grab a handful of spinach from the bag",
+            "Put it in a cool bowl",
+            "Hand the bowl to your grown-up"
+          ],
+          "learns": [
+            "senses",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Turn the heat to low. Stir in the cream cheese and spinach until the sauce is creamy and the spinach wilts.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Spoon chicken and sauce over the rice; add Parmesan if you like. Check the chicken is cut small for little ones; let it cool a little.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 39,
+      "protein_note": "About 39 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "protein_swaps": [
+        {
+          "id": "creamy-tomato-spinach-chicken-rice--greek-yogurt",
+          "type": "swap",
+          "replaces": "cream-cheese",
+          "use": {
+            "key": "greek-yogurt",
+            "name": "plain Greek yogurt",
+            "qty": 0.5,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Take the pan off the heat first, then stir it in so it stays smooth.",
+          "protein": {
+            "claim": "about +3 g protein for the whole recipe (about +0.8 g per serving)",
+            "g_per_recipe": 3.2,
+            "g_per_serving": 0.8,
+            "basis": "0.5 cup plain Greek yogurt (FDC 171304, 113.3 g) vs the recipe's 113.5 g of cream cheese (FDC 173418)",
+            "fdc_ids": [
+              171304,
+              173418
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "creamy-tomato-spinach-chicken-rice--white-beans",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "white-beans",
+            "name": "can of white beans",
+            "qty": 1,
+            "unit": "can",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Rinse, drain and stir in with the tomatoes. Mash them a little for little ones.",
+          "protein": {
+            "claim": "about +31 g protein for the whole recipe (about +7.7 g per serving)",
+            "g_per_recipe": 30.9,
+            "g_per_serving": 7.7,
+            "basis": "adds 1 can white beans (FDC 175204, 425 g net as packed per label)",
+            "fdc_ids": [
+              175204
+            ]
+          },
+          "contains": []
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "veggie-packed",
+          "chicken",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": 39,
+        "fiber_g": 4.1
+      },
+      "photo": {
+        "src": "photos/creamy-tomato-spinach-chicken-rice.webp",
+        "alt": "Plate of white rice topped with chicken pieces in a creamy tomato sauce with spinach"
+      }
+    },
+    {
+      "id": "baked-ravioli-meat-sauce-carrots",
+      "title": "Baked Ravioli with Meat Sauce and Hidden Carrots",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 50,
+      "serves": 4,
+      "tags": [
+        "beef",
+        "pasta",
+        "ravioli",
+        "carrots"
+      ],
+      "contains": [
+        "beef",
+        "dairy",
+        "egg",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "cheese-ravioli",
+          "name": "refrigerated cheese ravioli (20 oz)",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "dairy",
+          "check_label": true
+        },
+        {
+          "key": "lean-ground-beef",
+          "name": "93% lean ground beef",
+          "qty": 1,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "pasta-sauce",
+          "name": "jar of pasta sauce",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "shredded-carrots",
+          "name": "shredded carrots",
+          "qty": 1.5,
+          "unit": "cup",
+          "section": "produce"
+        },
+        {
+          "key": "shredded-mozzarella",
+          "name": "shredded mozzarella",
+          "qty": 1.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "parmesan",
+          "name": "grated Parmesan",
+          "qty": 0.25,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "cooking-spray",
+          "name": "cooking spray",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 375°F and spray a 9x13 baking dish.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back from the oven."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the beef in a big skillet over medium-high until no pink is left, breaking it into small crumbles.",
+          "minutes": 7,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the carrots, garlic powder and salt; cook until soft. Stir in the pasta sauce and 1/2 cup water, then turn off the heat.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Line up the ravioli",
+          "how": [
+            "Take ravioli from the package",
+            "Lay them in the empty dish, counting as you go",
+            "Wash your hands after"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Spoon the meat sauce over the ravioli so they are all covered. Cover the dish with foil.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Bake covered until the ravioli are tender.",
+          "minutes": 20,
+          "timer_min": 20,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back from the oven."
+        },
+        {
+          "who": "adult",
+          "text": "Take off the foil, sprinkle on the mozzarella and Parmesan, and bake until the cheese melts.",
+          "minutes": 8,
+          "timer_min": 8,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back from the oven."
+        },
+        {
+          "who": "adult",
+          "text": "Let it rest 5 minutes. Cut ravioli into small pieces for little ones before serving.",
+          "minutes": 5,
+          "timer_min": 5,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "protein_swaps": [
+        {
+          "id": "baked-ravioli-meat-sauce-carrots--extra-lean-ground-beef",
+          "type": "swap",
+          "replaces": "lean-ground-beef",
+          "use": {
+            "key": "extra-lean-ground-beef",
+            "name": "95% lean ground beef",
+            "qty": 1,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount; add a splash more water so the sauce stays loose.",
+          "protein": {
+            "claim": "about +3 g protein for the whole recipe (about +0.6 g per serving)",
+            "g_per_recipe": 2.5,
+            "g_per_serving": 0.6,
+            "basis": "1 lb 95% lean ground beef (FDC 171790, 453.6 g) vs the recipe's 453.6 g of beef entry (FDC 173110), raw weights",
+            "fdc_ids": [
+              171790,
+              173110
+            ]
+          },
+          "contains": [
+            "beef"
+          ]
+        }
+      ],
+      "filter": {
+        "tags": [
+          "beef",
+          "pasta"
+        ],
+        "protein_g": null,
+        "fiber_g": null
+      },
+      "photo": {
+        "src": "photos/baked-ravioli-meat-sauce-carrots.webp",
+        "alt": "Baking dish of cheese ravioli in meat sauce with shredded carrot under melted mozzarella"
+      }
+    },
+    {
+      "id": "baked-chicken-bean-burritos-zucchini",
+      "title": "Baked Chicken and Bean Burritos with Sneaky Zucchini",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 20,
+      "total_min": 40,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "burritos",
+        "beans",
+        "zucchini"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-breast",
+          "name": "boneless chicken breasts",
+          "qty": 1,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "refried-beans",
+          "name": "can of vegetarian refried beans",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "whole-wheat-tortillas",
+          "name": "whole-wheat tortillas (8-inch)",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "bakery",
+          "check_label": true
+        },
+        {
+          "key": "zucchini",
+          "name": "zucchini",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "bell-pepper",
+          "name": "bell pepper",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "monterey-jack",
+          "name": "shredded Monterey Jack",
+          "qty": 1,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "chili-powder",
+          "name": "chili powder",
+          "qty": 2,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "ground-cumin",
+          "name": "ground cumin",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "salsa",
+          "name": "mild salsa",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "optional": true
+        },
+        {
+          "key": "greek-yogurt",
+          "name": "plain Greek yogurt",
+          "qty": 0.5,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "vegetable-or-canola-oil",
+          "name": "vegetable or canola oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "cooking-spray",
+          "name": "cooking spray",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Heat the oven to 425°F and spray a 9x13 baking dish.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back from the oven."
+        },
+        {
+          "who": "adult",
+          "text": "Cut the chicken into very small pieces, then wash your hands and board. Grate the zucchini and dice the bell pepper small.",
+          "minutes": 8,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the chicken in a little oil in a big skillet over medium-high with the chili powder, cumin, garlic powder and salt until 165°F inside.",
+          "minutes": 7,
+          "timer_min": 7,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the zucchini and pepper and cook until soft and the extra liquid is gone. Turn off the heat.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Spread the beans",
+          "how": [
+            "Lay a tortilla flat on the table",
+            "Spread a big spoon of beans in the middle",
+            "Count the tortillas as you finish"
+          ],
+          "learns": [
+            "counting",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Spoon chicken mix over the beans; add half the cheese. Roll each tortilla up, seam side down in the dish. Top with the rest of the cheese.",
+          "minutes": 5,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Bake until the cheese melts and the edges turn golden.",
+          "minutes": 12,
+          "timer_min": 12,
+          "hazard": "hot",
+          "safety": "Hot oven. Keep {kid} back from the oven."
+        },
+        {
+          "who": "adult",
+          "text": "Let them cool 5 minutes. Cut a burrito into small pieces for little ones and serve with salsa and yogurt.",
+          "minutes": 5,
+          "timer_min": 5,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 48,
+      "protein_note": "About 48 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "protein_swaps": [
+        {
+          "id": "baked-chicken-bean-burritos-zucchini--greek-yogurt",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "greek-yogurt",
+            "name": "plain Greek yogurt",
+            "qty": 0.5,
+            "unit": "cup",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Spoon it on top like sour cream.",
+          "protein": {
+            "claim": "about +10 g protein for the whole recipe (about +2.5 g per serving)",
+            "g_per_recipe": 10.2,
+            "g_per_serving": 2.5,
+            "basis": "adds 0.5 cup plain Greek yogurt (FDC 171304, 113.3 g)",
+            "fdc_ids": [
+              171304
+            ]
+          },
+          "contains": [
+            "dairy"
+          ]
+        },
+        {
+          "id": "baked-chicken-bean-burritos-zucchini--high-protein-tortillas",
+          "type": "swap",
+          "replaces": "whole-wheat-tortillas",
+          "use": {
+            "key": "high-protein-tortillas",
+            "name": "high-protein flour tortillas",
+            "qty": 1,
+            "unit": "pkg",
+            "section": "bakery"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same size tortillas.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "chicken",
+          "tacos-mexican"
+        ],
+        "protein_g": 48,
+        "fiber_g": 15.0
+      },
+      "photo": {
+        "src": "photos/baked-chicken-bean-burritos-zucchini.webp",
+        "alt": "Baking dish of golden rolled burritos, one cut open to show chicken, beans and zucchini, with salsa"
+      }
+    },
+    {
+      "id": "mild-chicken-adobo-green-beans-rice",
+      "title": "Mild Filipino-Style Chicken Adobo with Green Beans and Rice",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 30,
+      "serves": 4,
+      "tags": [
+        "chicken",
+        "rice",
+        "green beans",
+        "adobo"
+      ],
+      "contains": [
+        "chicken",
+        "gluten",
+        "soy"
+      ],
+      "ingredients": [
+        {
+          "key": "chicken-thighs",
+          "name": "boneless chicken thighs",
+          "qty": 1.5,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "low-sodium-soy-sauce",
+          "name": "low-sodium soy sauce",
+          "qty": 3,
+          "unit": "tbsp",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "white-vinegar",
+          "name": "white vinegar",
+          "qty": 3,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "honey",
+          "name": "honey",
+          "qty": 1,
+          "unit": "tbsp",
+          "section": "pantry"
+        },
+        {
+          "key": "green-beans",
+          "name": "fresh green beans",
+          "qty": 1,
+          "unit": "lb",
+          "section": "produce"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "instant-rice",
+          "name": "instant rice",
+          "qty": 2,
+          "unit": "cup",
+          "section": "pantry"
+        },
+        {
+          "key": "bay-leaves",
+          "name": "bay leaves",
+          "qty": 2,
+          "unit": "",
+          "section": "pantry",
+          "optional": true
+        },
+        {
+          "key": "vegetable-or-canola-oil",
+          "name": "vegetable or canola oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Cut the chicken into small bite-size pieces, then wash your hands and board. Slice the onion thin.",
+          "minutes": 7,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "kid",
+          "text": "Snap the green beans",
+          "how": [
+            "Pull off the stem end with a grown-up",
+            "Snap each bean into short pieces",
+            "Drop them in the bowl"
+          ],
+          "learns": [
+            "helping",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Brown the chicken and onion in a little oil in a big skillet over medium-high.",
+          "minutes": 6,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in soy sauce, vinegar, honey, 1 tsp garlic powder, pepper, bay leaves if using and 1/2 cup water. Simmer until chicken is 165°F inside.",
+          "minutes": 8,
+          "timer_min": 8,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Make the instant rice in the microwave the way the box says.",
+          "minutes": 8,
+          "timer_min": 8,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        },
+        {
+          "who": "adult",
+          "text": "Add the green beans, cover and cook until they are soft. Take out the bay leaves.",
+          "minutes": 6,
+          "timer_min": 6,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Spoon the chicken, beans and sauce over rice in bowls. Cut green beans into small pieces for little ones and let it cool a little.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 41,
+      "protein_note": "About 41 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "protein_swaps": [
+        {
+          "id": "mild-chicken-adobo-green-beans-rice--chicken-breast",
+          "type": "swap",
+          "replaces": "chicken-thighs",
+          "use": {
+            "key": "chicken-breast",
+            "name": "boneless chicken breasts",
+            "qty": 1.5,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. Breasts dry out faster, so check for 165°F a little sooner.",
+          "protein": {
+            "claim": "about +19 g protein for the whole recipe (about +4.8 g per serving)",
+            "g_per_recipe": 19.3,
+            "g_per_serving": 4.8,
+            "basis": "1.5 lb boneless chicken breast (FDC 171077, 680.4 g) vs the recipe's 680.4 g of thigh entry (FDC 173627), raw weights",
+            "fdc_ids": [
+              171077,
+              173627
+            ]
+          },
+          "contains": [
+            "chicken"
+          ]
+        },
+        {
+          "id": "mild-chicken-adobo-green-beans-rice--eggs",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "eggs",
+            "name": "eggs",
+            "qty": 4,
+            "unit": "",
+            "section": "dairy"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Hard-boil them, peel, and chop small. Warm them in the sauce for the last 2 minutes.",
+          "protein": {
+            "claim": "about +25 g protein for the whole recipe (about +6.3 g per serving)",
+            "g_per_recipe": 25.1,
+            "g_per_serving": 6.3,
+            "basis": "adds 4 large eggs (FDC 171287, 50 g each)",
+            "fdc_ids": [
+              171287
+            ]
+          },
+          "contains": [
+            "egg"
+          ]
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "chicken",
+          "bowls",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": 41,
+        "fiber_g": 4.5
+      },
+      "photo": {
+        "src": "photos/mild-chicken-adobo-green-beans-rice.webp",
+        "alt": "Bowl of white rice topped with glossy brown chicken pieces and green beans"
+      }
+    },
+    {
+      "id": "hamburger-vegetable-soup",
+      "title": "Hamburger Vegetable Soup",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 40,
+      "serves": 4,
+      "tags": [
+        "beef",
+        "soup",
+        "potatoes",
+        "green beans"
+      ],
+      "contains": [
+        "beef"
+      ],
+      "ingredients": [
+        {
+          "key": "lean-ground-beef",
+          "name": "93% lean ground beef",
+          "qty": 1,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "russet-potatoes",
+          "name": "russet potatoes",
+          "qty": 2,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "green-beans",
+          "name": "fresh green beans",
+          "qty": 0.5,
+          "unit": "lb",
+          "section": "produce"
+        },
+        {
+          "key": "shredded-carrots",
+          "name": "shredded carrots",
+          "qty": 1,
+          "unit": "cup",
+          "section": "produce"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "diced-tomatoes",
+          "name": "can of diced tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "tomato-sauce",
+          "name": "can of tomato sauce (8 oz)",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "beef-broth",
+          "name": "beef broth (32 oz carton)",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "italian-seasoning",
+          "name": "Italian seasoning",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "kid",
+          "text": "Scrub the potatoes",
+          "how": [
+            "Put the potatoes in a bowl of cool water",
+            "Rub them with a brush or your hands",
+            "Hand them to your grown-up to dry"
+          ],
+          "learns": [
+            "helping",
+            "senses"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Peel and cut the potatoes into small cubes. Trim the green beans and cut them into short pieces. Dice the onion small.",
+          "minutes": 8,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the beef and onion in a big pot over medium-high until no pink is left, breaking it into small crumbles.",
+          "minutes": 7,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add potatoes, green beans, carrots, tomatoes with juice, tomato sauce, broth, Italian seasoning, garlic powder, salt and pepper. Boil.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Turn the heat down, cover and simmer until the potatoes are soft enough to mash with a spoon.",
+          "minutes": 15,
+          "timer_min": 15,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Ladle into bowls. Check that potato and bean pieces are small for little ones and let the soup cool before serving.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 32,
+      "protein_note": "About 32 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "protein_swaps": [
+        {
+          "id": "hamburger-vegetable-soup--extra-lean-ground-beef",
+          "type": "swap",
+          "replaces": "lean-ground-beef",
+          "use": {
+            "key": "extra-lean-ground-beef",
+            "name": "95% lean ground beef",
+            "qty": 1,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount, cooked the same way.",
+          "protein": {
+            "claim": "about +3 g protein for the whole recipe (about +0.6 g per serving)",
+            "g_per_recipe": 2.5,
+            "g_per_serving": 0.6,
+            "basis": "1 lb 95% lean ground beef (FDC 171790, 453.6 g) vs the recipe's 453.6 g of beef entry (FDC 173110), raw weights",
+            "fdc_ids": [
+              171790,
+              173110
+            ]
+          },
+          "contains": [
+            "beef"
+          ]
+        },
+        {
+          "id": "hamburger-vegetable-soup--white-beans",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "white-beans",
+            "name": "can of white beans",
+            "qty": 1,
+            "unit": "can",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Rinse, drain and add with the potatoes. Mash a few for little ones.",
+          "protein": {
+            "claim": "about +31 g protein for the whole recipe (about +7.7 g per serving)",
+            "g_per_recipe": 30.9,
+            "g_per_serving": 7.7,
+            "basis": "adds 1 can white beans (FDC 175204, 425 g net as packed per label)",
+            "fdc_ids": [
+              175204
+            ]
+          },
+          "contains": []
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "veggie-packed",
+          "beef",
+          "soups",
+          "one-pot"
+        ],
+        "protein_g": 32,
+        "fiber_g": 7.0
+      },
+      "photo": {
+        "src": "photos/hamburger-vegetable-soup.webp",
+        "alt": "Bowl of tomato broth soup with ground beef, potato cubes, carrots and green beans"
+      }
+    },
+    {
+      "id": "one-pot-pizza-pasta-sneaky-peppers",
+      "title": "One-Pot Pizza Pasta with Sneaky Peppers",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 30,
+      "serves": 4,
+      "tags": [
+        "pasta",
+        "pepperoni",
+        "pizza flavor",
+        "peppers"
+      ],
+      "contains": [
+        "dairy",
+        "gluten",
+        "pork"
+      ],
+      "ingredients": [
+        {
+          "key": "ziti",
+          "name": "ziti or penne",
+          "qty": 1,
+          "unit": "box",
+          "section": "pantry"
+        },
+        {
+          "key": "pasta-sauce",
+          "name": "jar of pasta sauce",
+          "qty": 1,
+          "unit": "jar",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "pepperoni",
+          "name": "pepperoni slices",
+          "qty": 1,
+          "unit": "pkg",
+          "section": "meat"
+        },
+        {
+          "key": "shredded-mozzarella",
+          "name": "shredded mozzarella",
+          "qty": 1.5,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "bell-pepper",
+          "name": "bell pepper",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "baby-spinach",
+          "name": "baby spinach",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "produce"
+        },
+        {
+          "key": "italian-seasoning",
+          "name": "Italian seasoning",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "parmesan",
+          "name": "grated Parmesan",
+          "qty": 0.25,
+          "unit": "cup",
+          "section": "dairy",
+          "optional": true
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Dice the bell pepper very small. Cut the pepperoni slices into small strips.",
+          "minutes": 6,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "kid",
+          "text": "Tear the spinach",
+          "how": [
+            "Take a handful of spinach",
+            "Tear the leaves into little pieces",
+            "Drop them in a cool bowl"
+          ],
+          "learns": [
+            "senses",
+            "helping"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Cook the pepper and half the pepperoni in a little oil in a big pot over medium until the pepper is soft.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the pasta sauce, 4 cups water, Italian seasoning, garlic powder and salt and bring to a boil.",
+          "minutes": 4,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the pasta, cover and simmer until tender, stirring every few minutes so it does not stick. Add a splash of water if it gets thick.",
+          "minutes": 13,
+          "timer_min": 13,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the spinach until it wilts, then turn off the heat. Top with the mozzarella and the rest of the pepperoni; cover 2 minutes to melt.",
+          "minutes": 3,
+          "timer_min": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Spoon into bowls with Parmesan. Cut pasta and pepperoni into small pieces for little ones and let it cool a little.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 36,
+      "protein_note": "About 36 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "protein_swaps": [
+        {
+          "id": "one-pot-pizza-pasta-sneaky-peppers--high-protein-wheat-pasta",
+          "type": "swap",
+          "replaces": "ziti",
+          "use": {
+            "key": "high-protein-wheat-pasta",
+            "name": "high-protein wheat pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount, cooked in the pot the same way.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "one-pot-pizza-pasta-sneaky-peppers--chickpea-or-lentil-pasta",
+          "type": "swap",
+          "replaces": "ziti",
+          "use": {
+            "key": "chickpea-or-lentil-pasta",
+            "name": "chickpea or lentil pasta (same shape)",
+            "qty": 1,
+            "unit": "box",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": true,
+          "note": "Same amount. Start checking it a few minutes early; it gets soft fast.",
+          "protein": {
+            "claim": "more protein",
+            "g_per_recipe": null,
+            "g_per_serving": null,
+            "basis": "packaged item; protein varies by product, so no number is given (compare labels)",
+            "fdc_ids": []
+          },
+          "contains": [
+            "gluten"
+          ]
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "high-fiber",
+          "pork",
+          "pasta",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": 36,
+        "fiber_g": 7.7
+      },
+      "photo": {
+        "src": "photos/one-pot-pizza-pasta-sneaky-peppers.webp",
+        "alt": "Pan of penne in red sauce with melted mozzarella, pepperoni, diced red pepper and spinach"
+      }
+    },
+    {
+      "id": "turkey-zucchini-orzo-skillet-spinach",
+      "title": "Turkey and Zucchini Orzo Skillet with Spinach",
+      "kind": "family",
+      "effort": "easy",
+      "hands_on_min": 15,
+      "total_min": 30,
+      "serves": 4,
+      "tags": [
+        "turkey",
+        "orzo",
+        "zucchini",
+        "spinach"
+      ],
+      "contains": [
+        "chicken",
+        "dairy",
+        "gluten",
+        "turkey"
+      ],
+      "ingredients": [
+        {
+          "key": "lean-ground-turkey",
+          "name": "93% lean ground turkey",
+          "qty": 1,
+          "unit": "lb",
+          "section": "meat"
+        },
+        {
+          "key": "orzo",
+          "name": "orzo pasta",
+          "qty": 1,
+          "unit": "cup",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "chicken-broth",
+          "name": "chicken broth (32 oz carton)",
+          "qty": 0.5,
+          "unit": "box",
+          "section": "pantry",
+          "check_label": true
+        },
+        {
+          "key": "zucchini",
+          "name": "zucchini",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "diced-tomatoes",
+          "name": "can of diced tomatoes",
+          "qty": 1,
+          "unit": "can",
+          "section": "pantry"
+        },
+        {
+          "key": "baby-spinach",
+          "name": "baby spinach",
+          "qty": 0.5,
+          "unit": "bag",
+          "section": "produce"
+        },
+        {
+          "key": "onion",
+          "name": "yellow onion",
+          "qty": 1,
+          "unit": "",
+          "section": "produce"
+        },
+        {
+          "key": "parmesan",
+          "name": "grated Parmesan",
+          "qty": 0.25,
+          "unit": "cup",
+          "section": "dairy"
+        },
+        {
+          "key": "italian-seasoning",
+          "name": "Italian seasoning",
+          "qty": 1,
+          "unit": "tsp",
+          "section": "pantry"
+        },
+        {
+          "key": "lemon",
+          "name": "lemon",
+          "qty": 1,
+          "unit": "",
+          "section": "produce",
+          "optional": true
+        },
+        {
+          "key": "olive-oil",
+          "name": "olive oil",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "garlic-powder",
+          "name": "garlic powder",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "salt",
+          "name": "salt",
+          "section": "pantry",
+          "staple": true
+        },
+        {
+          "key": "pepper",
+          "name": "pepper",
+          "section": "pantry",
+          "staple": true
+        }
+      ],
+      "steps": [
+        {
+          "who": "adult",
+          "text": "Dice the zucchini and onion small.",
+          "minutes": 5,
+          "hazard": "sharp",
+          "safety": "Sharp knife. {kid} stays at the table for this part."
+        },
+        {
+          "who": "adult",
+          "text": "Cook the turkey and onion in a little oil in a big skillet over medium-high until no pink is left, breaking it into small crumbles.",
+          "minutes": 7,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "kid",
+          "text": "Measure the orzo",
+          "how": [
+            "Scoop orzo into the measuring cup",
+            "Level the top with your finger",
+            "Feel how tiny the pieces are"
+          ],
+          "learns": [
+            "senses",
+            "counting"
+          ]
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the zucchini, Italian seasoning, garlic powder, salt and pepper and cook 2 minutes.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Add the broth, tomatoes with juice and 1/2 cup water and bring to a boil. Stir in the orzo.",
+          "minutes": 3,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Cover and simmer, stirring now and then, until the orzo is tender and most of the liquid is soaked up.",
+          "minutes": 10,
+          "timer_min": 10,
+          "hazard": "hot",
+          "safety": "Hot stove. Keep {kid} back from the stove."
+        },
+        {
+          "who": "adult",
+          "text": "Stir in the spinach until it wilts, then the Parmesan. Squeeze on lemon if you like and let it cool a little before serving.",
+          "minutes": 2,
+          "hazard": "hot",
+          "safety": "Hot food. Let it cool before {kid} touches it."
+        }
+      ],
+      "category": "fitness",
+      "protein_g_per_serving": 31,
+      "protein_note": "About 31 g protein per serving (4 servings), worked out from USDA FoodData Central values for these amounts.",
+      "protein_swaps": [
+        {
+          "id": "turkey-zucchini-orzo-skillet-spinach--fat-free-ground-turkey",
+          "type": "swap",
+          "replaces": "lean-ground-turkey",
+          "use": {
+            "key": "fat-free-ground-turkey",
+            "name": "fat-free ground turkey",
+            "qty": 1,
+            "unit": "lb",
+            "section": "meat"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Same amount. It cooks a little drier, so do not overcook it.",
+          "protein": {
+            "claim": "about +22 g protein for the whole recipe (about +5.5 g per serving)",
+            "g_per_recipe": 22.0,
+            "g_per_serving": 5.5,
+            "basis": "1 lb fat-free ground turkey (FDC 172847, 453.6 g) vs the recipe's 453.6 g of turkey entry (FDC 172850), raw weights",
+            "fdc_ids": [
+              172847,
+              172850
+            ]
+          },
+          "contains": [
+            "turkey"
+          ]
+        },
+        {
+          "id": "turkey-zucchini-orzo-skillet-spinach--white-beans",
+          "type": "add",
+          "replaces": null,
+          "use": {
+            "key": "white-beans",
+            "name": "can of white beans",
+            "qty": 1,
+            "unit": "can",
+            "section": "pantry"
+          },
+          "optional": true,
+          "check_label": false,
+          "note": "Rinse, drain and stir in with the orzo. Mash a few for little ones.",
+          "protein": {
+            "claim": "about +31 g protein for the whole recipe (about +7.7 g per serving)",
+            "g_per_recipe": 30.9,
+            "g_per_serving": 7.7,
+            "basis": "adds 1 can white beans (FDC 175204, 425 g net as packed per label)",
+            "fdc_ids": [
+              175204
+            ]
+          },
+          "contains": []
+        }
+      ],
+      "filter": {
+        "tags": [
+          "high-protein",
+          "veggie-packed",
+          "turkey",
+          "pasta",
+          "one-pot",
+          "quick"
+        ],
+        "protein_g": 31,
+        "fiber_g": 4.6
+      },
+      "photo": {
+        "src": "photos/turkey-zucchini-orzo-skillet-spinach.webp",
+        "alt": "Skillet of orzo with ground turkey, diced zucchini, tomatoes and spinach, topped with Parmesan and a lemon wedge"
       }
     },
     {

@@ -1,6 +1,6 @@
 // Offline: app shell cached first (build plan section 12).
 // Bump CACHE on every content or code change. Older fc- caches are deleted on activate (other apps on the same origin are left alone).
-const CACHE = 'fc-v2-pub19';
+const CACHE = 'fc-v2-pub20';
 const ASSETS = [
   './',
   './css/app.css',
@@ -47,10 +47,12 @@ const ASSETS = [
   './manifest.webmanifest',
   './photos/apple-pork-chops.webp',
   './photos/baked-bean-and-cheese-tostadas.webp',
+  './photos/baked-chicken-bean-burritos-zucchini.webp',
   './photos/baked-chicken-parmesan-spaghetti.webp',
   './photos/baked-chicken-taquitos.webp',
   './photos/baked-pizza-pinwheels.webp',
   './photos/baked-potato-bar.webp',
+  './photos/baked-ravioli-meat-sauce-carrots.webp',
   './photos/baked-sweet-and-sour-chicken.webp',
   './photos/bbq-chicken-sliders.webp',
   './photos/beef-and-broccoli-brown-rice.webp',
@@ -85,11 +87,13 @@ const ASSETS = [
   './photos/chinese-style-tomato-egg-rice.webp',
   './photos/corn-dog-muffins-and-fries.webp',
   './photos/creamy-chicken-mushroom-egg-noodles.webp',
+  './photos/creamy-tomato-spinach-chicken-rice.webp',
   './photos/crispy-oven-wings.webp',
   './photos/crispy-tenders-and-fries.webp',
   './photos/cuban-style-beef-picadillo-rice-bowls.webp',
   './photos/drumsticks-and-potatoes.webp',
   './photos/easy-baked-ziti.webp',
+  './photos/easy-beef-goulash-sneaky-zucchini.webp',
   './photos/easy-chicken-alfredo.webp',
   './photos/easy-white-bean-minestrone.webp',
   './photos/fall-squash-mac.webp',
@@ -101,6 +105,7 @@ const ASSETS = [
   './photos/ham-and-pea-alfredo-bowties.webp',
   './photos/ham-and-white-bean-soup.webp',
   './photos/hamburger-steaks-onion-gravy-cauliflower-mash.webp',
+  './photos/hamburger-vegetable-soup.webp',
   './photos/hawaiian-style-pork-pineapple-rice-bowls.webp',
   './photos/homemade-chicken-nuggets.webp',
   './photos/homemade-pizza-night.webp',
@@ -116,11 +121,13 @@ const ASSETS = [
   './photos/meatballs-and-butter-noodles.webp',
   './photos/mediterranean-chicken-chickpea-quinoa-bowls.webp',
   './photos/mild-cajun-chicken-sausage-jambalaya.webp',
+  './photos/mild-chicken-adobo-green-beans-rice.webp',
   './photos/mild-chicken-pozole-hominy-soup.webp',
   './photos/mild-shakshuka-eggs-with-toast.webp',
   './photos/mild-turkey-keema-peas-brown-rice.webp',
   './photos/mild-yogurt-chicken-curry.webp',
   './photos/mini-meatloaves.webp',
+  './photos/one-pot-pizza-pasta-sneaky-peppers.webp',
   './photos/oven-french-toast-sticks.webp',
   './photos/philly-cheesesteak-sliders.webp',
   './photos/pigs-in-a-blanket.webp',
@@ -148,6 +155,7 @@ const ASSETS = [
   './photos/stuffed-shells.webp',
   './photos/swedish-style-pork-meatballs-egg-noodles.webp',
   './photos/taco-bake.webp',
+  './photos/tater-tot-hotdish-sneaky-veggies.webp',
   './photos/teriyaki-chicken-bowls.webp',
   './photos/tex-mex-turkey-rice-skillet.webp',
   './photos/thai-style-basil-chicken-green-bean-bowls.webp',
@@ -160,9 +168,11 @@ const ASSETS = [
   './photos/turkey-stuffing-green-bean-skillet.webp',
   './photos/turkey-sweet-potato-breakfast-hash.webp',
   './photos/turkey-taco-oven-fries.webp',
+  './photos/turkey-zucchini-orzo-skillet-spinach.webp',
   './photos/unstuffed-cabbage-roll-turkey-skillet.webp',
   './photos/veggie-egg-muffins-and-toast.webp',
   './photos/veggie-pasta-primavera.webp',
+  './photos/white-chicken-chili.webp',
 ];
 
 // cache: 'reload' skips the browser's HTTP cache, so an update never re-caches an old file
